@@ -6,7 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
 
-import ButtonPar from './Button'
+import ButtonPar from '../Button/index'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
