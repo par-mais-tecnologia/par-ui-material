@@ -1,5 +1,5 @@
 import React from "react";
-import { configure, shallow, render } from 'enzyme'
+import { configure, shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import DatePicker from './datePicker'
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
@@ -17,7 +17,7 @@ export const test = describe('DatePicker', () => {
         });
 
         it('shallow DatePicker 3', () => {
-            const wrapper = render.create(<DatePicker dateUtilityLibrary = {MomentUtils}/>).toJSON();
+            const wrapper = shallow(<DatePicker dateUtilityLibrary = {MomentUtils}/>);
             expect(wrapper).toMatchSnapshot();
         });
     });
