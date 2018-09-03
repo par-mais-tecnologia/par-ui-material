@@ -11,12 +11,7 @@ export const test = describe('DatePicker', () => {
             expect(wrapper).toBeTruthy();
         });
 
-        it('shallow DatePicker 2', () => {
-            const wrapper = shallow(<DatePicker dateUtilityLibrary = {MomentUtils}/>);
-            expect(wrapper).toMatchSnapshot();
-        });
-
-        it('shallow DatePicker 3', () => {
+        it('shallow DatePicker match Snapshot', () => {
             const wrapper = shallow(<DatePicker dateUtilityLibrary = {MomentUtils}/>);
             expect(wrapper).toMatchSnapshot();
         });
