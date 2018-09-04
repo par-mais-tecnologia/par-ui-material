@@ -5,14 +5,14 @@ import CheckBox from './checkBox'
 configure({ adapter: new Adapter() });
 
 export const test = describe('CheckBox', () => {
-    it('shallow CheckBox', () => {
+    it('shallow Currency', () => {
         const wrapper = shallow(
             <CheckBox/>
         );
         expect(wrapper).toBeTruthy();
     });
 
-    it('shallow CheckBox match Snapshot', () => {
+    it('shallow Currency match Snapshot', () => {
         const wrapper = shallow(
             <CheckBox/>
         );
