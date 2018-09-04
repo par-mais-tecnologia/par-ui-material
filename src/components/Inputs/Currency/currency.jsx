@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react';
 import TextFieldMUI from '@material-ui/core/TextField';
 
-export default class CheckBox extends PureComponent {
+export default class Currency extends PureComponent {
 
     render() {
         return (
-            <TextFieldMUI{...this.props}/>
+            <TextFieldMUI
+                {...this.props} />
         );
     }
 }
