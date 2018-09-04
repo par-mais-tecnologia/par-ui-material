@@ -13,6 +13,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o .out",
     "test": "jest"
   },
   "devDependencies": {
