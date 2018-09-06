@@ -10,7 +10,7 @@ import { test } from '../Inputs/Currency/currency.teste';
 
 class CurrencyStory extends PureComponent {
     state = {
-        value: false,
+        value: false
     };
 
     handleCurrencyChange = decorateAction([args => {
