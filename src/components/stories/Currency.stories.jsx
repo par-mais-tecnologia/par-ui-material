@@ -10,11 +10,11 @@ import { test } from '../Inputs/Currency/currency.teste';
 
 class CurrencyStory extends PureComponent {
     state = {
-        value: false,
+        value: false
     };
 
     handleCurrencyChange = decorateAction([args => {
-        this.setState({ value: args[0].target.value });
+        this.setState({ value: Number(args[0].target.value) });
         return args;
     }]);
 
@@ -23,10 +23,10 @@ class CurrencyStory extends PureComponent {
 
         return (
             <Currency
+                id="CurrencyId"
                 label="Campo Monetário"
                 value={value}
                 onChange={this.handleCurrencyChange('valor monetário modificado')}
-                id="formatted-numberformat-input"
                 InputProps={{
                     inputComponent: NumberFormatCustom,
                 }}
@@ -49,8 +49,11 @@ function NumberFormatCustom(props) {
                     },
                 });
             }}
-            thousandSeparator
-            prefix="$"
+            thousandSeparator=' '
+            decimalSeparator=','
+            prefix='R$ '
+            decimalScale= {2}
+            fixedDecimalScale= {true}
         />
     );
 }
