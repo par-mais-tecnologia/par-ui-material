@@ -9,13 +9,17 @@ function isEmailValid (email) {
 export function emailValidation(email, isRequired) {
     let error = {emailError: false, message: ''};
 
-    if(isRequired && !utils.exist(email)) {
+    if(isRequired && !exist(email)) {
         return {emailError: true, message: dictionary.CAMPO_OBRIGATORIO}
     }
 
-    if(utils.exist(email) && !isEmailValid(email)) {
+    if(exist(email) && !isEmailValid(email)) {
         return {emailError: true, message: dictionary.EMAIL_INVALIDO}
     }
 
     return error;
+}
+
+export function exist(value) {
+    return !!value;
 }
