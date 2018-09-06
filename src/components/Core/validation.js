@@ -1,4 +1,3 @@
-import * as utils from './utils';
 import * as dictionary from './dictionary';
 
 function isEmailValid (email) {
