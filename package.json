@@ -14,9 +14,9 @@
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "test": "jest",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
+    "test": "npm run lint && jest",
+    "storybook": "npm run test:generate-output || true && start-storybook -p 9001 -c .storybook",
+    "test:generate-output": "npm run lint && jest --json --outputFile=.jest-test-results.json || true",
     "test:generate-output:watch": "onchange 'src/**/*.js?' -- npm run test:generate-output",
     "prebuild:storybook": "npm run test:generate-output",
     "build:storybook": "build-storybook -c .storybook -o build/",
