@@ -1,12 +1,9 @@
-
 import { storiesOf } from '@storybook/react';
 import Select from '../Inputs/Select/select'
 import React, { PureComponent } from 'react';
 import { decorateAction } from '@storybook/addon-actions'
-import { specs } from 'storybook-addon-specifications'
 import MenuItem from '@material-ui/core/MenuItem';
-
-import { test } from '../Inputs/Select/select.test';
+import withTests from './withTests';
 
 class SelectStory extends PureComponent {
     state = {
@@ -39,7 +36,7 @@ class SelectStory extends PureComponent {
 }
 
 storiesOf('Input', module)
+  .addDecorator(withTests('select'))
     .add('Select', () => {
-        specs(() => test);
         return <SelectStory/>
     });

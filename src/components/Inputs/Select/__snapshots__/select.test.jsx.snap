@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select shallow Select match Snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Select
+    errorMessage=""
+    hasError={false}
+    id="Select 4"
+    required={false}
+    showError={true}
+    showLabel={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "aria-describedby": "select-form-control",
+      "children": Array [
+        <WithStyles(InputLabel)
+          htmlFor="Select 4"
+        />,
+        <WithStyles(Select)
+          errorMessage=""
+          hasError={false}
+          id="Select 4"
+          inputProps={
+            Object {
+              "id": Object {
+                "id": "Select 4",
+              },
+              "name": Object {
+                "label": undefined,
+              },
+            }
+          }
+          required={false}
+          showError={true}
+          showLabel={true}
+        />,
+        <WithStyles(FormHelperText)
+          id="email-form-control"
+        >
+           
+          
+           
+        </WithStyles(FormHelperText)>,
+      ],
+      "required": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+          "htmlFor": "Select 4",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "errorMessage": "",
+          "hasError": false,
+          "id": "Select 4",
+          "inputProps": Object {
+            "id": Object {
+              "id": "Select 4",
+            },
+            "name": Object {
+              "label": undefined,
+            },
+          },
+          "required": false,
+          "showError": true,
+          "showLabel": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            " ",
+            "",
+            " ",
+          ],
+          "id": "email-form-control",
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          "",
+          " ",
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "aria-describedby": "select-form-control",
+        "children": Array [
+          <WithStyles(InputLabel)
+            htmlFor="Select 4"
+          />,
+          <WithStyles(Select)
+            errorMessage=""
+            hasError={false}
+            id="Select 4"
+            inputProps={
+              Object {
+                "id": Object {
+                  "id": "Select 4",
+                },
+                "name": Object {
+                  "label": undefined,
+                },
+              }
+            }
+            required={false}
+            showError={true}
+            showLabel={true}
+          />,
+          <WithStyles(FormHelperText)
+            id="email-form-control"
+          >
+             
+            
+             
+          </WithStyles(FormHelperText)>,
+        ],
+        "required": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "htmlFor": "Select 4",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "errorMessage": "",
+            "hasError": false,
+            "id": "Select 4",
+            "inputProps": Object {
+              "id": Object {
+                "id": "Select 4",
+              },
+              "name": Object {
+                "label": undefined,
+              },
+            },
+            "required": false,
+            "showError": true,
+            "showLabel": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              " ",
+              "",
+              " ",
+            ],
+            "id": "email-form-control",
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            "",
+            " ",
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

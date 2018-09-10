@@ -5,6 +5,7 @@ import React, { PureComponent } from 'react';
 import { decorateAction } from '@storybook/addon-actions'
 import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme";
 import MuiThemeProvider from "@material-ui/core/es/styles/MuiThemeProvider";
+import withTests from './withTests'
 
 const theme = createMuiTheme({
     palette: {
@@ -74,6 +75,7 @@ class EmailInputStory extends PureComponent {
 }
 
 storiesOf('Input', module)
-    .add('Email Input', () => {
+  .addDecorator(withTests('email'))
+  .add('Email Input', () => {
         return <EmailInputStory/>
     });

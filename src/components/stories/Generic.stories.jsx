@@ -3,9 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Generic from '../Inputs/Generic/generic'
 import React, { PureComponent } from 'react';
 import { decorateAction } from '@storybook/addon-actions'
-import { specs } from 'storybook-addon-specifications'
-
-import { test } from '../Inputs/Generic/generic.test';
+import withTests from './withTests'
 
 class GenericStory extends PureComponent {
     state = {
@@ -32,7 +30,7 @@ class GenericStory extends PureComponent {
 }
 
 storiesOf('Input', module)
-    .add('Livre', () => {
-        specs(() => test);
+  .addDecorator(withTests('generic'))
+  .add('Livre', () => {
         return <GenericStory/>
     });
