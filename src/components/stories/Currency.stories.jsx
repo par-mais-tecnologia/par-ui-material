@@ -58,8 +58,8 @@ function NumberFormatCustom(props) {
     );
 }
 
-storiesOf('Currency', module)
-    .add('pure', () => {
+storiesOf('Input', module)
+    .add('Currency', () => {
         specs(() => test);
         return <CurrencyStory/>
     });
