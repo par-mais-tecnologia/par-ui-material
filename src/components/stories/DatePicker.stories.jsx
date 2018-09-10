@@ -4,11 +4,8 @@ import DatePicker from '../Inputs/DatePicker/datePicker'
 import React, { PureComponent } from 'react';
 import MomentUtils from 'material-ui-pickers/utils/moment-utils';
 import { decorateAction } from '@storybook/addon-actions'
-import { specs } from 'storybook-addon-specifications'
 import moment from 'moment';
 import 'moment/locale/pt-br'
-import { test } from '../Inputs/DatePicker/datePicker.test';
-
 moment.locale('pt-br');
 
 class DatePickerStory extends PureComponent {
@@ -100,6 +97,5 @@ class DatePickerStory extends PureComponent {
 
 storiesOf('Input', module)
   .add('Date Picker', () => {
-      specs(() => test);
       return <DatePickerStory/>
   });

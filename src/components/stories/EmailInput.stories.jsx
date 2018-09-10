@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react';
 import EmailInput from '../Inputs/Email/email'
 import React, { PureComponent } from 'react';
 import { decorateAction } from '@storybook/addon-actions'
-import { specs } from 'storybook-addon-specifications'
-import { test } from '../Inputs/Email/email.test';
 import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme";
 import MuiThemeProvider from "@material-ui/core/es/styles/MuiThemeProvider";
 
@@ -77,6 +75,5 @@ class EmailInputStory extends PureComponent {
 
 storiesOf('Input', module)
     .add('Email Input', () => {
-        specs(() => test);
         return <EmailInputStory/>
     });

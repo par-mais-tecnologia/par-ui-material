@@ -3,10 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Currency from '../Inputs/Currency/currency'
 import React, { PureComponent } from 'react';
 import { decorateAction } from '@storybook/addon-actions'
-import { specs } from 'storybook-addon-specifications'
 import NumberFormat from 'react-number-format';
-
-import { test } from '../Inputs/Currency/currency.teste';
 
 class CurrencyStory extends PureComponent {
     state = {
@@ -60,6 +57,5 @@ function NumberFormatCustom(props) {
 
 storiesOf('Input', module)
     .add('Currency', () => {
-        specs(() => test);
         return <CurrencyStory/>
     });

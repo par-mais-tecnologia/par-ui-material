@@ -3,9 +3,6 @@ import { storiesOf } from '@storybook/react';
 import CheckBox from '../Inputs/CheckBox/checkBox'
 import React, { PureComponent } from 'react';
 import { decorateAction } from '@storybook/addon-actions'
-import { specs } from 'storybook-addon-specifications'
-
-import { test } from '../Inputs/CheckBox/checkBox.test';
 
 class CheckBoxStory extends PureComponent {
     state = {
@@ -32,6 +29,5 @@ class CheckBoxStory extends PureComponent {
 
 storiesOf('Input', module)
     .add('CheckBox', () => {
-        specs(() => test);
         return <CheckBoxStory/>
     });
