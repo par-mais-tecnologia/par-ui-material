@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Brandon Light';
+    src: url('https://static.parmais.com.br/fonts/brandon_light.otf');
+}
+
+@font-face {
+    font-family: 'Brandon Regular';
+    src: url('https://static.parmais.com.br/fonts/brandon_regular.otf');
+}
+
+@font-face {
+    font-family: 'Brandon Bold';
+    src: url('https://static.parmais.com.br/fonts/brandon_bold.otf');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('https://static.parmais.com.br/fonts/roboto_light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('https://static.parmais.com.br/fonts/roboto_medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('https://static.parmais.com.br/fonts/roboto_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Rounded Elegance';
+    src: url('https://static.parmais.com.br/fonts/rounded_elegance_regular.ttf');
+}
+

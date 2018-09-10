@@ -1,0 +1,30 @@
+@import '_fonts.css';
+
+/* Fonts */
+.brandon-light {
+    font-family: 'Brandon-Light', sans-serif;
+}
+
+.brandon-regular {
+    font-family: 'Brandon Regular', sans-serif;
+}
+
+.brandon-bold {
+    font-family: 'Brandon Bold', sans-serif;
+}
+
+.roboto-light {
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.roboto-medium {
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.roboto-bold {
+    font-family: 'Roboto Bold', sans-serif;
+}
+
+.rounded-elegance {
+    font-family: 'Rounded Elegance', sans-serif;
+}
