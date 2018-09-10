@@ -3,13 +3,13 @@ import React, { PureComponent } from 'react'
 import Stepper from '@material-ui/core/Stepper'
 import Step from '@material-ui/core/Step'
 import StepLabel from '@material-ui/core/StepLabel'
-import { MuiThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/styles'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 
 import PropTypes from 'prop-types'
 
 export default class StepperParMais extends PureComponent {
-  getTheme() {
+  getTheme () {
     return createMuiTheme({
       overrides: {
         MuiStepIcon: {
@@ -27,58 +27,58 @@ export default class StepperParMais extends PureComponent {
           label: {
             color: this.props.inactiveLabelColor,
             '&$active': {
-              color: this.props.activeLabelColor,
+              color: this.props.activeLabelColor
             },
             '&$completed': {
-              color: this.props.completedLabelColor,
-            },
+              color: this.props.completedLabelColor
+            }
           }
         },
         MuiStepConnector: {
           lineHorizontal: {
-            visibility: 'hidden',
-          },
+            visibility: 'hidden'
+          }
         },
         MuiStepper: {
           root: {
             padding: '24px 24px 0px 24px'
-          },
+          }
         },
         MuiTypography: {
           body1: {
-            color: this.props.activeLabelColor,
+            color: this.props.activeLabelColor
           }
         }
-      },
+      }
     })
   }
 
-  render() {
+  render () {
     const {
       steps,
       activeStep,
-      orientation,
+      orientation
     } = this.props
     const alternativeLabel = orientation === 'horizontal'
 
     return (
       <MuiThemeProvider theme={this.getTheme()}>
-        <Stepper 
-          activeStep={activeStep} 
+        <Stepper
+          activeStep={activeStep}
           orientation={orientation}
           alternativeLabel={alternativeLabel}
         >
           {
-            steps.map((label, index)=> {
+            steps.map((label, index) => {
               return (
                 <Step key={label}>
                   <StepLabel>
                     {
                       alternativeLabel
-                      ? ''
-                      : <p className='stepLabelPPlus'>
+                        ? ''
+                        : <p className='stepLabelPPlus'>
                           {label}
-                        </p> 
+                        </p>
                     }
                   </StepLabel>
                 </Step>
@@ -86,9 +86,9 @@ export default class StepperParMais extends PureComponent {
             })
           }
         </Stepper>
-        { alternativeLabel 
+        {alternativeLabel
           ? (
-            <Typography align='center' noWrap style={{marginTop: '-7px'}}>
+            <Typography align='center' noWrap style={{ marginTop: '-7px' }}>
               {steps[activeStep]}
             </Typography>
           )
@@ -105,17 +105,15 @@ StepperParMais.propTypes = {
   orientation: PropTypes.string.isRequired,
   inactiveIconColor: PropTypes.string,
   activeIconColor: PropTypes.string,
-  completedIconColor: PropTypes.string,
   inactiveLabelColor: PropTypes.string,
   activeLabelColor: PropTypes.string,
-  completedIconColor: PropTypes.string,
+  completedIconColor: PropTypes.string
 }
 
 StepperParMais.defaultProps = {
   inactiveIconColor: '#C1C1C1',
   activeIconColor: '#5EB8C0',
-  completedIconColor: '#B6DDDC',
   inactiveLabelColor: '#C1C1C1',
   activeLabelColor: '#5EB8C0',
-  completedIconColor: '#B6DDDC',
+  completedIconColor: '#B6DDDC'
 }

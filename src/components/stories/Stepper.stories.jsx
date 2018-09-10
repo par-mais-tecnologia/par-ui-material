@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react';
-import { storiesOf } from '@storybook/react';
+import React, { PureComponent } from 'react'
+import { storiesOf } from '@storybook/react'
 
-import StepperParMais from '../Stepper';
-import withTests from './withTests';
+import StepperParMais from '../Stepper'
+import withTests from './withTests'
 
 class StepperStories extends PureComponent {
   steps = [
@@ -13,7 +13,7 @@ class StepperStories extends PureComponent {
     'Sua experiência em investimentos'
   ]
 
-  render() {
+  render () {
     return (
       <StepperParMais
         steps={this.steps}
@@ -24,27 +24,27 @@ class StepperStories extends PureComponent {
   }
 }
 
-const MobileStepper = ({children}) => (
-  <div style={{width: '290px'}}>
-    { children }
+const MobileStepper = ({ children }) => (
+  <div style={{ width: '290px' }}>
+    {children}
   </div>
 )
 
 storiesOf('Stepper', module)
   .addDecorator(withTests('stepper'))
   .add('shallow', () => {
-    return (<StepperStories orientation='vertical'/>)
+    return (<StepperStories orientation='vertical' />)
   })
   .add('horizontal', () => {
-    return (<StepperStories orientation='horizontal'/>)
+    return (<StepperStories orientation='horizontal' />)
   })
   .add('vertical', () => {
-    return (<StepperStories orientation='vertical'/>)
+    return (<StepperStories orientation='vertical' />)
   })
   .add('mobile', () => {
     return (
       <MobileStepper>
-        <StepperStories orientation='horizontal'/>
+        <StepperStories orientation='horizontal' />
       </MobileStepper>
     )
   })

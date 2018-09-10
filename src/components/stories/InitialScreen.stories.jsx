@@ -1,9 +1,9 @@
-import React, { PureComponent } from 'react';
-import { storiesOf } from '@storybook/react';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
 
-import InitialScreen from "../InitialScreen";
-import MyWalletLoginView from "../InitialScreen/components/MyWalletLoginView";
-import BioInitialView from "../InitialScreen/components/BioInitialView";
+import InitialScreen from '../InitialScreen'
+import MyWalletLoginView from '../InitialScreen/components/MyWalletLoginView'
+import BioInitialView from '../InitialScreen/components/BioInitialView'
 
 storiesOf('InitialScreen', module)
   .add('Minha Carteira', () => {
@@ -11,7 +11,7 @@ storiesOf('InitialScreen', module)
       <InitialScreen
         imageSrc={'https://static.parmais.com.br/images/background.jpg'}
         middleBoxColor='#347A7C'>
-        <MyWalletLoginView/>
+        <MyWalletLoginView />
       </InitialScreen>
     )
   })
@@ -20,7 +20,7 @@ storiesOf('InitialScreen', module)
       <InitialScreen
         imageSrc={'https://static.parmais.com.br/images/background.jpg'}
         middleBoxColor='#347A7C'>
-        <BioInitialView/>
+        <BioInitialView />
       </InitialScreen>
     )
-  });
+  })

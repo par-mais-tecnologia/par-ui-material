@@ -1,5 +1,5 @@
-import React from "react"
-import { configure, shallow, mount } from 'enzyme'
+import React from 'react'
+import { configure, mount, shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 import Stepper from './index'
@@ -8,27 +8,27 @@ import { Typography } from '@material-ui/core'
 
 configure({ adapter: new Adapter() })
 
-export const testShallow = describe('Stepper shallow', ()=> {
+export const testShallow = describe('Stepper shallow', () => {
   const getShallow = () => (
     <Stepper
-        steps={['foo1', 'foo2']}
-        activeStep={0}
-        orientation={'vertical'}
-      />
+      steps={['foo1', 'foo2']}
+      activeStep={0}
+      orientation={'vertical'}
+    />
   )
 
   it(`shallow Stepper`, () => {
     const wrapper = shallow(getShallow())
-      expect(wrapper).toBeTruthy()
+    expect(wrapper).toBeTruthy()
   })
 
   it('shallow Stepper match Snapshot', () => {
-    const wrapper = shallow(getShallow());
-    expect(wrapper).toMatchSnapshot();
-});
+    const wrapper = shallow(getShallow())
+    expect(wrapper).toMatchSnapshot()
+  })
 
-  it(`should have the number of <Step/>'s equals the number of steps`, ()=> {
-    const steps = ['1', '2', '3'];
+  it(`should have the number of <Step/>'s equals the number of steps`, () => {
+    const steps = ['1', '2', '3']
     const wrapper = shallow(
       <Stepper
         steps={steps}
@@ -40,15 +40,15 @@ export const testShallow = describe('Stepper shallow', ()=> {
   })
 })
 
-export const testHorizontal = describe('Stepper horizontal', ()=> {
-  const steps = ['Foo1', 'Foo2', 'Foo3'];
+export const testHorizontal = describe('Stepper horizontal', () => {
+  const steps = ['Foo1', 'Foo2', 'Foo3']
   const activeStep = 1
   const stepper = (
     <Stepper
-        steps={steps}
-        activeStep={1}
-        orientation={'horizontal'}
-      />  
+      steps={steps}
+      activeStep={1}
+      orientation={'horizontal'}
+    />
   )
 
   it(`should be horizontal`, () => {
@@ -72,9 +72,9 @@ export const testHorizontal = describe('Stepper horizontal', ()=> {
   })
 })
 
-export const testVertical = describe('Stepper vertical', ()=> {
+export const testVertical = describe('Stepper vertical', () => {
   it(`should show all step labels`, () => {
-    const steps = ['Foo1', 'Foo2', 'Foo3'];
+    const steps = ['Foo1', 'Foo2', 'Foo3']
     const wrapper = mount(
       <Stepper
         steps={steps}

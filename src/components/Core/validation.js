@@ -1,24 +1,24 @@
-import * as dictionary from './dictionary';
+import * as dictionary from './dictionary'
 
 function isEmailValid (email) {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(String(email).toLowerCase())
+  const re = /\S+@\S+\.\S+/
+  return re.test(String(email).toLowerCase())
 }
 
-export function emailValidation(email, isRequired) {
-    let error = {emailError: false, message: ''};
+export function emailValidation (email, isRequired) {
+  let error = { emailError: false, message: '' }
 
-    if(isRequired && !exist(email)) {
-        return {emailError: true, message: dictionary.CAMPO_OBRIGATORIO}
-    }
+  if (isRequired && !exist(email)) {
+    return { emailError: true, message: dictionary.CAMPO_OBRIGATORIO }
+  }
 
-    if(exist(email) && !isEmailValid(email)) {
-        return {emailError: true, message: dictionary.EMAIL_INVALIDO}
-    }
+  if (exist(email) && !isEmailValid(email)) {
+    return { emailError: true, message: dictionary.EMAIL_INVALIDO }
+  }
 
-    return error;
+  return error
 }
 
-export function exist(value) {
-    return !!value;
+export function exist (value) {
+  return !!value
 }

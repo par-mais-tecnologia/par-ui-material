@@ -1,19 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Input from '@material-ui/core/Input';
-import Button from '@material-ui/core/Button';
+import React from 'react'
 
-import {convertHexToRGB} from "./functions";
+import { convertHexToRGB } from './functions'
 
-import 'tachyons/css/tachyons.min.css';
-import '../Core/styles/index.css';
+import 'tachyons/css/tachyons.min.css'
+import '../Core/styles/index.css'
 
 const InitialScreen = (props) => {
-
   const {
     imageSrc,
-    middleBoxColor,
-  } = props;
+    middleBoxColor
+  } = props
 
   const styles = {
     backgroundContainer: {
@@ -21,14 +17,14 @@ const InitialScreen = (props) => {
       width: '100%',
       height: '100%',
       backgroundImage: `url(${imageSrc})`,
-      backgroundSize: 'cover',
+      backgroundSize: 'cover'
     },
     middleBox: {
       backgroundColor: middleBoxColor !== '' ? convertHexToRGB(middleBoxColor, 0.6) : '',
       borderRadius: '5px'
       // filter: 'blur(2px)',
     }
-  };
+  }
 
   return (
     <div className='flex justify-center items-center' style={styles.backgroundContainer}>
@@ -37,11 +33,11 @@ const InitialScreen = (props) => {
       </div>
     </div>
   )
-};
+}
 
 InitialScreen.defaultProps = {
   middleBoxColor: '#347A7C',
   imageSrc: ''
-};
+}
 
-export default InitialScreen;
+export default InitialScreen

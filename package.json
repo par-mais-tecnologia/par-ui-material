@@ -12,6 +12,8 @@
     "react-number-format": "^3.5.2"
   },
   "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
@@ -23,8 +25,8 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
-    "@storybook/addon-knobs": "^3.4.10",
     "@storybook/addon-jest": "^3.4.10",
+    "@storybook/addon-knobs": "^3.4.10",
     "@storybook/addon-links": "^3.4.10",
     "@storybook/addon-viewport": "^3.4.10",
     "@storybook/addons": "^3.4.10",
@@ -40,6 +42,20 @@
     "jest": "^23.5.0",
     "onchange": "^4.1.0",
     "react-test-renderer": "^16.4.2",
+    "standard": "^12.0.1",
     "tachyons": "^4.10.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ],
+    "parser": "babel-eslint"
   }
 }
