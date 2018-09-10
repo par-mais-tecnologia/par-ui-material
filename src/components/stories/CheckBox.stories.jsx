@@ -30,8 +30,8 @@ class CheckBoxStory extends PureComponent {
     }
 }
 
-storiesOf('CheckBox', module)
-    .add('pure', () => {
+storiesOf('Input', module)
+    .add('CheckBox', () => {
         specs(() => test);
         return <CheckBoxStory/>
     });

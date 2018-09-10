@@ -4,7 +4,7 @@ import EmailInput from '../Inputs/Email/email'
 import React, { PureComponent } from 'react';
 import { decorateAction } from '@storybook/addon-actions'
 import { specs } from 'storybook-addon-specifications'
-import { test } from '../Inputs/Currency/currency.teste';
+import { test } from '../Inputs/Email/email.test';
 import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme";
 import MuiThemeProvider from "@material-ui/core/es/styles/MuiThemeProvider";
 
@@ -75,8 +75,8 @@ class EmailInputStory extends PureComponent {
     }
 }
 
-storiesOf('EmailInput', module)
-    .add('pure', () => {
+storiesOf('Input', module)
+    .add('Email Input', () => {
         specs(() => test);
         return <EmailInputStory/>
     });
