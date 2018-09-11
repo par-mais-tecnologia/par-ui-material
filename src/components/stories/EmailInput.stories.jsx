@@ -5,6 +5,7 @@ import { decorateAction } from '@storybook/addon-actions'
 import createMuiTheme from '@material-ui/core/es/styles/createMuiTheme'
 import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import withTests from './withTests'
+import 'tachyons/css/tachyons.min.css'
 
 const theme = createMuiTheme({
   palette: {
@@ -42,33 +43,36 @@ class EmailInputStory extends PureComponent {
     const { value } = this.state
 
     return (
-      <MuiThemeProvider theme={theme}>
-        <h5> Campo Obrigatório </h5>
-        <EmailInput
-          required
-          label='Email'
-          onChange={this.handleEmailChange('Email Modificado')}
-          name='email'
-          value={value}
-        />
+        <div className='pl3'>
+            <MuiThemeProvider theme={theme}>
+                <h5> Campo Obrigatório </h5>
+                <EmailInput
+                    required
+                    label='Email'
+                    onChange={this.handleEmailChange('Email Modificado')}
+                    name='email'
+                    value={value}
+                />
 
-        <h5> Campo Não obrigatório </h5>
-        <EmailInput
-          label='Email'
-          onChange={this.handleEmailChange('Email Modificado')}
-          name='email'
-          value={value}
-        />
+                <h5> Campo Não obrigatório </h5>
+                <EmailInput
+                    label='Email'
+                    onChange={this.handleEmailChange('Email Modificado')}
+                    name='email'
+                    value={value}
+                />
 
-        <h5> Campo sem mostrar erros </h5>
-        <EmailInput
-          label='Email'
-          onChange={this.handleEmailChange('Email Modificado')}
-          name='email'
-          value={value}
-          showError={false}
-        />
-      </MuiThemeProvider>
+                <h5> Campo sem mostrar erros </h5>
+                <EmailInput
+                    label='Email'
+                    onChange={this.handleEmailChange('Email Modificado')}
+                    name='email'
+                    value={value}
+                    showError={false}
+                />
+            </MuiThemeProvider>
+        </div>
+
     )
   }
 }
