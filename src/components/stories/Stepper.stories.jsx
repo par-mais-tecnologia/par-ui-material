@@ -15,11 +15,13 @@ class StepperStories extends PureComponent {
 
   render () {
     return (
-      <StepperParMais
-        steps={this.steps}
-        activeStep={3}
-        orientation={this.props.orientation}
-      />
+        <div className='pl3'>
+            <StepperParMais
+                steps={this.steps}
+                activeStep={3}
+                orientation={this.props.orientation}
+            />
+        </div>
     )
   }
 }
