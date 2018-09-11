@@ -18,12 +18,14 @@ class GenericStory extends PureComponent {
     const { value } = this.state
 
     return (
-      <Generic
-        id='GenericId'
-        label='Campo Genérico'
-        value={value}
-        onChange={this.handleGenericChange('Valor genérico alterado')}
-      />
+        <div className='pl3'>
+            <Generic
+                id='GenericId'
+                label='Campo Genérico'
+                value={value}
+                onChange={this.handleGenericChange('Valor genérico alterado')}
+            />
+        </div>
     )
   }
 }

@@ -19,7 +19,7 @@ class SelectStory extends PureComponent {
     const { value } = this.state
 
     return (
-        <div>
+        <div className='pl3'>
             <h5> Normal </h5>
             <Select
                 id='SelectId'

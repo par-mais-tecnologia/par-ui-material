@@ -18,11 +18,13 @@ class CheckBoxStory extends PureComponent {
     const { checked } = this.state
 
     return (
-      <CheckBox
-        checked={checked}
-        onChange={this.handleCheckedChange('marquei a caixa')}
-        value='checked'
-      />
+        <div className='pl3'>
+            <CheckBox
+                checked={checked}
+                onChange={this.handleCheckedChange('marquei a caixa')}
+                value='checked'
+            />
+        </div>
     )
   }
 }
