@@ -42,3 +42,5 @@ Select.defaultProps = {
   hasError: false,
   error: false
 }
+
+export default Select
