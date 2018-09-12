@@ -1,7 +1,7 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
 
-import NumberedTitle from '../NumberedTitle';
+import NumberedTitle from '../NumberedTitle'
 
 const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Curabitur quis mattis turpis, a eleifend enim. Vestibulum ante ipsum primis 
@@ -20,7 +20,7 @@ Pellentesque ut elit laoreet, aliquet augue at, tempor nisi.`
 storiesOf('NumberedTitle', module)
   .add('shallow', () => {
     return (
-      <div style={{width:'400px', padding: '10px'}}>
+      <div style={{ width: '400px', padding: '10px' }}>
         <NumberedTitle
           number={7}
           title={`Suas`}

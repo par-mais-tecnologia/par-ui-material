@@ -1,8 +1,9 @@
 @import '_fonts.css';
+@import '~tachyons/css/tachyons.min.css';
 
 /* Fonts */
 .brandon-light {
-    font-family: 'Brandon-Light', sans-serif;
+    font-family: 'Brandon Light', sans-serif;
 }
 
 .brandon-regular {

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core'
 
 const styles = {
   headline: {
@@ -23,19 +23,19 @@ const styles = {
   }
 }
 
-function NumberedTitle(props) {
-  const {classes} = props;
+function NumberedTitle (props) {
+  const { classes } = props
   return (
-    <Grid container direction="column">
-      <Grid  container direction="row" alignItems="center">
-        <Typography variant="headline" classes={{headline: classes.headline}}>
+    <Grid container direction='column'>
+      <Grid container direction='row' alignItems='center'>
+        <Typography variant='headline' classes={{ headline: classes.headline }}>
           {props.number}
         </Typography>
-        <Grid direction="column">
-          <Typography variant="title" classes={{title: classes.title}}>
+        <Grid direction='column'>
+          <Typography variant='title' classes={{ title: classes.title }}>
             {props.title}
           </Typography>
-          <Typography variant="subheading" classes={{subheading: classes.subheading}}>
+          <Typography variant='subheading' classes={{ subheading: classes.subheading }}>
             {props.subtitle}
           </Typography>
         </Grid>
@@ -47,4 +47,4 @@ function NumberedTitle(props) {
   )
 }
 
-export default withStyles(styles)(NumberedTitle);
+export default withStyles(styles)(NumberedTitle)

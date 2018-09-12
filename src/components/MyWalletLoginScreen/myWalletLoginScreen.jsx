@@ -2,13 +2,12 @@ import React from 'react'
 import Input from '@material-ui/core/Input'
 import Button from '@material-ui/core/Button'
 
-import 'tachyons/css/tachyons.min.css'
-import '../../../Core/styles/index.css'
+import '../Core/styles/index.css'
 
-const MyWalletLoginView = (props) => {
+const MyWalletLoginScreen = (props) => {
   return (
-    <div className='flex'>
-      <div className='white pv4 pl4 mr5'>
+    <div className='flex z-2 justify-center'>
+      <div className='white pv4 pl4 mr5 dn db-ns'>
         <div className='brandon-regular lh-copy'>
           <p className='f4 mb2 rounded-elegance'>#ClienteMais</p>
           <p className='f3 ttu mt2 mb1'>Trabalhamos <br /> <span className='brandon-bold'>para você <br /></span>e para o
@@ -17,13 +16,14 @@ const MyWalletLoginView = (props) => {
         </div>
         <p className='roboto-bold f6 b'>Conheça a Par Mais</p>
       </div>
-      <div className='bl b--white-20 white roboto-medium pl5 pr5 mt4'>
-        <p className='roboto-light f4'>Acessar conta</p>
+      <div className='bl-ns b--white-20 white roboto-medium pl5-ns pr5-ns mt4-ns'>
+        <p className='f2 mb4 mt3 rounded-elegance dn-ns'>#ClienteMais</p>
+        <p className='roboto-light f4'>Acesse sua conta</p>
         <div>
           <Input
             placeholder='E-mail'
             fullWidth
-            className='mb2'
+            className='mb3'
           />
           <br />
           <Input
@@ -31,12 +31,12 @@ const MyWalletLoginView = (props) => {
             fullWidth
           />
           <p className='f7 b mt4 mb4 lh-copy'>
-            Esqueceu sua senha?<br />
-            Clique para receber uma nova em seu e-mail
+              Esqueceu sua senha?<br />
+              Clique para receber uma nova em seu e-mail
           </p>
           <div className='flex justify-end'>
             <Button variant='contained' color='secondary'>
-              Continuar
+                Continuar
             </Button>
           </div>
         </div>
@@ -45,4 +45,4 @@ const MyWalletLoginView = (props) => {
   )
 }
 
-export default MyWalletLoginView
+export default MyWalletLoginScreen
