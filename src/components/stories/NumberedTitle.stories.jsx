@@ -2,6 +2,11 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import NumberedTitle from '../NumberedTitle'
+import PatrimonyResultChart from '../PatrimonyResultChart'
+
+import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+
+import finBioTheme from '../themes/bioFinanceira/theme'
 
 const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Curabitur quis mattis turpis, a eleifend enim. Vestibulum ante ipsum primis 
@@ -20,14 +25,48 @@ Pellentesque ut elit laoreet, aliquet augue at, tempor nisi.`
 storiesOf('NumberedTitle', module)
   .add('shallow', () => {
     return (
-      <div style={{ width: '400px', padding: '10px' }}>
-        <NumberedTitle
-          number={7}
-          title={`Suas`}
-          subtitle={`finanças`}
-        >
-          {lorem}
-        </NumberedTitle>
-      </div>
+      <NumberedTitle
+        number={1}
+        title={`Suas`}
+        subtitle={`finanças`}
+      >
+        {lorem}
+      </NumberedTitle>
     )
   })
+  .add('bio financeira', () => {
+    return (
+      <MuiThemeProvider theme={finBioTheme}>
+        <div style={{ width: '400px', padding: '10px' }}>
+          <NumberedTitle
+            number={1}
+            title={`Suas`}
+            subtitle={`finanças`}
+          >
+            {lorem}
+          </NumberedTitle>
+        </div>
+      </MuiThemeProvider>
+    )
+  })
+  .add('with result 1', () => {
+    return (
+      <MuiThemeProvider theme={finBioTheme}>
+        <div style={{ width: '400px', padding: '0px 10px 0px 10px' }}>
+          <NumberedTitle
+            number={1}
+            title={`Seus bens`}
+            subtitle={`${5000000 + 2000000 + 500000}`}
+          >
+            <PatrimonyResultChart
+              investments={5000000}
+              realState={2000000}
+              movableAssets={500000}
+              classes={finBioTheme.styles.classes}
+            />
+          </NumberedTitle>
+        </div>
+      </MuiThemeProvider>
+    )
+  })
+

@@ -86,6 +86,11 @@ const fonts = {
         fontSize:  '1.25rem',
         color: colors.gray_01
     },
+    body3: {
+        fontFamily: "'Roboto Light', sans-serif",
+        fontSize:  '1rem',
+        color: colors.gray_02
+    },
     body4: {
         fontFamily: "'Roboto Medium', sans-serif",
         fontSize:  '1rem',
@@ -116,6 +121,11 @@ const fonts = {
         fontSize:  '.875rem',
         color: colors.pink
     },
+    subheading: {
+        fontFamily: "'Roboto Medium', sans-serif",
+        fontSize:  '1rem',
+        color: colors.pink,
+    }
 }
 
 export const styles = {

@@ -3,7 +3,7 @@ import EmailInput from '../Inputs/Email/email'
 import React, { PureComponent } from 'react'
 import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import 'tachyons/css/tachyons.min.css'
-import theme from '../themes/bioFinanceira/theme'
+import finBioTheme from '../themes/bioFinanceira/theme'
 import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme";
 
 const theme2 = createMuiTheme({
@@ -38,7 +38,7 @@ class ThemeStory extends PureComponent {
 
     return (
         <div className='pl3'>
-            <MuiThemeProvider theme={theme}>
+            <MuiThemeProvider theme={finBioTheme}>
                 <h2> H2 puro nao foi estilizado pelo tema </h2>
                 <EmailInput
                     required
@@ -46,7 +46,7 @@ class ThemeStory extends PureComponent {
                     name='email'
                 />
 
-                <h2 className={theme.styles.classes.title1}> H2 pega classe do tema para se estilizar</h2>
+                <h2 className={finBioTheme.styles.classes.title1}> H2 pega classe do tema para se estilizar</h2>
 
                 <MuiThemeProvider theme={theme2}>
                     <h2> Exemplo de component MUI estilizado pelo tema </h2>
