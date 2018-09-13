@@ -14,7 +14,8 @@ storiesOf('InitialScreen', module)
       <BaseInitialScreen
         imageSrc={text('imageSrc', 'https://static.parmais.com.br/images/background.jpg')}
         middleBoxColor={text('middleBoxColor', '#347A7C')}
-        middleFullScreen={boolean('middleBoxFullScreen', false)}>
+        middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
+        middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}>
         <BioInitialScreen />
       </BaseInitialScreen>
     )

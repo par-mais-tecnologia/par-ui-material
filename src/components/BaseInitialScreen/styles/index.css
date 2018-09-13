@@ -8,3 +8,7 @@
     bottom: 0;
     filter: blur(3px);
 }
+
+.img-bg {
+    background-position-x: center;
+}
