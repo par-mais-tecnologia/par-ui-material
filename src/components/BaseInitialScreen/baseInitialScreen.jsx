@@ -5,13 +5,14 @@ import { convertHexToRGB } from './functions'
 
 import '../Core/styles/index.css'
 import './styles/index.css'
+import { isMobile } from '../Core/functions'
 
 export default class BaseInitialScreen extends PureComponent {
   render () {
-    const { imageSrc, middleBoxColor, middleBoxFullScreen, children } = this.props
+    const { imageSrc, middleBoxColor, middleBoxFullScreen, middleBoxFullScreenMobile, children } = this.props
 
-    const backgroundClasses = 'flex justify-center absolute items-center w-100 h-100 cover'
-    const middleBoxClasses = 'flex middleBox flex ab row justify-center items-center flex-wrap w-auto-ns h-auto-ns absolute'
+    const backgroundClasses = 'flex img-bg justify-center absolute items-center w-100 h-100 cover'
+    const middleBoxClasses = `flex middleBox flex ab row justify-center items-center flex-wrap ${middleBoxFullScreenMobile && isMobile ? 'w-100 h-100' : ''} w-auto-ns h-auto-ns absolute`
 
     const styles = {
       backgroundStyles: {
@@ -27,15 +28,13 @@ export default class BaseInitialScreen extends PureComponent {
       },
       glassColor: {
         backgroundColor: middleBoxColor !== '' ? convertHexToRGB(middleBoxColor, 0.6) : '',
-        width: middleBoxFullScreen ? '100%' : '',
-        height: middleBoxFullScreen ? '100%' : ''
       }
     }
 
     return (
       <div className={backgroundClasses} style={styles.backgroundStyles}>
         <div className={middleBoxClasses} style={styles.middleBoxStyles}>
-          <div className={`glassColor ma0-ns z-5 pa4`} style={styles.glassColor}>
+          <div className={`glassColor ma0-ns z-5 pa4 w-100 h-100`} style={styles.glassColor}>
             {children}
           </div>
         </div>
@@ -53,5 +52,6 @@ BaseInitialScreen.propTypes = {
 BaseInitialScreen.defaultProps = {
   imageSrc: 'https://static.parmais.com.br/images/background.jpg',
   middleBoxColor: '#347A7C',
-  middleBoxFullScreen: false
+  middleBoxFullScreen: false,
+  middleBoxFullScreenMobile: false,
 }

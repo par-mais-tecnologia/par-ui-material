@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button'
 
 const BioInitialScreen = (props) => {
   return (
-    <div className='flex justify-center items-center flex-wrap w-100'>
+    <div className='flex justify-center items-center flex-wrap w-100 h-100'>
       <div className='logo pv0 pv4-ns ph4 ph0-ns tc'>
         <img
           className='w-60 w-80-ns'
@@ -13,7 +13,7 @@ const BioInitialScreen = (props) => {
         />
       </div>
       <div className='description pa4-ns mw6-ns w-100'>
-        <h1 className='white brandon-light ttu mt2'><span className='brandon-regular'>Bio</span> Financeira</h1>
+        <h1 className='white brandon-light ttu mt2 fw1'><span className='brandon-bold'>Bio</span> Financeira</h1>
         <div className='white roboto-light lh-copy'>
           <p>
             A BIO Financeira é a soama de seu perfil psicológico frente aos
@@ -23,7 +23,7 @@ const BioInitialScreen = (props) => {
             Sabendo como está a sua BIO você poderá traçar estratégias de
             investimento mais seguras.
           </p>
-          <p>
+          <p className='f6 i'>
             Ao clicar em "Começar", você concorda com a nossa
             <i><b> política de privacidade</b></i>.
           </p>

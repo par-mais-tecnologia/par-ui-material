@@ -6,7 +6,7 @@ import '../Core/styles/index.css'
 
 const MyWalletLoginScreen = (props) => {
   return (
-    <div className='flex z-2 justify-center'>
+    <div className='flex z-2 justify-center w-100 h-100 justify-center items-center'>
       <div className='white pv4 pl4 mr5 dn db-ns'>
         <div className='brandon-regular lh-copy'>
           <p className='f4 mb2 rounded-elegance'>#ClienteMais</p>
@@ -30,7 +30,7 @@ const MyWalletLoginScreen = (props) => {
             placeholder='Senha'
             fullWidth
           />
-          <p className='f7 b mt4 mb4 lh-copy'>
+          <p className='f7 f6-ns roboto-bold b mt4 mb4 lh-copy'>
               Esqueceu sua senha?<br />
               Clique para receber uma nova em seu e-mail
           </p>

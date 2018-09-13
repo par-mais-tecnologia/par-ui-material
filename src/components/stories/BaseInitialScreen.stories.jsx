@@ -13,7 +13,8 @@ storiesOf('InitialScreen', module)
       <BaseInitialScreen
         imageSrc={text('imageSrc', 'https://wallhalla.com/thumbs/preview/l/La748MeuPdY.jpg')}
         middleBoxColor={text('middleBoxColor', '#2b4e99')}
-        middleBoxFullScreen={boolean('middleBoxFullScreen', false)}>
+        middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
+        middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', false)}>
         <h1 className='roboto-light white'>
           {text('Content', 'Content Here')}
         </h1>
