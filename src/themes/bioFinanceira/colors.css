@@ -1,0 +1,79 @@
+:root {
+    --gray_01: #636363;
+    --gray_02: #9C9C9C;
+    --gray_03: #D4D4D4;
+    --gray_04: #F0F0F0;
+
+    --fairy: #B6DDDC;
+    --aqua: #8ACAC7;
+    --turquise: #5EB8C0;
+    --siren: #019193;
+    --see: #347A7C;
+
+    --pink: #D4436B;
+
+    --green: #94BA1D;
+
+    --purple: #632B7D;
+
+    --cobalt: #007CA3;
+
+    --see_gradient: linear-gradient(26deg, #347A7C, #8ACAC7);
+
+}
+
+.gray_01 {
+    color: var(--gray_01);
+}
+
+.gray_02 {
+    color: var(--gray_02);
+}
+
+.gray_03 {
+    color: var(--gray_03);
+}
+
+.gray_04 {
+    color: var(--gray_04);
+}
+
+.fairy {
+    color: var(--fairy)
+}
+
+.aqua {
+    color: var(--aqua)
+}
+
+.turquise {
+    color: var(--turquise)
+}
+
+.siren {
+    color: var(--siren)
+}
+
+.see {
+    color: var(--see)
+}
+
+.pink {
+    color: var(--pink)
+}
+
+.green {
+    color: var(--green)
+}
+
+.purple {
+    color: var(--purple)
+}
+
+.cobalt {
+    color: var(--cobalt)
+}
+
+.see_gradient {
+    color: var(--see_gradient)
+}
