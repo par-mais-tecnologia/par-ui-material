@@ -4,22 +4,25 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core'
 
-const styles = {
-  headline: {
-    fontSize: '48px',
-    color: '#636363',
-    fontWeight: '500',
-    padding: '0px 4px 0px 4px'
-  },
-  title: {
-    fontSize: '20px',
-    color: '#636363',
-    fontWeight: '300'
-  },
-  subheading: {
-    fontSize: '16px',
-    color: '#D4426A',
-    fontWeight: '800'
+const styles = theme => {
+  console.log(theme)
+  return {
+      headline: {
+          fontSize: '48px',
+          color: '#636363',
+          fontWeight: '500',
+          padding: '0px 4px 0px 4px'
+      },
+      title: {
+          fontSize: '20px',
+          color: '#636363',
+          fontWeight: '300'
+      },
+      subheading: {
+          fontSize: '16px',
+          color: '#D4426A',
+          fontWeight: '800'
+      }
   }
 }
 
