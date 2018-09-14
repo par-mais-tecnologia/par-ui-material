@@ -5,7 +5,6 @@ import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core'
 
 const styles = theme => {
-  console.log(theme)
   return {
       headline: {
           fontSize: '48px',
