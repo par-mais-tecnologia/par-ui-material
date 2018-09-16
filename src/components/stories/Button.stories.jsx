@@ -8,14 +8,30 @@ import { Welcome } from '@storybook/react/demo'
 
 import ButtonPar from '../Button/index'
 
+import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme"
+import finBioTheme from '../themes/bioFinanceira/theme'
+import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
 
 storiesOf('Button', module)
-  .add('with text', () => <ButtonPar onClick={action('clicked')}>Hello Button</ButtonPar>)
-  .add('with some emoji', () => (
-    <ButtonPar onClick={action('clicked')}>
-      <span role='img' aria-label='so cool'>
-        😀 😎 👍 💯
-      </span>
-    </ButtonPar>
+  .add('contained', () =>
+  <MuiThemeProvider theme={finBioTheme}>
+    <div style={{padding: '50px'}}>
+      <ButtonPar variant='contained'>
+        AVANÇAR
+      </ButtonPar>
+    </div>
+  </MuiThemeProvider>)
+  .add('outlined', () => (
+    <MuiThemeProvider theme={finBioTheme}>
+      <div style={{padding: '50px'}}>
+        <ButtonPar 
+          onClick={action('clicked')} 
+          variant='outlined' 
+        >
+          VOLTAR
+        </ButtonPar>
+      </div>
+    </MuiThemeProvider>
   ))

@@ -24,8 +24,11 @@ export const theme = createMuiTheme({
         },
         display2: {
             ...styles.fonts.body3
+        },
+        button: {
+            ...styles.fonts.button
         }
-    },
+    }
 });
 
 export default theme;
