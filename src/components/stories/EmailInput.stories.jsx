@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import EmailInput from '../Inputs/Email/email'
+import TextField from '../Inputs/TextField/textField'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import createMuiTheme from '@material-ui/core/es/styles/createMuiTheme'
@@ -46,8 +46,8 @@ class EmailInputStory extends PureComponent {
         <div className='pl3'>
             <MuiThemeProvider theme={theme}>
                 <h5> Campo Obrigatório </h5>
-                <EmailInput
-                    required
+                <TextField
+                    required={true}
                     label='Email'
                     onChange={this.handleEmailChange('Email Modificado')}
                     name='email'
@@ -55,7 +55,7 @@ class EmailInputStory extends PureComponent {
                 />
 
                 <h5> Campo Não obrigatório </h5>
-                <EmailInput
+                <TextField
                     label='Email'
                     onChange={this.handleEmailChange('Email Modificado')}
                     name='email'
@@ -63,12 +63,12 @@ class EmailInputStory extends PureComponent {
                 />
 
                 <h5> Campo sem mostrar erros </h5>
-                <EmailInput
+                <TextField
                     label='Email'
                     onChange={this.handleEmailChange('Email Modificado')}
                     name='email'
                     value={value}
-                    showError={false}
+                    showHelper={false}
                 />
             </MuiThemeProvider>
         </div>

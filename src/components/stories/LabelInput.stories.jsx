@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import LabelInput from '../Inputs/LabelInput/labelInput'
+import TextField from '../Inputs/TextField/textField'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import withTests from './withTests'
@@ -20,7 +20,7 @@ class LabelInputStory extends PureComponent {
     return (
         <div className='pl3'>
             <h5> Full width </h5>
-            <LabelInput
+            <TextField
                 id='LabelInputId'
                 label='Input com Label'
                 minWidth='100%'
@@ -29,14 +29,14 @@ class LabelInputStory extends PureComponent {
             />
 
             <h5> Control width with text Helper</h5>
-            <LabelInput
+            <TextField
                 id='LabelInputId'
                 label='Input com Label'
                 value={value}
                 onChange={this.handleLabelInputChange('Input Label alterado')}
                 maxWidth='50%'
-                helperTex='Texto de apoio'
-                showHelperText={true}
+                helperText='Texto de apoio'
+                showHelper={true}
             />
         </div>
     )

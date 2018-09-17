@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import Generic from '../Inputs/Generic/generic'
+import TextField from '../Inputs/TextField/textField'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import withTests from './withTests'
@@ -19,7 +19,7 @@ class GenericStory extends PureComponent {
 
     return (
         <div className='pl3'>
-            <Generic
+            <TextField
                 id='GenericId'
                 label='Campo Genérico'
                 value={value}

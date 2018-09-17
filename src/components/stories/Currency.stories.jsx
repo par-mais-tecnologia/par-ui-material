@@ -1,9 +1,10 @@
 import { storiesOf } from '@storybook/react'
-import Currency from '../Inputs/Currency/currency'
+import TextField from '../Inputs/TextField/textField'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
-import NumberFormat from 'react-number-format'
+import { NumberFormatCustom } from '../Core/masks'
 import withTests from './withTests'
+import * as dictionary from '../Core/dictionary'
 
 class CurrencyStory extends PureComponent {
   state = {
@@ -19,41 +20,19 @@ class CurrencyStory extends PureComponent {
     const { value } = this.state
 
     return (
-      <Currency
-        id='CurrencyId'
-        label='Campo Monetário'
-        value={value}
-        onChange={this.handleCurrencyChange('valor monetário modificado')}
-        InputProps={{
-          inputComponent: NumberFormatCustom
-        }}
-      />
+        <div className='pl3'>
+            <TextField
+                id='CurrencyId'
+                label={dictionary.CAMPO_MONETARIO}
+                value={value}
+                onChange={this.handleCurrencyChange(dictionary.VALOR_MONETARIO_MODIFICADO)}
+                InputProps={{
+                    inputComponent: NumberFormatCustom
+                }}
+            />
+        </div>
     )
   }
-}
-
-function NumberFormatCustom (props) {
-  const { inputRef, onChange, ...other } = props
-
-  return (
-      <div className='pl3'>
-          <NumberFormat
-              {...other}
-              getInputRef={inputRef}
-              onValueChange={values => {
-                  onChange({
-                      target: {
-                          value: values.value
-                      }
-                  })
-              }}
-              thousandSeparator=' '
-              decimalSeparator=','
-              prefix='R$ '
-              decimalScale={2}
-              fixedDecimalScale/>
-      </div>
-  )
 }
 
 storiesOf('Input', module)

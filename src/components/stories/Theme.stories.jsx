@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import EmailInput from '../Inputs/Email/email'
+import TextField from '../Inputs/TextField/textField'
 import React, { PureComponent } from 'react'
 import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import 'tachyons/css/tachyons.min.css'
@@ -40,7 +40,7 @@ class ThemeStory extends PureComponent {
         <div className='pl3'>
             <MuiThemeProvider theme={finBioTheme}>
                 <h2> H2 puro nao foi estilizado pelo tema </h2>
-                <EmailInput
+                <TextField
                     required
                     label='Email'
                     name='email'
@@ -50,7 +50,7 @@ class ThemeStory extends PureComponent {
 
                 <MuiThemeProvider theme={theme2}>
                     <h2> Exemplo de component MUI estilizado pelo tema </h2>
-                    <EmailInput
+                    <TextField
                         required
                         label='Email'
                         name='email'
