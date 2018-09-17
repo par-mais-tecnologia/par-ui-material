@@ -5,14 +5,13 @@ import { convertHexToRGB } from './functions'
 
 import '../Core/styles/index.css'
 import './styles/index.css'
-import { isMobile } from '../Core/functions'
 
 export default class BaseInitialScreen extends PureComponent {
   render () {
     const { imageSrc, middleBoxColor, middleBoxFullScreen, middleBoxFullScreenMobile, children } = this.props
 
     const backgroundClasses = 'flex img-bg justify-center absolute items-center w-100 h-100 cover'
-    const middleBoxClasses = `flex middleBox flex ab row justify-center items-center flex-wrap ${middleBoxFullScreenMobile && isMobile ? 'w-100 h-100' : ''} w-auto-ns h-auto-ns absolute`
+    const middleBoxClasses = `flex middleBox flex ab row justify-center items-center flex-wrap ${middleBoxFullScreenMobile ? 'w-100 h-100' : ''} w-auto-ns h-auto-ns absolute`
 
     const styles = {
       backgroundStyles: {
@@ -27,7 +26,7 @@ export default class BaseInitialScreen extends PureComponent {
         height: middleBoxFullScreen ? '100%' : ''
       },
       glassColor: {
-        backgroundColor: middleBoxColor !== '' ? convertHexToRGB(middleBoxColor, 0.6) : '',
+        backgroundColor: middleBoxColor !== '' ? convertHexToRGB(middleBoxColor, 0.6) : ''
       }
     }
 
@@ -53,5 +52,5 @@ BaseInitialScreen.defaultProps = {
   imageSrc: 'https://static.parmais.com.br/images/background.jpg',
   middleBoxColor: '#347A7C',
   middleBoxFullScreen: false,
-  middleBoxFullScreenMobile: false,
+  middleBoxFullScreenMobile: false
 }
