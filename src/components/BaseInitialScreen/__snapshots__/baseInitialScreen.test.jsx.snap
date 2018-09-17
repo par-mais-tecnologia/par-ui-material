@@ -7,6 +7,7 @@ ShallowWrapper {
     imageSrc="https://wallhalla.com/thumbs/preview/l/La748MeuPdY.jpg"
     middleBoxColor="#2b4e99"
     middleBoxFullScreen={false}
+    middleBoxFullScreenMobile={false}
   >
     <h1
       className="roboto-light white"
@@ -18,6 +19,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -27,7 +29,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="flex middleBox flex ab row justify-center items-center flex-wrap w-auto-ns h-auto-ns absolute"
+        className="flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute"
         style={
           Object {
             "background": "inherit",
@@ -38,12 +40,10 @@ ShallowWrapper {
         }
       >
         <div
-          className="glassColor ma0-ns z-5 pa4"
+          className="glassColor ma0-ns z-5 pa4 w-100 h-100"
           style={
             Object {
               "backgroundColor": "rgba(43, 78, 153, 0.6)",
-              "height": "",
-              "width": "",
             }
           }
         >
@@ -54,7 +54,7 @@ ShallowWrapper {
           </h1>
         </div>
       </div>,
-      "className": "flex justify-center absolute items-center w-100 h-100 cover",
+      "className": "flex img-bg justify-center absolute items-center w-100 h-100 cover",
       "style": Object {
         "backgroundAttachment": "fixed",
         "backgroundImage": "url(https://wallhalla.com/thumbs/preview/l/La748MeuPdY.jpg)",
@@ -68,12 +68,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="glassColor ma0-ns z-5 pa4"
+          className="glassColor ma0-ns z-5 pa4 w-100 h-100"
           style={
             Object {
               "backgroundColor": "rgba(43, 78, 153, 0.6)",
-              "height": "",
-              "width": "",
             }
           }
         >
@@ -83,7 +81,7 @@ ShallowWrapper {
             Content Here
           </h1>
         </div>,
-        "className": "flex middleBox flex ab row justify-center items-center flex-wrap w-auto-ns h-auto-ns absolute",
+        "className": "flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute",
         "style": Object {
           "background": "inherit",
           "height": "",
@@ -102,11 +100,9 @@ ShallowWrapper {
           >
             Content Here
           </h1>,
-          "className": "glassColor ma0-ns z-5 pa4",
+          "className": "glassColor ma0-ns z-5 pa4 w-100 h-100",
           "style": Object {
             "backgroundColor": "rgba(43, 78, 153, 0.6)",
-            "height": "",
-            "width": "",
           },
         },
         "ref": null,
@@ -135,7 +131,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="flex middleBox flex ab row justify-center items-center flex-wrap w-auto-ns h-auto-ns absolute"
+          className="flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute"
           style={
             Object {
               "background": "inherit",
@@ -146,12 +142,10 @@ ShallowWrapper {
           }
         >
           <div
-            className="glassColor ma0-ns z-5 pa4"
+            className="glassColor ma0-ns z-5 pa4 w-100 h-100"
             style={
               Object {
                 "backgroundColor": "rgba(43, 78, 153, 0.6)",
-                "height": "",
-                "width": "",
               }
             }
           >
@@ -162,7 +156,7 @@ ShallowWrapper {
             </h1>
           </div>
         </div>,
-        "className": "flex justify-center absolute items-center w-100 h-100 cover",
+        "className": "flex img-bg justify-center absolute items-center w-100 h-100 cover",
         "style": Object {
           "backgroundAttachment": "fixed",
           "backgroundImage": "url(https://wallhalla.com/thumbs/preview/l/La748MeuPdY.jpg)",
@@ -176,12 +170,10 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <div
-            className="glassColor ma0-ns z-5 pa4"
+            className="glassColor ma0-ns z-5 pa4 w-100 h-100"
             style={
               Object {
                 "backgroundColor": "rgba(43, 78, 153, 0.6)",
-                "height": "",
-                "width": "",
               }
             }
           >
@@ -191,7 +183,7 @@ ShallowWrapper {
               Content Here
             </h1>
           </div>,
-          "className": "flex middleBox flex ab row justify-center items-center flex-wrap w-auto-ns h-auto-ns absolute",
+          "className": "flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute",
           "style": Object {
             "background": "inherit",
             "height": "",
@@ -210,11 +202,9 @@ ShallowWrapper {
             >
               Content Here
             </h1>,
-            "className": "glassColor ma0-ns z-5 pa4",
+            "className": "glassColor ma0-ns z-5 pa4 w-100 h-100",
             "style": Object {
               "backgroundColor": "rgba(43, 78, 153, 0.6)",
-              "height": "",
-              "width": "",
             },
           },
           "ref": null,

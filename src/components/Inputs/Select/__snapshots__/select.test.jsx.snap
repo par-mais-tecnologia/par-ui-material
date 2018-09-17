@@ -7,7 +7,7 @@ ShallowWrapper {
     error={false}
     errorMessage=""
     hasError={false}
-    id="Select 4"
+    id="Select 10"
     required={false}
     showError={true}
     showLabel={true}
@@ -16,6 +16,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -27,17 +28,17 @@ ShallowWrapper {
       "aria-describedby": "select-form-control",
       "children": Array [
         <WithStyles(InputLabel)
-          htmlFor="Select 4"
+          htmlFor="Select 10"
         />,
         <WithStyles(Select)
           error={false}
           errorMessage=""
           hasError={false}
-          id="Select 4"
+          id="Select 10"
           inputProps={
             Object {
               "id": Object {
-                "id": "Select 4",
+                "id": "Select 10",
               },
               "name": Object {
                 "label": undefined,
@@ -70,7 +71,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": undefined,
-          "htmlFor": "Select 4",
+          "htmlFor": "Select 10",
         },
         "ref": null,
         "rendered": null,
@@ -84,10 +85,10 @@ ShallowWrapper {
           "error": false,
           "errorMessage": "",
           "hasError": false,
-          "id": "Select 4",
+          "id": "Select 10",
           "inputProps": Object {
             "id": Object {
-              "id": "Select 4",
+              "id": "Select 10",
             },
             "name": Object {
               "label": undefined,
@@ -133,17 +134,17 @@ ShallowWrapper {
         "aria-describedby": "select-form-control",
         "children": Array [
           <WithStyles(InputLabel)
-            htmlFor="Select 4"
+            htmlFor="Select 10"
           />,
           <WithStyles(Select)
             error={false}
             errorMessage=""
             hasError={false}
-            id="Select 4"
+            id="Select 10"
             inputProps={
               Object {
                 "id": Object {
-                  "id": "Select 4",
+                  "id": "Select 10",
                 },
                 "name": Object {
                   "label": undefined,
@@ -176,7 +177,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": undefined,
-            "htmlFor": "Select 4",
+            "htmlFor": "Select 10",
           },
           "ref": null,
           "rendered": null,
@@ -190,10 +191,10 @@ ShallowWrapper {
             "error": false,
             "errorMessage": "",
             "hasError": false,
-            "id": "Select 4",
+            "id": "Select 10",
             "inputProps": Object {
               "id": Object {
-                "id": "Select 4",
+                "id": "Select 10",
               },
               "name": Object {
                 "label": undefined,
