@@ -1,4 +1,5 @@
 import { storiesOf } from '@storybook/react'
+import Button from '@material-ui/core/Button'
 import TextField from '../Inputs/TextField/textField'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
@@ -6,6 +7,10 @@ import createMuiTheme from '@material-ui/core/es/styles/createMuiTheme'
 import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import withTests from './withTests'
 import 'tachyons/css/tachyons.min.css'
+import * as validation from "../Core/validation"
+
+
+const validator = new validation.Validator()
 
 const theme = createMuiTheme({
   palette: {
@@ -51,6 +56,7 @@ class EmailInputStory extends PureComponent {
                     label='Email'
                     onChange={this.handleEmailChange('Email Modificado')}
                     name='email'
+                    validator={{validator, type: validation.types.email}}
                     value={value}
                 />
 
@@ -59,6 +65,7 @@ class EmailInputStory extends PureComponent {
                     label='Email'
                     onChange={this.handleEmailChange('Email Modificado')}
                     name='email'
+                    validator={{validator, type: validation.types.email}}
                     value={value}
                 />
 
@@ -69,7 +76,12 @@ class EmailInputStory extends PureComponent {
                     name='email'
                     value={value}
                     showHelper={false}
+                    validator={{validator, type: validation.types.email}}
                 />
+              <br/>
+                <Button onClick={validator.validate} variant="contained">
+                  Validate
+                </Button>
             </MuiThemeProvider>
         </div>
 
