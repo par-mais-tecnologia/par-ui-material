@@ -18,14 +18,14 @@ class GenericStory extends PureComponent {
     const { value } = this.state
 
     return (
-        <div className='pl3'>
-            <TextField
-                id='GenericId'
-                label='Campo Genérico'
-                value={value}
-                onChange={this.handleGenericChange('Valor genérico alterado')}
-            />
-        </div>
+      <div className='pl3'>
+        <TextField
+          id='GenericId'
+          label='Campo Genérico'
+          value={value}
+          onChange={this.handleGenericChange('Valor genérico alterado')}
+        />
+      </div>
     )
   }
 }

@@ -18,14 +18,14 @@ class ToogleStory extends PureComponent {
     const { checked } = this.state
 
     return (
-        <div className='pl3'>
-            <Toogle
-                id='ToogleId'
-                label='Campo de Toogle'
-                value={checked}
-                onChange={this.handleToogleChange('Toogle alterado')}
-            />
-        </div>
+      <div className='pl3'>
+        <Toogle
+          id='ToogleId'
+          label='Campo de Toogle'
+          value={checked}
+          onChange={this.handleToogleChange('Toogle alterado')}
+        />
+      </div>
     )
   }
 }

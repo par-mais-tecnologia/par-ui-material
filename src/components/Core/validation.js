@@ -52,7 +52,7 @@ function validateComponent (instance) {
     instance.component.props.value,
     instance.component.props.required
   )
-  instance.component.setState({state: instance.component.state})
+  instance.component.setState({ state: instance.component.state })
   return instance
 }
 
@@ -62,14 +62,14 @@ function isEmailValid (email) {
 }
 
 function emailValidation (email, isRequired) {
-  let error = {hasError: false, errorMessage: ''}
+  let error = { hasError: false, errorMessage: '' }
 
   if (isRequired && !exist(email)) {
-    return {hasError: true, errorMessage: dictionary.CAMPO_OBRIGATORIO}
+    return { hasError: true, errorMessage: dictionary.CAMPO_OBRIGATORIO }
   }
 
   if (exist(email) && !isEmailValid(email)) {
-    return {hasError: true, errorMessage: dictionary.EMAIL_INVALIDO}
+    return { hasError: true, errorMessage: dictionary.EMAIL_INVALIDO }
   }
 
   return error
@@ -81,8 +81,9 @@ function exist (value) {
 
 function uuidv4 () {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-    var r = (Math.random() * 16) | 0,
-      v = c === 'x' ? r : (r & 0x3) | 0x8
+    var r = (Math.random() * 16) | 0
+
+    var v = c === 'x' ? r : (r & 0x3) | 0x8
     return v.toString(16)
   })
 }

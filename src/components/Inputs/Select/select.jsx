@@ -5,21 +5,20 @@ import InputLabel from '@material-ui/core/InputLabel'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 
 class Select extends PureComponent {
-
-  getStyle(props) {
-    const {minWidth } = props;
-    return {minWidth: minWidth ? minWidth : '100%'}
+  getStyle (props) {
+    const { minWidth } = props
+    return { minWidth: minWidth || '100%' }
   }
 
   render () {
-    const { required, showLabel, showError, errorMessage, id, label, error } = this.props;
+    const { required, showLabel, showError, errorMessage, id, label, error } = this.props
 
     return (
       <FormControl
-        error = {error}
+        error={error}
         aria-describedby='select-form-control'
         required={required}
-        style = {this.getStyle(this.props)}>
+        style={this.getStyle(this.props)}>
         {showLabel ? <InputLabel htmlFor={id}>{label}</InputLabel> : ''}
         <SelectMUI
           {...this.props}

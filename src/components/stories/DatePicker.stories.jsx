@@ -23,7 +23,7 @@ class DatePickerStory extends PureComponent {
     const { selectedDate } = this.state
 
     return (
-    <div className='pl3'>
+      <div className='pl3'>
         <h5> Uso Básico </h5>
         <DatePicker
           label='Campo de Data'

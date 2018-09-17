@@ -14,9 +14,9 @@ class TextField extends PureComponent {
 
   handleInputBlur (event) {
     if (this.props.onBlur) {
-      this.props.onBlur(event)
+      return this.props.onBlur(event)
     } else {
-      this.validationInstance ? this.validationInstance.validate(event) : false
+      return this.validationInstance ? this.validationInstance.validate(event) : false
     }
   }
 
@@ -33,10 +33,10 @@ class TextField extends PureComponent {
   }
 
   getStyle (props) {
-    const {minWidth, maxWidth, style} = props
+    const { minWidth, maxWidth, style } = props
     return {
-      minWidth: minWidth ? minWidth : '0',
-      maxWidth: maxWidth ? maxWidth : '100%',
+      minWidth: minWidth || '0',
+      maxWidth: maxWidth || '100%',
       ...style
     }
   }
@@ -45,19 +45,19 @@ class TextField extends PureComponent {
     const inputProps = {
       onBlur: this.handleInputBlur.bind(this),
       onChange: this.handleInputChange.bind(this),
-      onFocus: this.handleInputFocus.bind(this),
+      onFocus: this.handleInputFocus.bind(this)
     }
 
-    const {helperText, id, label, required, showHelper, value,} = this.props
-    if(this.validationInstance) {
+    const { helperText, id, label, required, showHelper, value } = this.props
+    if (this.validationInstance) {
       this.state.errors = {
         ...this.validationInstance.error
-      };
+      }
     } else {
-      this.state.errors = {hasError: false}
+      this.state.errors = { hasError: false }
     }
 
-    const proxyProps = {...this.props}
+    const proxyProps = { ...this.props }
     delete proxyProps.validatorType
 
     return (

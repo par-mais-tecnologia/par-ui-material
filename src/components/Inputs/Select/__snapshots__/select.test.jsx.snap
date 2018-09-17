@@ -4,6 +4,7 @@ exports[`Select shallow Select match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Select
+    error={false}
     errorMessage=""
     hasError={false}
     id="Select 4"
@@ -29,6 +30,7 @@ ShallowWrapper {
           htmlFor="Select 4"
         />,
         <WithStyles(Select)
+          error={false}
           errorMessage=""
           hasError={false}
           id="Select 4"
@@ -54,7 +56,11 @@ ShallowWrapper {
            
         </WithStyles(FormHelperText)>,
       ],
+      "error": false,
       "required": false,
+      "style": Object {
+        "minWidth": "100%",
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -75,6 +81,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "error": false,
           "errorMessage": "",
           "hasError": false,
           "id": "Select 4",
@@ -129,6 +136,7 @@ ShallowWrapper {
             htmlFor="Select 4"
           />,
           <WithStyles(Select)
+            error={false}
             errorMessage=""
             hasError={false}
             id="Select 4"
@@ -154,7 +162,11 @@ ShallowWrapper {
              
           </WithStyles(FormHelperText)>,
         ],
+        "error": false,
         "required": false,
+        "style": Object {
+          "minWidth": "100%",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -175,6 +187,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "error": false,
             "errorMessage": "",
             "hasError": false,
             "id": "Select 4",

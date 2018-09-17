@@ -7,8 +7,7 @@ import createMuiTheme from '@material-ui/core/es/styles/createMuiTheme'
 import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import withTests from './withTests'
 import 'tachyons/css/tachyons.min.css'
-import * as validation from "../Core/validation"
-
+import * as validation from '../Core/validation'
 
 const validator = new validation.Validator()
 
@@ -48,42 +47,42 @@ class EmailInputStory extends PureComponent {
     const { value } = this.state
 
     return (
-        <div className='pl3'>
-            <MuiThemeProvider theme={theme}>
-                <h5> Campo Obrigatório </h5>
-                <TextField
-                    required={true}
-                    label='Email'
-                    onChange={this.handleEmailChange('Email Modificado')}
-                    name='email'
-                    validator={{validator, type: validation.types.email}}
-                    value={value}
-                />
+      <div className='pl3'>
+        <MuiThemeProvider theme={theme}>
+          <h5> Campo Obrigatório </h5>
+          <TextField
+            required
+            label='Email'
+            onChange={this.handleEmailChange('Email Modificado')}
+            name='email'
+            validator={{ validator, type: validation.types.email }}
+            value={value}
+          />
 
-                <h5> Campo Não obrigatório </h5>
-                <TextField
-                    label='Email'
-                    onChange={this.handleEmailChange('Email Modificado')}
-                    name='email'
-                    validator={{validator, type: validation.types.email}}
-                    value={value}
-                />
+          <h5> Campo Não obrigatório </h5>
+          <TextField
+            label='Email'
+            onChange={this.handleEmailChange('Email Modificado')}
+            name='email'
+            validator={{ validator, type: validation.types.email }}
+            value={value}
+          />
 
-                <h5> Campo sem mostrar erros </h5>
-                <TextField
-                    label='Email'
-                    onChange={this.handleEmailChange('Email Modificado')}
-                    name='email'
-                    value={value}
-                    showHelper={false}
-                    validator={{validator, type: validation.types.email}}
-                />
-              <br/>
-                <Button onClick={validator.validate} variant="contained">
+          <h5> Campo sem mostrar erros </h5>
+          <TextField
+            label='Email'
+            onChange={this.handleEmailChange('Email Modificado')}
+            name='email'
+            value={value}
+            showHelper={false}
+            validator={{ validator, type: validation.types.email }}
+          />
+          <br />
+          <Button onClick={validator.validate} variant='contained'>
                   Validate
-                </Button>
-            </MuiThemeProvider>
-        </div>
+          </Button>
+        </MuiThemeProvider>
+      </div>
 
     )
   }

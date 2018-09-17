@@ -18,27 +18,27 @@ class LabelInputStory extends PureComponent {
     const { value } = this.state
 
     return (
-        <div className='pl3'>
-            <h5> Full width </h5>
-            <TextField
-                id='LabelInputId'
-                label='Input com Label'
-                minWidth='100%'
-                value={value}
-                onChange={this.handleLabelInputChange('Input Label alterado')}
-            />
+      <div className='pl3'>
+        <h5> Full width </h5>
+        <TextField
+          id='LabelInputId'
+          label='Input com Label'
+          minWidth='100%'
+          value={value}
+          onChange={this.handleLabelInputChange('Input Label alterado')}
+        />
 
-            <h5> Control width with text Helper</h5>
-            <TextField
-                id='LabelInputId'
-                label='Input com Label'
-                value={value}
-                onChange={this.handleLabelInputChange('Input Label alterado')}
-                maxWidth='50%'
-                helperText='Texto de apoio'
-                showHelper={true}
-            />
-        </div>
+        <h5> Control width with text Helper</h5>
+        <TextField
+          id='LabelInputId'
+          label='Input com Label'
+          value={value}
+          onChange={this.handleLabelInputChange('Input Label alterado')}
+          maxWidth='50%'
+          helperText='Texto de apoio'
+          showHelper
+        />
+      </div>
     )
   }
 }

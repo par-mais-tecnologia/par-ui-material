@@ -20,17 +20,17 @@ class CurrencyStory extends PureComponent {
     const { value } = this.state
 
     return (
-        <div className='pl3'>
-            <TextField
-                id='CurrencyId'
-                label={dictionary.CAMPO_MONETARIO}
-                value={value}
-                onChange={this.handleCurrencyChange(dictionary.VALOR_MONETARIO_MODIFICADO)}
-                InputProps={{
-                    inputComponent: NumberFormatCustom
-                }}
-            />
-        </div>
+      <div className='pl3'>
+        <TextField
+          id='CurrencyId'
+          label={dictionary.CAMPO_MONETARIO}
+          value={value}
+          onChange={this.handleCurrencyChange(dictionary.VALOR_MONETARIO_MODIFICADO)}
+          InputProps={{
+            inputComponent: NumberFormatCustom
+          }}
+        />
+      </div>
     )
   }
 }
