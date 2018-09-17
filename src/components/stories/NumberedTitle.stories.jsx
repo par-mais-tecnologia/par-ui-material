@@ -69,4 +69,3 @@ storiesOf('NumberedTitle', module)
       </MuiThemeProvider>
     )
   })
-

@@ -27,25 +27,25 @@ const styles = {
     '&$outlined:focus': {
       backgroundColor: '#F0F0F0'
     }
-  },
+  }
 }
 
-function ButtonPar(props) {
+function ButtonPar (props) {
   const { classes, variant } = props
   return (
-    <Button 
-      variant={variant} 
+    <Button
+      variant={variant}
       classes={{
         contained: classes.contained,
         outlined: classes.outlined
       }}
+    >
+      <Typography
+        variant='button'
+        color='inherit'
       >
-        <Typography
-          variant='button'
-          color='inherit'
-        >
-          {props.children}
-        </Typography>
+        {props.children}
+      </Typography>
     </Button>
   )
 }

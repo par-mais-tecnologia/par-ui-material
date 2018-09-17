@@ -4,7 +4,7 @@ import React, { PureComponent } from 'react'
 import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import 'tachyons/css/tachyons.min.css'
 import finBioTheme from '../themes/bioFinanceira/theme'
-import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme";
+import createMuiTheme from '@material-ui/core/es/styles/createMuiTheme'
 
 const theme2 = createMuiTheme({
   palette: {
@@ -33,9 +33,7 @@ const theme2 = createMuiTheme({
 })
 
 class ThemeStory extends PureComponent {
-
   render () {
-
     return (
       <div className='pl3'>
         <MuiThemeProvider theme={finBioTheme}>
