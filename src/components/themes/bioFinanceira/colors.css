@@ -18,8 +18,14 @@
 
     --cobalt: #007CA3;
 
+    --white: '#ffffff';
+
     --see_gradient: linear-gradient(26deg, #347A7C, #8ACAC7);
 
+}
+
+.white {
+    color: var(--white);
 }
 
 .gray_01 {
@@ -76,4 +82,8 @@
 
 .see_gradient {
     color: var(--see_gradient)
+}
+
+.see_gradient_bk {
+    background-image: linear-gradient(5deg, #347A7C, #8ACAC7)
 }

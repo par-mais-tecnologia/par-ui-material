@@ -10,8 +10,6 @@ class TextField extends PureComponent {
     this
   ) : false
 
-  debugger;
-
   handleInputBlur (event) {
     if (this.props.onBlur) {
       return this.props.onBlur(event)

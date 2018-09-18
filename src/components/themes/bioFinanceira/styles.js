@@ -1,3 +1,5 @@
+import './colors.css';
+import './fonts.css';
 
 const colors = {
   gray_01: '#636363',
@@ -18,6 +20,8 @@ const colors = {
   purple: '#632B7D',
 
   cobalt: '#007CA3',
+
+  white: '#ffffff',
 
   see_gradient: 'linear-gradient(26deg, #347A7C, #8ACAC7)'
 }
@@ -125,6 +129,11 @@ const fonts = {
     fontFamily: "'Roboto Medium', sans-serif",
     fontSize: '1rem',
     color: colors.pink
+  },
+  mainTitle: {
+      fontFamily: "'Brandon Light', sans-serif",
+      fontSize: '1.6rem',
+      color: colors.white
   }
 }
 

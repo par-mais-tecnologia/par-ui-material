@@ -27,6 +27,9 @@ export const theme = createMuiTheme({
     },
     button: {
       ...styles.fonts.button
+    },
+    title: {
+        ...styles.fonts.title1
     }
   }
 })
