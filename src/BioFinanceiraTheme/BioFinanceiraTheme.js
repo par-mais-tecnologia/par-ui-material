@@ -1,5 +1,6 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 import { styles } from './styles/styles'
+import sliderStyle from './styles/slider'
 
 export const bioFinanceiraTheme = createMuiTheme({
   styles,
@@ -31,6 +32,9 @@ export const bioFinanceiraTheme = createMuiTheme({
     title: {
       ...styles.fonts.title1
     }
+  },
+  overrides: {
+    MuiSlider: sliderStyle
   }
 })
 
