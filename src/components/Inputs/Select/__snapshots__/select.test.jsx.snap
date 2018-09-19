@@ -7,7 +7,7 @@ ShallowWrapper {
     error={false}
     errorMessage=""
     hasError={false}
-    id="Select 10"
+    id="1"
     required={false}
     showError={true}
     showLabel={true}
@@ -28,17 +28,17 @@ ShallowWrapper {
       "aria-describedby": "select-form-control",
       "children": Array [
         <WithStyles(InputLabel)
-          htmlFor="Select 10"
+          htmlFor="1"
         />,
         <WithStyles(Select)
           error={false}
           errorMessage=""
           hasError={false}
-          id="Select 10"
+          id="1"
           inputProps={
             Object {
               "id": Object {
-                "id": "Select 10",
+                "id": "1",
               },
               "name": Object {
                 "label": undefined,
@@ -71,7 +71,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": undefined,
-          "htmlFor": "Select 10",
+          "htmlFor": "1",
         },
         "ref": null,
         "rendered": null,
@@ -85,10 +85,10 @@ ShallowWrapper {
           "error": false,
           "errorMessage": "",
           "hasError": false,
-          "id": "Select 10",
+          "id": "1",
           "inputProps": Object {
             "id": Object {
-              "id": "Select 10",
+              "id": "1",
             },
             "name": Object {
               "label": undefined,
@@ -134,17 +134,17 @@ ShallowWrapper {
         "aria-describedby": "select-form-control",
         "children": Array [
           <WithStyles(InputLabel)
-            htmlFor="Select 10"
+            htmlFor="1"
           />,
           <WithStyles(Select)
             error={false}
             errorMessage=""
             hasError={false}
-            id="Select 10"
+            id="1"
             inputProps={
               Object {
                 "id": Object {
-                  "id": "Select 10",
+                  "id": "1",
                 },
                 "name": Object {
                   "label": undefined,
@@ -177,7 +177,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": undefined,
-            "htmlFor": "Select 10",
+            "htmlFor": "1",
           },
           "ref": null,
           "rendered": null,
@@ -191,10 +191,10 @@ ShallowWrapper {
             "error": false,
             "errorMessage": "",
             "hasError": false,
-            "id": "Select 10",
+            "id": "1",
             "inputProps": Object {
               "id": Object {
-                "id": "Select 10",
+                "id": "1",
               },
               "name": Object {
                 "label": undefined,

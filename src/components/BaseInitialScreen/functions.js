@@ -12,7 +12,6 @@ export const convertHexToRGB = (hex, opacity) => {
     const b = parseInt(hex.substring(4, 6), 16)
     return `rgba(${r}, ${g}, ${b}, ${opacity})`
   } catch (e) {
-    console.error(e)
     return e
   }
 }

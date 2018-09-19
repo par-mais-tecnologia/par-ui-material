@@ -8,14 +8,14 @@ configure({ adapter: new Adapter() })
 export const test = describe('Select', () => {
   it('shallow Select', () => {
     const wrapper = shallow(
-      <Select />
+      <Select id={'1'} />
     )
     expect(wrapper).toBeTruthy()
   })
 
   it('shallow Select match Snapshot', () => {
     const wrapper = shallow(
-      <Select />
+      <Select id={'1'} />
     )
     expect(wrapper).toMatchSnapshot()
   })

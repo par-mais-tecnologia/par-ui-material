@@ -1,5 +1,5 @@
-import './colors.css';
-import './fonts.css';
+import './colors.css'
+import './fonts.css'
 
 const colors = {
   gray_01: '#636363',
@@ -23,7 +23,7 @@ const colors = {
 
   white: '#ffffff',
 
-  see_gradient: 'linear-gradient(26deg, #347A7C, #8ACAC7)'
+  seeGradient: 'linear-gradient(26deg, #347A7C, #8ACAC7)'
 }
 
 const classes = {
@@ -131,9 +131,9 @@ const fonts = {
     color: colors.pink
   },
   mainTitle: {
-      fontFamily: "'Brandon Light', sans-serif",
-      fontSize: '1.6rem',
-      color: colors.white
+    fontFamily: "'Brandon Light', sans-serif",
+    fontSize: '1.6rem',
+    color: colors.white
   }
 }
 
