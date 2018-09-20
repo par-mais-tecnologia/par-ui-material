@@ -8,7 +8,7 @@ import { Typography } from '@material-ui/core'
 
 import PropTypes from 'prop-types'
 
-export default class StepperParMais extends PureComponent {
+class StepperParMais extends PureComponent {
   getTheme () {
     return createMuiTheme({
       overrides: {
@@ -117,3 +117,5 @@ StepperParMais.defaultProps = {
   activeLabelColor: '#5EB8C0',
   completedIconColor: '#B6DDDC'
 }
+
+export default StepperParMais

@@ -3,7 +3,7 @@ import MuiPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsPr
 import DatePickerMUI from 'material-ui-pickers/DatePicker'
 import PropTypes from 'prop-types'
 
-export default class DatePicker extends PureComponent {
+class DatePicker extends PureComponent {
   render () {
     const { dateUtilityLibrary } = this.props
 
@@ -20,3 +20,5 @@ export default class DatePicker extends PureComponent {
 DatePicker.propTYpes = {
   utils: PropTypes.object
 }
+
+export default DatePicker

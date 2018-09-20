@@ -1,10 +1,10 @@
 {
-  "name": "par-ui-material",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@parmais/par-ui-material",
+  "version": "0.0.1",
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^3.0.3",
-    "material-ui-pickers": "^1.0.0-rc.13",
+    "material-ui-pickers": "^1.0.0-rc.14",
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
@@ -12,7 +12,7 @@
     "react-number-format": "^3.5.2"
   },
   "scripts": {
-    "build": "",
+    "build": "NODE_ENV=production babel src --delete-dir-on-start --out-dir build && copyfiles -u 1 \"./src/**/*.css\" \"./build\" && cp package.json build && cd ./build && npm install --production",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "test": "npm run lint && jest",
@@ -25,6 +25,10 @@
     "deploy": "gh-pages -d build/"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^3.4.10",
     "@storybook/addon-jest": "^3.4.10",
     "@storybook/addon-knobs": "^3.4.10",
@@ -32,13 +36,10 @@
     "@storybook/addon-viewport": "^3.4.10",
     "@storybook/addons": "^3.4.10",
     "@storybook/react": "^3.4.10",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-webpack": "^6.4.3",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "copyfiles": "^2.1.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",

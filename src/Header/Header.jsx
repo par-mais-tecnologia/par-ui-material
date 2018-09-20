@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 
-export default class Header extends PureComponent {
+class Header extends PureComponent {
   getStyle (props) {
     return {
       height: props.height,
@@ -25,3 +25,5 @@ Header.defaultProps = {
   height: '70px',
   backgroundImage: 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199));'
 }
+
+export default Header
