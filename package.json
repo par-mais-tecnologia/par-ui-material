@@ -7,17 +7,17 @@
     "url": "https://github.com/par-mais-tecnologia/par-ui-material.git"
   },
   "dependencies": {
-    "@material-ui/core": "^3.0.3",
+    "@material-ui/core": "^3.1.0",
     "@material-ui/lab": "^3.0.0-alpha.16",
-    "material-ui-pickers": "^1.0.0-rc.13",
+    "material-ui-pickers": "^1.0.0-rc.14",
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
-    "react-number-format": "^3.5.2"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-number-format": "^3.6.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src --delete-dir-on-start --out-dir build && copyfiles -u 1 \"./src/**/*.css\" \"./build\" && cp README.md LICENSE package.json build",
+    "build": "NODE_ENV=production babel src --delete-dir-on-start --out-dir .build && copyfiles -u 1 \"./src/**/*.css\" \"./.build\" && cp README.md LICENSE package.json .build",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "test": "npm run lint && jest",
@@ -25,32 +25,34 @@
     "test:generate-output": "npm run lint && jest --json --outputFile=.jest-test-results.json || true",
     "test:generate-output:watch": "onchange 'src/**/*.js?' -- npm run test:generate-output",
     "prebuild:storybook": "npm run test:generate-output",
-    "build:storybook": "build-storybook -c .storybook -o build/",
+    "build:storybook": "build-storybook -c .storybook -o .storybookbuild/",
     "predeploy": "npm run build:storybook",
-    "deploy": "gh-pages -d build/"
+    "deploy": "gh-pages -d .storybookbuild/"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^3.4.10",
-    "@storybook/addon-jest": "^3.4.10",
-    "@storybook/addon-knobs": "^3.4.10",
-    "@storybook/addon-links": "^3.4.10",
-    "@storybook/addon-viewport": "^3.4.10",
-    "@storybook/addons": "^3.4.10",
-    "@storybook/react": "^3.4.10",
+    "@storybook/addon-actions": "4.0.0-alpha.21",
+    "@storybook/addon-jest": "4.0.0-alpha.21",
+    "@storybook/addon-knobs": "4.0.0-alpha.21",
+    "@storybook/addon-links": "4.0.0-alpha.21",
+    "@storybook/addon-viewport": "4.0.0-alpha.21",
+    "@storybook/addons": "4.0.0-alpha.21",
+    "@storybook/react": "4.0.0-alpha.21",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-loader": "^8.0.2",
     "copyfiles": "^2.1.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "onchange": "^4.1.0",
-    "react-test-renderer": "^16.5.0",
+    "react-test-renderer": "^16.5.2",
     "standard": "^12.0.1",
     "tachyons": "^4.10.0"
   },
@@ -68,6 +70,9 @@
     "parser": "babel-eslint"
   },
   "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/support/mocks/fileMock.js",
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
