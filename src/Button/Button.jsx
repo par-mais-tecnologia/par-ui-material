@@ -31,7 +31,7 @@ const styles = {
 }
 
 function ButtonPar (props) {
-  const { classes, variant } = props
+  const { classes, variant, onClick } = props
   return (
     <Button
       variant={variant}
@@ -39,10 +39,12 @@ function ButtonPar (props) {
         contained: classes.contained,
         outlined: classes.outlined
       }}
+      onClick={onClick}
     >
       <Typography
         variant='button'
         color='inherit'
+        noWrap
       >
         {props.children}
       </Typography>

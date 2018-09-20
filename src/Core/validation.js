@@ -25,7 +25,7 @@ export class Validator {
   }
 
   validate = instance => {
-    if (instance.id) {
+    if (instance && instance.id) {
       validateComponent(instance)
     } else {
       this.instances.map(instance => validateComponent(instance))
@@ -42,6 +42,9 @@ export class Validator {
           left: 0,
           behavior: 'smooth'
         })
+        return false
+      } else {
+        return true
       }
     }
   }
