@@ -89,6 +89,7 @@ class EmailInputStory extends PureComponent {
 }
 
 storiesOf('Input', module)
+  .addDecorator(withTests('TextField'))
   .add('Email Input', () => {
     return <EmailInputStory/>
   })
