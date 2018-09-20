@@ -2,6 +2,10 @@
   "name": "@parmais/par-ui-material",
   "version": "0.0.1",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/par-mais-tecnologia/par-ui-material.git"
+  },
   "dependencies": {
     "@material-ui/core": "^3.0.3",
     "material-ui-pickers": "^1.0.0-rc.14",
@@ -12,7 +16,7 @@
     "react-number-format": "^3.5.2"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src --delete-dir-on-start --out-dir build && copyfiles -u 1 \"./src/**/*.css\" \"./build\" && cp package.json build && cd ./build && npm install --production",
+    "build": "NODE_ENV=production babel src --delete-dir-on-start --out-dir build && copyfiles -u 1 \"./src/**/*.css\" \"./build\" && cp package.json build",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "test": "npm run lint && jest",
