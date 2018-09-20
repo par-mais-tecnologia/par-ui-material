@@ -4,6 +4,7 @@ import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import 'tachyons/css/tachyons.min.css'
 import { Header, BioFinanceiraTheme } from '../../src'
 import { createMuiTheme } from '@material-ui/core'
+import withTests from './withTests'
 
 class HeaderStory extends PureComponent {
   getThemeHeader (BioFinanceiraTheme) {
@@ -35,6 +36,7 @@ class HeaderStory extends PureComponent {
 }
 
 storiesOf('Header', module)
+  .addDecorator(withTests('Header'))
   .add('Bio Financeira Header', () => {
     return <HeaderStory />
   })
