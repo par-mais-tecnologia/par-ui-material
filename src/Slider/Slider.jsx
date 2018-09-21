@@ -8,7 +8,7 @@ export default class SliderPar extends Component {
   getTypo = (max) => {
     let typos = []
     for (let i = 1; i <= max; i++) {
-      typos.push(<Typography variant='body2'>{i}</Typography>)
+      typos.push(<Typography variant='body1'>{i}</Typography>)
     }
     return typos
   }
