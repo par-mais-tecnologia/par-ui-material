@@ -6,7 +6,7 @@ import { convertHexToRGB } from './functions'
 import '../Core/styles/index.css'
 import './styles/index.css'
 
-export default class BaseInitialScreen extends PureComponent {
+export default class InitialScreen extends PureComponent {
   render () {
     const { imageSrc, middleBoxColor, middleBoxFullScreen, middleBoxFullScreenMobile, children } = this.props
 
@@ -42,13 +42,13 @@ export default class BaseInitialScreen extends PureComponent {
   }
 }
 
-BaseInitialScreen.propTypes = {
+InitialScreen.propTypes = {
   imageSrc: PropTypes.string,
   middleBoxColor: PropTypes.string,
   middleBoxFullScreen: PropTypes.bool
 }
 
-BaseInitialScreen.defaultProps = {
+InitialScreen.defaultProps = {
   imageSrc: 'https://static.parmais.com.br/images/background.jpg',
   middleBoxColor: '#347A7C',
   middleBoxFullScreen: false,
