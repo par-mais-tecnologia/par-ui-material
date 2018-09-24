@@ -3,27 +3,44 @@ import { CheckBox } from '../../src'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import withTests from './withTests'
+import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+import bioFinanceiraTheme from '../../src/BioFinanceiraTheme'
 
 class CheckBoxStory extends PureComponent {
   state = {
-    checked: false
+    checkedA: false,
+    checkedB: false
   }
 
-  handleCheckedChange = decorateAction([args => {
-    this.setState({checked: args[1]})
+  handleCheckedChangeA = decorateAction([args => {
+    this.setState({checkedA: args[1]})
+    return args
+  }])
+
+  handleCheckedChangeB = decorateAction([args => {
+    this.setState({checkedB: args[1]})
     return args
   }])
 
   render () {
-    const {checked} = this.state
+    const {checkedA, checkedB} = this.state
 
     return (
       <div className='pl3'>
         <CheckBox
-          checked={checked}
-          onChange={this.handleCheckedChange('marquei a caixa')}
+          checked={checkedA}
+          onChange={this.handleCheckedChangeA('marquei a caixa')}
           value='checked'
         />
+        <h5> CheckBox with theme</h5>
+        <MuiThemeProvider theme={bioFinanceiraTheme}>
+          <CheckBox
+            checked={checkedB}
+            onChange={this.handleCheckedChangeB('marquei a caixa do check box theme')}
+            value='checked'
+            color='primary'
+          />
+        </MuiThemeProvider>
       </div>
     )
   }

@@ -64,6 +64,7 @@ class TextField extends PureComponent {
         required={required}
         style={this.getStyle(this.props)}>
         <TextFieldMUI
+          inputStyle={{ color: "red" }}
           error={this.state.errors.hasError}
           {...proxyProps}
           {...inputProps}

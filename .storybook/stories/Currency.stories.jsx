@@ -4,12 +4,13 @@ import { TextField } from '../../src'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import { NumberFormatCustom } from '../../src/Core/masks'
-import withTests from './withTests'
 import * as dictionary from '../../src/Core/dictionary'
+import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+import bioFinanceiraTheme from '../../src/BioFinanceiraTheme'
 
 class CurrencyStory extends PureComponent {
   state = {
-    value: false
+    value: ''
   }
 
   handleCurrencyChange = decorateAction([args => {
@@ -22,15 +23,17 @@ class CurrencyStory extends PureComponent {
 
     return (
       <div className='pl3'>
+        <MuiThemeProvider theme={bioFinanceiraTheme}>
         <TextField
           id='CurrencyId'
           label={dictionary.CAMPO_MONETARIO}
           value={value}
           onChange={this.handleCurrencyChange(dictionary.VALOR_MONETARIO_MODIFICADO)}
           InputProps={{
-            inputComponent: NumberFormatCustom
+            inputComponent: NumberFormatCustom,
           }}
         />
+        </MuiThemeProvider>
       </div>
     )
   }

@@ -7,6 +7,8 @@ import { decorateAction } from '@storybook/addon-actions'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import withTests from './withTests'
+import bioFinanceiraTheme from '../../src/BioFinanceiraTheme/BioFinanceiraTheme'
+import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 
 moment.locale('pt-br')
 
@@ -92,6 +94,23 @@ class DatePickerStory extends PureComponent {
           value={selectedDate}
           onChange={this.handleDateChange('selecionei a data')}
         />
+
+        <MuiThemeProvider theme={bioFinanceiraTheme}>
+          <h5> Date Picker com tema </h5>
+          <DatePicker
+            showTodayButton
+            label='Campo de Data'
+            dateUtilityLibrary={MomentUtils}
+            cancelLabel='Cancelar'
+            clearLabel='Limpar'
+            format='DD/MMMM/YYYY'
+            okLabel='Ok'
+            todayLabel='Hoje'
+            value={selectedDate}
+            onChange={this.handleDateChange('selecionei a data')}
+          />
+        </MuiThemeProvider>
+
       </div>
     )
   }

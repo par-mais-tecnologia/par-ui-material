@@ -6,7 +6,8 @@ class Header extends PureComponent {
   getStyle (props) {
     return {
       height: props.height,
-      backgroundImage: props.backgroundImage
+      backgroundImage: props.backgroundImage,
+      boxShadow: props.boxShadow
     }
   }
 

@@ -1,11 +1,11 @@
 import NumberFormat from 'react-number-format'
 import React from 'react'
+import * as PropTypes from 'prop-types'
 
 export function NumberFormatCustom (props) {
   const { inputRef, onChange, ...other } = props
 
   return (
-    <div className='pl3'>
       <NumberFormat
         {...other}
         getInputRef={inputRef}
@@ -21,6 +21,9 @@ export function NumberFormatCustom (props) {
         prefix='R$ '
         decimalScale={2}
         fixedDecimalScale />
-    </div>
   )
 }
+NumberFormatCustom.propTypes = {
+  inputRef: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+};

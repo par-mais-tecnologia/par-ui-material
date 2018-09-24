@@ -4,6 +4,11 @@ import sliderStyle from './styles/slider'
 
 export const bioFinanceiraTheme = createMuiTheme({
   styles,
+  palette: {
+    primary: {
+      main: styles.colors.turquise
+  }
+  },
   typography: {
     fontFamily: '\'Roboto Light\', \'sans-serif\'',
     fontSize: '1rem',
@@ -34,7 +39,23 @@ export const bioFinanceiraTheme = createMuiTheme({
     }
   },
   overrides: {
-    MuiSlider: sliderStyle
+    MuiSlider: sliderStyle,
+    MuiPickersSlideTransition: {
+      transitionContainer: {
+        fontFamily: 'Roboto Light',
+        fontSize: '12px'
+      }
+    },
+    MuiInputBase: {
+      input: {
+        fontFamily: 'Roboto Light',
+      }
+    },
+    MuiInputLabel: {
+      root: {
+        fontFamily: 'Roboto',
+      }
+    }
   }
 })
 
