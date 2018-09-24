@@ -23,7 +23,8 @@ const colors = {
 
   white: '#ffffff',
 
-  seeGradient: 'linear-gradient(26deg, #347A7C, #8ACAC7)'
+  seeGradient: 'linear-gradient(26deg, #347A7C, #8ACAC7)',
+  bgFooter: '#383838'
 }
 
 const classes = {
@@ -34,6 +35,7 @@ const classes = {
   subtitle2: 'f3 roboto-medium turquise',
   subtitle3: 'f4 brandon-regular turquise',
   subtitle4: 'f6 brandon-bold turquise',
+  subtitle5: 'f7 roboto-light gray_04',
   body1: 'f5 roboto-light gray_01',
   body2: 'f4 roboto-light gray_01',
   body4: 'f5 roboto-medium gray_01',
@@ -134,6 +136,11 @@ const fonts = {
     fontFamily: "'Brandon Light', sans-serif",
     fontSize: '1.6rem',
     color: colors.white
+  },
+  footerText: {
+    fontFamily: 'Roboto-Light, sans-serif',
+    fontSize: '0.875rem',
+    color: colors.gray_04
   }
 }
 
