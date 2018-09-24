@@ -24,7 +24,8 @@ class Header extends PureComponent {
 
 Header.defaultProps = {
   height: '70px',
-  backgroundImage: 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199));'
+  backgroundImage: 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))',
+  boxShadow: '0px -3px 20px 0px'
 }
 
 export default Header

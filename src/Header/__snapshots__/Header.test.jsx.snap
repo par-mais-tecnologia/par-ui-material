@@ -4,7 +4,8 @@ exports[`Header shallow Header match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
-    backgroundImage="linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199));"
+    backgroundImage="linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))"
+    boxShadow="0px -3px 20px 0px"
     height="70px"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -27,7 +28,8 @@ ShallowWrapper {
       />,
       "container": true,
       "style": Object {
-        "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199));",
+        "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
+        "boxShadow": "0px -3px 20px 0px",
         "height": "70px",
       },
     },
@@ -60,7 +62,8 @@ ShallowWrapper {
         />,
         "container": true,
         "style": Object {
-          "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199));",
+          "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
+          "boxShadow": "0px -3px 20px 0px",
           "height": "70px",
         },
       },

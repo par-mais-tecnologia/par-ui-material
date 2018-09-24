@@ -7,7 +7,7 @@ export const bioFinanceiraTheme = createMuiTheme({
   palette: {
     primary: {
       main: styles.colors.turquise
-  }
+    }
   },
   typography: {
     fontFamily: '\'Roboto Light\', \'sans-serif\'',
@@ -48,12 +48,12 @@ export const bioFinanceiraTheme = createMuiTheme({
     },
     MuiInputBase: {
       input: {
-        fontFamily: 'Roboto Light',
+        fontFamily: 'Roboto Light'
       }
     },
     MuiInputLabel: {
       root: {
-        fontFamily: 'Roboto',
+        fontFamily: 'Roboto'
       }
     }
   }
