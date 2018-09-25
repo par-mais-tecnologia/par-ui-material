@@ -11,9 +11,6 @@ class HeaderStory extends PureComponent {
     return createMuiTheme({
       overrides: {
         MuiTypography: {
-          root: {
-            margin: 'auto'
-          },
           title: {
             ...BioFinanceiraTheme.styles.fonts.mainTitle
           }
@@ -29,7 +26,8 @@ class HeaderStory extends PureComponent {
           classes={BioFinanceiraTheme}
           boxShadow={'0px -3px 20px 0px'}
           backgroundImage={BioFinanceiraTheme.styles.colors.seeGradient}
-          height='70px' margin='16px'>
+          height='70px' margin='16px'
+          justifyContent='center'>
           <b>BIO</b> <spam style={{fontWeight: 100}}>FINANCEIRA</spam>
         </Header>
       </MuiThemeProvider>
