@@ -4,7 +4,7 @@ exports[`TextField shallow TextField match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TextField
-    id="textField 24"
+    id="textField"
     label=""
     required={false}
     showHelper={false}
@@ -23,11 +23,16 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "aria-describedby": "textField 24",
+      "aria-describedby": "textField",
       "children": Array [
         <TextField
           error={false}
-          id="textField 24"
+          id="textField"
+          inputStyle={
+            Object {
+              "color": "red",
+            }
+          }
           label=""
           margin="normal"
           onBlur={[Function]}
@@ -56,7 +61,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "error": false,
-          "id": "textField 24",
+          "id": "textField",
+          "inputStyle": Object {
+            "color": "red",
+          },
           "label": "",
           "margin": "normal",
           "onBlur": [Function],
@@ -83,11 +91,16 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "aria-describedby": "textField 24",
+        "aria-describedby": "textField",
         "children": Array [
           <TextField
             error={false}
-            id="textField 24"
+            id="textField"
+            inputStyle={
+              Object {
+                "color": "red",
+              }
+            }
             label=""
             margin="normal"
             onBlur={[Function]}
@@ -116,7 +129,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "error": false,
-            "id": "textField 24",
+            "id": "textField",
+            "inputStyle": Object {
+              "color": "red",
+            },
             "label": "",
             "margin": "normal",
             "onBlur": [Function],

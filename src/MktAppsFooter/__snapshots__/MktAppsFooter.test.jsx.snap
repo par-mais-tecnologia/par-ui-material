@@ -41,15 +41,31 @@ ShallowWrapper {
           },
         },
         "overrides": Object {
+          "MuiInputBase": Object {
+            "input": Object {
+              "fontFamily": "Roboto Light",
+            },
+          },
+          "MuiInputLabel": Object {
+            "root": Object {
+              "fontFamily": "Roboto",
+            },
+          },
+          "MuiPickersSlideTransition": Object {
+            "transitionContainer": Object {
+              "fontFamily": "Roboto Light",
+              "fontSize": "12px",
+            },
+          },
           "MuiSlider": Object {
             "thumb": Object {
               "backgroundColor": "white",
-              "boxShadow": "0px 0px 1px #000000",
+              "boxShadow": "0px 0px 1px #9C9C9C",
             },
             "track": Object {
               "background": "linear-gradient(to right, #8ACAC7 0%, #347A7C 100%)",
               "borderRadius": "10px",
-              "boxShadow": "0px 0px 1px #000000",
+              "boxShadow": "1px 1px 1px #9C9C9C",
               "height": "9px",
             },
             "trackAfter": Object {
@@ -101,10 +117,10 @@ ShallowWrapper {
             "A700": "#616161",
           },
           "primary": Object {
-            "contrastText": "#fff",
-            "dark": "#303f9f",
-            "light": "#7986cb",
-            "main": "#3f51b5",
+            "contrastText": "rgba(0, 0, 0, 0.87)",
+            "dark": "rgb(65, 128, 134)",
+            "light": "rgb(126, 198, 204)",
+            "main": "#5EB8C0",
           },
           "secondary": Object {
             "contrastText": "#fff",
