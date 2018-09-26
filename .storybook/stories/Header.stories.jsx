@@ -23,7 +23,7 @@ class HeaderStory extends PureComponent {
     return (
       <MuiThemeProvider theme={this.getThemeHeader(BioFinanceiraTheme)}>
         <Header
-          classes={BioFinanceiraTheme}
+          classes='justify-center'
           boxShadow={'0px -3px 20px 0px'}
           backgroundImage={BioFinanceiraTheme.styles.colors.seeGradient}
           height='70px' margin='16px'

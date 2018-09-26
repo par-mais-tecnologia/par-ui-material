@@ -8,13 +8,15 @@ class Header extends PureComponent {
       height: props.height,
       backgroundImage: props.backgroundImage,
       boxShadow: props.boxShadow,
-      justifyContent: props.justifyContent
     }
   }
 
   render () {
+
+    const { classes } = this.props
+
     return (
-      <Grid container alignItems='center' style={this.getStyle(this.props)}>
+      <Grid container alignItems='center' style={this.getStyle(this.props)} className={`${classes} top-0`}>
         <Typography align='center' variant='title'>
           {this.props.children}
         </Typography>
@@ -27,7 +29,6 @@ Header.defaultProps = {
   height: '70px',
   backgroundImage: 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))',
   boxShadow: '0px -3px 20px 0px',
-  justifyContent: 'center'
 }
 
 export default Header

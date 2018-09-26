@@ -22,5 +22,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .build
+.storybookbuild
 .idea
 .jest-test-results.json
