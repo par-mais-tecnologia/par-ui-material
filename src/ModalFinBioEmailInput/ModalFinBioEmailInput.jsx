@@ -42,7 +42,7 @@ class ModalFinBioEmailInput extends Component {
           <Grid item xs={12}>
             <TextField
               required
-              label='Email'
+              label='Seu e-mail'
               onChange={onChangeEmail}
               name='email'
               validator={{ validator, type: validation.types.email }}
