@@ -39,7 +39,7 @@ storiesOf('InitialScreen', module)
             <h1 className='white brandon-light ttu mt2 fw1'><span className='brandon-bold'>Bio</span> Financeira</h1>
             <Grid className='white roboto-light lh-copy'>
               <p>
-                A BIO Financeira é a soama de seu perfil psicológico frente aos
+                A BIO Financeira é a soma de seu perfil psicológico frente aos
                 investimentos, momento de vida e capacidade financeira e patrimonial.
               </p>
               <p>
