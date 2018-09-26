@@ -7,7 +7,6 @@ ShallowWrapper {
     backgroundImage="linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))"
     boxShadow="0px -3px 20px 0px"
     height="70px"
-    justifyContent="center"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -27,12 +26,12 @@ ShallowWrapper {
         align="center"
         variant="title"
       />,
+      "className": "undefined top-0",
       "container": true,
       "style": Object {
         "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
         "boxShadow": "0px -3px 20px 0px",
         "height": "70px",
-        "justifyContent": "center",
       },
     },
     "ref": null,
@@ -62,12 +61,12 @@ ShallowWrapper {
           align="center"
           variant="title"
         />,
+        "className": "undefined top-0",
         "container": true,
         "style": Object {
           "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
           "boxShadow": "0px -3px 20px 0px",
           "height": "70px",
-          "justifyContent": "center",
         },
       },
       "ref": null,
