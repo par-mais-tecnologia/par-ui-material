@@ -1,14 +1,13 @@
-import { storiesOf } from '@storybook/react'
-import { DatePicker } from '../../src'
-
 import React, { PureComponent } from 'react'
-import MomentUtils from 'material-ui-pickers/utils/moment-utils'
+import { storiesOf } from '@storybook/react'
 import { decorateAction } from '@storybook/addon-actions'
 import moment from 'moment'
+import MomentUtils from 'material-ui-pickers/utils/moment-utils'
 import 'moment/locale/pt-br'
+import { MuiThemeProvider } from '@material-ui/core'
+
+import { DatePicker, BioFinanceiraTheme } from '../../src'
 import withTests from './withTests'
-import bioFinanceiraTheme from '../../src/BioFinanceiraTheme/BioFinanceiraTheme'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 
 moment.locale('pt-br')
 
@@ -95,7 +94,7 @@ class DatePickerStory extends PureComponent {
           onChange={this.handleDateChange('selecionei a data')}
         />
 
-        <MuiThemeProvider theme={bioFinanceiraTheme}>
+        <MuiThemeProvider theme={BioFinanceiraTheme}>
           <h5> Date Picker com tema </h5>
           <DatePicker
             showTodayButton

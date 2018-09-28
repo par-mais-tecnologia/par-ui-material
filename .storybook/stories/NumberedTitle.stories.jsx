@@ -1,9 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { BioFinanceiraTheme, NumberedTitle, PatrimonyResultChart } from '../../src'
+import { MuiThemeProvider } from '@material-ui/core'
 
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+import { BioFinanceiraTheme, NumberedTitle, PatrimonyResultChart } from '../../src'
 
 const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Curabitur quis mattis turpis, a eleifend enim. Vestibulum ante ipsum primis 

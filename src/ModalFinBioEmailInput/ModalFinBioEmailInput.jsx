@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Grid, Typography } from '@material-ui/core/es'
+import { Grid, Typography } from '@material-ui/core'
 
 import Modal from '../Modal'
 import Button from '../Button'

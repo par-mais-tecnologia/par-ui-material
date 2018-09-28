@@ -1,10 +1,10 @@
 import { storiesOf } from '@storybook/react'
 import React, { PureComponent } from 'react'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import 'tachyons/css/tachyons.min.css'
-import { Header, BioFinanceiraTheme } from '../../src'
-import { createMuiTheme } from '@material-ui/core'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core'
 import withTests from './withTests'
+
+import { Header, BioFinanceiraTheme } from '../../src'
 
 class HeaderStory extends PureComponent {
   getThemeHeader (BioFinanceiraTheme) {

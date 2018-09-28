@@ -1,10 +1,11 @@
-import { storiesOf } from '@storybook/react'
-import { CheckBox } from '../../src'
 import React, { PureComponent } from 'react'
+import { storiesOf } from '@storybook/react'
 import { decorateAction } from '@storybook/addon-actions'
+import { MuiThemeProvider } from '@material-ui/core'
+
+import { bioFinanceiraTheme, CheckBox } from '../../src'
 import withTests from './withTests'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
-import bioFinanceiraTheme from '../../src/BioFinanceiraTheme'
+
 
 class CheckBoxStory extends PureComponent {
   state = {

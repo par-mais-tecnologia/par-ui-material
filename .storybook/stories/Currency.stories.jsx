@@ -1,12 +1,11 @@
-import { storiesOf } from '@storybook/react'
-import { TextField } from '../../src'
 import React, { PureComponent } from 'react'
+import { storiesOf } from '@storybook/react'
 import { decorateAction } from '@storybook/addon-actions'
-import { NumberFormatCustom } from '../../src/Core/masks'
+import { MuiThemeProvider, Typography } from '@material-ui/core'
+
+import { BioFinanceiraTheme, TextField } from '../../src'
 import * as dictionary from '../../src/Core/dictionary'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
-import { BioFinanceiraTheme } from '../../src'
-import { Typography } from '@material-ui/core'
+import { NumberFormatCustom } from '../../src/Core/masks'
 
 class CurrencyStory extends PureComponent {
   state = {

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+import { MuiThemeProvider } from '@material-ui/core'
 
 import { BioFinanceiraTheme, Slider } from '../../src'
 

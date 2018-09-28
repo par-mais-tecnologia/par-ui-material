@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slider from '@material-ui/lab/Slider'
-import { Grid, Typography } from '@material-ui/core/es'
+import { Grid, Typography } from '@material-ui/core'
 
 import PropTypes from 'prop-types'
 

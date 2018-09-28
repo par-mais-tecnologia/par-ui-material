@@ -1,17 +1,12 @@
 import React, { PureComponent } from 'react'
-
 import { storiesOf } from '@storybook/react'
-import { decorateAction } from '@storybook/addon-actions'
-
-import Button from '@material-ui/core/Button'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+import { Button, MuiThemeProvider, Grid, Typography } from '@material-ui/core'
 
 import { 
   BioFinanceiraTheme,
   Modal,
   ModalFinBioEmailInput
 } from '../../src'
-import { Grid, Typography } from '@material-ui/core/es'
 
 function ModalSample(props) {
   return (
