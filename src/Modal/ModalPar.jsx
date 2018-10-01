@@ -25,7 +25,7 @@ class ModalPar extends Component {
         open={this.props.open}
         onClose={this.props.onClose}
       >
-        <Paper className={classes.modal}>
+        <Paper className={`${classes.modal} w-90 w-auto-ns`}>
           {this.props.children}
         </Paper>
       </Modal>
