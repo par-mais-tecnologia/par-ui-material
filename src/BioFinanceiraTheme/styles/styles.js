@@ -141,6 +141,11 @@ const fonts = {
     fontFamily: 'Roboto-Light, sans-serif',
     fontSize: '0.875rem',
     color: colors.gray_04
+  },
+  headline: {
+    fontFamily: 'Roboto-Light, sans-serif',
+    fontSize: '1.25rem',
+    color: colors.gray_01
   }
 }
 

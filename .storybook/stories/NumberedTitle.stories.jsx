@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import { MuiThemeProvider } from '@material-ui/core'
 
-import { BioFinanceiraTheme, NumberedTitle, PatrimonyResultChart } from '../../src'
+import { BioFinanceiraTheme, NumberedTitle } from '../../src'
 
 const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Curabitur quis mattis turpis, a eleifend enim. Vestibulum ante ipsum primis 
@@ -41,26 +41,6 @@ storiesOf('NumberedTitle', module)
             subtitle={`finanças`}
           >
             {lorem}
-          </NumberedTitle>
-        </div>
-      </MuiThemeProvider>
-    )
-  })
-  .add('with result 1', () => {
-    return (
-      <MuiThemeProvider theme={BioFinanceiraTheme}>
-        <div style={{width: '400px', padding: '0px 10px 0px 10px'}}>
-          <NumberedTitle
-            number={1}
-            title={`Seus bens`}
-            subtitle={`${5000000 + 2000000 + 500000}`}
-          >
-            <PatrimonyResultChart
-              investments={5000000}
-              realState={2000000}
-              movableAssets={500000}
-              classes={BioFinanceiraTheme.styles.classes}
-            />
           </NumberedTitle>
         </div>
       </MuiThemeProvider>

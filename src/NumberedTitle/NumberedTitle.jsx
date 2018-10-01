@@ -7,16 +7,24 @@ function NumberedTitle (props) {
   return (
     <Grid container direction='column'>
       <Grid container direction='row' alignItems='center'>
-        <Typography variant='headline'>
-          {props.number}
-        </Typography>
-        <Grid direction='column'>
-          <Typography variant='body2'>
-            {props.title}
+        <Grid item>
+          <Typography variant='display1'>
+            {props.number}
           </Typography>
-          <Typography variant='subheading'>
-            {props.subtitle}
-          </Typography>
+        </Grid>
+        <Grid item>
+          <Grid container direction='column'>
+            <Grid item>
+              <Typography variant='headline' style={{ lineHeight: '1em' }}>
+                {props.title}
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant='subheading' style={{ lineHeight: '1em' }}>
+                {props.subtitle}
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
       <Grid item>

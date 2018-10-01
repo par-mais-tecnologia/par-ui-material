@@ -1,6 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 import { styles } from './styles/styles'
 import sliderStyle from './styles/slider'
+import patrimonyResultChartStyle from './styles/patrimonyResultChart'
 
 export const bioFinanceiraTheme = createMuiTheme({
   styles,
@@ -14,7 +15,7 @@ export const bioFinanceiraTheme = createMuiTheme({
     fontSize: '1rem',
     color: styles.colors.gray_01,
     headline: {
-      ...styles.fonts.title2
+      ...styles.fonts.headline
     },
     body1: {
       ...styles.fonts.body1
@@ -26,7 +27,7 @@ export const bioFinanceiraTheme = createMuiTheme({
       ...styles.fonts.subheading
     },
     display1: {
-      ...styles.fonts.body4
+      ...styles.fonts.title2
     },
     display2: {
       ...styles.fonts.body3
@@ -56,7 +57,8 @@ export const bioFinanceiraTheme = createMuiTheme({
         fontFamily: 'Roboto'
       }
     }
-  }
+  },
+  patrimonyResultChart: patrimonyResultChartStyle
 })
 
 export default bioFinanceiraTheme
