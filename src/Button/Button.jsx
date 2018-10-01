@@ -1,14 +1,10 @@
 import React from 'react'
-
-import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
+import { Button, withStyles, Typography } from '@material-ui/core'
 
 const styles = {
   contained: {
     color: 'white',
     backgroundColor: '#D4436B',
-    boxShadow: '0px 1px #C1C1C1',
     '&$contained:hover': {
       backgroundColor: '#9D0238'
     },

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { decorateAction } from '@storybook/addon-actions'
 import { MuiThemeProvider } from '@material-ui/core'
 
-import { bioFinanceiraTheme, CheckBox } from '../../src'
+import { BioFinanceiraTheme, CheckBox } from '../../src'
 import withTests from './withTests'
 
 
@@ -34,7 +34,7 @@ class CheckBoxStory extends PureComponent {
           value='checked'
         />
         <h5> CheckBox with theme</h5>
-        <MuiThemeProvider theme={bioFinanceiraTheme}>
+        <MuiThemeProvider theme={BioFinanceiraTheme}>
           <CheckBox
             checked={checkedB}
             onChange={this.handleCheckedChangeB('marquei a caixa do check box theme')}

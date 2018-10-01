@@ -47,7 +47,7 @@ storiesOf('InitialScreen', module)
                 investimento mais seguras.
               </p>
               <p className='f6 i'>
-                Ao clicar em "Começar", você concorda com a nossa
+                Ao clicar em "COMECE AGORA", você concorda com a nossa
                 <i><b> política de privacidade</b></i>.
               </p>
             </Grid>

@@ -77,7 +77,6 @@ export { colors, createGenerateClassName, createMuiTheme, createStyles, jssPrese
   MenuItem,
   MenuList,
   MobileStepper,
-  Moda,
   NativeSelect,
   NoSsr,
   OutlinedInput,
