@@ -1,0 +1,674 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`YourFinances shallow YourFinances match Snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <YourFinances
+    expenses={1000}
+    incomes={4500}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <WithStyles(Grid)
+          container={true}
+          justify="space-between"
+        >
+          <WithStyles(Typography)>
+            Rendas: 
+          </WithStyles(Typography)>
+          <WithStyles(Typography)>
+            R$ 
+            4,500.00
+          </WithStyles(Typography)>
+        </WithStyles(Grid)>,
+        <WithStyles(Grid)
+          className="mb3 mt1"
+          style={
+            Object {
+              "backgroundColor": "#94BA1D",
+              "height": 2,
+              "width": "100%",
+            }
+          }
+        />,
+        <WithStyles(Grid)
+          container={true}
+          justify="space-between"
+        >
+          <WithStyles(Typography)>
+            Despesas:
+          </WithStyles(Typography)>
+          <WithStyles(Typography)>
+            R$ 
+            1,000.00
+          </WithStyles(Typography)>
+        </WithStyles(Grid)>,
+        <WithStyles(Grid)
+          className="mb3 mt1"
+          style={
+            Object {
+              "backgroundColor": "#BA2B31",
+              "height": 2,
+              "width": "22.2%",
+            }
+          }
+        />,
+        <WithStyles(Grid)>
+          <WithStyles(Grid)
+            container={true}
+            justify="space-between"
+          >
+            <WithStyles(Typography)>
+              Saldo para investir: 
+            </WithStyles(Typography)>
+            <WithStyles(Typography)>
+              R$ 
+              3,500.00
+            </WithStyles(Typography)>
+          </WithStyles(Grid)>
+          <WithStyles(Grid)
+            className="mt1"
+            style={
+              Object {
+                "backgroundColor": "#007CA3",
+                "height": 2,
+                "width": "77.8%",
+              }
+            }
+          />
+        </WithStyles(Grid)>,
+      ],
+      "className": "mt3",
+      "container": true,
+      "direction": "column",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Typography)>
+              Rendas: 
+            </WithStyles(Typography)>,
+            <WithStyles(Typography)>
+              R$ 
+              4,500.00
+            </WithStyles(Typography)>,
+          ],
+          "container": true,
+          "justify": "space-between",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Rendas: ",
+            },
+            "ref": null,
+            "rendered": "Rendas: ",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "R$ ",
+                "4,500.00",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "R$ ",
+              "4,500.00",
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "mb3 mt1",
+          "style": Object {
+            "backgroundColor": "#94BA1D",
+            "height": 2,
+            "width": "100%",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Typography)>
+              Despesas:
+            </WithStyles(Typography)>,
+            <WithStyles(Typography)>
+              R$ 
+              1,000.00
+            </WithStyles(Typography)>,
+          ],
+          "container": true,
+          "justify": "space-between",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Despesas:",
+            },
+            "ref": null,
+            "rendered": "Despesas:",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "R$ ",
+                "1,000.00",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "R$ ",
+              "1,000.00",
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "mb3 mt1",
+          "style": Object {
+            "backgroundColor": "#BA2B31",
+            "height": 2,
+            "width": "22.2%",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Grid)
+              container={true}
+              justify="space-between"
+            >
+              <WithStyles(Typography)>
+                Saldo para investir: 
+              </WithStyles(Typography)>
+              <WithStyles(Typography)>
+                R$ 
+                3,500.00
+              </WithStyles(Typography)>
+            </WithStyles(Grid)>,
+            <WithStyles(Grid)
+              className="mt1"
+              style={
+                Object {
+                  "backgroundColor": "#007CA3",
+                  "height": 2,
+                  "width": "77.8%",
+                }
+              }
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(Typography)>
+                  Saldo para investir: 
+                </WithStyles(Typography)>,
+                <WithStyles(Typography)>
+                  R$ 
+                  3,500.00
+                </WithStyles(Typography)>,
+              ],
+              "container": true,
+              "justify": "space-between",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Saldo para investir: ",
+                },
+                "ref": null,
+                "rendered": "Saldo para investir: ",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "R$ ",
+                    "3,500.00",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "R$ ",
+                  "3,500.00",
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "className": "mt1",
+              "style": Object {
+                "backgroundColor": "#007CA3",
+                "height": 2,
+                "width": "77.8%",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <WithStyles(Grid)
+            container={true}
+            justify="space-between"
+          >
+            <WithStyles(Typography)>
+              Rendas: 
+            </WithStyles(Typography)>
+            <WithStyles(Typography)>
+              R$ 
+              4,500.00
+            </WithStyles(Typography)>
+          </WithStyles(Grid)>,
+          <WithStyles(Grid)
+            className="mb3 mt1"
+            style={
+              Object {
+                "backgroundColor": "#94BA1D",
+                "height": 2,
+                "width": "100%",
+              }
+            }
+          />,
+          <WithStyles(Grid)
+            container={true}
+            justify="space-between"
+          >
+            <WithStyles(Typography)>
+              Despesas:
+            </WithStyles(Typography)>
+            <WithStyles(Typography)>
+              R$ 
+              1,000.00
+            </WithStyles(Typography)>
+          </WithStyles(Grid)>,
+          <WithStyles(Grid)
+            className="mb3 mt1"
+            style={
+              Object {
+                "backgroundColor": "#BA2B31",
+                "height": 2,
+                "width": "22.2%",
+              }
+            }
+          />,
+          <WithStyles(Grid)>
+            <WithStyles(Grid)
+              container={true}
+              justify="space-between"
+            >
+              <WithStyles(Typography)>
+                Saldo para investir: 
+              </WithStyles(Typography)>
+              <WithStyles(Typography)>
+                R$ 
+                3,500.00
+              </WithStyles(Typography)>
+            </WithStyles(Grid)>
+            <WithStyles(Grid)
+              className="mt1"
+              style={
+                Object {
+                  "backgroundColor": "#007CA3",
+                  "height": 2,
+                  "width": "77.8%",
+                }
+              }
+            />
+          </WithStyles(Grid)>,
+        ],
+        "className": "mt3",
+        "container": true,
+        "direction": "column",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Typography)>
+                Rendas: 
+              </WithStyles(Typography)>,
+              <WithStyles(Typography)>
+                R$ 
+                4,500.00
+              </WithStyles(Typography)>,
+            ],
+            "container": true,
+            "justify": "space-between",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Rendas: ",
+              },
+              "ref": null,
+              "rendered": "Rendas: ",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "R$ ",
+                  "4,500.00",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "R$ ",
+                "4,500.00",
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "mb3 mt1",
+            "style": Object {
+              "backgroundColor": "#94BA1D",
+              "height": 2,
+              "width": "100%",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Typography)>
+                Despesas:
+              </WithStyles(Typography)>,
+              <WithStyles(Typography)>
+                R$ 
+                1,000.00
+              </WithStyles(Typography)>,
+            ],
+            "container": true,
+            "justify": "space-between",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Despesas:",
+              },
+              "ref": null,
+              "rendered": "Despesas:",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "R$ ",
+                  "1,000.00",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "R$ ",
+                "1,000.00",
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "mb3 mt1",
+            "style": Object {
+              "backgroundColor": "#BA2B31",
+              "height": 2,
+              "width": "22.2%",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Grid)
+                container={true}
+                justify="space-between"
+              >
+                <WithStyles(Typography)>
+                  Saldo para investir: 
+                </WithStyles(Typography)>
+                <WithStyles(Typography)>
+                  R$ 
+                  3,500.00
+                </WithStyles(Typography)>
+              </WithStyles(Grid)>,
+              <WithStyles(Grid)
+                className="mt1"
+                style={
+                  Object {
+                    "backgroundColor": "#007CA3",
+                    "height": 2,
+                    "width": "77.8%",
+                  }
+                }
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(Typography)>
+                    Saldo para investir: 
+                  </WithStyles(Typography)>,
+                  <WithStyles(Typography)>
+                    R$ 
+                    3,500.00
+                  </WithStyles(Typography)>,
+                ],
+                "container": true,
+                "justify": "space-between",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Saldo para investir: ",
+                  },
+                  "ref": null,
+                  "rendered": "Saldo para investir: ",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      "R$ ",
+                      "3,500.00",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "R$ ",
+                    "3,500.00",
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "mt1",
+                "style": Object {
+                  "backgroundColor": "#007CA3",
+                  "height": 2,
+                  "width": "77.8%",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

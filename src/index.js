@@ -17,6 +17,7 @@ export { default as MktAppsFooter } from './MktAppsFooter'
 export { default as Modal } from './Modal'
 export { default as ModalFinBioEmailInput } from './ModalFinBioEmailInput'
 export { default as RotatingImage } from './RotatingImage'
+export { default as YourFinance } from './YourFinance'
 
 export { colors, createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme, AppBar,
   Avatar,

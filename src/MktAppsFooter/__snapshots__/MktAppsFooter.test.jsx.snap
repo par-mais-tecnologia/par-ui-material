@@ -137,6 +137,28 @@ ShallowWrapper {
           "tonalOffset": 0.2,
           "type": "light",
         },
+        "patrimonyResultChart": Object {
+          "&$patrimony .display4": Object {
+            "color": "#707070",
+            "fontFamily": "Roboto Medium",
+          },
+          "&$patrimony .percentage": Object {
+            "color": "#A3A3A3",
+          },
+          "&$patrimony:hover .bar": Object {
+            "animation": "createBox 0.2s forwards",
+          },
+          "&$patrimony:hover .onHover.investment": Object {
+            "color": "#632B7D",
+          },
+          "&$patrimony:hover .onHover.movable": Object {
+            "color": "#347A7C",
+          },
+          "&$patrimony:hover .onHover.realstate": Object {
+            "color": "#5EB8C0",
+          },
+          "paddingBottom": "16px",
+        },
         "props": Object {},
         "shadows": Array [
           "none",
@@ -238,6 +260,11 @@ ShallowWrapper {
               "color": "#F0F0F0",
               "fontFamily": "Roboto-Light, sans-serif",
               "fontSize": "0.875rem",
+            },
+            "headline": Object {
+              "color": "#636363",
+              "fontFamily": "Roboto-Light, sans-serif",
+              "fontSize": "1.25rem",
             },
             "highlight1": Object {
               "color": "#D4436B",
@@ -358,7 +385,7 @@ ShallowWrapper {
           "display1": Object {
             "color": "#636363",
             "fontFamily": "'Roboto Medium', sans-serif",
-            "fontSize": "1rem",
+            "fontSize": "3rem",
             "fontWeight": 400,
             "lineHeight": "1.20588em",
           },
@@ -395,8 +422,8 @@ ShallowWrapper {
           "fontWeightRegular": 400,
           "headline": Object {
             "color": "#636363",
-            "fontFamily": "'Roboto Medium', sans-serif",
-            "fontSize": "3rem",
+            "fontFamily": "Roboto-Light, sans-serif",
+            "fontSize": "1.25rem",
             "fontWeight": 400,
             "lineHeight": "1.35417em",
           },
