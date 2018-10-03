@@ -1,19 +1,16 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Typography } from '../index'
 import { getCurrencyFormat } from '../Core/functions'
 
 class YourFinances extends PureComponent {
   render () {
     const { incomes, expenses } = this.props
     const balance = incomes - expenses
-    let referenceValue
-
-    let percentIncomes
-
-    let percentExpenses
-
-    let percentBalance = 0
+    let referenceValue,
+      percentBalance = 0
+    let percentIncomes = 100
+    let percentExpenses = 100
 
     if (incomes > expenses) {
       referenceValue = incomes
@@ -25,9 +22,6 @@ class YourFinances extends PureComponent {
       percentExpenses = 100
       percentIncomes = Number(((incomes / referenceValue) * 100).toFixed(1))
       percentBalance = Number((((referenceValue - incomes) / referenceValue) * 100).toFixed(1))
-    } else {
-      percentIncomes = 100
-      percentExpenses = 100
     }
 
     const barStyles = {
