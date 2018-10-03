@@ -3,7 +3,6 @@ import { TextField } from '../../src'
 
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
-import withTests from './withTests'
 
 class LabelInputStory extends PureComponent {
   state = {

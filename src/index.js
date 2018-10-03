@@ -19,6 +19,8 @@ export { default as ModalFinBioEmailInput } from './ModalFinBioEmailInput'
 export { default as RotatingImage } from './RotatingImage'
 export { default as YourFinance } from './YourFinance'
 export { default as EmergencyReserve } from './EmergencyReserve'
+export { default as InputMask } from './InputMask'
+export { default as Typography } from './Typography'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'
@@ -116,7 +118,6 @@ export {
   Tabs,
   Toolbar,
   Tooltip,
-  Typography,
   withMobileDialog,
   withWidth,
   Zoom } from '@material-ui/core'

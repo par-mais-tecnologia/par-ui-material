@@ -6,6 +6,9 @@ class Toogle extends PureComponent {
   render () {
     const { label } = this.props
 
+    const proxyProps = { ...this.props }
+    delete proxyProps.minWidth
+
     return (
       <FormControlLabel
         control={
