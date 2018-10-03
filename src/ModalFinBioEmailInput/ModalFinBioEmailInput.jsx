@@ -54,6 +54,7 @@ class ModalFinBioEmailInput extends Component {
           <Grid item>
             <Grid
               container
+              item
               direction='row'
               wrap='nowrap'
               justify='space-between'

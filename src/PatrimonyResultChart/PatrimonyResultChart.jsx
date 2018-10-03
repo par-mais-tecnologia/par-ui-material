@@ -42,10 +42,10 @@ function PatrimonyResultChart (props) {
     return [inv, rs, ma]
   }
 
-  const investmentChart = (classes, property) => {
+  const investmentChart = (classes, property, key) => {
     return (
-      <Grid container direction='row' className={classes.patrimony}>
-        <Grid container direction='column' xs={6} alignItems='flex-end'>
+      <Grid key={key} container direction='row' className={classes.patrimony}>
+        <Grid container item direction='column' xs={6} alignItems='flex-end'>
           <Typography
             variant='body1'
             className={`display4 onHover ${property.class}`}
@@ -65,7 +65,7 @@ function PatrimonyResultChart (props) {
             {property.percentage}
           </Typography>
         </Grid>
-        <Grid container xs={6} style={{ paddingLeft: '8px' }}>
+        <Grid container item xs={6} style={{ paddingLeft: '8px' }}>
           <Grid
             item
             className='bar'
@@ -84,7 +84,7 @@ function PatrimonyResultChart (props) {
 
   return (
     <Grid container direction='column'>
-      {patrimonies.map(inv => investmentChart(classes, inv))}
+      {patrimonies.map(inv => investmentChart(classes, inv, Math.floor(Math.random() * 6530)))}
     </Grid>
   )
 }
