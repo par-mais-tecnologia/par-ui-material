@@ -7,7 +7,7 @@ import withTests from './withTests'
 
 class ToggleStory extends PureComponent {
   state = {
-    checked: true
+    checked: false
   }
 
   handleToggleChange = decorateAction([args => {
@@ -22,8 +22,9 @@ class ToggleStory extends PureComponent {
       <div className='pl3'>
         <Toggle
           id='ToggleId'
+          checked={checked}
           label='Campo de Toggle'
-          value={checked}
+          value='CheckToogle'
           onChange={this.handleToggleChange('Toggle alterado')}
         />
       </div>

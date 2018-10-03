@@ -57,6 +57,9 @@ class TextField extends PureComponent {
 
     const proxyProps = { ...this.props }
     delete proxyProps.validatorType
+    delete proxyProps.showHelper
+    delete proxyProps.minWidth
+    delete proxyProps.maxWidth
 
     return (
       <FormControl
@@ -64,7 +67,6 @@ class TextField extends PureComponent {
         required={required}
         style={this.getStyle(this.props)}>
         <TextFieldMUI
-          inputStyle={{ color: 'red' }}
           error={this.state.errors.hasError}
           {...proxyProps}
           {...inputProps}

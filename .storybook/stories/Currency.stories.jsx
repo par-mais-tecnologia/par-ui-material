@@ -35,8 +35,7 @@ class CurrencyStory extends PureComponent {
     return (
       <div className='pl3'>
         <MuiThemeProvider theme={BioFinanceiraTheme}>
-          <Typography>
-            <h3>Sem conteúdo inicial ou se == 0</h3>
+            <Typography>Sem conteúdo inicial ou se == 0</Typography>
             <TextField
               id='CurrencyId'
               label={dictionary.CAMPO_MONETARIO}
@@ -46,7 +45,8 @@ class CurrencyStory extends PureComponent {
                 inputComponent: NumberFormatCustom,
               }}
             />
-            <h3>Com conteúdo inicial e voltando para 0</h3>
+          <div className='pv4'>
+            <Typography>Com conteúdo inicial e voltando para 0</Typography>
             <TextField
               id='CurrencyId'
               label={dictionary.CAMPO_MONETARIO}
@@ -56,7 +56,7 @@ class CurrencyStory extends PureComponent {
                 inputComponent: NumberFormatCustom,
               }}
             />
-          </Typography>
+          </div>
         </MuiThemeProvider>
       </div>
     )

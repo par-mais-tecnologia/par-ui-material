@@ -7,10 +7,13 @@ class DatePicker extends PureComponent {
   render () {
     const { dateUtilityLibrary } = this.props
 
+    const proxyProps = { ...this.props }
+    delete proxyProps.dateUtilityLibrary
+
     return (
       <MuiPickersUtilsProvider utils={dateUtilityLibrary}>
         <DatePickerMUI
-          {...this.props}
+          {...proxyProps}
         />
       </MuiPickersUtilsProvider>
     )
