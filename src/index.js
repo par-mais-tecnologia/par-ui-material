@@ -21,6 +21,7 @@ export { default as YourFinance } from './YourFinance'
 export { default as EmergencyReserve } from './EmergencyReserve'
 export { default as InputMask } from './InputMask'
 export { default as Typography } from './Typography'
+export { default as MenuItem } from './MenuItem'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'
@@ -82,7 +83,6 @@ export {
   ListItemText,
   ListSubheader,
   Menu,
-  MenuItem,
   MenuList,
   MobileStepper,
   NativeSelect,
