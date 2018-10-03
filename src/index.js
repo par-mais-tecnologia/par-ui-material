@@ -18,8 +18,19 @@ export { default as Modal } from './Modal'
 export { default as ModalFinBioEmailInput } from './ModalFinBioEmailInput'
 export { default as RotatingImage } from './RotatingImage'
 export { default as YourFinance } from './YourFinance'
+export { default as InputMask } from './InputMask'
+export { default as Typography } from './Typography'
 
-export { colors, createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme, AppBar,
+export {
+  colors,
+  createGenerateClassName,
+  createMuiTheme,
+  createStyles,
+  jssPreset,
+  MuiThemeProvider,
+  withStyles,
+  withTheme,
+  AppBar,
   Avatar,
   Backdrop,
   Badge,
@@ -111,7 +122,6 @@ export { colors, createGenerateClassName, createMuiTheme, createStyles, jssPrese
   Tabs,
   Toolbar,
   Tooltip,
-  Typography,
   withMobileDialog,
   withWidth,
   Zoom } from '@material-ui/core'

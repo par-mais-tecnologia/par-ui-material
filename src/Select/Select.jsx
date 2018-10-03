@@ -13,6 +13,12 @@ class Select extends PureComponent {
   render () {
     const { required, showLabel, showError, errorMessage, id, label, error } = this.props
 
+    const proxyProps = { ...this.props }
+    delete proxyProps.minWidth
+    delete proxyProps.showError
+    delete proxyProps.showLabel
+    delete proxyProps.errorMessage
+
     return (
       <FormControl
         error={error}
@@ -21,9 +27,9 @@ class Select extends PureComponent {
         style={this.getStyle(this.props)}>
         {showLabel ? <InputLabel htmlFor={id}>{label}</InputLabel> : ''}
         <SelectMUI
-          {...this.props}
+          {...proxyProps}
           inputProps={{
-            name: { label },
+            name: label,
             id: { id }
           }} />
         {showError ? <FormHelperText id='email-form-control'> {errorMessage} </FormHelperText> : ''}
@@ -38,7 +44,6 @@ Select.defaultProps = {
   showLabel: true,
   required: false,
   errorMessage: '',
-  hasError: false,
   error: false
 }
 

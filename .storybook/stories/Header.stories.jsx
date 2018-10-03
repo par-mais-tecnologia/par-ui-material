@@ -28,7 +28,7 @@ class HeaderStory extends PureComponent {
           backgroundImage={BioFinanceiraTheme.styles.colors.seeGradient}
           height='70px' margin='16px'
           justifyContent='center'>
-          <b>BIO</b> <spam style={{fontWeight: 100}}>FINANCEIRA</spam>
+          <b>BIO</b> <span style={{fontWeight: 100}}>FINANCEIRA</span>
         </Header>
       </MuiThemeProvider>
     )
