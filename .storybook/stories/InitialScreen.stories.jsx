@@ -31,13 +31,15 @@ storiesOf('InitialScreen', module)
         middleBoxColor={text('middleBoxColor', '#347A7C')}
         middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
         middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}>
-        <Grid container justify='center' alignItems='center' wrap className='w-100 h-100'>
-          <Grid item className='logo pv0 pv4-ns ph4 ph0-ns tc'>
-            <img className='w-60 w-80-ns' src='https://static.parmais.com.br/images/see-logo.svg.png' />
+        <Grid container wrap alignItems='center' justify='center' className='white pa4-ns teste'>
+          <Grid className='mr4-l tc'>
+            <img className='w-50 w-80-l' src='https://static.parmais.com.br/images/see-logo.svg.png' />
           </Grid>
-          <Grid item className='description pa4-ns mw6-ns w-100'>
-            <h1 className='white brandon-light ttu mt2 fw1'><span className='brandon-bold'>Bio</span> Financeira</h1>
-            <Grid className='white roboto-light lh-copy'>
+          <Grid className='flex flex-column roboto-light lh-copy' style={{width: 500}}>
+            <Grid item>
+              <h1 className='white brandon-light ttu mt2 fw1 tc tl-l'>
+                <span className='brandon-bold'>Bio</span> Financeira
+              </h1>
               <p>
                 A BIO Financeira é a soma de seu perfil psicológico frente aos
                 investimentos, momento de vida e capacidade financeira e patrimonial.
@@ -48,11 +50,16 @@ storiesOf('InitialScreen', module)
               </p>
               <p className='f6 i'>
                 Ao clicar em "COMECE AGORA", você concorda com a nossa
-                <i><b> política de privacidade</b></i>.
+                <i>
+                  <b className='pointer' onClick={() => console.log('Abriu modal com política de privacidade')}> política de privacidade</b>
+                </i>.
               </p>
             </Grid>
-            <Grid container justify='flex-end' className='mt4 mt0-ns'>
-              <Button variant='contained' color='secondary'>
+            <Grid className='flex justify-end'>
+              <Button
+                onClick={() => console.log('Clicou no botão "COMECE AGORA"')}
+                variant='contained'
+                color='secondary'>
                 COMECE AGORA
               </Button>
             </Grid>

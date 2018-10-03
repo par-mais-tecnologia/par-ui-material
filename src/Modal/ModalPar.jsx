@@ -7,6 +7,8 @@ const styles = theme => ({
     position: 'absolute',
     left: '50%',
     top: '50%',
+    border: '0px',
+    outline: '0px',
     transform: 'translate(-50%, -50%)',
     [theme.breakpoints.down('sm')]: {
       padding: '30px 15px 45px 15px'

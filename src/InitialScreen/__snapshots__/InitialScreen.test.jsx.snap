@@ -29,7 +29,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute"
+        className="flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-l h-auto-l absolute"
         style={
           Object {
             "background": "inherit",
@@ -44,6 +44,7 @@ ShallowWrapper {
           style={
             Object {
               "backgroundColor": "rgba(43, 78, 153, 0.6)",
+              "overflow": "auto",
             }
           }
         >
@@ -72,6 +73,7 @@ ShallowWrapper {
           style={
             Object {
               "backgroundColor": "rgba(43, 78, 153, 0.6)",
+              "overflow": "auto",
             }
           }
         >
@@ -81,7 +83,7 @@ ShallowWrapper {
             Content Here
           </h1>
         </div>,
-        "className": "flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute",
+        "className": "flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-l h-auto-l absolute",
         "style": Object {
           "background": "inherit",
           "height": "",
@@ -103,6 +105,7 @@ ShallowWrapper {
           "className": "glassColor ma0-ns z-5 pa4 w-100 h-100",
           "style": Object {
             "backgroundColor": "rgba(43, 78, 153, 0.6)",
+            "overflow": "auto",
           },
         },
         "ref": null,
@@ -131,7 +134,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute"
+          className="flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-l h-auto-l absolute"
           style={
             Object {
               "background": "inherit",
@@ -146,6 +149,7 @@ ShallowWrapper {
             style={
               Object {
                 "backgroundColor": "rgba(43, 78, 153, 0.6)",
+                "overflow": "auto",
               }
             }
           >
@@ -174,6 +178,7 @@ ShallowWrapper {
             style={
               Object {
                 "backgroundColor": "rgba(43, 78, 153, 0.6)",
+                "overflow": "auto",
               }
             }
           >
@@ -183,7 +188,7 @@ ShallowWrapper {
               Content Here
             </h1>
           </div>,
-          "className": "flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-ns h-auto-ns absolute",
+          "className": "flex middleBox flex ab row justify-center items-center flex-wrap  w-auto-l h-auto-l absolute",
           "style": Object {
             "background": "inherit",
             "height": "",
@@ -205,6 +210,7 @@ ShallowWrapper {
             "className": "glassColor ma0-ns z-5 pa4 w-100 h-100",
             "style": Object {
               "backgroundColor": "rgba(43, 78, 153, 0.6)",
+              "overflow": "auto",
             },
           },
           "ref": null,

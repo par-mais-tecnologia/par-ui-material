@@ -11,7 +11,7 @@ export default class InitialScreen extends PureComponent {
     const { imageSrc, middleBoxColor, middleBoxFullScreen, middleBoxFullScreenMobile, children } = this.props
 
     const backgroundClasses = 'flex img-bg justify-center absolute items-center w-100 h-100 cover'
-    const middleBoxClasses = `flex middleBox flex ab row justify-center items-center flex-wrap ${middleBoxFullScreenMobile ? 'w-100 h-100' : ''} w-auto-ns h-auto-ns absolute`
+    const middleBoxClasses = `flex middleBox flex ab row justify-center items-center flex-wrap ${middleBoxFullScreenMobile ? 'w-100 h-100' : ''} w-auto-l h-auto-l absolute`
 
     const styles = {
       backgroundStyles: {
@@ -26,7 +26,8 @@ export default class InitialScreen extends PureComponent {
         height: middleBoxFullScreen ? '100%' : ''
       },
       glassColor: {
-        backgroundColor: middleBoxColor !== '' ? convertHexToRGB(middleBoxColor, 0.6) : ''
+        backgroundColor: middleBoxColor !== '' ? convertHexToRGB(middleBoxColor, 0.6) : '',
+        overflow: 'auto'
       }
     }
 
