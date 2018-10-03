@@ -18,7 +18,7 @@ class YourFinances extends PureComponent {
       percentBalance = Number((((incomes - expenses) / incomes) * 100).toFixed(1))
     } else if (expenses > incomes) {
       percentExpenses = 100
-      percentIncomes = Number(((incomes / expenses ) * 100).toFixed(1))
+      percentIncomes = Number(((incomes / expenses) * 100).toFixed(1))
       percentBalance = Number((((expenses - incomes) / expenses) * 100).toFixed(1))
     }
 
