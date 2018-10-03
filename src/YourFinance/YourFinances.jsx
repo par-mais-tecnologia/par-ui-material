@@ -8,21 +8,18 @@ class YourFinances extends PureComponent {
     const { incomes, expenses } = this.props
     const balance = incomes - expenses
 
-    let referenceValue
     let percentBalance = 0
     let percentIncomes = 100
     let percentExpenses = 100
 
     if (incomes > expenses) {
-      referenceValue = incomes
       percentIncomes = 100
-      percentExpenses = Number(((expenses / referenceValue) * 100).toFixed(1))
-      percentBalance = Number((((referenceValue - expenses) / referenceValue) * 100).toFixed(1))
+      percentExpenses = Number(((expenses / incomes) * 100).toFixed(1))
+      percentBalance = Number((((incomes - expenses) / incomes) * 100).toFixed(1))
     } else if (expenses > incomes) {
-      referenceValue = expenses
       percentExpenses = 100
-      percentIncomes = Number(((incomes / referenceValue) * 100).toFixed(1))
-      percentBalance = Number((((referenceValue - incomes) / referenceValue) * 100).toFixed(1))
+      percentIncomes = Number(((incomes / expenses ) * 100).toFixed(1))
+      percentBalance = Number((((expenses - incomes) / expenses) * 100).toFixed(1))
     }
 
     const barStyles = {
