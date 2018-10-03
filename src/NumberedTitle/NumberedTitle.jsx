@@ -12,7 +12,7 @@ function NumberedTitle (props) {
             {props.number}
           </Typography>
         </Grid>
-        <Grid item>
+        <Grid item style={{ marginLeft: '5px', marginTop: '5px' }}>
           <Grid container direction='column'>
             <Grid item>
               <Typography variant='headline' style={{ lineHeight: '1em' }}>
@@ -20,7 +20,7 @@ function NumberedTitle (props) {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant='subheading' style={{ lineHeight: '1em' }}>
+              <Typography variant='subheading'>
                 {props.subtitle}
               </Typography>
             </Grid>

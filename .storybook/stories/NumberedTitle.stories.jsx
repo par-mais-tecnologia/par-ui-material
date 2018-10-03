@@ -23,7 +23,7 @@ storiesOf('NumberedTitle', module)
   .add('shallow', () => {
     return (
       <NumberedTitle
-        number={1}
+        number={2}
         title={`Suas`}
         subtitle={`finanças`}
       >
@@ -36,7 +36,7 @@ storiesOf('NumberedTitle', module)
       <MuiThemeProvider theme={BioFinanceiraTheme}>
         <div style={{width: '400px', padding: '10px'}}>
           <NumberedTitle
-            number={1}
+            number={2}
             title={`Suas`}
             subtitle={`finanças`}
           >
