@@ -7,8 +7,9 @@ class YourFinances extends PureComponent {
   render () {
     const { incomes, expenses } = this.props
     const balance = incomes - expenses
-    let referenceValue,
-      percentBalance = 0
+
+    let referenceValue
+    let percentBalance = 0
     let percentIncomes = 100
     let percentExpenses = 100
 

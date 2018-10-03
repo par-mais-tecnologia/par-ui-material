@@ -21,7 +21,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <WithStyles(Grid)
+        <Grid
           container={true}
           justify="space-between"
         >
@@ -32,8 +32,8 @@ ShallowWrapper {
             R$ 
             4,500.00
           </WithStyles(Typography)>
-        </WithStyles(Grid)>,
-        <WithStyles(Grid)
+        </Grid>,
+        <Grid
           className="mb3 mt1"
           style={
             Object {
@@ -43,7 +43,7 @@ ShallowWrapper {
             }
           }
         />,
-        <WithStyles(Grid)
+        <Grid
           container={true}
           justify="space-between"
         >
@@ -54,8 +54,8 @@ ShallowWrapper {
             R$ 
             1,000.00
           </WithStyles(Typography)>
-        </WithStyles(Grid)>,
-        <WithStyles(Grid)
+        </Grid>,
+        <Grid
           className="mb3 mt1"
           style={
             Object {
@@ -65,8 +65,8 @@ ShallowWrapper {
             }
           }
         />,
-        <WithStyles(Grid)>
-          <WithStyles(Grid)
+        <Grid>
+          <Grid
             container={true}
             justify="space-between"
           >
@@ -77,8 +77,8 @@ ShallowWrapper {
               R$ 
               3,500.00
             </WithStyles(Typography)>
-          </WithStyles(Grid)>
-          <WithStyles(Grid)
+          </Grid>
+          <Grid
             className="mt1"
             style={
               Object {
@@ -88,7 +88,7 @@ ShallowWrapper {
               }
             }
           />
-        </WithStyles(Grid)>,
+        </Grid>,
       ],
       "className": "mt3",
       "container": true,
@@ -234,7 +234,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <WithStyles(Grid)
+            <Grid
               container={true}
               justify="space-between"
             >
@@ -245,8 +245,8 @@ ShallowWrapper {
                 R$ 
                 3,500.00
               </WithStyles(Typography)>
-            </WithStyles(Grid)>,
-            <WithStyles(Grid)
+            </Grid>,
+            <Grid
               className="mt1"
               style={
                 Object {
@@ -339,7 +339,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <WithStyles(Grid)
+          <Grid
             container={true}
             justify="space-between"
           >
@@ -350,8 +350,8 @@ ShallowWrapper {
               R$ 
               4,500.00
             </WithStyles(Typography)>
-          </WithStyles(Grid)>,
-          <WithStyles(Grid)
+          </Grid>,
+          <Grid
             className="mb3 mt1"
             style={
               Object {
@@ -361,7 +361,7 @@ ShallowWrapper {
               }
             }
           />,
-          <WithStyles(Grid)
+          <Grid
             container={true}
             justify="space-between"
           >
@@ -372,8 +372,8 @@ ShallowWrapper {
               R$ 
               1,000.00
             </WithStyles(Typography)>
-          </WithStyles(Grid)>,
-          <WithStyles(Grid)
+          </Grid>,
+          <Grid
             className="mb3 mt1"
             style={
               Object {
@@ -383,8 +383,8 @@ ShallowWrapper {
               }
             }
           />,
-          <WithStyles(Grid)>
-            <WithStyles(Grid)
+          <Grid>
+            <Grid
               container={true}
               justify="space-between"
             >
@@ -395,8 +395,8 @@ ShallowWrapper {
                 R$ 
                 3,500.00
               </WithStyles(Typography)>
-            </WithStyles(Grid)>
-            <WithStyles(Grid)
+            </Grid>
+            <Grid
               className="mt1"
               style={
                 Object {
@@ -406,7 +406,7 @@ ShallowWrapper {
                 }
               }
             />
-          </WithStyles(Grid)>,
+          </Grid>,
         ],
         "className": "mt3",
         "container": true,
@@ -552,7 +552,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <WithStyles(Grid)
+              <Grid
                 container={true}
                 justify="space-between"
               >
@@ -563,8 +563,8 @@ ShallowWrapper {
                   R$ 
                   3,500.00
                 </WithStyles(Typography)>
-              </WithStyles(Grid)>,
-              <WithStyles(Grid)
+              </Grid>,
+              <Grid
                 className="mt1"
                 style={
                   Object {
