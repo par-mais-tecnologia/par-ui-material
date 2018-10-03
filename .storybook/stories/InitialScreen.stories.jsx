@@ -31,7 +31,7 @@ storiesOf('InitialScreen', module)
         middleBoxColor={text('middleBoxColor', '#347A7C')}
         middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
         middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}>
-        <Grid container justify='center' alignItems='center' wrap className='w-100 h-100'>
+        <Grid container justify='center' alignItems='center' wrap='wrap' className='w-100 h-100'>
           <Grid item className='logo pv0 pv4-ns ph4 ph0-ns tc'>
             <img className='w-60 w-80-ns' src='https://static.parmais.com.br/images/see-logo.svg.png' />
           </Grid>

@@ -20,14 +20,15 @@ export { default as RotatingImage } from './RotatingImage'
 export { default as YourFinance } from './YourFinance'
 export { default as InputMask } from './InputMask'
 export { default as Typography } from './Typography'
+export { default as MuiThemeProvider } from './MuiThemeProvider'
+export { default as createMuiTheme } from './CreateMuiTheme'
+export { default as MenuItem } from './MenuItem'
 
 export {
   colors,
   createGenerateClassName,
-  createMuiTheme,
   createStyles,
   jssPreset,
-  MuiThemeProvider,
   withStyles,
   withTheme,
   AppBar,
@@ -86,7 +87,6 @@ export {
   ListItemText,
   ListSubheader,
   Menu,
-  MenuItem,
   MenuList,
   MobileStepper,
   NativeSelect,
