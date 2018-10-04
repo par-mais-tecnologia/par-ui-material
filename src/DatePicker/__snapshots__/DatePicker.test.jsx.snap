@@ -19,9 +19,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <ForwardRef
-        dateUtilityLibrary={[Function]}
-      />,
+      "children": <ForwardRef />,
       "locale": undefined,
       "moment": undefined,
       "utils": [Function],
@@ -31,9 +29,7 @@ ShallowWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {
-        "dateUtilityLibrary": [Function],
-      },
+      "props": Object {},
       "ref": null,
       "rendered": null,
       "type": Object {
@@ -49,9 +45,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <ForwardRef
-          dateUtilityLibrary={[Function]}
-        />,
+        "children": <ForwardRef />,
         "locale": undefined,
         "moment": undefined,
         "utils": [Function],
@@ -61,9 +55,7 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {
-          "dateUtilityLibrary": [Function],
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": Object {

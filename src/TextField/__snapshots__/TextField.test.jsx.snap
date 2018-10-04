@@ -28,11 +28,6 @@ ShallowWrapper {
         <TextField
           error={false}
           id="textField"
-          inputStyle={
-            Object {
-              "color": "red",
-            }
-          }
           label=""
           margin="normal"
           onBlur={[Function]}
@@ -40,7 +35,6 @@ ShallowWrapper {
           onFocus={[Function]}
           required={false}
           select={false}
-          showHelper={false}
           value=""
           variant="standard"
         />,
@@ -62,9 +56,6 @@ ShallowWrapper {
         "props": Object {
           "error": false,
           "id": "textField",
-          "inputStyle": Object {
-            "color": "red",
-          },
           "label": "",
           "margin": "normal",
           "onBlur": [Function],
@@ -72,7 +63,6 @@ ShallowWrapper {
           "onFocus": [Function],
           "required": false,
           "select": false,
-          "showHelper": false,
           "value": "",
           "variant": "standard",
         },
@@ -96,11 +86,6 @@ ShallowWrapper {
           <TextField
             error={false}
             id="textField"
-            inputStyle={
-              Object {
-                "color": "red",
-              }
-            }
             label=""
             margin="normal"
             onBlur={[Function]}
@@ -108,7 +93,6 @@ ShallowWrapper {
             onFocus={[Function]}
             required={false}
             select={false}
-            showHelper={false}
             value=""
             variant="standard"
           />,
@@ -130,9 +114,6 @@ ShallowWrapper {
           "props": Object {
             "error": false,
             "id": "textField",
-            "inputStyle": Object {
-              "color": "red",
-            },
             "label": "",
             "margin": "normal",
             "onBlur": [Function],
@@ -140,7 +121,6 @@ ShallowWrapper {
             "onFocus": [Function],
             "required": false,
             "select": false,
-            "showHelper": false,
             "value": "",
             "variant": "standard",
           },
