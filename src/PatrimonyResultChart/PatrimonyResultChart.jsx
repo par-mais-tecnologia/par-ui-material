@@ -2,6 +2,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
 import { Typography, withStyles } from '@material-ui/core'
+import { getCurrencyFormat } from '../Core/masks'
 
 import PropTypes from 'prop-types'
 
@@ -18,21 +19,21 @@ function PatrimonyResultChart (props) {
     const percentmov = Number(((movableAssets / total) * 100).toFixed(1))
 
     const inv = {
-      amount: `R$ ${investments}`,
+      amount: `R$ ${getCurrencyFormat(investments)}`,
       desc: 'Investimentos',
       percentage: `${percentinv}%`,
       backgroundColor: props.investmentColor,
       class: 'investment'
     }
     const rs = {
-      amount: `R$ ${realState}`,
+      amount: `R$ ${getCurrencyFormat(realState)}`,
       desc: 'Bens imóveis',
       percentage: `${percentreal}%`,
       backgroundColor: props.realStateColor,
       class: 'realstate'
     }
     const ma = {
-      amount: `R$ ${movableAssets}`,
+      amount: `R$ ${getCurrencyFormat(movableAssets)}`,
       desc: 'Bens móveis',
       percentage: `${percentmov}%`,
       backgroundColor: props.movableAssetsColor,

@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Grid, Typography } from '../'
 import { withStyles } from '@material-ui/core/styles'
-import { getCurrencyFormat } from '../Core/functions'
+import { getCurrencyFormat } from '../Core/masks'
 
 const styles = (theme) => ({
   reserve: theme.styles && theme.styles.fonts && theme.styles.fonts.subtitle2 ? theme.styles.fonts.subtitle2 : {}

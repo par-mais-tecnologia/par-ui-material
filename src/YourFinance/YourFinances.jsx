@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Grid, Typography } from '../index'
-import { getCurrencyFormat } from '../Core/functions'
+import { getCurrencyFormat } from '../Core/masks'
 
 class YourFinances extends PureComponent {
   render () {
