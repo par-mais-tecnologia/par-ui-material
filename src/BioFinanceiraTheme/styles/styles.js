@@ -1,3 +1,4 @@
+import './animations.css'
 import './colors.css'
 import './fonts.css'
 
