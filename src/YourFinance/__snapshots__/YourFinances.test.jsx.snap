@@ -26,7 +26,7 @@ ShallowWrapper {
           justify="space-between"
         >
           <Typography>
-            Rendas: 
+            Rendas 
           </Typography>
           <Typography>
             R$ 
@@ -48,7 +48,7 @@ ShallowWrapper {
           justify="space-between"
         >
           <Typography>
-            Despesas:
+            Despesas
           </Typography>
           <Typography>
             R$ 
@@ -71,11 +71,15 @@ ShallowWrapper {
             justify="space-between"
           >
             <Typography>
-              Saldo para investir: 
+              <b>
+                Saldo para investir 
+              </b>
             </Typography>
             <Typography>
-              R$ 
-              3,500.00
+              <b>
+                R$ 
+                3,500.00
+              </b>
             </Typography>
           </Grid>
           <Grid
@@ -103,7 +107,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Typography>
-              Rendas: 
+              Rendas 
             </Typography>,
             <Typography>
               R$ 
@@ -120,10 +124,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Rendas: ",
+              "children": "Rendas ",
             },
             "ref": null,
-            "rendered": "Rendas: ",
+            "rendered": "Rendas ",
             "type": [Function],
           },
           Object {
@@ -169,7 +173,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Typography>
-              Despesas:
+              Despesas
             </Typography>,
             <Typography>
               R$ 
@@ -186,10 +190,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Despesas:",
+              "children": "Despesas",
             },
             "ref": null,
-            "rendered": "Despesas:",
+            "rendered": "Despesas",
             "type": [Function],
           },
           Object {
@@ -239,11 +243,15 @@ ShallowWrapper {
               justify="space-between"
             >
               <Typography>
-                Saldo para investir: 
+                <b>
+                  Saldo para investir 
+                </b>
               </Typography>
               <Typography>
-                R$ 
-                3,500.00
+                <b>
+                  R$ 
+                  3,500.00
+                </b>
               </Typography>
             </Grid>,
             <Grid
@@ -267,11 +275,15 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <Typography>
-                  Saldo para investir: 
+                  <b>
+                    Saldo para investir 
+                  </b>
                 </Typography>,
                 <Typography>
-                  R$ 
-                  3,500.00
+                  <b>
+                    R$ 
+                    3,500.00
+                  </b>
                 </Typography>,
               ],
               "container": true,
@@ -284,10 +296,22 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Saldo para investir: ",
+                  "children": <b>
+                    Saldo para investir 
+                  </b>,
                 },
                 "ref": null,
-                "rendered": "Saldo para investir: ",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Saldo para investir ",
+                  },
+                  "ref": null,
+                  "rendered": "Saldo para investir ",
+                  "type": "b",
+                },
                 "type": [Function],
               },
               Object {
@@ -295,16 +319,29 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": Array [
+                  "children": <b>
+                    R$ 
+                    3,500.00
+                  </b>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "R$ ",
+                      "3,500.00",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
                     "R$ ",
                     "3,500.00",
                   ],
+                  "type": "b",
                 },
-                "ref": null,
-                "rendered": Array [
-                  "R$ ",
-                  "3,500.00",
-                ],
                 "type": [Function],
               },
             ],
@@ -344,7 +381,7 @@ ShallowWrapper {
             justify="space-between"
           >
             <Typography>
-              Rendas: 
+              Rendas 
             </Typography>
             <Typography>
               R$ 
@@ -366,7 +403,7 @@ ShallowWrapper {
             justify="space-between"
           >
             <Typography>
-              Despesas:
+              Despesas
             </Typography>
             <Typography>
               R$ 
@@ -389,11 +426,15 @@ ShallowWrapper {
               justify="space-between"
             >
               <Typography>
-                Saldo para investir: 
+                <b>
+                  Saldo para investir 
+                </b>
               </Typography>
               <Typography>
-                R$ 
-                3,500.00
+                <b>
+                  R$ 
+                  3,500.00
+                </b>
               </Typography>
             </Grid>
             <Grid
@@ -421,7 +462,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Typography>
-                Rendas: 
+                Rendas 
               </Typography>,
               <Typography>
                 R$ 
@@ -438,10 +479,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Rendas: ",
+                "children": "Rendas ",
               },
               "ref": null,
-              "rendered": "Rendas: ",
+              "rendered": "Rendas ",
               "type": [Function],
             },
             Object {
@@ -487,7 +528,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Typography>
-                Despesas:
+                Despesas
               </Typography>,
               <Typography>
                 R$ 
@@ -504,10 +545,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Despesas:",
+                "children": "Despesas",
               },
               "ref": null,
-              "rendered": "Despesas:",
+              "rendered": "Despesas",
               "type": [Function],
             },
             Object {
@@ -557,11 +598,15 @@ ShallowWrapper {
                 justify="space-between"
               >
                 <Typography>
-                  Saldo para investir: 
+                  <b>
+                    Saldo para investir 
+                  </b>
                 </Typography>
                 <Typography>
-                  R$ 
-                  3,500.00
+                  <b>
+                    R$ 
+                    3,500.00
+                  </b>
                 </Typography>
               </Grid>,
               <Grid
@@ -585,11 +630,15 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <Typography>
-                    Saldo para investir: 
+                    <b>
+                      Saldo para investir 
+                    </b>
                   </Typography>,
                   <Typography>
-                    R$ 
-                    3,500.00
+                    <b>
+                      R$ 
+                      3,500.00
+                    </b>
                   </Typography>,
                 ],
                 "container": true,
@@ -602,10 +651,22 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": "Saldo para investir: ",
+                    "children": <b>
+                      Saldo para investir 
+                    </b>,
                   },
                   "ref": null,
-                  "rendered": "Saldo para investir: ",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Saldo para investir ",
+                    },
+                    "ref": null,
+                    "rendered": "Saldo para investir ",
+                    "type": "b",
+                  },
                   "type": [Function],
                 },
                 Object {
@@ -613,16 +674,29 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": Array [
+                    "children": <b>
+                      R$ 
+                      3,500.00
+                    </b>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "R$ ",
+                        "3,500.00",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
                       "R$ ",
                       "3,500.00",
                     ],
+                    "type": "b",
                   },
-                  "ref": null,
-                  "rendered": Array [
-                    "R$ ",
-                    "3,500.00",
-                  ],
                   "type": [Function],
                 },
               ],
