@@ -2,6 +2,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import { styles } from './styles/styles'
 import sliderStyle from './styles/slider'
 import patrimonyResultChartStyle from './styles/patrimonyResultChart'
+import stepperDotsStyle from './styles/stepperDots'
 
 export const bioFinanceiraTheme = createMuiTheme({
   styles,
@@ -58,7 +59,8 @@ export const bioFinanceiraTheme = createMuiTheme({
       }
     }
   },
-  patrimonyResultChart: patrimonyResultChartStyle
+  patrimonyResultChart: patrimonyResultChartStyle,
+  stepperDotsStyle
 })
 
 export default bioFinanceiraTheme

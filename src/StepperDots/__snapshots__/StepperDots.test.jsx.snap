@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mktAppsFooter shallow mktAppsFooter match Snapshot 1`] = `
+exports[`shallow FinBio StepperDots match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MuiThemeProvider
@@ -472,9 +472,13 @@ ShallowWrapper {
       }
     }
   >
-    <WithStyles(MktAppsFooter)>
-      <WithStyles(MktAppsFooter) />
-    </WithStyles(MktAppsFooter)>
+    <WithStyles(StepperDots)
+      activeStep={1}
+      handleBack={[Function]}
+      handleNext={[Function]}
+      position="bottom"
+      steps={3}
+    />
   </MuiThemeProvider>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -489,18 +493,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <WithStyles(MktAppsFooter) />,
+      "activeStep": 1,
+      "handleBack": [Function],
+      "handleNext": [Function],
+      "position": "bottom",
+      "steps": 3,
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    "rendered": null,
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -509,18 +509,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <WithStyles(MktAppsFooter) />,
+        "activeStep": 1,
+        "handleBack": [Function],
+        "handleNext": [Function],
+        "position": "bottom",
+        "steps": 3,
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "rendered": null,
       "type": [Function],
     },
   ],

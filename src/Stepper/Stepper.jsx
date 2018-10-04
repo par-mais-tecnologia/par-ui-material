@@ -9,6 +9,7 @@ import { Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
 class StepperParMais extends PureComponent {
+  // TODO: move to BioFinanceiraTheme
   getTheme () {
     return createMuiTheme({
       overrides: {

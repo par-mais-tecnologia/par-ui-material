@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, withStyles, Typography } from '@material-ui/core'
-
+// TODO: move to BioFinanceiraTheme
 const styles = {
   contained: {
     color: 'white',
