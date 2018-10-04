@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`YourProfile shallow YourProfile match Snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <YourProfile
+    justification="Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:"
+    options={
+      Array [
+        "Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.",
+        "Considera que risco é uma oportunidade para char bons investimentos",
+        "E você possui certa tolerância a risco nos investimentos.",
+      ]
+    }
+    profile="Moderado"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Grid
+          className="mb3"
+        >
+          <Typography>
+            Levando em conta os fatores psicológicos, seu perfil de risco é: 
+            <b>
+              Moderado
+            </b>
+          </Typography>
+        </Grid>,
+        <Grid
+          className="mb4"
+        >
+          <Typography>
+            Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:
+          </Typography>
+        </Grid>,
+        <Grid>
+          <WithStyles(CheckedText)
+            containerClasses="mb4"
+          >
+            Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.
+          </WithStyles(CheckedText)>
+          <WithStyles(CheckedText)
+            containerClasses="mb4"
+          >
+            Considera que risco é uma oportunidade para char bons investimentos
+          </WithStyles(CheckedText)>
+          <WithStyles(CheckedText)
+            containerClasses="mb4"
+          >
+            E você possui certa tolerância a risco nos investimentos.
+          </WithStyles(CheckedText)>
+        </Grid>,
+      ],
+      "className": "mt3",
+      "container": true,
+      "direction": "column",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Typography>
+            Levando em conta os fatores psicológicos, seu perfil de risco é: 
+            <b>
+              Moderado
+            </b>
+          </Typography>,
+          "className": "mb3",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Levando em conta os fatores psicológicos, seu perfil de risco é: ",
+              <b>
+                Moderado
+              </b>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Levando em conta os fatores psicológicos, seu perfil de risco é: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Moderado",
+              },
+              "ref": null,
+              "rendered": "Moderado",
+              "type": "b",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Typography>
+            Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:
+          </Typography>,
+          "className": "mb4",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:",
+          },
+          "ref": null,
+          "rendered": "Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(CheckedText)
+              containerClasses="mb4"
+            >
+              Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.
+            </WithStyles(CheckedText)>,
+            <WithStyles(CheckedText)
+              containerClasses="mb4"
+            >
+              Considera que risco é uma oportunidade para char bons investimentos
+            </WithStyles(CheckedText)>,
+            <WithStyles(CheckedText)
+              containerClasses="mb4"
+            >
+              E você possui certa tolerância a risco nos investimentos.
+            </WithStyles(CheckedText)>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.",
+            "nodeType": "class",
+            "props": Object {
+              "children": "Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.",
+              "containerClasses": "mb4",
+            },
+            "ref": null,
+            "rendered": "Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "Considera que risco é uma oportunidade para char bons investimentos",
+            "nodeType": "class",
+            "props": Object {
+              "children": "Considera que risco é uma oportunidade para char bons investimentos",
+              "containerClasses": "mb4",
+            },
+            "ref": null,
+            "rendered": "Considera que risco é uma oportunidade para char bons investimentos",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "E você possui certa tolerância a risco nos investimentos.",
+            "nodeType": "class",
+            "props": Object {
+              "children": "E você possui certa tolerância a risco nos investimentos.",
+              "containerClasses": "mb4",
+            },
+            "ref": null,
+            "rendered": "E você possui certa tolerância a risco nos investimentos.",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Grid
+            className="mb3"
+          >
+            <Typography>
+              Levando em conta os fatores psicológicos, seu perfil de risco é: 
+              <b>
+                Moderado
+              </b>
+            </Typography>
+          </Grid>,
+          <Grid
+            className="mb4"
+          >
+            <Typography>
+              Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:
+            </Typography>
+          </Grid>,
+          <Grid>
+            <WithStyles(CheckedText)
+              containerClasses="mb4"
+            >
+              Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.
+            </WithStyles(CheckedText)>
+            <WithStyles(CheckedText)
+              containerClasses="mb4"
+            >
+              Considera que risco é uma oportunidade para char bons investimentos
+            </WithStyles(CheckedText)>
+            <WithStyles(CheckedText)
+              containerClasses="mb4"
+            >
+              E você possui certa tolerância a risco nos investimentos.
+            </WithStyles(CheckedText)>
+          </Grid>,
+        ],
+        "className": "mt3",
+        "container": true,
+        "direction": "column",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Typography>
+              Levando em conta os fatores psicológicos, seu perfil de risco é: 
+              <b>
+                Moderado
+              </b>
+            </Typography>,
+            "className": "mb3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "Levando em conta os fatores psicológicos, seu perfil de risco é: ",
+                <b>
+                  Moderado
+                </b>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Levando em conta os fatores psicológicos, seu perfil de risco é: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Moderado",
+                },
+                "ref": null,
+                "rendered": "Moderado",
+                "type": "b",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Typography>
+              Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:
+            </Typography>,
+            "className": "mb4",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:",
+            },
+            "ref": null,
+            "rendered": "Você fica confortável em buscar retornos acima da média nos investimentos, mas de forma ponderada sem correr riscos expressivos. Especialmente porque:",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(CheckedText)
+                containerClasses="mb4"
+              >
+                Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.
+              </WithStyles(CheckedText)>,
+              <WithStyles(CheckedText)
+                containerClasses="mb4"
+              >
+                Considera que risco é uma oportunidade para char bons investimentos
+              </WithStyles(CheckedText)>,
+              <WithStyles(CheckedText)
+                containerClasses="mb4"
+              >
+                E você possui certa tolerância a risco nos investimentos.
+              </WithStyles(CheckedText)>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.",
+              "nodeType": "class",
+              "props": Object {
+                "children": "Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.",
+                "containerClasses": "mb4",
+              },
+              "ref": null,
+              "rendered": "Conhece poupança, previdência privada, capitalizações, fundos de investimento em renda fixa e DI de bancos.",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Considera que risco é uma oportunidade para char bons investimentos",
+              "nodeType": "class",
+              "props": Object {
+                "children": "Considera que risco é uma oportunidade para char bons investimentos",
+                "containerClasses": "mb4",
+              },
+              "ref": null,
+              "rendered": "Considera que risco é uma oportunidade para char bons investimentos",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "E você possui certa tolerância a risco nos investimentos.",
+              "nodeType": "class",
+              "props": Object {
+                "children": "E você possui certa tolerância a risco nos investimentos.",
+                "containerClasses": "mb4",
+              },
+              "ref": null,
+              "rendered": "E você possui certa tolerância a risco nos investimentos.",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

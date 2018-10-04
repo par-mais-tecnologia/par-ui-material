@@ -28,7 +28,8 @@
     "prebuild:storybook": "npm run test:generate-output",
     "build:storybook": "build-storybook -c .storybook -o .storybookbuild/",
     "predeploy": "npm run build:storybook",
-    "deploy": "gh-pages -d .storybookbuild/"
+    "deploy": "gh-pages -d .storybookbuild/",
+    "update:snaphots": "npm test -- -u"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
