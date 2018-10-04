@@ -44,13 +44,13 @@ class YourFinances extends PureComponent {
       <Grid container direction='column' className='mt3'>
 
         <Grid container justify='space-between'>
-          <Typography>Rendas: </Typography>
+          <Typography>Rendas </Typography>
           <Typography>R$ {getCurrencyFormat(incomes)}</Typography>
         </Grid>
         <Grid style={barStyles.barIncomes} className='mb3 mt1' />
 
         <Grid container justify='space-between'>
-          <Typography>Despesas:</Typography>
+          <Typography>Despesas</Typography>
           <Typography>R$ {getCurrencyFormat(expenses)}</Typography>
         </Grid>
         <Grid style={barStyles.barExpenses} className='mb3 mt1' />
@@ -58,8 +58,8 @@ class YourFinances extends PureComponent {
         { balance > 0
           ? <Grid>
             <Grid container justify='space-between'>
-              <Typography>Saldo para investir: </Typography>
-              <Typography>R$ {getCurrencyFormat(incomes - expenses)}</Typography>
+              <Typography><b>Saldo para investir </b></Typography>
+              <Typography><b>R$ {getCurrencyFormat(incomes - expenses)}</b></Typography>
             </Grid>
             <Grid style={barStyles.barBalance} className='mt1' />
           </Grid>

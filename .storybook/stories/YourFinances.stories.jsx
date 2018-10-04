@@ -5,7 +5,7 @@ import { number, withKnobs } from '@storybook/addon-knobs'
 import { MuiThemeProvider, BioFinanceiraTheme, YourFinance, NumberedTitle } from '../../src'
 import withTests from './withTests'
 
-class YourFinanceStorie extends PureComponent {
+class YourFinanceStory extends PureComponent {
   render() {
     const { children } = this.props
     return(
@@ -25,23 +25,23 @@ storiesOf('YourFinances', module)
   .addDecorator(withKnobs)
   .add('shallow', () => {
     return (
-      <YourFinanceStorie>
+      <YourFinanceStory>
         <YourFinance
           incomes={number('Rendas', 800)}
           expenses={number('Despesas', 550)}
         />
-      </YourFinanceStorie>
+      </YourFinanceStory>
     )
   })
   .add('Bio Financeira', () => {
     return (
-      <YourFinanceStorie>
+      <YourFinanceStory>
         <NumberedTitle number={2} title={`Suas`} subtitle={`finanças`}>
           <YourFinance
             incomes={number('Rendas', 800)}
             expenses={number('Despesas', 550)}
           />
         </NumberedTitle>
-      </YourFinanceStorie>
+      </YourFinanceStory>
     )
   })
