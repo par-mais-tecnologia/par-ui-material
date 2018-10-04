@@ -22,6 +22,7 @@ export { default as EmergencyReserve } from './EmergencyReserve'
 export { default as InputMask } from './InputMask'
 export { default as Typography } from './Typography'
 export { default as MenuItem } from './MenuItem'
+export { default as CheckedText } from './CheckedText'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'
