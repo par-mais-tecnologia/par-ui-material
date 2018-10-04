@@ -6,7 +6,6 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Select
     error={false}
     errorMessage=""
-    hasError={false}
     id="1"
     required={false}
     showError={true}
@@ -32,22 +31,16 @@ ShallowWrapper {
         />,
         <WithStyles(Select)
           error={false}
-          errorMessage=""
-          hasError={false}
           id="1"
           inputProps={
             Object {
               "id": Object {
                 "id": "1",
               },
-              "name": Object {
-                "label": undefined,
-              },
+              "name": undefined,
             }
           }
           required={false}
-          showError={true}
-          showLabel={true}
         />,
         <WithStyles(FormHelperText)
           id="email-form-control"
@@ -83,20 +76,14 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "error": false,
-          "errorMessage": "",
-          "hasError": false,
           "id": "1",
           "inputProps": Object {
             "id": Object {
               "id": "1",
             },
-            "name": Object {
-              "label": undefined,
-            },
+            "name": undefined,
           },
           "required": false,
-          "showError": true,
-          "showLabel": true,
         },
         "ref": null,
         "rendered": null,
@@ -138,22 +125,16 @@ ShallowWrapper {
           />,
           <WithStyles(Select)
             error={false}
-            errorMessage=""
-            hasError={false}
             id="1"
             inputProps={
               Object {
                 "id": Object {
                   "id": "1",
                 },
-                "name": Object {
-                  "label": undefined,
-                },
+                "name": undefined,
               }
             }
             required={false}
-            showError={true}
-            showLabel={true}
           />,
           <WithStyles(FormHelperText)
             id="email-form-control"
@@ -189,20 +170,14 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "error": false,
-            "errorMessage": "",
-            "hasError": false,
             "id": "1",
             "inputProps": Object {
               "id": Object {
                 "id": "1",
               },
-              "name": Object {
-                "label": undefined,
-              },
+              "name": undefined,
             },
             "required": false,
-            "showError": true,
-            "showLabel": true,
           },
           "ref": null,
           "rendered": null,
