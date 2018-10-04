@@ -63,7 +63,7 @@ function PatrimonyResultChart (props) {
             variant='body1'
             className={`percentage onHover ${property.class}`}
           >
-            {property.percentage}
+            {String(property.percentage).replace(/\./, ',')}
           </Typography>
         </Grid>
         <Grid container item xs={6} style={{ paddingLeft: '8px' }}>
