@@ -1,0 +1,20 @@
+.line-circles-box {
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-left: 15px;
+    position: relative;
+}
+.line-circles-box:before,
+.line-circles-box:after {
+    position: absolute;
+    bottom: -4px;
+    left: -3PX;
+    height: 5px;
+    width: 5px;
+    content: "";
+    border-radius: 20px;
+}
+.line-circles-box:after {
+    right: 0;
+    top: -5px;
+}
