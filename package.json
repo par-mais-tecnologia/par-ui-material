@@ -18,7 +18,7 @@
     "tachyons": "^4.10.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src --delete-dir-on-start --out-dir .build && copyfiles -u 1 \"./src/**/*.css\" \"./.build\" && cp README.md LICENSE package.json .build",
+    "build": "NODE_ENV=production babel src --delete-dir-on-start --out-dir .build && copyfiles -u 1 \"./src/**/*.css\" \"./.build\" && copyfiles -u 1 \"./src/**/*.svg\" \"./.build\" && cp README.md LICENSE package.json .build",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "test": "npm run lint && jest",
