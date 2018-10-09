@@ -110,3 +110,39 @@ storiesOf('Bio Resultados', module)
       </BioResultStory>
     )
   })
+  .add('6 - Seu momento de vida', () => {
+
+    const mainPhrases = [
+      'Seu momento de vida permite que você ouse em seus investimentos, pois:',
+      'Seu momento de vida pede cautela nos seus investimentos, pois:'
+    ]
+
+    const phrases = [
+      'Você possui X dependentes',
+      'Você não possui dependentes',
+      'E está há X anos da idade que pretende parar de trabalhar'
+    ]
+
+    return (
+      <BioResultStory>
+        <NumberedTitle number={6} title={`Seu momento`} subtitle={`de vida`}>
+          <Grid container direction='column' className='mt3'>
+            <Grid className='mb4'>
+              <Typography>
+                {mainPhrases[0]}
+              </Typography>
+            </Grid>
+            <Grid className='mb4'>
+              {Object.values(phrases).map((i) => {
+                return (
+                  <CheckedText key={i} containerClasses='mb4'>
+                    {i}
+                  </CheckedText>
+                )
+              })}
+            </Grid>
+          </Grid>
+        </NumberedTitle>
+      </BioResultStory>
+    )
+  })
