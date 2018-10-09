@@ -10,6 +10,7 @@ import {
   CheckedText,
   LineCirclesBox,
   DropCap,
+  Thermometer
 } from '../../src'
 
 import { mock } from '../../src/YourProfile/'
@@ -140,6 +141,35 @@ storiesOf('Bio Resultados', module)
                   </CheckedText>
                 )
               })}
+            </Grid>
+          </Grid>
+        </NumberedTitle>
+      </BioResultStory>
+    )
+  })
+  .add('7 - Sua BIO financeira', () => {
+
+    const bioColor = 'Laranja'
+
+    return (
+      <BioResultStory>
+        <NumberedTitle number={7} title={`Sua BIO`} subtitle={`financeira`}>
+          <Grid container direction='column'>
+            <Grid className='mt3'>
+              <Typography>
+                Portanto, de acordo com a nossa metodologia, sua BIO Financeira está <b>{bioColor}</b>
+              </Typography>
+            </Grid>
+            <Grid className='mb4'>
+              <Thermometer bioColor={bioColor} />
+            </Grid>
+            <Grid>
+              <LineCirclesBox lineColor='#FF8C18'>
+                <Typography>
+                  Sua BIO indica que você pode <b>ousar e investir com entusiasmo</b>,
+                  permitindo uma <b>dose extra de risco</b> em seus investimentos
+                </Typography>
+              </LineCirclesBox>
             </Grid>
           </Grid>
         </NumberedTitle>
