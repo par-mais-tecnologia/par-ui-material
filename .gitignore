@@ -24,4 +24,5 @@ yarn-error.log*
 .build
 .storybookbuild
 .idea
+.vscode
 .jest-test-results.json

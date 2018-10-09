@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { text, object, withKnobs } from '@storybook/addon-knobs'
 
 import { MuiThemeProvider, BioFinanceiraTheme, YourProfile, NumberedTitle } from '../../src'
-import { mock } from '../../src/YourProfile/'
+import { yourProfileMock as mock } from '../../src/Core/mocks'
 import withTests from './withTests'
 
 class YourProfileStory extends PureComponent {
