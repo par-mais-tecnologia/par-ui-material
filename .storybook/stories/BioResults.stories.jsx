@@ -193,7 +193,7 @@ storiesOf('Bio Resultados', module)
       </BioResultStory>
     )
   })
-  .add('8 - Carteira de invesimentos', () => {
+  .add('8 - Carteira de investimentos', () => {
     const bioColor = 'Laranja'
     return (
       <BioResultStory>
