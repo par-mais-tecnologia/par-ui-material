@@ -112,6 +112,7 @@ storiesOf('Bio Resultados', module)
                     do que ganha
                   </DropCap>
                 </Grid>
+                <hr align="left" width={50} color='#E2E2E2' className='mb3'/>
                 <Grid>
                   <Typography>
                     E o valor atual dos seus investimentos lhe <br/>
