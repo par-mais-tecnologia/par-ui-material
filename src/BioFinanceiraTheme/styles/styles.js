@@ -1,6 +1,7 @@
 import './animations.css'
 import './colors.css'
 import './fonts.css'
+import './reset.css'
 
 const colors = {
   gray_01: '#636363',

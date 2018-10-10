@@ -1,16 +1,26 @@
 import React, { PureComponent } from 'react'
 import Grid from '@material-ui/core/Grid'
-import { withTheme } from '@material-ui/core/styles'
+import { withStyles } from '@material-ui/core/styles'
 
 import PropTypes from 'prop-types'
 
+const styles = (theme) => ({
+  footer: {
+    position: 'fixed',
+    bottom: '0px',
+    width: ' 100%',
+    margin: '0 auto',
+    background: theme.styles.bgFooter || '#000',
+    zIndex: ' 100'
+  }
+})
+
 class BaseFooter extends PureComponent {
   render () {
-    const { children, theme } = this.props
-    const { colors } = theme.styles
+    const { children, classes, height } = this.props
 
     return (
-      <Grid container justify='center' style={{ backgroundColor: colors.bgFooter }}>
+      <Grid container justify='center' style={{ height }} className={classes.footer}>
         {children}
       </Grid>
     )
@@ -21,7 +31,8 @@ BaseFooter.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-  ]).isRequired
+  ]).isRequired,
+  height: PropTypes.number.isRequired
 }
 
-export default withTheme()(BaseFooter)
+export default withStyles(styles)(BaseFooter)

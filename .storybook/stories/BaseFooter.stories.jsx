@@ -15,7 +15,7 @@ class BaseFooterStory extends PureComponent {
     return (
       <MuiThemeProvider theme={finBioTheme}>
         <div className='flex flex-column items-center'>
-          <div className='roboto-light' style={{minHeight: 'calc(100vh - 70px)'}}>
+          <div className='roboto-light'>
             <h2>Content here</h2>
             <h2>Content here</h2>
             <h2>Content here</h2>
