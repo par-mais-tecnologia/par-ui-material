@@ -9,6 +9,8 @@
   "dependencies": {
     "@material-ui/core": "^3.1.2",
     "@material-ui/lab": "^3.0.0-alpha.18",
+    "c3": "^0.6.8",
+    "d3": "^5.7.0",
     "material-ui-pickers": "^1.0.0-rc.17",
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",
@@ -66,7 +68,9 @@
       "after",
       "afterEach",
       "it",
-      "expect"
+      "expect",
+      "c3",
+      "d3"
     ],
     "parser": "babel-eslint"
   },
@@ -76,7 +80,9 @@
     },
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/support/mocks/fileMock.js",
-      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+      "c3": "<rootDir>/support/mocks/c3.js",
+      "d3": "<rootDir>/support/mocks/d3.js"
     }
   }
 }

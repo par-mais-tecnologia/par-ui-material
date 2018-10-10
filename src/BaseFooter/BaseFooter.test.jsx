@@ -7,7 +7,7 @@ import BaseFooter from './'
 configure({ adapter: new Adapter() })
 
 const getShallow = () => (
-  <BaseFooter>
+  <BaseFooter height={200}>
     <h1 className='roboto-light white'>
       Footer content here
     </h1>

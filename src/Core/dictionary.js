@@ -3,3 +3,13 @@ export const EMAIL_INVALIDO = 'E-mail inválido'
 export const EMAIL = 'E-mail'
 export const CAMPO_MONETARIO = 'Campo Monetário'
 export const VALOR_MONETARIO_MODIFICADO = 'Valor Monetário Modificado'
+
+// STRATEGIES //
+export const ACOES_STRATEGIE = 'Ações'
+export const RENDA_POS_FIXADO_STRATEGIE = 'Renda Fixa Pós-Fixado'
+export const RENDA_PRE_FIXADO_STRATEGIE = 'Renda Fixa Pré-Fixado'
+export const RENDA__INFLACAO_STRATEGIE = 'Renda Fixa Inflação'
+export const MULTIMERCADO_STRATEGIE = 'Multimercado'
+export const INTERNACIONAL_STRATEGIE = 'Internacional'
+export const FUNDO_IMOBILIARIO_STRATEGIE = 'Fundo Imobiliário'
+export const PREVIDENCIA_STRATEGIE = 'Previdência'

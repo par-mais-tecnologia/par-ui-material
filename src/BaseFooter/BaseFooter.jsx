@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 
 import PropTypes from 'prop-types'
 
-const styles = (theme) => ({
+const styles = theme => ({
   footer: {
     position: 'fixed',
     bottom: '0px',

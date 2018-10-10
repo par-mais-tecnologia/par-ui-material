@@ -29,6 +29,8 @@ export { default as CheckedText } from './CheckedText'
 export { default as StepperDots } from './StepperDots'
 export { default as DropCap } from './DropCap'
 export { default as Thermometer } from './Thermometer'
+export { default as WalletChart } from './WalletChart'
+export { default as LegendChart } from './LegendChart'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'

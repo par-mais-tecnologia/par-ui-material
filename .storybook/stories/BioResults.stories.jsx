@@ -10,13 +10,15 @@ import {
   CheckedText,
   LineCirclesBox,
   DropCap,
-  Thermometer, EmergencyReserve, Button
+  Thermometer,
+  EmergencyReserve,
+  Button,
+  WalletChart
 } from '../../src'
 
 import { mock } from '../../src/YourProfile/'
+import { walletExample } from '../../src/Core/mocks'
 import { number } from '@storybook/addon-knobs'
-import { getCurrencyFormat } from '../../src/Core/masks'
-import { action } from '@storybook/addon-actions'
 
 class BioResultStory extends PureComponent {
   render () {
@@ -187,6 +189,16 @@ storiesOf('Bio Resultados', module)
               </LineCirclesBox>
             </Grid>
           </Grid>
+        </NumberedTitle>
+      </BioResultStory>
+    )
+  })
+  .add('8 - Carteira de invesimentos', () => {
+    const bioColor = 'Laranja'
+    return (
+      <BioResultStory>
+        <NumberedTitle number={8} title={'Carteira de invesimentos'} subtitle={`alinhadas à sua BIO ${bioColor}`}>
+          <WalletChart initialInvestment={200000} name='Charlinho de Jesus' wallet={walletExample}/>
         </NumberedTitle>
       </BioResultStory>
     )

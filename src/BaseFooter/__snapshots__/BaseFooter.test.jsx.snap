@@ -3,7 +3,9 @@
 exports[`baseFooter shallow BaseFooter match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(BaseFooter)>
+  Symbol(enzyme.__unrendered__): <WithStyles(BaseFooter)
+    height={200}
+  >
     <h1
       className="roboto-light white"
     >
@@ -31,6 +33,7 @@ ShallowWrapper {
       "classes": Object {
         "footer": "BaseFooter-footer-1",
       },
+      "height": 200,
     },
     "ref": null,
     "rendered": Object {
@@ -61,6 +64,7 @@ ShallowWrapper {
         "classes": Object {
           "footer": "BaseFooter-footer-1",
         },
+        "height": 200,
       },
       "ref": null,
       "rendered": Object {
