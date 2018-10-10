@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import { Grid, createMuiTheme, MuiThemeProvider } from '../index'
+import { Grid } from '../index'
 import { withStyles } from '@material-ui/core/styles'
 import './styles.css'
 
@@ -16,10 +16,9 @@ const styles = {
 
 class LineCirclesBox extends PureComponent {
   componentDidMount () {
-    const { classes, lineColor } = this.props
-    const line = classes.line
+    const { lineColor } = this.props
 
-    this.lineRef = ReactDOM.findDOMNode(this);
+    this.lineRef = ReactDOM.findDOMNode(this)
     this.lineRef.style.setProperty('--line-color', lineColor)
   }
 
@@ -27,9 +26,9 @@ class LineCirclesBox extends PureComponent {
     const { children, classes } = this.props
     const line = classes.line
     return (
-        <Grid container ref={this.setLineRefRef} className={`line-circles-box ${line}`}>
-          {children}
-        </Grid>
+      <Grid container ref={this.setLineRefRef} className={`line-circles-box ${line}`}>
+        {children}
+      </Grid>
     )
   }
 }

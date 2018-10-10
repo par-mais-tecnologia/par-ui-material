@@ -8,6 +8,3 @@ export const yourProfileMock = {
     'E você possui certa tolerância a risco nos investimentos.'
   ]
 }
-
-
-
