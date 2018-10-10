@@ -10,14 +10,17 @@ import {
   CheckedText,
   LineCirclesBox,
   DropCap,
-  Thermometer
+  Thermometer, EmergencyReserve, Button
 } from '../../src'
 
 import { mock } from '../../src/YourProfile/'
+import { number } from '@storybook/addon-knobs'
+import { getCurrencyFormat } from '../../src/Core/masks'
+import { action } from '@storybook/addon-actions'
 
 class BioResultStory extends PureComponent {
-  render() {
-    const { children } = this.props
+  render () {
+    const {children} = this.props
     return (
       <div className="w-100 pa2">
         <MuiThemeProvider theme={BioFinanceiraTheme}>
@@ -35,7 +38,19 @@ storiesOf('Bio Resultados', module)
     return (
       <BioResultStory>
         <NumberedTitle number={2} title={`Suas`} subtitle={`finanças`}>
-          <YourFinance incomes={800} expenses={550} />
+          <YourFinance incomes={800} expenses={550}/>
+        </NumberedTitle>
+      </BioResultStory>
+    )
+  })
+  .add('3 - Reserva de Emergência', () => {
+    return (
+      <BioResultStory>
+        <NumberedTitle number={3} title={`Sua reserva`} subtitle={`de emergência`}>
+          <EmergencyReserve
+            reserve={number('Reserva', 8000)}
+            months={number('Meses', 6)}
+          />
         </NumberedTitle>
       </BioResultStory>
     )
@@ -85,27 +100,27 @@ storiesOf('Bio Resultados', module)
                 {mainPhrases[0]}
               </Typography>
             </Grid>
-              <LineCirclesBox>
-                <Grid className='pl3'>
-                  <Grid className='mb3'>
-                    <Typography>
-                      Você consegue poupar
-                    </Typography>
-                    <DropCap dropCap='20%'>
-                      do que ganha
-                    </DropCap>
-                  </Grid>
-                  <Grid>
-                    <Typography>
-                      E o valor atual dos seus investimentos lhe <br/>
-                      dá segurança, pois eles poderiam cobrir
-                    </Typography>
-                    <DropCap dropCap='20%'>
-                      das suas despesas
-                    </DropCap>
-                  </Grid>
+            <LineCirclesBox>
+              <Grid className='pl3'>
+                <Grid className='mb3'>
+                  <Typography>
+                    Você consegue poupar
+                  </Typography>
+                  <DropCap dropCap='20%'>
+                    do que ganha
+                  </DropCap>
                 </Grid>
-              </LineCirclesBox>
+                <Grid>
+                  <Typography>
+                    E o valor atual dos seus investimentos lhe <br/>
+                    dá segurança, pois eles poderiam cobrir
+                  </Typography>
+                  <DropCap dropCap='20%'>
+                    das suas despesas
+                  </DropCap>
+                </Grid>
+              </Grid>
+            </LineCirclesBox>
           </Grid>
         </NumberedTitle>
       </BioResultStory>
@@ -161,7 +176,7 @@ storiesOf('Bio Resultados', module)
               </Typography>
             </Grid>
             <Grid className='mb4'>
-              <Thermometer bioColor={bioColor} />
+              <Thermometer bioColor={bioColor}/>
             </Grid>
             <Grid>
               <LineCirclesBox lineColor='#FF8C18'>
@@ -173,6 +188,61 @@ storiesOf('Bio Resultados', module)
             </Grid>
           </Grid>
         </NumberedTitle>
+      </BioResultStory>
+    )
+  })
+  .add('9 - Próximos passos', () => {
+    const name = 'Vânia'
+    const bioColor = 'Laranja'
+    return (
+      <BioResultStory>
+        <Grid container direction='column' className='mt3'>
+          <Grid item className='pv3'>
+            <Typography style={BioFinanceiraTheme.styles.fonts.subtitle2}>{name},</Typography>
+          </Grid>
+          <Grid item className='pv3'>
+            <Typography>Agora que você já sabe</Typography>
+          </Grid>
+          <Grid>
+            <CheckedText containerClasses='mb4'>
+              Que sua BIO está {bioColor}
+            </CheckedText>
+          </Grid>
+          <Grid>
+            <CheckedText containerClasses='mb4'>
+              O valor para sua reserva de emergência
+            </CheckedText>
+          </Grid>
+          <Grid>
+            <CheckedText containerClasses='mb4'>
+              A estratégia de investimentos mais adequada à sua BIO
+            </CheckedText>
+          </Grid>
+          <Grid item className='pv3'>
+            <Typography>É hora de definir seus objetivos financeiros com o Time de Especialistas da Par
+              Mais </Typography>
+          </Grid>
+        </Grid>
+        <div className={'pv3'}>
+        <Grid container justify="center"  alignItems="center" spacing={12}>
+          <Grid item xm={6} className={'tc'}></Grid>
+            <Grid item sm={6} className={'tc'}>
+            <Button
+              variant='outlined'
+            >
+              FALE COM UM ESPECIALISTA
+            </Button>
+            <Typography>Consulta gratuita</Typography>
+          </Grid>
+          <Grid item sm={6} className={'tc'}>
+            <Button variant='contained'>
+              CONTRATE ONLINE
+            </Button>
+            <Typography style={{color: '#fff'}}> .</Typography>
+          </Grid>
+            <Grid item xm={6} className={'tc'}></Grid>
+            </Grid>
+        </div>
       </BioResultStory>
     )
   })

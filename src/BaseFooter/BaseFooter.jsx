@@ -10,7 +10,7 @@ const styles = (theme) => ({
     bottom: '0px',
     width: ' 100%',
     margin: '0 auto',
-    background: theme.styles.bgFooter || '#000',
+    background: theme.styles && theme.styles.bgFooter ? theme.styles.bgFooter : '#000',
     zIndex: ' 100'
   }
 })
