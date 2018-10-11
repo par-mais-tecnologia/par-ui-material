@@ -5,6 +5,7 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core'
 import withTests from './withTests'
 
 import { Header, BioFinanceiraTheme } from '../../src'
+import Typography from '@material-ui/core/Typography/Typography'
 
 class HeaderStory extends PureComponent {
   getThemeHeader (BioFinanceiraTheme) {
@@ -21,16 +22,16 @@ class HeaderStory extends PureComponent {
 
   render () {
     return (
-      <MuiThemeProvider theme={this.getThemeHeader(BioFinanceiraTheme)}>
-        <Header
-          classes='justify-center'
-          boxShadow={'0px -3px 20px 0px'}
-          backgroundImage={BioFinanceiraTheme.styles.colors.seeGradient}
-          height='70px' margin='16px'
-          justifyContent='center'>
+      <Header
+        classes='justify-center'
+        boxShadow={'0px -3px 20px 0px'}
+        backgroundImage={BioFinanceiraTheme.styles.colors.seeGradient}
+        height='70px' margin='16px'
+        justifyContent='center'>
+        <Typography align='center' style={BioFinanceiraTheme.styles.fonts.mainTitle}>
           <b>BIO</b> <span style={{fontWeight: 100}}>FINANCEIRA</span>
-        </Header>
-      </MuiThemeProvider>
+        </Typography>
+      </Header>
     )
   }
 }

@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
 
 class Header extends PureComponent {
   getStyle (props) {
@@ -16,9 +15,7 @@ class Header extends PureComponent {
 
     return (
       <Grid container alignItems='center' style={this.getStyle(this.props)} className={`${classes} top-0`}>
-        <Typography align='center' variant='title'>
-          {this.props.children}
-        </Typography>
+        {this.props.children}
       </Grid>
     )
   }

@@ -22,10 +22,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "alignItems": "center",
-      "children": <WithStyles(Typography)
-        align="center"
-        variant="title"
-      />,
+      "children": undefined,
       "className": "undefined top-0",
       "container": true,
       "style": Object {
@@ -35,19 +32,7 @@ ShallowWrapper {
       },
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "align": "center",
-        "children": undefined,
-        "variant": "title",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    "rendered": null,
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -57,10 +42,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "alignItems": "center",
-        "children": <WithStyles(Typography)
-          align="center"
-          variant="title"
-        />,
+        "children": undefined,
         "className": "undefined top-0",
         "container": true,
         "style": Object {
@@ -70,19 +52,7 @@ ShallowWrapper {
         },
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "align": "center",
-          "children": undefined,
-          "variant": "title",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "rendered": null,
       "type": [Function],
     },
   ],
