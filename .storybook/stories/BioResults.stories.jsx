@@ -209,12 +209,16 @@ storiesOf('Bio Resultados', module)
     const bioColor = 'Laranja'
     return (
       <BioResultStory>
-        <Grid container direction='column' className='mt3'>
+
+
+        <Grid container className='stepsContainer'>
+
+        <Grid item md={6} xs={12}>
           <Grid item className='pv3'>
             <Typography style={BioFinanceiraTheme.styles.fonts.subtitle2}>{name},</Typography>
           </Grid>
           <Grid item className='pv3'>
-            <Typography>Agora que você já sabe</Typography>
+            <Typography>Agora que você já sabe:</Typography>
           </Grid>
           <Grid>
             <CheckedText containerClasses='mb4'>
@@ -236,26 +240,27 @@ storiesOf('Bio Resultados', module)
               Mais </Typography>
           </Grid>
         </Grid>
-        <div className={'pv3'}>
-        <Grid container justify="center"  alignItems="center" spacing={12}>
-          <Grid item xm={6} className={'tc'}></Grid>
-            <Grid item sm={6} className={'tc'}>
-            <Button
-              variant='outlined'
-            >
+        <Grid item md={6} xs={12}>
+          <img className='pt3' src="https://static.parmais.com.br/mkt/assets/see-pai-filho-balanco.jpg"/>
+        </Grid>
+        <Grid className='pt3 flex-column-reverse flex-row-ns' container justify="center"  alignItems="center" md={12} xs={12}>
+          <Grid item xm={2} className={'tc'}></Grid>
+          <Grid item sm={6} className={'tc pa2 pa3-ns'}>
+            <Button variant='outlined'>
               FALE COM UM ESPECIALISTA
             </Button>
             <Typography>Consulta gratuita</Typography>
           </Grid>
-          <Grid item sm={6} className={'tc'}>
+          <Grid item sm={6} className={'tc pa2 pa3-ns'}>
             <Button variant='contained'>
               CONTRATE ONLINE
             </Button>
             <Typography style={{color: '#fff'}}> .</Typography>
           </Grid>
-            <Grid item xm={6} className={'tc'}></Grid>
-            </Grid>
-        </div>
+          <Grid item xm={2} className={'tc'}></Grid>
+        </Grid>
+
+        </Grid>
       </BioResultStory>
     )
   })
