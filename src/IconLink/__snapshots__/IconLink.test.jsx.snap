@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconLink shallow IconLink match Snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <IconLink
+    color="#909090"
+    fontSize={15}
+    icon="reload"
+    onClick={[Function]}
+    text="Refazer BIO"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <WithStyles(Typography)
+        align="center"
+        variant="body1"
+      >
+        <i
+          className="par-icon-reload mr2"
+          style={
+            Object {
+              "color": "#909090",
+              "fontSize": 12,
+            }
+          }
+        />
+        <b
+          style={
+            Object {
+              "color": "#909090",
+              "fontSize": 15,
+            }
+          }
+        >
+          Refazer BIO
+        </b>
+      </WithStyles(Typography)>,
+      "className": "b pointer undefined",
+      "container": true,
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "align": "center",
+        "children": Array [
+          <i
+            className="par-icon-reload mr2"
+            style={
+              Object {
+                "color": "#909090",
+                "fontSize": 12,
+              }
+            }
+          />,
+          <b
+            style={
+              Object {
+                "color": "#909090",
+                "fontSize": 15,
+              }
+            }
+          >
+            Refazer BIO
+          </b>,
+        ],
+        "variant": "body1",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "par-icon-reload mr2",
+            "style": Object {
+              "color": "#909090",
+              "fontSize": 12,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Refazer BIO",
+            "style": Object {
+              "color": "#909090",
+              "fontSize": 15,
+            },
+          },
+          "ref": null,
+          "rendered": "Refazer BIO",
+          "type": "b",
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <WithStyles(Typography)
+          align="center"
+          variant="body1"
+        >
+          <i
+            className="par-icon-reload mr2"
+            style={
+              Object {
+                "color": "#909090",
+                "fontSize": 12,
+              }
+            }
+          />
+          <b
+            style={
+              Object {
+                "color": "#909090",
+                "fontSize": 15,
+              }
+            }
+          >
+            Refazer BIO
+          </b>
+        </WithStyles(Typography)>,
+        "className": "b pointer undefined",
+        "container": true,
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "align": "center",
+          "children": Array [
+            <i
+              className="par-icon-reload mr2"
+              style={
+                Object {
+                  "color": "#909090",
+                  "fontSize": 12,
+                }
+              }
+            />,
+            <b
+              style={
+                Object {
+                  "color": "#909090",
+                  "fontSize": 15,
+                }
+              }
+            >
+              Refazer BIO
+            </b>,
+          ],
+          "variant": "body1",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "par-icon-reload mr2",
+              "style": Object {
+                "color": "#909090",
+                "fontSize": 12,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Refazer BIO",
+              "style": Object {
+                "color": "#909090",
+                "fontSize": 15,
+              },
+            },
+            "ref": null,
+            "rendered": "Refazer BIO",
+            "type": "b",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

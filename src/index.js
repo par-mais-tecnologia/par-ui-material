@@ -31,6 +31,7 @@ export { default as DropCap } from './DropCap'
 export { default as Thermometer } from './Thermometer'
 export { default as WalletChart } from './WalletChart'
 export { default as LegendChart } from './LegendChart'
+export { default as IconLink } from './IconLink'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'
