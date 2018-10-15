@@ -55,7 +55,7 @@ ShallowWrapper {
           </h1>
         </div>
       </div>,
-      "className": "flex img-bg justify-center absolute items-center w-100 h-100 cover",
+      "className": "flex img-bg justify-center absolute items-center w-100 h-100 cover undefined",
       "style": Object {
         "backgroundAttachment": "fixed",
         "backgroundImage": "url(https://wallhalla.com/thumbs/preview/l/La748MeuPdY.jpg)",
@@ -160,7 +160,7 @@ ShallowWrapper {
             </h1>
           </div>
         </div>,
-        "className": "flex img-bg justify-center absolute items-center w-100 h-100 cover",
+        "className": "flex img-bg justify-center absolute items-center w-100 h-100 cover undefined",
         "style": Object {
           "backgroundAttachment": "fixed",
           "backgroundImage": "url(https://wallhalla.com/thumbs/preview/l/La748MeuPdY.jpg)",

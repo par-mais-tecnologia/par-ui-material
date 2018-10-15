@@ -8,9 +8,9 @@ import './styles/index.css'
 
 export default class InitialScreen extends PureComponent {
   render () {
-    const { imageSrc, middleBoxColor, middleBoxFullScreen, middleBoxFullScreenMobile, children } = this.props
+    const { imageSrc, middleBoxColor, middleBoxFullScreen, middleBoxFullScreenMobile, children, classes } = this.props
 
-    const backgroundClasses = 'flex img-bg justify-center absolute items-center w-100 h-100 cover z-5'
+    const backgroundClasses = `flex img-bg justify-center absolute items-center w-100 h-100 cover ${classes}`
     const middleBoxClasses = `flex middleBox flex ab row justify-center items-center flex-wrap ${middleBoxFullScreenMobile ? 'w-100 h-100' : ''} w-auto-l h-auto-l absolute`
 
     const styles = {
@@ -44,6 +44,7 @@ export default class InitialScreen extends PureComponent {
 }
 
 InitialScreen.propTypes = {
+  classes: PropTypes.string,
   imageSrc: PropTypes.string,
   middleBoxColor: PropTypes.string,
   middleBoxFullScreen: PropTypes.bool

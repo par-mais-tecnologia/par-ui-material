@@ -30,7 +30,8 @@ storiesOf('InitialScreen', module)
         imageSrc={text('imageSrc', 'https://static.parmais.com.br/images/background.jpg')}
         middleBoxColor={text('middleBoxColor', '#347A7C')}
         middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
-        middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}>
+        middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}
+        classes={text('classes', 'z-5')}>
         <Grid container wrap alignItems='center' justify='center' className='white pa4-ns'>
           <Grid className='mr4-l tc'>
             <img className='w-50 w-80-l' src='https://static.parmais.com.br/images/see-logo.svg.png' />
