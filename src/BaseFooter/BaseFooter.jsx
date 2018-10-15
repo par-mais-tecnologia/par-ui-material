@@ -6,7 +6,6 @@ import PropTypes from 'prop-types'
 
 const styles = theme => ({
   footer: {
-    position: 'fixed',
     bottom: '0px',
     width: ' 100%',
     margin: '0 auto',
