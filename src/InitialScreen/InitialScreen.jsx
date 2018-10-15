@@ -10,7 +10,7 @@ export default class InitialScreen extends PureComponent {
   render () {
     const { imageSrc, middleBoxColor, middleBoxFullScreen, middleBoxFullScreenMobile, children } = this.props
 
-    const backgroundClasses = 'flex img-bg justify-center absolute items-center w-100 h-100 cover'
+    const backgroundClasses = 'flex img-bg justify-center absolute items-center w-100 h-100 cover z-max'
     const middleBoxClasses = `flex middleBox flex ab row justify-center items-center flex-wrap ${middleBoxFullScreenMobile ? 'w-100 h-100' : ''} w-auto-l h-auto-l absolute`
 
     const styles = {
