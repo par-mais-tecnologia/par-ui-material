@@ -44,16 +44,16 @@ class MktAppsFooter extends PureComponent {
               Nossas<br />redes sociais
           </span>
           <Grid className='bl-l b--white-20 ml0 ml3-l'>
-            <a href=''>
+            <a className='no-underline' href='https://www.facebook.com/parmais' target='_blank' rel='noopener noreferrer'>
               <i className='ml0 ml3-l white par-icon-facebook' />
             </a>
-            <a href=''>
+            <a className='no-underline' href='https://br.linkedin.com/company/par-mais' target='_blank' rel='noopener noreferrer'>
               <i className='ml3 ml2-l white par-icon-linkedin' />
             </a>
-            <a href=''>
+            <a className='no-underline' href='https://www.youtube.com/parmais' target='_blank' rel='noopener noreferrer'>
               <i className='ml3 ml2-l white par-icon-youtube' />
             </a>
-            <a href=''>
+            <a className='no-underline' href='https://www.instagram.com/parmais' target='_blank' rel='noopener noreferrer'>
               <i className='ml3 ml2-l white par-icon-instagram' />
             </a>
           </Grid>
