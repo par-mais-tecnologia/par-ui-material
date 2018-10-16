@@ -95,9 +95,9 @@ const fonts = {
     color: colors.gray_02
   },
   body3: {
-    fontFamily: '\'Roboto Light\', sans-serif',
-    fontSize: '1rem',
-    color: colors.gray_02
+    fontFamily: '\'Roboto Medium\', sans-serif',
+    fontSize: '3rem',
+    color: colors.turquise
   },
   body4: {
     fontFamily: '\'Roboto Medium\', sans-serif',

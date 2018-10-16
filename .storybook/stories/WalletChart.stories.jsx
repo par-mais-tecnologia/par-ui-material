@@ -26,7 +26,7 @@ storiesOf('WalletChart', module)
   .add('shallow', () => {
     return (
       <WalletChartStory>
-          <WalletChart initialInvestment={200000} name='Charlinho Maionese' wallet={walletExample}/>
+          <WalletChart initialInvestment={200000} name='José da Silva' wallet={walletExample}/>
       </WalletChartStory>
     )
   })

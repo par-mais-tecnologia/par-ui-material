@@ -262,9 +262,9 @@ ShallowWrapper {
               "fontSize": ".875rem",
             },
             "body3": Object {
-              "color": "#9C9C9C",
-              "fontFamily": "'Roboto Light', sans-serif",
-              "fontSize": "1rem",
+              "color": "#5EB8C0",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "3rem",
             },
             "body4": Object {
               "color": "#636363",
@@ -410,9 +410,9 @@ ShallowWrapper {
             "lineHeight": "1.20588em",
           },
           "display2": Object {
-            "color": "#9C9C9C",
-            "fontFamily": "'Roboto Light', sans-serif",
-            "fontSize": "1rem",
+            "color": "#5EB8C0",
+            "fontFamily": "'Roboto Medium', sans-serif",
+            "fontSize": "3rem",
             "fontWeight": 400,
             "lineHeight": "1.13333em",
             "marginLeft": "-.02em",

@@ -33,7 +33,7 @@ class WalletChart extends Component {
   };
 
   getChartCustomStyles () {
-    const name = this.props.name.split(' ')[0].toUpperCase()
+    const name = this.props.name.trim().split(' ')[0].toUpperCase()
     const labelChart = select('text.c3-chart-arcs-title')
     labelChart.html('')
     labelChart.insert('tspan').text('INVESTIMENTOS').attr('dy', 0).attr('x', 0).style('font-family', 'sans-serif')
