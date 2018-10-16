@@ -27,9 +27,11 @@ const styles = {
 }
 
 function ButtonPar (props) {
-  const { classes, variant, onClick } = props
+  const { classes, variant, onClick, href, target } = props
   return (
     <Button
+      target={target}
+      href={href}
       variant={variant}
       classes={{
         contained: classes.contained,
