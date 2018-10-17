@@ -55,6 +55,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "autoFocus": undefined,
           "error": false,
           "id": "textField",
           "label": "",
@@ -114,6 +115,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "autoFocus": undefined,
             "error": false,
             "id": "textField",
             "label": "",
