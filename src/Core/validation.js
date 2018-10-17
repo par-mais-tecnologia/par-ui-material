@@ -2,7 +2,8 @@ import * as dictionary from './dictionary'
 import ReactDOM from 'react-dom'
 
 export const types = {
-  email: emailValidation
+  email: emailValidation,
+  required: requiredField,
 }
 
 export class Validator {
@@ -73,6 +74,16 @@ function emailValidation (email, isRequired) {
 
   if (exist(email) && !isEmailValid(email)) {
     return { hasError: true, errorMessage: dictionary.EMAIL_INVALIDO }
+  }
+
+  return error
+}
+
+function requiredField (value, isRequired) {
+  let error = { hasError: false, errorMessage: '' }
+
+  if (isRequired && !exist(value)) {
+    return { hasError: true, errorMessage: dictionary.CAMPO_OBRIGATORIO }
   }
 
   return error

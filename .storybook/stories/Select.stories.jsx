@@ -5,6 +5,9 @@ import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import MenuItem from '@material-ui/core/MenuItem'
 import withTests from './withTests'
+import * as validation from '../../src/Core/validation'
+
+const validator = new validation.Validator()
 
 class SelectStory extends PureComponent {
   state = {
@@ -73,6 +76,22 @@ class SelectStory extends PureComponent {
         <h5> Erro </h5>
         <Select
           error
+          value={value}
+          onChange={this.handleSelectChange('valor selecionado')}
+          minWidth={120}
+          renderValue={value => `⚠️  - ${value}`}>
+          <MenuItem value=''>
+            <em>None</em>
+          </MenuItem>
+          <MenuItem value='hai'>Hai</MenuItem>
+          <MenuItem value='olivier'>Olivier</MenuItem>
+          <MenuItem value='kevin'>Kevin</MenuItem>
+        </Select>
+
+        <h5> Com validação </h5>
+        <Select
+          required
+          validator={{validator, type: validation.types.required}}
           value={value}
           onChange={this.handleSelectChange('valor selecionado')}
           minWidth={120}
