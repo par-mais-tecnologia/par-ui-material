@@ -30,11 +30,9 @@ class GenericStory extends PureComponent {
         <TextField
           style={{ width: '100%' }}
           type='number'
-          InputProps={{ inputProps: { min: 0, max: 100 } }}
+          inputProps={{ min: "0", max: "10", step: "1", style: { height: '2em'}}}
           value={value}
-          onChange={(e) => {
-            this.handleGenericChange('Valor genérico alterado')
-          }} />
+          onChange={this.handleGenericChange('Valor genérico alterado')} />
       </div>
     )
   }
