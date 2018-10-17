@@ -7,7 +7,7 @@
     "url": "https://github.com/par-mais-tecnologia/par-ui-material.git"
   },
   "dependencies": {
-    "@material-ui/core": "^3.1.2",
+    "@material-ui/core": "^3.2.2",
     "@material-ui/lab": "^3.0.0-alpha.18",
     "c3": "^0.6.8",
     "d3": "^5.7.0",

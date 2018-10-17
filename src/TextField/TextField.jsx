@@ -88,7 +88,8 @@ TextField.defaultProps = {
   label: '',
   required: false,
   showHelper: false,
-  value: ''
+  value: '',
+  margin: 'normal'
 }
 
 export default TextField
