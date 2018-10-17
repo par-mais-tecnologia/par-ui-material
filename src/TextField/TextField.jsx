@@ -46,7 +46,7 @@ class TextField extends PureComponent {
       onFocus: this.handleInputFocus.bind(this)
     }
 
-    const { helperText, id, label, required, showHelper, value } = this.props
+    const { helperText, id, label, required, showHelper, value, type } = this.props
     if (this.validationInstance) {
       this.state.errors = {
         ...this.validationInstance.error
@@ -74,6 +74,7 @@ class TextField extends PureComponent {
           id={id}
           margin='normal'
           value={value}
+          type={type}
         />
         {showHelper ? <FormHelperText id={id}> {helperText} </FormHelperText> : ''}
         {this.state.errors.hasError ? <FormHelperText

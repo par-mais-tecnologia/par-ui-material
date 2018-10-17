@@ -40,15 +40,13 @@ ShallowWrapper {
               "name": undefined,
             }
           }
+          onChange={[Function]}
+          onClose={[Function]}
+          onOpen={[Function]}
+          open={false}
           required={false}
         />,
-        <WithStyles(FormHelperText)
-          id="email-form-control"
-        >
-           
-          
-           
-        </WithStyles(FormHelperText)>,
+        "",
       ],
       "error": false,
       "required": false,
@@ -83,32 +81,17 @@ ShallowWrapper {
             },
             "name": undefined,
           },
+          "onChange": [Function],
+          "onClose": [Function],
+          "onOpen": [Function],
+          "open": false,
           "required": false,
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            " ",
-            "",
-            " ",
-          ],
-          "id": "email-form-control",
-        },
-        "ref": null,
-        "rendered": Array [
-          " ",
-          "",
-          " ",
-        ],
-        "type": [Function],
-      },
+      "",
     ],
     "type": [Function],
   },
@@ -134,15 +117,13 @@ ShallowWrapper {
                 "name": undefined,
               }
             }
+            onChange={[Function]}
+            onClose={[Function]}
+            onOpen={[Function]}
+            open={false}
             required={false}
           />,
-          <WithStyles(FormHelperText)
-            id="email-form-control"
-          >
-             
-            
-             
-          </WithStyles(FormHelperText)>,
+          "",
         ],
         "error": false,
         "required": false,
@@ -177,32 +158,17 @@ ShallowWrapper {
               },
               "name": undefined,
             },
+            "onChange": [Function],
+            "onClose": [Function],
+            "onOpen": [Function],
+            "open": false,
             "required": false,
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              " ",
-              "",
-              " ",
-            ],
-            "id": "email-form-control",
-          },
-          "ref": null,
-          "rendered": Array [
-            " ",
-            "",
-            " ",
-          ],
-          "type": [Function],
-        },
+        "",
       ],
       "type": [Function],
     },
@@ -223,8 +189,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;
