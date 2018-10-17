@@ -6,7 +6,7 @@ import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 
 class Select extends PureComponent {
   state = {
-    open:false
+    open: false
   }
 
   validationInstance = this.props.validator ? this.props.validator.validator.register(
@@ -17,7 +17,7 @@ class Select extends PureComponent {
     if (this.props.onClose) {
       return this.props.onClose(event)
     } else {
-      this.setState({ open: false });
+      this.setState({ open: false })
       return this.validationInstance ? this.validationInstance.validate(event) : false
     }
   }
@@ -32,7 +32,7 @@ class Select extends PureComponent {
     if (this.props.onFocus) {
       this.props.onFocus(event)
     } else {
-      this.setState({ open: true });
+      this.setState({ open: true })
     }
   }
 
@@ -47,7 +47,7 @@ class Select extends PureComponent {
       onChange: this.handleChange.bind(this),
       onOpen: this.handleOpen.bind(this)
     }
-    const { required, showLabel, showError, errorMessage, id, label } = this.props
+    const { required, showLabel, id, label } = this.props
     if (this.validationInstance) {
       this.state.errors = {
         ...this.validationInstance.error

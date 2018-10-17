@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 export const types = {
   email: emailValidation,
-  required: requiredField,
+  required: requiredField
 }
 
 export class Validator {
