@@ -33,11 +33,14 @@ class WalletChart extends Component {
   };
 
   getChartCustomStyles () {
-    const name = this.props.name.trim().split(' ')[0].toUpperCase()
+    const {
+      labelFirstLine,
+      labelSecondLine
+    } = this.props
     const labelChart = select('text.c3-chart-arcs-title')
     labelChart.html('')
-    labelChart.insert('tspan').text('INVESTIMENTOS').attr('dy', 0).attr('x', 0).style('font-family', 'sans-serif')
-    labelChart.insert('tspan').text(`DO ${name}`).attr('dy', 15).attr('x', 0).style('font-family', 'sans-serif')
+    labelChart.insert('tspan').text(labelFirstLine).attr('dy', 0).attr('x', 0).style('font-family', 'sans-serif')
+    labelChart.insert('tspan').text(labelSecondLine).attr('dy', 15).attr('x', 0).style('font-family', 'sans-serif')
     labelChart.style('dominant-baseline', 'auto')
     labelChart.style('fill', '#a0a0a0')
   };
@@ -74,13 +77,16 @@ class WalletChart extends Component {
 
 WalletChart.propTypes = {
   initialInvestment: PropTypes.number,
-  name: PropTypes.string,
+  labelFirstLine: PropTypes.string,
+  labelSecondLine: PropTypes.string,
   wallet: PropTypes.arrayOf(PropTypes.object),
   legend: PropTypes.bool
 }
 
 WalletChart.defaultProps = {
-  legend: true
+  legend: true,
+  labelFirstLine: '',
+  labelSecondLine: ''
 }
 
 export default WalletChart
