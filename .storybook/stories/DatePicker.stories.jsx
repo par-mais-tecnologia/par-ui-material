@@ -4,16 +4,19 @@ import { decorateAction } from '@storybook/addon-actions'
 import moment from 'moment'
 import MomentUtils from 'material-ui-pickers/utils/moment-utils'
 import 'moment/locale/pt-br'
-import { MuiThemeProvider } from '@material-ui/core'
+import { Button, MuiThemeProvider } from '@material-ui/core'
 
-import { DatePicker, BioFinanceiraTheme } from '../../src'
+import { DatePicker, BioFinanceiraTheme, Select } from '../../src'
 import withTests from './withTests'
+import * as validation from '../../src/Core/validation'
 
 moment.locale('pt-br')
 
+const validator = new validation.Validator()
+
 class DatePickerStory extends PureComponent {
   state = {
-    selectedDate: new Date()
+    selectedDate: null
   }
 
   handleDateChange = decorateAction([args => {
@@ -110,6 +113,30 @@ class DatePickerStory extends PureComponent {
           />
         </MuiThemeProvider>
 
+        <MuiThemeProvider theme={BioFinanceiraTheme}>
+          <h5> Date Picker com validação </h5>
+          <DatePicker
+            required
+            keyboard
+            showTodayButton
+            clearable
+            validator={{validator, type: validation.types.required}}
+            label='Campo de Data'
+            invalidDateMessage={'Data Inválida'}
+            dateUtilityLibrary={MomentUtils}
+            cancelLabel='Cancelar'
+            clearLabel='Limpar'
+            format='DD/MMMM/YYYY'
+            okLabel='Ok'
+            todayLabel='Hoje'
+            value={selectedDate}
+            onChange={this.handleDateChange('selecionei a data')}
+          />
+        </MuiThemeProvider>
+
+        <Button onClick={validator.validate} variant='contained'>
+          Validate
+        </Button>
       </div>
     )
   }

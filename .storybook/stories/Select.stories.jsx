@@ -6,6 +6,7 @@ import { decorateAction } from '@storybook/addon-actions'
 import MenuItem from '@material-ui/core/MenuItem'
 import withTests from './withTests'
 import * as validation from '../../src/Core/validation'
+import { Button } from '@material-ui/core'
 
 const validator = new validation.Validator()
 
@@ -103,6 +104,10 @@ class SelectStory extends PureComponent {
           <MenuItem value='olivier'>Olivier</MenuItem>
           <MenuItem value='kevin'>Kevin</MenuItem>
         </Select>
+
+        <Button onClick={validator.validate} variant='contained'>
+          Validate
+        </Button>
       </div>
 
     )

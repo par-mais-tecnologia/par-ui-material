@@ -19,14 +19,18 @@ export class Validator {
       error: component.props.validator.type(component.props.value, false)
     }
     instance.validate = evt => {
-      this.validate(instance)
+      this.validate(instance, evt)
     }
     this.instances.push(instance)
     return instance
   }
 
-  validate = instance => {
-    if (instance && instance.id) {
+  validate = (instance, evt) => {
+    if(instance.component && instance.component.constructor.name === 'Select') {
+      validateSelectComponent(instance, evt.target.textContent)
+    } else if(instance.component && instance.component.constructor.name === 'DatePicker') {
+      validateDatePickerComponent(instance, evt)
+    } else if (instance && instance.id) {
       validateComponent(instance)
     } else {
       this.instances.map(instance => validateComponent(instance))
@@ -54,6 +58,24 @@ export class Validator {
 function validateComponent (instance) {
   instance.error = instance.type(
     instance.component.props.value,
+    instance.component.props.required
+  )
+  instance.component.setState({ state: instance.component.state })
+  return instance
+}
+
+function validateSelectComponent (instance, value) {
+  instance.error = instance.type(
+    value,
+    instance.component.props.required
+  )
+  instance.component.setState({ state: instance.component.state })
+  return instance
+}
+
+function validateDatePickerComponent (instance, evt) {
+  instance.error = instance.type(
+    evt.target.value,
     instance.component.props.required
   )
   instance.component.setState({ state: instance.component.state })
