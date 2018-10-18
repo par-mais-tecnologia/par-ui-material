@@ -26,9 +26,9 @@ export class Validator {
   }
 
   validate = (instance, evt) => {
-    if(instance.component && instance.component.constructor.name === 'Select') {
+    if (instance.component && instance.component.constructor.name === 'Select') {
       validateSelectComponent(instance, evt.target.textContent)
-    } else if(instance.component && instance.component.constructor.name === 'DatePicker') {
+    } else if (instance.component && instance.component.constructor.name === 'DatePicker') {
       validateDatePickerComponent(instance, evt)
     } else if (instance && instance.id) {
       validateComponent(instance)

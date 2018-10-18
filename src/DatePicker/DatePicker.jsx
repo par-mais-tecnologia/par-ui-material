@@ -5,14 +5,13 @@ import PropTypes from 'prop-types'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 
 class DatePicker extends PureComponent {
-
   state = {}
 
   validationInstance = this.props.validator ? this.props.validator.validator.register(
     this
   ) : false
 
-  handleOnBlur(event) {
+  handleOnBlur (event) {
     if (this.props.onBlur) {
       return this.props.onBlur(event)
     } else {
@@ -42,8 +41,8 @@ class DatePicker extends PureComponent {
           {...inputProps}
           error={this.state.errors.hasError}
         />
-        {this.state.errors.hasError ?
-          <FormHelperText style={{color:'#f44336'}}>
+        {this.state.errors.hasError
+          ? <FormHelperText style={{ color: '#f44336' }}>
             {this.state.errors.errorMessage}
           </FormHelperText> : ''}
       </MuiPickersUtilsProvider>
