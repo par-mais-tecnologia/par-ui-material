@@ -30,9 +30,9 @@ export class Validator {
     if (instance && instance.id) {
       const componentValue =
         instance.component.constructor.name === 'Select' ? evt.target.textContent
-        : instance.component.constructor.name === 'DatePicker'  && evt.constructor.name === 'Moment' ? moment(evt).format('DD MMMM')
-        : instance.component.constructor.name === 'DatePicker'  && evt.constructor.name !== 'Moment' ? evt.target.value :
-          instance.component.props.value
+          : instance.component.constructor.name === 'DatePicker' && evt.constructor.name === 'Moment' ? moment(evt).format('DD MMMM')
+            : instance.component.constructor.name === 'DatePicker' && evt.constructor.name !== 'Moment' ? evt.target.value
+              : instance.component.props.value
 
       validateComponent(instance, componentValue)
     } else {

@@ -106,7 +106,6 @@ class FormValidationStory extends PureComponent {
 }
 
 storiesOf('Input', module)
-  .addDecorator(withTests('FormValidation'))
   .add('FormValidation', () => {
     return <FormValidationStory/>
   })

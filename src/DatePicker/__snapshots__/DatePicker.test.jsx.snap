@@ -23,6 +23,7 @@ ShallowWrapper {
         <ForwardRef
           error={false}
           onBlur={[Function]}
+          onChange={[Function]}
         />,
         "",
       ],
@@ -39,6 +40,7 @@ ShallowWrapper {
         "props": Object {
           "error": false,
           "onBlur": [Function],
+          "onChange": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -61,6 +63,7 @@ ShallowWrapper {
           <ForwardRef
             error={false}
             onBlur={[Function]}
+            onChange={[Function]}
           />,
           "",
         ],
@@ -77,6 +80,7 @@ ShallowWrapper {
           "props": Object {
             "error": false,
             "onBlur": [Function],
+            "onChange": [Function],
           },
           "ref": null,
           "rendered": null,
