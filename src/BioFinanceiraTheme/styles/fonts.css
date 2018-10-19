@@ -1,0 +1,68 @@
+/* BRANDON */
+@font-face {
+    font-family: 'Brandon Light';
+    src: url('https://static.parmais.com.br/fonts/brandon_light.otf');
+}
+
+@font-face {
+    font-family: 'Brandon Regular';
+    src: url('https://static.parmais.com.br/fonts/brandon_regular.otf');
+}
+
+@font-face {
+    font-family: 'Brandon Bold';
+    src: url('https://static.parmais.com.br/fonts/brandon_bold.otf');
+}
+
+/* ROBOTO */
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('https://static.parmais.com.br/fonts/roboto_light.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://static.parmais.com.br/fonts/roboto_light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('https://static.parmais.com.br/fonts/roboto_medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('https://static.parmais.com.br/fonts/roboto_bold.ttf');
+}
+
+/* Fonts */
+.brandon-light {
+    font-family: 'Brandon Light', sans-serif;
+}
+
+.brandon-regular {
+    font-family: 'Brandon Regular', sans-serif;
+}
+
+.brandon-bold {
+    font-family: 'Brandon Bold', sans-serif;
+}
+
+.roboto-light {
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.roboto-medium {
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.roboto-bold {
+    font-family: 'Roboto Bold', sans-serif;
+}
+
+.rounded-elegance {
+    font-family: 'Rounded Elegance', sans-serif;
+}
+
+.toUppercase {
+    text-transform: uppercase;
+}

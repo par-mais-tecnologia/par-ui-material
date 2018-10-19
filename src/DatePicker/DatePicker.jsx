@@ -19,9 +19,17 @@ class DatePicker extends PureComponent {
     }
   }
 
+  handleOnChange (event) {
+    if (this.props.onChange) {
+      this.props.onChange(event)
+      return this.validationInstance ? this.validationInstance.validate(event) : false
+    }
+  }
+
   render () {
     const inputProps = {
-      onBlur: this.handleOnBlur.bind(this)
+      onBlur: this.handleOnBlur.bind(this),
+      onChange: this.handleOnChange.bind(this)
     }
     const { dateUtilityLibrary } = this.props
     if (this.validationInstance) {

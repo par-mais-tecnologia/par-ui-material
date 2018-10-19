@@ -1,5 +1,6 @@
 import * as dictionary from './dictionary'
 import ReactDOM from 'react-dom'
+import moment from 'moment'
 
 export const types = {
   email: emailValidation,
@@ -26,14 +27,16 @@ export class Validator {
   }
 
   validate = (instance, evt) => {
-    if (instance.component && instance.component.constructor.name === 'Select') {
-      validateSelectComponent(instance, evt.target.textContent)
-    } else if (instance.component && instance.component.constructor.name === 'DatePicker') {
-      validateDatePickerComponent(instance, evt)
-    } else if (instance && instance.id) {
-      validateComponent(instance)
+    if (instance && instance.id) {
+      const componentValue =
+        instance.component.constructor.name === 'Select' ? evt.target.textContent
+        : instance.component.constructor.name === 'DatePicker'  && evt.constructor.name === 'Moment' ? moment(evt).format('DD MMMM')
+        : instance.component.constructor.name === 'DatePicker'  && evt.constructor.name !== 'Moment' ? evt.target.value :
+          instance.component.props.value
+
+      validateComponent(instance, componentValue)
     } else {
-      this.instances.map(instance => validateComponent(instance))
+      this.instances.map(instance => validateComponent(instance, instance.component.props.value))
 
       const firstWithError = this.instances
         .filter(instance => instance.error.hasError)
@@ -55,27 +58,9 @@ export class Validator {
   }
 }
 
-function validateComponent (instance) {
-  instance.error = instance.type(
-    instance.component.props.value,
-    instance.component.props.required
-  )
-  instance.component.setState({ state: instance.component.state })
-  return instance
-}
-
-function validateSelectComponent (instance, value) {
+function validateComponent (instance, value) {
   instance.error = instance.type(
     value,
-    instance.component.props.required
-  )
-  instance.component.setState({ state: instance.component.state })
-  return instance
-}
-
-function validateDatePickerComponent (instance, evt) {
-  instance.error = instance.type(
-    evt.target.value,
     instance.component.props.required
   )
   instance.component.setState({ state: instance.component.state })

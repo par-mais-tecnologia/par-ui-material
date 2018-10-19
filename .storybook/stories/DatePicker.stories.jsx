@@ -90,7 +90,7 @@ class DatePickerStory extends PureComponent {
           dateUtilityLibrary={MomentUtils}
           cancelLabel='Cancelar'
           clearLabel='Limpar'
-          format='DD/MMMM/YYYY'
+          format='DD/MM/YYYY'
           okLabel='Ok'
           todayLabel='Hoje'
           value={selectedDate}
@@ -105,7 +105,7 @@ class DatePickerStory extends PureComponent {
             dateUtilityLibrary={MomentUtils}
             cancelLabel='Cancelar'
             clearLabel='Limpar'
-            format='DD/MMMM/YYYY'
+            format='DD/MM/YYYY'
             okLabel='Ok'
             todayLabel='Hoje'
             value={selectedDate}
@@ -120,13 +120,14 @@ class DatePickerStory extends PureComponent {
             keyboard
             showTodayButton
             clearable
+            mask={value => (value ? [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/] : [])}
             validator={{validator, type: validation.types.required}}
             label='Campo de Data'
             invalidDateMessage={'Data Inválida'}
             dateUtilityLibrary={MomentUtils}
             cancelLabel='Cancelar'
             clearLabel='Limpar'
-            format='DD/MMMM/YYYY'
+            format='DD/MM/YYYY'
             okLabel='Ok'
             todayLabel='Hoje'
             value={selectedDate}
