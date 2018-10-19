@@ -27,14 +27,14 @@ function PatrimonyResultChart (props) {
     }
     const rs = {
       amount: `R$ ${getCurrencyFormat(realState)}`,
-      desc: 'Bens imóveis',
+      desc: 'Imóveis',
       percentage: `${percentreal}%`,
       backgroundColor: props.realStateColor,
       class: 'realstate'
     }
     const ma = {
       amount: `R$ ${getCurrencyFormat(movableAssets)}`,
-      desc: 'Bens móveis',
+      desc: 'Outros bens',
       percentage: `${percentmov}%`,
       backgroundColor: props.movableAssetsColor,
       class: 'movable'
