@@ -1,12 +1,12 @@
 import { storiesOf } from '@storybook/react'
-import { Select } from '../../src'
+import { BioFinanceiraTheme, Select } from '../../src'
 
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import MenuItem from '@material-ui/core/MenuItem'
 import withTests from './withTests'
 import * as validation from '../../src/Core/validation'
-import { Button } from '@material-ui/core'
+import { Button, MuiThemeProvider } from '@material-ui/core'
 
 const validator = new validation.Validator()
 
@@ -104,6 +104,26 @@ class SelectStory extends PureComponent {
           <MenuItem value='olivier'>Olivier</MenuItem>
           <MenuItem value='kevin'>Kevin</MenuItem>
         </Select>
+
+        <div className='pl3'>
+          <h5> Com tema e validação</h5>
+          <MuiThemeProvider theme={BioFinanceiraTheme}>
+            <Select
+              required
+              validator={{validator, type: validation.types.required}}
+              value={value}
+              onChange={this.handleSelectChange('valor selecionado')}
+              minWidth={120}
+              renderValue={value => `⚠️  - ${value}`}>
+              <MenuItem value=''>
+                <em>None</em>
+              </MenuItem>
+              <MenuItem value='hai'>Hai</MenuItem>
+              <MenuItem value='olivier'>Olivier</MenuItem>
+              <MenuItem value='kevin'>Kevin</MenuItem>
+            </Select>
+          </MuiThemeProvider>
+        </div>
 
         <Button onClick={validator.validate} variant='contained'>
           Validate
