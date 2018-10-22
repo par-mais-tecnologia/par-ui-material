@@ -56,7 +56,7 @@ export const bioFinanceiraTheme = createMuiTheme({
     MuiInputLabel: {
       root: {
         fontFamily: 'Roboto'
-      },
+      }
     },
     MuiFormLabel: {
       asterisk: {

@@ -41,6 +41,16 @@ ShallowWrapper {
           },
         },
         "overrides": Object {
+          "MuiFormHelperText": Object {
+            "required": Object {
+              "color": "#f44336",
+            },
+          },
+          "MuiFormLabel": Object {
+            "asterisk": Object {
+              "display": "none",
+            },
+          },
           "MuiInputBase": Object {
             "input": Object {
               "fontFamily": "Roboto Light",
@@ -637,6 +647,8 @@ ShallowWrapper {
         },
       },
     },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
   },
 }
 `;
