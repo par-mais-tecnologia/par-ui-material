@@ -62,6 +62,11 @@ export const bioFinanceiraTheme = createMuiTheme({
       asterisk: {
         display: 'none'
       }
+    },
+    MuiFormHelperText: {
+      required: {
+        color: '#f44336'
+      }
     }
   },
   patrimonyResultChart: patrimonyResultChartStyle,

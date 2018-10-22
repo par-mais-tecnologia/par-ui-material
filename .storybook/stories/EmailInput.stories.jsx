@@ -4,7 +4,7 @@ import { decorateAction } from '@storybook/addon-actions'
 import { Button, MuiThemeProvider, createMuiTheme  } from '@material-ui/core'
 import withTests from './withTests'
 import 'tachyons/css/tachyons.min.css'
-import { TextField } from '../../src'
+import { BioFinanceiraTheme, TextField } from '../../src'
 import * as validation from '../../src/Core/validation'
 
 const validator = new validation.Validator()
@@ -46,6 +46,18 @@ class EmailInputStory extends PureComponent {
 
     return (
       <div className='pl3'>
+        <MuiThemeProvider theme={BioFinanceiraTheme}>
+          <h5> Campo Obrigatório </h5>
+          <TextField
+            required
+            label='Email'
+            onChange={this.handleEmailChange('Email Modificado')}
+            name='email'
+            validator={{validator, type: validation.types.email}}
+            value={value}
+          />
+        </MuiThemeProvider>
+
         <MuiThemeProvider theme={theme}>
           <h5> Campo Obrigatório </h5>
           <TextField
