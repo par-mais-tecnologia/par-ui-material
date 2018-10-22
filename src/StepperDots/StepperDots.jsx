@@ -28,7 +28,7 @@ const StepperDots = ({ steps, activeStep, handleNext, handleBack, position, clas
         }}
       >
         <Grid container direction='row' className='mt2 mb2'>
-          <Grid item>CONTINUAR</Grid>
+          <Grid item>AVANÇAR</Grid>
           <Grid item id='nextIcon'>
             <i className='white par-icon-arrow-up' />
           </Grid>
