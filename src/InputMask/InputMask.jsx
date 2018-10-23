@@ -48,7 +48,7 @@ class InputMask extends PureComponent {
         onChange: this.handleInputChange.bind(this),
         onFocus: this.handleInputFocus.bind(this)
       }
-      const { helperText, id, label, required, showHelper, value, typeMask } = this.props
+      const { helperText, id, label, required, showHelper, value, typeMask, inputComponent, showEndAdornment } = this.props
       if (this.validationInstance) {
         this.state.errors = {
           ...this.validationInstance.error
@@ -60,6 +60,7 @@ class InputMask extends PureComponent {
       const proxyProps = { ...this.props }
       delete proxyProps.validatorType
       delete proxyProps.typeMask
+      delete proxyProps.showEndAdornment
 
       return (
         <FormControl
@@ -71,9 +72,10 @@ class InputMask extends PureComponent {
             error={this.state.errors.hasError}
             {...proxyProps}
             {...inputProps}
+            inputComponent={inputComponent}
             id={id}
             value={value}
-            endAdornment={<InputAdornment position='end'>{getMask(typeMask, value)}</InputAdornment>}
+            endAdornment={showEndAdornment ? <InputAdornment position='end'>{getMask(typeMask, value)}</InputAdornment> : ''}
           />
           {showHelper ? <FormHelperText id={id}> {helperText} </FormHelperText> : ''}
           {this.state.errors.hasError ? <FormHelperText

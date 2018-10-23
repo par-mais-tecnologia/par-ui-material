@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import { InputMask } from '../../src'
+import { InputMask, MaskedInput } from '../../src'
 
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
@@ -14,6 +14,25 @@ class InputMaskStory extends PureComponent {
     return args
   }])
 
+  handleInputMaskChange2 = evt => {
+    this.setState({value: evt.target.value})
+  }
+
+  TextMaskCustom(props) {
+    const { inputRef, onChange, ...other } = props;
+
+    return (
+      <MaskedInput
+        {...other}
+        ref={inputRef}
+        onChange={onChange}
+        mask={['(', /[1-9]/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, /\d/]}
+        placeholderChar={'\u2000'}
+        showMask
+      />
+    );
+  }
+
   render () {
     const {value} = this.state
 
@@ -24,6 +43,7 @@ class InputMaskStory extends PureComponent {
           label='Mask Input of People'
           typeMask='people'
           value={value}
+          showEndAdornment = {true}
           onChange={this.handleInputMaskChange('Input Label alterado')}
         />
         <br/>
@@ -32,9 +52,26 @@ class InputMaskStory extends PureComponent {
           label='Mask Input of Years'
           typeMask='years'
           value={value}
+          showEndAdornment = {true}
+          onChange={this.handleInputMaskChange('Input Label alterado')}
+        />
+        <br/>
+        <InputMask
+          id='MaskInputId'
+          label='Mask Input of Years com adorment false'
+          typeMask='years'
+          value={value}
+          showEndAdornment = {false}
           onChange={this.handleInputMaskChange('Input Label alterado')}
         />
 
+        <h5> Input with Mask element</h5>
+        <InputMask
+          value={value}
+          onChange={(evt => this.handleInputMaskChange2(evt))}
+          showEndAdornment={false}
+          inputComponent={this.TextMaskCustom}
+        />
       </div>
     )
   }
