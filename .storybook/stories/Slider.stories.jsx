@@ -3,28 +3,33 @@ import { storiesOf } from '@storybook/react'
 import { MuiThemeProvider } from '@material-ui/core'
 
 import { BioFinanceiraTheme, Slider } from '../../src'
+import * as validation from '../../src/Core/validation'
+
+const validator = new validation.Validator()
 
 class SliderStories extends PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      value: 1
+    state = {
+      value: 0
     }
-    this.handleChange = this.handleChange.bind(this)
-  }
 
   handleChange(event, value) {
     this.setState({ value })
   }
 
   render() {
+
+    const { errorMessage } = this.props
+
     return (
       <MuiThemeProvider theme={BioFinanceiraTheme}>
-        <div style={{width: '400px', padding: '10px 10px 10px 10px'}}>
-          <Slider 
+        <div style={{width: '400px', padding: '10px 10px 10px 10px', marginTop: 100, marginLeft: 40}}>
+          <Slider
+            required={true}
+            validator={{validator, type: validation.types.required}}
+            errorMessage={errorMessage}
             max={5}
             value={this.state.value}
-            handleChange={this.handleChange}
+            onChange={(evt, value) => this.handleChange(evt, value)}
           />
         </div>
       </MuiThemeProvider>
@@ -34,5 +39,9 @@ class SliderStories extends PureComponent {
 
 storiesOf('Slider', module)
   .add('finBio Slider', () => {
-    return (<SliderStories/>)
+    return (
+      <SliderStories
+        errorMessage={'Campo Obrigatório'}
+      />
+    )
   })
