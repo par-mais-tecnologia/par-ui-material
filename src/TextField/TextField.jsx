@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import FormControl from '@material-ui/core/FormControl/FormControl'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 import TextFieldMUI from '@material-ui/core/TextField/TextField'
+import PropTypes from 'prop-types'
 
 class TextField extends PureComponent {
   state = {}
@@ -40,13 +41,15 @@ class TextField extends PureComponent {
   }
 
   render () {
+    const { helperText, id, label, required, showHelper, value, type, autoFocus, spellCheck } = this.props
+
     const inputProps = {
       onBlur: this.handleInputBlur.bind(this),
       onChange: this.handleInputChange.bind(this),
-      onFocus: this.handleInputFocus.bind(this)
+      onFocus: this.handleInputFocus.bind(this),
+      spellCheck: spellCheck
     }
 
-    const { helperText, id, label, required, showHelper, value, type, autoFocus } = this.props
     if (this.validationInstance) {
       this.state.errors = {
         ...this.validationInstance.error
@@ -85,13 +88,18 @@ class TextField extends PureComponent {
   }
 }
 
+TextField.propTypes = {
+  spellCheck: PropTypes.bool
+}
+
 TextField.defaultProps = {
   id: `textField`,
   label: '',
   required: false,
   showHelper: false,
   value: '',
-  margin: 'normal'
+  margin: 'normal',
+  spellCheck: false
 }
 
 export default TextField

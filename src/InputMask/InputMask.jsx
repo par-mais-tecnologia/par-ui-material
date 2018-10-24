@@ -5,6 +5,7 @@ import FormControl from '@material-ui/core/FormControl/FormControl'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 import InputLabel from '@material-ui/core/InputLabel/InputLabel'
 import { getMask } from './masks'
+import PropTypes from 'prop-types'
 
 class InputMask extends PureComponent {
     state = {}
@@ -43,12 +44,15 @@ class InputMask extends PureComponent {
     }
 
     render () {
+      const { helperText, id, label, required, showHelper, value, typeMask, inputComponent, showEndAdornment, spellCheck } = this.props
+
       const inputProps = {
         onBlur: this.handleInputBlur.bind(this),
         onChange: this.handleInputChange.bind(this),
-        onFocus: this.handleInputFocus.bind(this)
+        onFocus: this.handleInputFocus.bind(this),
+        spellCheck: spellCheck
       }
-      const { helperText, id, label, required, showHelper, value, typeMask, inputComponent, showEndAdornment } = this.props
+
       if (this.validationInstance) {
         this.state.errors = {
           ...this.validationInstance.error
@@ -83,6 +87,14 @@ class InputMask extends PureComponent {
         </FormControl>
       )
     }
+}
+
+InputMask.propTypes = {
+  spellCheck: PropTypes.bool
+}
+
+InputMask.defaultProps = {
+  spellCheck: false
 }
 
 export default InputMask

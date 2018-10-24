@@ -9,6 +9,7 @@ ShallowWrapper {
     margin="normal"
     required={false}
     showHelper={false}
+    spellCheck={false}
     value=""
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -36,6 +37,7 @@ ShallowWrapper {
           onFocus={[Function]}
           required={false}
           select={false}
+          spellCheck={false}
           value=""
           variant="standard"
         />,
@@ -65,6 +67,7 @@ ShallowWrapper {
           "onFocus": [Function],
           "required": false,
           "select": false,
+          "spellCheck": false,
           "type": undefined,
           "value": "",
           "variant": "standard",
@@ -96,6 +99,7 @@ ShallowWrapper {
             onFocus={[Function]}
             required={false}
             select={false}
+            spellCheck={false}
             value=""
             variant="standard"
           />,
@@ -125,6 +129,7 @@ ShallowWrapper {
             "onFocus": [Function],
             "required": false,
             "select": false,
+            "spellCheck": false,
             "type": undefined,
             "value": "",
             "variant": "standard",
