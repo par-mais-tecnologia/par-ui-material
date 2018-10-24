@@ -61,6 +61,12 @@ ShallowWrapper {
               "fontFamily": "Roboto",
             },
           },
+          "MuiMenuItem": Object {
+            "root": Object {
+              "height": "auto",
+              "whiteSpace": "normal",
+            },
+          },
           "MuiPickersSlideTransition": Object {
             "transitionContainer": Object {
               "fontFamily": "Roboto Light",
