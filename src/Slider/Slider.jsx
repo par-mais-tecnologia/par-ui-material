@@ -8,6 +8,7 @@ import bioFinanceiraTheme from '../BioFinanceiraTheme/BioFinanceiraTheme'
 
 export default class SliderPar extends Component {
   state = {
+    sliderValue: null,
     errors: {
       hasError: false
     }
@@ -83,7 +84,7 @@ export default class SliderPar extends Component {
             min={0}
             max={this.props.max}
             step={1}
-            value={this.state.sliderValue}
+            value={this.props.value}
             {...inputProps}
           />
           <Grid
@@ -92,7 +93,7 @@ export default class SliderPar extends Component {
             justify='space-between'
             className='mt3'
             style={{
-              marginBottom: '0.5rem'
+              margin: '0.2rem 0 0.5rem 0.3rem'
             }}>
             {this.getTypo(this.props.max)}
           </Grid>
