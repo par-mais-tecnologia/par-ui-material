@@ -72,6 +72,7 @@ class Select extends PureComponent {
           {...proxyProps}
           {...inputProps}
           open={this.state.open}
+          error={this.state.errors.hasError}
           inputProps={{
             name: label,
             id: { id }

@@ -28,7 +28,7 @@ export class Validator {
 
   validate = (instance, evt) => {
     if (instance && instance.id) {
-      let componentValue = evt.target ? evt.target.textContent || evt.target.value : instance.component.props.value
+      let componentValue = evt.target ? evt.target.textContent || evt.target.value || instance.component.props.value : instance.component.props.value
       componentValue = moment.isMoment(evt) ? evt.toISOString() : componentValue
 
       validateComponent(instance, componentValue)
