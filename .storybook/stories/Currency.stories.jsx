@@ -29,6 +29,14 @@ class CurrencyStory extends PureComponent {
     return args
   }])
 
+  handleCurrencyBlur = decorateAction([args => {
+    this.setState({
+      valueInitial:
+        Number(args[0].target.value)
+    })
+    return args
+  }])
+
   render () {
     const {value, valueInitial} = this.state
 
@@ -52,6 +60,7 @@ class CurrencyStory extends PureComponent {
               label={dictionary.CAMPO_MONETARIO}
               value={valueInitial}
               onChange={this.handleCurrencyChange(dictionary.VALOR_MONETARIO_MODIFICADO)}
+              onBlur={this.handleCurrencyBlur(dictionary.VALOR_MONETARIO_MODIFICADO)}
               InputProps={{
                 inputComponent: NumberFormatCustom,
               }}

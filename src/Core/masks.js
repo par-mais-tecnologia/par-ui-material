@@ -3,16 +3,21 @@ import React from 'react'
 import * as PropTypes from 'prop-types'
 
 export function NumberFormatCustom (props) {
-  const { inputRef, onChange, ...other } = props
+  const { inputRef, onBlur, onChange, ...other } = props
 
   return (
     <NumberFormat
       {...other}
       getInputRef={inputRef}
+      onBlur={() => {
+        if (onBlur) {
+          onBlur({ target: { value: props.value } })
+        }
+      }}
       onValueChange={values => {
         onChange({
           target: {
-            value: values.value
+            value: values.floatValue
           }
         })
       }}
