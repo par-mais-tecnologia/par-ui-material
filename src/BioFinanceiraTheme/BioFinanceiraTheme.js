@@ -41,6 +41,12 @@ export const bioFinanceiraTheme = createMuiTheme({
     }
   },
   overrides: {
+    MuiMenuItem: {
+      root: {
+        height: 'auto',
+        whiteSpace: 'normal'
+      }
+    },
     MuiSlider: sliderStyle,
     MuiPickersSlideTransition: {
       transitionContainer: {
