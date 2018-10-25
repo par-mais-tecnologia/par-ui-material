@@ -41,8 +41,7 @@ class YourFinances extends PureComponent {
     }
 
     return (
-      <Grid container direction='column' className='mt3'>
-
+      <Grid container direction='column' className='mb3'>
         <Grid container justify='space-between'>
           <Typography>Rendas </Typography>
           <Typography>R$ {getCurrencyFormat(incomes)}</Typography>

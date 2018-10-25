@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 function NumberedTitle (props) {
   return (
     <Grid container direction='column'>
-      <Grid container direction='row' alignItems='center'>
+      <Grid container direction='row' alignItems='center' className='mb4'>
         <Grid item>
           <Typography variant='display1'>
             {props.number}

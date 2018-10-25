@@ -12,8 +12,8 @@ class EmergencyReserve extends PureComponent {
   render () {
     const { reserve, months, classes } = this.props
     return (
-      <Grid container direction='column' className='mt3'>
-        <Grid item className='pv3'>
+      <Grid container direction='column'>
+        <Grid item className='pb3'>
           <Typography>Recomendamos que você tenha uma reserva de emergência de</Typography>
         </Grid>
         <Grid item className='pv3'>

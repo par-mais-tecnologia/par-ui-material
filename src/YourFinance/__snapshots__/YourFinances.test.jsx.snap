@@ -94,7 +94,7 @@ ShallowWrapper {
           />
         </Grid>,
       ],
-      "className": "mt3",
+      "className": "mb3",
       "container": true,
       "direction": "column",
     },
@@ -449,7 +449,7 @@ ShallowWrapper {
             />
           </Grid>,
         ],
-        "className": "mt3",
+        "className": "mb3",
         "container": true,
         "direction": "column",
       },

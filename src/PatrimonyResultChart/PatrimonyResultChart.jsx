@@ -1,10 +1,9 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
-
-import { Typography, withStyles } from '@material-ui/core'
-import { getCurrencyFormat } from '../Core/masks'
-
 import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core'
+
+import { Grid, Typography } from '../index'
+import { getCurrencyFormat } from '../Core/masks'
 
 const styles = (theme) => ({
   patrimony: theme.patrimonyResultChart ? theme.patrimonyResultChart : {}
@@ -45,30 +44,26 @@ function PatrimonyResultChart (props) {
 
   const investmentChart = (classes, property, key) => {
     return (
-      <Grid key={key} container direction='row' className={classes.patrimony}>
-        <Grid container item direction='column' xs={6} alignItems='flex-end'>
+      <Grid key={key} className={`flex flex-row mb4 ${classes.patrimony}`}>
+        <Grid className='flex flex-column' style={{ minWidth: 150 }}>
           <Typography
             variant='body1'
-            className={`display4 onHover ${property.class}`}
-          >
+            className={`display4 onHover ${property.class}`}>
             {property.amount}
           </Typography>
           <Typography
             variant='body1'
-            className={`onHover ${property.class}`}
-          >
+            className={`onHover ${property.class}`}>
             {property.desc}
           </Typography>
           <Typography
             variant='body1'
-            className={`percentage onHover ${property.class}`}
-          >
+            className={`percentage onHover ${property.class}`}>
             {String(property.percentage).replace(/\./, ',')}
           </Typography>
         </Grid>
-        <Grid container item xs={6} style={{ paddingLeft: '8px' }}>
+        <Grid className='flex w-100' style={{ paddingLeft: 8 }}>
           <Grid
-            item
             className='bar'
             style={{
               width: property.percentage,
@@ -84,9 +79,9 @@ function PatrimonyResultChart (props) {
   const patrimonies = createObjects(investments, realState, movableAssets, props)
 
   return (
-    <Grid container direction='column'>
+    <div className='flex flex-column'>
       {patrimonies.map(inv => investmentChart(classes, inv, Math.floor(Math.random() * 6530)))}
-    </Grid>
+    </div>
   )
 }
 
