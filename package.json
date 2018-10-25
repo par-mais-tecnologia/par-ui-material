@@ -11,7 +11,7 @@
     "@material-ui/lab": "^3.0.0-alpha.21",
     "c3": "^0.6.8",
     "d3": "^5.7.0",
-    "material-ui-pickers": "^1.0.0-rc.17",
+    "material-ui-pickers": "^1.0.0",
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
