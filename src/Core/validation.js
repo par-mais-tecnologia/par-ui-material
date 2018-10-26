@@ -33,7 +33,9 @@ export class Validator {
 
       validateComponent(instance, componentValue)
     } else {
-      this.instances.map(instance => validateComponent(instance, instance.component.props.value))
+      this.instances
+        .filter(instance => instance.component.updater.isMounted(instance))
+        .map(instance => validateComponent(instance, instance.component.props.value))
 
       const firstWithError = this.instances
         .filter(instance => instance.error.hasError)
