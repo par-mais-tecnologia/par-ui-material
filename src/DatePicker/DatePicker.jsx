@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { MuiPickersUtilsProvider, DatePicker as DatePickerMUI  } from 'material-ui-pickers'
+import { MuiPickersUtilsProvider, DatePicker as DatePickerMUI } from 'material-ui-pickers'
 import PropTypes from 'prop-types'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 

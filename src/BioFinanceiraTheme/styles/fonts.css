@@ -19,8 +19,14 @@
     font-family: 'Roboto Light';
     src: url('https://static.parmais.com.br/fonts/roboto_light.ttf');
 }
+
 @font-face {
     font-family: 'Roboto';
+    src: url('https://static.parmais.com.br/fonts/roboto_light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
     src: url('https://static.parmais.com.br/fonts/roboto_light.ttf');
 }
 
