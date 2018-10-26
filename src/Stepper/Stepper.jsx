@@ -42,7 +42,7 @@ class StepperParMais extends PureComponent {
         },
         MuiStepper: {
           root: {
-            padding: '24px 24px 0px 24px'
+            padding: '24px'
           }
         },
         MuiTypography: {

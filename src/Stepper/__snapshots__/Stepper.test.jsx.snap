@@ -123,7 +123,7 @@ ShallowWrapper {
           },
           "MuiStepper": Object {
             "root": Object {
-              "padding": "24px 24px 0px 24px",
+              "padding": "24px",
             },
           },
           "MuiTypography": Object {
@@ -679,7 +679,7 @@ ShallowWrapper {
             },
             "MuiStepper": Object {
               "root": Object {
-                "padding": "24px 24px 0px 24px",
+                "padding": "24px",
               },
             },
             "MuiTypography": Object {
