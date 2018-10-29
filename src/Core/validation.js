@@ -33,11 +33,13 @@ export class Validator {
 
       validateComponent(instance, componentValue)
     } else {
-      this.instances
-        .filter(instance => instance.component.updater.isMounted(instance))
-        .map(instance => validateComponent(instance, instance.component.props.value))
+      const mountedInstances = this.instances
+        .filter(instance => instance.component.updater.isMounted(instance.component))
 
-      const firstWithError = this.instances
+      mountedInstances
+        .forEach(instance => validateComponent(instance, instance.component.props.value))
+
+      const firstWithError = mountedInstances
         .filter(instance => instance.error.hasError)
         .map(instance => ReactDOM.findDOMNode(instance.component))
         .sort(elm => elm.getBoundingClientRect().top)
