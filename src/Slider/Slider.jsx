@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import Slider from '@material-ui/lab/Slider'
-import { createMuiTheme, Grid, MuiThemeProvider, Typography } from '@material-ui/core'
+import { createMuiTheme, Grid, MuiThemeProvider, Typography, withTheme } from '@material-ui/core'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 
 import PropTypes from 'prop-types'
-import bioFinanceiraTheme from '../BioFinanceiraTheme/BioFinanceiraTheme'
 
-export default class SliderPar extends Component {
+class SliderPar extends Component {
   state = {
     sliderValue: this.props.value,
     errors: {
@@ -19,17 +18,13 @@ export default class SliderPar extends Component {
   ) : false
 
   getTheme () {
-    return createMuiTheme({
-      overrides: {
-        MuiSlider: {
-          ...bioFinanceiraTheme.overrides.MuiSlider,
-          thumb: {
-            ...bioFinanceiraTheme.overrides.MuiSlider.thumb,
-            border: this.state.errors.hasError ? '1px solid #f44336' : ''
-          }
-        }
-      }
-    })
+    const theme = this.props.theme
+    theme.overrides.MuiSlider = theme.overrides.MuiSlider
+      ? theme.overrides.MuiSlider : { thumb: {} }
+    theme.overrides.MuiSlider.thumb.border =
+      this.state.errors.hasError ? '1px solid #f44336' : ''
+
+    return createMuiTheme(theme)
   }
 
   handleChange (event, value) {
@@ -74,8 +69,8 @@ export default class SliderPar extends Component {
 
     const { errorMessage, required } = this.props
     return (
-      <MuiThemeProvider theme={this.getTheme()}>
-        <Grid container direction='column'>
+      <Grid container direction='column'>
+        <MuiThemeProvider theme={this.getTheme()}>
           <Slider
             required={required}
             min={0}
@@ -84,27 +79,29 @@ export default class SliderPar extends Component {
             value={this.state.sliderValue}
             {...inputProps}
           />
-          <Grid
-            container
-            direction='row'
-            justify='space-between'
-            className='mt3'
-            style={{
-              margin: '0.2rem 0 0.5rem 0.3rem'
-            }}>
-            {this.getTypo(this.props.max)}
-          </Grid>
-          <Grid>
-            { this.state.errors.hasError ?
-              <FormHelperText error>
-                {errorMessage}
-              </FormHelperText> : ''}
-          </Grid>
+        </MuiThemeProvider>
+        <Grid
+          container
+          direction='row'
+          justify='space-between'
+          className='mt3'
+          style={{
+            margin: '0.2rem 0 0.5rem 0.3rem'
+          }}>
+          {this.getTypo(this.props.max)}
         </Grid>
-      </MuiThemeProvider>
+        <Grid>
+          {this.state.errors.hasError
+            ? <FormHelperText error={this.state.errors.hasError}>
+              {errorMessage || this.state.errors.errorMessage}
+            </FormHelperText> : ''}
+        </Grid>
+      </Grid>
     )
   }
 }
+
+export default withTheme()(SliderPar)
 
 SliderPar.propTypes = {
   max: PropTypes.number.isRequired,
