@@ -9,7 +9,7 @@ const validator = new validation.Validator()
 
 class SliderStories extends PureComponent {
     state = {
-      value: 0
+      value: 2
     }
 
   handleChange(event, value) {
@@ -21,7 +21,6 @@ class SliderStories extends PureComponent {
     const { errorMessage } = this.props
 
     return (
-      <MuiThemeProvider theme={BioFinanceiraTheme}>
         <div style={{width: '400px', padding: '10px 10px 10px 10px', marginTop: 100, marginLeft: 40}}>
           <Slider
             required={true}
@@ -32,7 +31,6 @@ class SliderStories extends PureComponent {
             onChange={(evt, value) => this.handleChange(evt, value)}
           />
         </div>
-      </MuiThemeProvider>
     )
   }
 }

@@ -8,7 +8,7 @@ import bioFinanceiraTheme from '../BioFinanceiraTheme/BioFinanceiraTheme'
 
 export default class SliderPar extends Component {
   state = {
-    sliderValue: null,
+    sliderValue: this.props.value,
     errors: {
       hasError: false
     }
@@ -20,9 +20,7 @@ export default class SliderPar extends Component {
 
   getTheme () {
     return createMuiTheme({
-      ...bioFinanceiraTheme,
       overrides: {
-        ...bioFinanceiraTheme.overrides,
         MuiSlider: {
           ...bioFinanceiraTheme.overrides.MuiSlider,
           thumb: {
@@ -63,8 +61,7 @@ export default class SliderPar extends Component {
 
   render () {
     const inputProps = {
-      onChange: this.handleChange.bind(this),
-      sliderValue: this.props.value
+      onChange: this.handleChange.bind(this)
     }
 
     if (this.validationInstance) {
@@ -84,7 +81,7 @@ export default class SliderPar extends Component {
             min={0}
             max={this.props.max}
             step={1}
-            value={this.props.value}
+            value={this.state.sliderValue}
             {...inputProps}
           />
           <Grid
@@ -98,11 +95,10 @@ export default class SliderPar extends Component {
             {this.getTypo(this.props.max)}
           </Grid>
           <Grid>
-            { this.state.errors.hasError ? <p>
+            { this.state.errors.hasError ?
               <FormHelperText error>
                 {errorMessage}
-              </FormHelperText>
-            </p> : ''}
+              </FormHelperText> : ''}
           </Grid>
         </Grid>
       </MuiThemeProvider>
