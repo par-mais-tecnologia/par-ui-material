@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/react'
 import { Toggle } from '../../src'
-
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import withTests from './withTests'

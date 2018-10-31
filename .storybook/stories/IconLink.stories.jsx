@@ -1,12 +1,10 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
-import { action, configureActions } from '@storybook/addon-actions';
+import { action } from '@storybook/addon-actions';
 import { number, text, withKnobs } from '@storybook/addon-knobs'
 import { MuiThemeProvider, BioFinanceiraTheme } from '../../src'
-
 import withTests from './withTests'
 import { IconLink } from '../../src'
-import PropTypes from 'prop-types'
 
 class IconLinkStory extends PureComponent {
   render() {

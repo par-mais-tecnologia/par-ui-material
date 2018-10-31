@@ -5,7 +5,6 @@ import {
   BioFinanceiraTheme,
   LegendChart
 } from '../../src'
-
 import { walletExample } from '../../src/Core/mocks'
 import { getStrategies } from '../../src/WalletChart/functions'
 import withTests from './withTests'

@@ -4,9 +4,7 @@ import { decorateAction } from '@storybook/addon-actions'
 import moment from 'moment'
 import MomentUtils from 'material-ui-pickers/utils/moment-utils'
 import 'moment/locale/pt-br'
-import { Button, MuiThemeProvider } from '@material-ui/core'
-
-import { DatePicker, BioFinanceiraTheme, Select } from '../../src'
+import { DatePicker, BioFinanceiraTheme, Button, MuiThemeProvider } from '../../src'
 import withTests from './withTests'
 import * as validation from '../../src/Core/validation'
 

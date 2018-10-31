@@ -1,12 +1,9 @@
 import { storiesOf } from '@storybook/react'
-import { DatePicker, Select, TextField } from '../../src'
-
+import { DatePicker, Select, TextField, Button } from '../../src'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 import MenuItem from '@material-ui/core/MenuItem'
-import withTests from './withTests'
 import * as validation from '../../src/Core/validation'
-import { Button } from '@material-ui/core'
 import MomentUtils from 'material-ui-pickers/utils/moment-utils'
 
 const validator = new validation.Validator()

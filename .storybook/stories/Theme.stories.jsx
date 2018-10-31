@@ -1,8 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core'
-
-import { BioFinanceiraTheme, TextField } from '../../src'
+import { BioFinanceiraTheme, TextField, MuiThemeProvider, createMuiTheme } from '../../src'
 import 'tachyons/css/tachyons.min.css'
 
 const theme2 = createMuiTheme({

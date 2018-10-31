@@ -1,9 +1,7 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { decorateAction } from '@storybook/addon-actions'
-import { Button, MuiThemeProvider, Typography } from '@material-ui/core'
-
-import { BioFinanceiraTheme, TextField } from '../../src'
+import { BioFinanceiraTheme, TextField, Button, MuiThemeProvider, Typography  } from '../../src'
 import * as dictionary from '../../src/Core/dictionary'
 import { NumberFormatCustom } from '../../src/Core/masks'
 import * as validation from '../../src/Core/validation'

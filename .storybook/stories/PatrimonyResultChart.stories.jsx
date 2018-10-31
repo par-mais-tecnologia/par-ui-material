@@ -1,11 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-
 import { text, number, withKnobs } from '@storybook/addon-knobs'
-
-import { MuiThemeProvider } from '@material-ui/core'
-
-import { BioFinanceiraTheme, NumberedTitle, PatrimonyResultChart } from '../../src'
+import { BioFinanceiraTheme, NumberedTitle, PatrimonyResultChart, MuiThemeProvider } from '../../src'
 
 storiesOf('Patrimony Result Chart', module)
   .addDecorator(withKnobs)

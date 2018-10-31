@@ -1,10 +1,6 @@
 import React from 'react'
-
 import { storiesOf } from '@storybook/react'
-
-import { InitialScreen, RotatingImage, BioFinanceiraTheme } from '../../src'
-import { Typography, Grid } from '@material-ui/core'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
+import { InitialScreen, RotatingImage, BioFinanceiraTheme, Grid, MuiThemeProvider } from '../../src'
 
 storiesOf('Loading screen', module)
   .add('Rotating Image', () =>{ 

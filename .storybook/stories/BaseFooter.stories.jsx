@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import withTests from './withTests'
-
 import BaseFooter from '../../src/BaseFooter/index'
 import finBioTheme from '../../src/BioFinanceiraTheme'
 

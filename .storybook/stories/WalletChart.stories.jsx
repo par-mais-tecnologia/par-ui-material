@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import {
+  WalletChart,
   MuiThemeProvider,
   BioFinanceiraTheme,
 } from '../../src'
-import { WalletChart } from '../../src'
 import { walletExample } from '../../src/Core/mocks'
 
 class WalletChartStory extends PureComponent {

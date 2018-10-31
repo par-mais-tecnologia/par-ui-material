@@ -1,8 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
-import { MuiThemeProvider } from '@material-ui/core'
-
-import { BioFinanceiraTheme, Slider } from '../../src'
+import { BioFinanceiraTheme, Slider, MuiThemeProvider } from '../../src'
 import * as validation from '../../src/Core/validation'
 
 const validator = new validation.Validator()

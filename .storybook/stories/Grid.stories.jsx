@@ -2,8 +2,7 @@ import { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import withTests from './withTests'
 import React from 'react'
-import { Grid } from '../../src'
-import { Paper } from '../../src'
+import { Grid, Paper } from '../../src'
 
 class GridStory extends PureComponent {
 

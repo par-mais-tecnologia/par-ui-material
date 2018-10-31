@@ -22,6 +22,7 @@ ShallowWrapper {
       "children": Array [
         <ForwardRef
           error={false}
+          margin="normal"
           onBlur={[Function]}
           onChange={[Function]}
         />,
@@ -39,6 +40,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "error": false,
+          "margin": "normal",
           "onBlur": [Function],
           "onChange": [Function],
         },
@@ -62,6 +64,7 @@ ShallowWrapper {
         "children": Array [
           <ForwardRef
             error={false}
+            margin="normal"
             onBlur={[Function]}
             onChange={[Function]}
           />,
@@ -79,6 +82,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "error": false,
+            "margin": "normal",
             "onBlur": [Function],
             "onChange": [Function],
           },

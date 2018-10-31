@@ -45,10 +45,28 @@ ShallowWrapper {
             "required": Object {
               "color": "#f44336",
             },
+            "root": Object {
+              "fontFamily": "'Roboto Regular', 'sans-serif'",
+              "fontSize": ".875rem",
+              "marginTop": "2px",
+            },
           },
           "MuiFormLabel": Object {
             "asterisk": Object {
               "display": "none",
+            },
+            "root": Object {
+              "width": "max-content",
+            },
+          },
+          "MuiInput": Object {
+            "root": Object {
+              "borderBottom": "0px solid #d4d4d4",
+            },
+            "underline": Object {
+              "&:before": Object {
+                "borderBottomColor": "#d4d4d4",
+              },
             },
           },
           "MuiInputBase": Object {
@@ -58,7 +76,9 @@ ShallowWrapper {
           },
           "MuiInputLabel": Object {
             "root": Object {
-              "fontFamily": "Roboto",
+              "color": "#9C9C9C",
+              "fontFamily": "'Roboto Regular', sans-serif",
+              "fontSize": ".875rem",
             },
           },
           "MuiMenuItem": Object {
@@ -73,7 +93,15 @@ ShallowWrapper {
               "fontSize": "12px",
             },
           },
+          "MuiSelect": Object {
+            "selectMenu": Object {
+              "whiteSpace": "inherit",
+            },
+          },
           "MuiSlider": Object {
+            "root": Object {
+              "marginBottom": "1rem",
+            },
             "thumb": Object {
               "backgroundColor": "white",
               "boxShadow": "1px 1px 20px #9C9C9C",
@@ -88,6 +116,113 @@ ShallowWrapper {
             },
             "trackAfter": Object {
               "background": "#c6c1c1",
+            },
+          },
+          "MuiTypography": Object {
+            "body1": Object {
+              "color": "#636363",
+              "fontFamily": "'Roboto Light', sans-serif",
+              "fontSize": "1rem",
+            },
+            "body2": Object {
+              "color": "#9C9C9C",
+              "fontFamily": "'Roboto Regular', sans-serif",
+              "fontSize": ".875rem",
+            },
+            "body3": Object {
+              "color": "#5EB8C0",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "3rem",
+            },
+            "body4": Object {
+              "color": "#636363",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "1rem",
+            },
+            "button": Object {
+              "color": "#D4436B",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": ".875rem",
+            },
+            "display3": Object {
+              "color": "#5EB8C0",
+              "fontSize": 24,
+              "fontWeight": "bold",
+            },
+            "footerText": Object {
+              "color": "#F0F0F0",
+              "fontFamily": "Roboto-Light, sans-serif",
+              "fontSize": "0.875rem",
+            },
+            "headline": Object {
+              "color": "#636363",
+              "fontFamily": "Roboto-Light, sans-serif",
+              "fontSize": "1.25rem",
+            },
+            "highlight1": Object {
+              "color": "#D4436B",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "1rem",
+            },
+            "highlight2": Object {
+              "color": "#636363",
+              "fontFamily": "'Roboto Regular', sans-serif",
+              "fontSize": ".875rem",
+            },
+            "highlight3": Object {
+              "color": "#D4436B",
+              "fontFamily": "'Roboto Light', sans-serif",
+              "fontSize": "1rem",
+            },
+            "links": Object {
+              "color": "#D4436B",
+              "fontFamily": "'Brandon Regular', sans-serif",
+              "fontSize": "1.25rem",
+            },
+            "mainTitle": Object {
+              "color": "#ffffff",
+              "fontFamily": "'Brandon Light', sans-serif",
+              "fontSize": "1.6rem",
+            },
+            "subheading": Object {
+              "color": "#D4436B",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "1rem",
+            },
+            "subtitle1": Object {
+              "color": "#636363",
+              "fontFamily": "'Roboto Light', sans-serif",
+              "fontSize": "1.5rem",
+            },
+            "subtitle2": Object {
+              "color": "#5EB8C0",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "1.5rem",
+            },
+            "subtitle3": Object {
+              "color": "#5EB8C0",
+              "fontFamily": "'Roboto Regular', sans-serif",
+              "fontSize": "1.25rem",
+            },
+            "subtitle4": Object {
+              "color": "#5EB8C0",
+              "fontFamily": "'Roboto Regular', sans-serif",
+              "fontSize": ".875rem",
+            },
+            "title1": Object {
+              "color": "#D4436B",
+              "fontFamily": "'Brandon Regular', sans-serif",
+              "fontSize": "1.25rem",
+            },
+            "title2": Object {
+              "color": "#636363",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "3rem",
+            },
+            "title3": Object {
+              "color": "#5EB8C0",
+              "fontFamily": "'Roboto Medium', sans-serif",
+              "fontSize": "3rem",
             },
           },
         },

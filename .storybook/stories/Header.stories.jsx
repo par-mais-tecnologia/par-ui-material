@@ -1,24 +1,11 @@
 import { storiesOf } from '@storybook/react'
 import React, { PureComponent } from 'react'
 import 'tachyons/css/tachyons.min.css'
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core'
 import withTests from './withTests'
-
 import { Header, BioFinanceiraTheme } from '../../src'
 import Typography from '@material-ui/core/Typography/Typography'
 
 class HeaderStory extends PureComponent {
-  getThemeHeader (BioFinanceiraTheme) {
-    return createMuiTheme({
-      overrides: {
-        MuiTypography: {
-          title: {
-            ...BioFinanceiraTheme.styles.fonts.mainTitle
-          }
-        }
-      }
-    })
-  }
 
   render () {
     return (

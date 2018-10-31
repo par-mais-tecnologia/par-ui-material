@@ -15,7 +15,6 @@ import {
   Button,
   WalletChart
 } from '../../src'
-
 import { mock } from '../../src/YourProfile/'
 import { walletExample } from '../../src/Core/mocks'
 import { number } from '@storybook/addon-knobs'
@@ -244,7 +243,7 @@ storiesOf('Bio Resultados', module)
           <img className='pt3' src="https://static.parmais.com.br/mkt/assets/see-pai-filho-balanco.jpg"/>
         </Grid>
         <Grid className='pt3 flex-column-reverse flex-row-ns' container justify="center"  alignItems="center" md={12} xs={12}>
-          <Grid item xm={2} className={'tc'}></Grid>
+          <Grid item xm={2} className={'tc'}/>
           <Grid item sm={6} className={'tc pa2 pa3-ns'}>
             <Button variant='outlined'>
               FALE COM UM ESPECIALISTA
@@ -257,7 +256,7 @@ storiesOf('Bio Resultados', module)
             </Button>
             <Typography style={{color: '#fff'}}> .</Typography>
           </Grid>
-          <Grid item xm={2} className={'tc'}></Grid>
+          <Grid item xm={2} className={'tc'}/>
         </Grid>
 
         </Grid>

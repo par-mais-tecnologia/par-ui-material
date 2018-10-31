@@ -1,10 +1,8 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { text, withKnobs } from '@storybook/addon-knobs'
-import { MuiThemeProvider, BioFinanceiraTheme } from '../../src'
-
+import { MuiThemeProvider, BioFinanceiraTheme, LineCirclesBox } from '../../src'
 import withTests from './withTests'
-import { LineCirclesBox } from '../../src'
 
 class LineCirclesBoxStory extends PureComponent {
   render() {

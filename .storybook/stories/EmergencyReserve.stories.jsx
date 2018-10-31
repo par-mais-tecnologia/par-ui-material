@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { number, withKnobs } from '@storybook/addon-knobs'
-
 import { MuiThemeProvider, BioFinanceiraTheme, EmergencyReserve, NumberedTitle } from '../../src'
 import withTests from './withTests'
 

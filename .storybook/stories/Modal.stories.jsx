@@ -1,11 +1,13 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
-import { Button, MuiThemeProvider, Grid, Typography } from '@material-ui/core'
-
-import { 
+import {
   BioFinanceiraTheme,
   Modal,
-  ModalFinBioEmailInput
+  ModalFinBioEmailInput,
+  Button,
+  MuiThemeProvider,
+  Grid,
+  Typography
 } from '../../src'
 
 function ModalSample(props) {

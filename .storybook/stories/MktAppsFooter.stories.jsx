@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
-
 import BaseFooter from '../../src/BaseFooter/index'
 import MktAppsFooter from '../../src/MktAppsFooter/index'
 import finBioTheme from '../../src/BioFinanceiraTheme'

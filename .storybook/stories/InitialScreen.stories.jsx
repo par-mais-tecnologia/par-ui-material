@@ -1,12 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
-
-import { InitialScreen } from '../../src'
+import { InitialScreen, Grid, Button, Input } from '../../src'
 import withTests from './withTests'
-import Grid from '@material-ui/core/Grid/Grid'
-import Button from '@material-ui/core/Button/Button'
-import Input from '@material-ui/core/Input/Input'
 
 storiesOf('InitialScreen', module)
   .addDecorator(withKnobs)

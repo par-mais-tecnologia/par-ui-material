@@ -1,11 +1,8 @@
 import { storiesOf } from '@storybook/react'
-import { BioFinanceiraTheme, InputMask, MaskedInput, Select } from '../../src'
-
+import { BioFinanceiraTheme, InputMask, MaskedInput, Button, MuiThemeProvider } from '../../src'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
-import { Button, MuiThemeProvider } from '@material-ui/core'
 import * as validation from '../../src/Core/validation'
-import MenuItem from '@material-ui/core/MenuItem/MenuItem'
 
 const validator = new validation.Validator()
 

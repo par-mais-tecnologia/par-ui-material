@@ -1,8 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
-
 import { Stepper } from '../../src'
-
 import withTests from './withTests'
 
 class StepperStories extends PureComponent {

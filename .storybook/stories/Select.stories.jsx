@@ -1,12 +1,9 @@
 import { storiesOf } from '@storybook/react'
-import { BioFinanceiraTheme, Select } from '../../src'
-
+import { BioFinanceiraTheme, Select, MenuItem, Button, MuiThemeProvider } from '../../src'
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
-import MenuItem from '@material-ui/core/MenuItem'
 import withTests from './withTests'
 import * as validation from '../../src/Core/validation'
-import { Button, MuiThemeProvider } from '@material-ui/core'
 
 const validator = new validation.Validator()
 

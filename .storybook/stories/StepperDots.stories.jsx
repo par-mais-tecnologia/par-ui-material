@@ -1,8 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-
 import { StepperDots, MuiThemeProvider, BioFinanceiraTheme } from '../../src'
-
 import withTests from './withTests'
 
 class StepperDotsStories extends React.PureComponent {

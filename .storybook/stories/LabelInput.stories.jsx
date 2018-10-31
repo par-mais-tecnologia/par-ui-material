@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/react'
 import { TextField } from '../../src'
-
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
 

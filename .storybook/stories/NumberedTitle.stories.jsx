@@ -1,9 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-
-import { MuiThemeProvider } from '@material-ui/core'
-
-import { BioFinanceiraTheme, NumberedTitle } from '../../src'
+import { BioFinanceiraTheme, NumberedTitle, MuiThemeProvider } from '../../src'
 
 const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Curabitur quis mattis turpis, a eleifend enim. Vestibulum ante ipsum primis 

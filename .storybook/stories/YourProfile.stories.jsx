@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { text, object, withKnobs } from '@storybook/addon-knobs'
-
 import { MuiThemeProvider, BioFinanceiraTheme, YourProfile, NumberedTitle } from '../../src'
 import { yourProfileMock as mock } from '../../src/Core/mocks'
 import withTests from './withTests'
