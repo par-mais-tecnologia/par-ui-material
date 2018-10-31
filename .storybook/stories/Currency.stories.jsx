@@ -1,11 +1,14 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { decorateAction } from '@storybook/addon-actions'
-import { MuiThemeProvider, Typography } from '@material-ui/core'
+import { Button, MuiThemeProvider, Typography } from '@material-ui/core'
 
 import { BioFinanceiraTheme, TextField } from '../../src'
 import * as dictionary from '../../src/Core/dictionary'
 import { NumberFormatCustom } from '../../src/Core/masks'
+import * as validation from '../../src/Core/validation'
+
+const validator = new validation.Validator()
 
 class CurrencyStory extends PureComponent {
   state = {
@@ -65,6 +68,24 @@ class CurrencyStory extends PureComponent {
                 inputComponent: NumberFormatCustom,
               }}
             />
+          </div>
+          <div className='pv4'>
+            <Typography>Com validação</Typography>
+            <TextField
+              required
+              validator={{ validator, type: validation.types.required }}
+              id='CurrencyId'
+              label={dictionary.CAMPO_MONETARIO}
+              value={valueInitial}
+              onChange={this.handleCurrencyChange(dictionary.VALOR_MONETARIO_MODIFICADO)}
+              onBlur={this.handleCurrencyBlur(dictionary.VALOR_MONETARIO_MODIFICADO)}
+              InputProps={{
+                inputComponent: NumberFormatCustom,
+              }}
+            />
+            <Button onClick={validator.validate} variant='contained'>
+              Validate
+            </Button>
           </div>
         </MuiThemeProvider>
       </div>

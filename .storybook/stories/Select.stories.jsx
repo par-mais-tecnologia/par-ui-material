@@ -105,7 +105,7 @@ class SelectStory extends PureComponent {
           <MenuItem value='kevin'>Kevin</MenuItem>
         </Select>
 
-        <div className='pl3'>
+        <div className='mv4'>
           <h5> Com tema e validação</h5>
           <MuiThemeProvider theme={BioFinanceiraTheme}>
             <Select

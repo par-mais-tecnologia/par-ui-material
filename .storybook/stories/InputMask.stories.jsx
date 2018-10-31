@@ -1,8 +1,13 @@
 import { storiesOf } from '@storybook/react'
-import { InputMask, MaskedInput } from '../../src'
+import { BioFinanceiraTheme, InputMask, MaskedInput, Select } from '../../src'
 
 import React, { PureComponent } from 'react'
 import { decorateAction } from '@storybook/addon-actions'
+import { Button, MuiThemeProvider } from '@material-ui/core'
+import * as validation from '../../src/Core/validation'
+import MenuItem from '@material-ui/core/MenuItem/MenuItem'
+
+const validator = new validation.Validator()
 
 class InputMaskStory extends PureComponent {
   state = {
@@ -72,6 +77,24 @@ class InputMaskStory extends PureComponent {
           showEndAdornment={false}
           inputComponent={this.TextMaskCustom}
         />
+
+        <div className='mv4'>
+          <h5> Com tema e validação</h5>
+          <MuiThemeProvider theme={BioFinanceiraTheme}>
+            <InputMask
+              required
+              validator={{ validator, type: validation.types.required}}
+              value={value}
+              onChange={(evt => this.handleInputMaskChange2(evt))}
+              showEndAdornment={false}
+              inputComponent={this.TextMaskCustom}
+            />
+          </MuiThemeProvider>
+        </div>
+
+        <Button onClick={validator.validate} variant='contained'>
+          Validate
+        </Button>
       </div>
     )
   }

@@ -4,7 +4,7 @@ import sliderStyle from './styles/slider'
 import patrimonyResultChartStyle from './styles/patrimonyResultChart'
 import stepperDotsStyle from './styles/stepperDots'
 
-export const bioFinanceiraTheme = createMuiTheme({
+const theme = {
   styles,
   palette: {
     primary: {
@@ -70,6 +70,9 @@ export const bioFinanceiraTheme = createMuiTheme({
       }
     },
     MuiFormHelperText: {
+      root: {
+        marginTop: '2px'
+      },
       required: {
         color: '#f44336'
       }
@@ -77,6 +80,35 @@ export const bioFinanceiraTheme = createMuiTheme({
   },
   patrimonyResultChart: patrimonyResultChartStyle,
   stepperDotsStyle
-})
+}
+theme.overrides.MuiInputLabel.root = theme.typography.body2
+theme.overrides = {
+  ...theme.overrides,
+  MuiSelect: { selectMenu: { whiteSpace: 'inherit' } },
+  MuiSlider: { ...theme.overrides.MuiSlider, root: { marginBottom: '1rem' } },
+  MuiFormLabel: { ...theme.overrides.MuiFormLabel, root: { width: 'max-content' } },
+  MuiFormHelperText: {
+    ...theme.overrides.MuiFormHelperText,
+    root: { fontFamily: '\'Roboto Regular\', \'sans-serif\'', fontSize: '.875rem', marginTop: '2px' } },
+  MuiInput: {
+    root: { borderBottom: '0px solid #d4d4d4' },
+    underline: {
+      '&:before': {
+        borderBottomColor: '#d4d4d4'
+      }
+    }
+  },
+  MuiTypography: {
+    ...theme.styles.fonts,
+    display3: {
+      ...theme.styles.fonts.display3,
+      fontSize: 24,
+      fontWeight: 'bold',
+      color: '#5EB8C0'
+    }
+  }
+}
+
+export const bioFinanceiraTheme = createMuiTheme(theme)
 
 export default bioFinanceiraTheme
