@@ -79,20 +79,19 @@ class InputMask extends PureComponent {
             inputComponent={inputComponent}
             id={id}
             value={value}
-            endAdornment=
-              {showEndAdornment ?
-                <InputAdornment position='end'>
-                  {getMask(typeMask, value)}
-                  </InputAdornment> : ''
-              }
+            endAdornment={showEndAdornment
+              ? <InputAdornment position='end'>
+                {getMask(typeMask, value)}
+              </InputAdornment> : ''
+            }
           />
-          {showHelper ?
-            <FormHelperText id={id} style={{marginTop:'10px'}}>
+          {showHelper
+            ? <FormHelperText id={id} style={{ marginTop: '6px' }}>
               {helperText}
             </FormHelperText> : ''
           }
-          {this.state.errors.hasError ?
-            <FormHelperText id={id} style={{marginTop:'10px'}}> {this.state.errors.errorMessage}
+          {this.state.errors.hasError
+            ? <FormHelperText id={id} style={{ marginTop: '6px' }}> {this.state.errors.errorMessage}
             </FormHelperText> : ''
           }
         </FormControl>

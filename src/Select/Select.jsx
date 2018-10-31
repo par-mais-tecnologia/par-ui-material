@@ -3,7 +3,6 @@ import SelectMUI from '@material-ui/core/Select'
 import FormControl from '@material-ui/core/FormControl/FormControl'
 import InputLabel from '@material-ui/core/InputLabel'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
-import TextFieldMUI from '@material-ui/core/TextField/TextField'
 
 class Select extends PureComponent {
   state = {
@@ -68,8 +67,8 @@ class Select extends PureComponent {
         required={required}
         error={this.state.errors.hasError}
         style={this.getStyle(this.props)}>
-        {showLabel ?
-          <InputLabel htmlFor={id}>
+        {showLabel
+          ? <InputLabel htmlFor={id}>
             {label}
           </InputLabel> : ''
         }
@@ -82,9 +81,9 @@ class Select extends PureComponent {
             name: label,
             id: { id }
           }} />
-        {this.state.errors.hasError ?
-          <FormHelperText style={{marginTop:'10px'}}
-          id={id}> {this.state.errors.errorMessage}
+        {this.state.errors.hasError
+          ? <FormHelperText style={{ marginTop: '2px' }}
+            id={id}> {this.state.errors.errorMessage}
           </FormHelperText> : ''
         }
       </FormControl>

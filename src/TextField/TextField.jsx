@@ -80,14 +80,14 @@ class TextField extends PureComponent {
           type={type}
           autoFocus={autoFocus}
         />
-        {showHelper ?
-          <FormHelperText id={id}>
+        {showHelper
+          ? <FormHelperText id={id}>
             {helperText}
           </FormHelperText> : ''
         }
-        {this.state.errors.hasError ?
-          <FormHelperText
-          id={id}> {this.state.errors.errorMessage}
+        {this.state.errors.hasError
+          ? <FormHelperText
+            id={id}> {this.state.errors.errorMessage}
           </FormHelperText> : ''
         }
       </FormControl>
