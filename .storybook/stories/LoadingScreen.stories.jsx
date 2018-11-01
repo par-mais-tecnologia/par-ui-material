@@ -1,9 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { InitialScreen, RotatingImage, BioFinanceiraTheme, Grid, MuiThemeProvider } from '../../src'
+import { InitialScreen, RotatingImage, BioFinanceiraTheme, Grid, MuiThemeProvider, MyWalletLoading } from '../../src'
 
 storiesOf('Loading screen', module)
-  .add('Rotating Image', () =>{ 
+  .add('BIO - Loading', () => { 
     return (
       <MuiThemeProvider theme={BioFinanceiraTheme}>
         <InitialScreen
@@ -34,5 +34,10 @@ storiesOf('Loading screen', module)
           
         </InitialScreen>
       </MuiThemeProvider>
+    )
+  })
+  .add('Minha Carteira - Loading', () => {
+    return (
+      <MyWalletLoading/>
     )
   })

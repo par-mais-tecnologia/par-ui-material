@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+}
+
+.front-layer {
+  position: absolute;
+  top: 0;
+}
+
+.back-layer {
+}
+
+.hashtag {
+  color: #5EB8C0
+}
+.mais {
+  color: #5EB8C0
+}
+.cliente {
+  color: #632B7D
+}
+
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to right, rgba(255,255,255,0) 38%,rgba(255,255,255,0.38) 43%,rgba(255,255,255,1) 51%,rgba(255,255,255,0.5) 59%,rgba(255,255,255,0) 67%);
+  background-size: 200% auto;
+  
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  animation: shine 0.7s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% center;
+  }
+}

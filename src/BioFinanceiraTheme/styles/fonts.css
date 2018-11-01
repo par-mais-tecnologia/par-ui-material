@@ -40,6 +40,11 @@
     src: url('https://static.parmais.com.br/fonts/roboto_bold.ttf');
 }
 
+@font-face {
+    font-family: 'Rounded Elegance';
+    src: url('https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/fonts/rounded_elegance_regular.ttf')
+}
+
 /* Fonts */
 .brandon-light {
     font-family: 'Brandon Light', sans-serif;
