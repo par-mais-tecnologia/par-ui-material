@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
-import { InitialScreen, Grid, Button, Input } from '../../src'
+import { InitialScreen, Grid, Button, Input, BioFinanceiraTheme } from '../../src'
 import withTests from './withTests'
 
 storiesOf('InitialScreen', module)
@@ -67,6 +67,7 @@ storiesOf('InitialScreen', module)
   })
   .add('Minha Carteira', () => {
     return (
+      <MuiThemeProvider theme={BioFinanceiraTheme}>
       <InitialScreen
         imageSrc={text('imageSrc', 'https://static.parmais.com.br/images/background.jpg')}
         middleBoxColor={text('middleBoxColor', '#347A7C')}
@@ -109,5 +110,6 @@ storiesOf('InitialScreen', module)
           </div>
         </div>
       </InitialScreen>
+      </MuiThemeProvider>
     )
   })
