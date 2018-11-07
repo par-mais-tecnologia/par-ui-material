@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
-import { InitialScreen, Grid, Button, Input, BioFinanceiraTheme } from '../../src'
+import { InitialScreen, Grid, Button, Input, BioFinanceiraTheme, MuiThemeProvider, InputLabel, TextField } from '../../src'
 import withTests from './withTests'
 
 storiesOf('InitialScreen', module)
@@ -87,11 +87,19 @@ storiesOf('InitialScreen', module)
             <p className='f2 mb4 mt3 rounded-elegance dn-ns'>#ClienteMais</p>
             <p className='roboto-light f4'>Acesse sua conta</p>
             <div>
-              <Input
-                placeholder='E-mail'
-                fullWidth
-                className='mb3'
-              />
+              <InputLabel>E-mail</InputLabel>
+              <TextField
+                required
+                validator={{ validator, type: emailValidation }}
+                style={{ width: '100%', marginTop: 0 }}
+                value={email}
+                type='email'
+                InputProps={{
+                  className: 'input2'
+                }}
+                onChange={(e) => {
+                  this.handleEmail(e.target.value)
+                }} />
               <br />
               <Input
                 placeholder='Senha'

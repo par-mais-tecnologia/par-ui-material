@@ -1,7 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 import { styles } from './styles/styles'
-import buttonStyle from './styles/button'
-import menu from './styles/menu'
 
 export const seeTheme = createMuiTheme({
   styles,
@@ -37,9 +35,6 @@ export const seeTheme = createMuiTheme({
     },
     title: {
       ...styles.fonts.title1
-    },
-    overline: {
-      ...styles.fonts.overline
     }
   },
   overrides: {
@@ -70,8 +65,6 @@ export const seeTheme = createMuiTheme({
       }
     }
   },
-  buttonStyle,
-  menu
 })
 
 export default seeTheme

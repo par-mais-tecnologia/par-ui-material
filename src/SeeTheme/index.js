@@ -1,1 +1,1 @@
-export { default } from './SeeTheme'
+export { default } from './BioFinanceiraTheme'
