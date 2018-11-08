@@ -1,4 +1,5 @@
 export { default as BioFinanceiraTheme } from './BioFinanceiraTheme'
+export { default as SeeTheme } from './SeeTheme'
 export { default as Button } from './Button'
 export { default as CheckBox } from './CheckBox'
 export { default as DatePicker } from './DatePicker'
@@ -34,6 +35,7 @@ export { default as LegendChart } from './LegendChart'
 export { default as IconLink } from './IconLink'
 export { default as MaskedInput } from './MaskedInput'
 export { default as MyWalletLoading } from './MyWalletLoading'
+export { default as SeeMenu } from './SeeMenu'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'

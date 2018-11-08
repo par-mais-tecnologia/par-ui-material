@@ -35,6 +35,9 @@ export const seeTheme = createMuiTheme({
     },
     title: {
       ...styles.fonts.title1
+    },
+    overline: {
+      ...styles.fonts.overline
     }
   },
   overrides: {

@@ -1,8 +1,3 @@
-import './animations.css'
-import './colors.css'
-import './fonts.css'
-import './reset.css'
-
 const colors = {
   gray_01: '#636363',
   gray_02: '#9C9C9C',
@@ -86,7 +81,7 @@ const fonts = {
   },
   body1: {
     fontFamily: '\'Roboto Light\', sans-serif',
-    fontSize: '1rem',
+    fontSize: '16px',
     color: colors.gray_01
   },
   body2: {
@@ -148,6 +143,11 @@ const fonts = {
     fontFamily: 'Roboto-Light, sans-serif',
     fontSize: '1.25rem',
     color: colors.gray_01
+  },
+  overline: {
+    fontFamily: 'Roboto Bold, sans-serif',
+    fontSize: '16px',
+    color: colors.gray_02
   }
 }
 
