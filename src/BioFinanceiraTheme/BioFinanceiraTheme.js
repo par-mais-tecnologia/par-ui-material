@@ -3,6 +3,7 @@ import { styles } from './styles/styles'
 import sliderStyle from './styles/slider'
 import patrimonyResultChartStyle from './styles/patrimonyResultChart'
 import stepperDotsStyle from './styles/stepperDots'
+import buttonStyle from './styles/button'
 
 const theme = {
   styles,
@@ -79,7 +80,8 @@ const theme = {
     }
   },
   patrimonyResultChart: patrimonyResultChartStyle,
-  stepperDotsStyle
+  stepperDotsStyle,
+  buttonStyle
 }
 theme.overrides.MuiInputLabel.root = theme.typography.body2
 theme.overrides = {
