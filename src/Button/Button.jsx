@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button, withStyles, Typography } from '@material-ui/core'
-// TODO: move to BioFinanceiraTheme
 
 const styles = theme => (theme.buttonStyle)
 

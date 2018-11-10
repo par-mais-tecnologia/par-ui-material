@@ -1,11 +1,17 @@
 import React from 'react'
 
 import Button from '../Button'
-import Menu from '@material-ui/core/Menu'
-import MenuItem from '@material-ui/core/MenuItem'
 import Typography from '@material-ui/core/Typography'
 
-const SeeMenu = ({ name, lastUpdate, menuItems, handleClose, handleExit, isOpen }) => (
+import {
+  Menu,
+  MenuItem,
+  withStyles
+} from '@material-ui/core'
+
+const styles = theme => (theme.menu)
+
+const SeeMenu = ({ name, lastUpdate, menuItems, handleClose, handleExit, isOpen, classes }) => (
   <Menu
     id='simple-menu'
     open={isOpen}
@@ -29,8 +35,18 @@ const SeeMenu = ({ name, lastUpdate, menuItems, handleClose, handleExit, isOpen 
     <div className='mt1 mh3 bt bb bw-1' style={{ borderColor: '#E2E2E2' }}>
       {
         [...menuItems].map(item => (
-          <MenuItem onClick={item.onClick}>
-            <Typography variant='body1' style={{ marginLeft: '-16px' }}>
+          <MenuItem
+            onClick={item.onClick}
+            disableGutters
+            classes={{
+              root: classes.menuItem
+            }}
+          >
+            <Typography
+              variant='body1'
+              className='w-100'
+              color='inherit'
+            >
               {item.item}
             </Typography>
           </MenuItem>
@@ -45,4 +61,4 @@ const SeeMenu = ({ name, lastUpdate, menuItems, handleClose, handleExit, isOpen 
   </Menu>
 )
 
-export default SeeMenu
+export default withStyles(styles)(SeeMenu)

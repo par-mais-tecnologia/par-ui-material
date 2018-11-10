@@ -3,7 +3,6 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Button from '@material-ui/core/Button'
 
-
 import { SeeMenu, MuiThemeProvider, SeeTheme } from '../../src'
 
 const menuItems = [
@@ -64,13 +63,13 @@ class MenuStories extends React.Component {
   }
 }
 
-storiesOf('Menu', module)
-  .add('Menu', () => {
+storiesOf('SeeMenu', module)
+  .add('SeeMenu', () => {
     return (
       <MenuStories />
     )
   })
-  .add('Menu See Theme', () => {
+  .add('SeeMenu with See Theme', () => {
     return (
       <MuiThemeProvider theme={SeeTheme}>
         <MenuStories />

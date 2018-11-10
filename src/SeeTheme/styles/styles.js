@@ -86,7 +86,7 @@ const fonts = {
   },
   body2: {
     fontFamily: '\'Roboto Regular\', sans-serif',
-    fontSize: '.875rem',
+    fontSize: '16px',
     color: colors.gray_02
   },
   body3: {
@@ -120,9 +120,9 @@ const fonts = {
     color: colors.pink
   },
   button: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '.875rem',
-    color: colors.pink
+    fontFamily: '\'Roboto Bold\', sans-serif',
+    fontSize: '14px',
+    color: colors.purple
   },
   subheading: {
     fontFamily: '\'Roboto Medium\', sans-serif',
