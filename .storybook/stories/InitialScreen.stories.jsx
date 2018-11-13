@@ -1,8 +1,175 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
-import { InitialScreen, Grid, Button, Input, BioFinanceiraTheme, MuiThemeProvider, InputLabel, TextField } from '../../src'
+import { InitialScreen, Grid, Button, MuiThemeProvider, InputLabel, TextField, SeeTheme, Typography } from '../../src'
 import withTests from './withTests'
+import * as validation from '../../src/Core/validation'
+
+const validator = new validation.Validator()
+
+let seeThemeOverride = SeeTheme;
+seeThemeOverride.overrides.MuiInputLabel.root =  {...seeThemeOverride.overrides.MuiInputLabel.root, color: '#d4d4d4' }
+seeThemeOverride.overrides.MuiInputBase.root =  {...seeThemeOverride.overrides.MuiInputLabel.root, color: '#ffffff' }
+seeThemeOverride.overrides.MuiInputBase.inputType =  {...seeThemeOverride.overrides.MuiInputLabel.inputType, height: '2.1875em' }
+seeThemeOverride.overrides.MuiFormHelperText.root =  {...seeThemeOverride.overrides.MuiFormHelperText.root, fontFamily:  'Roboto Regular'}
+seeThemeOverride.overrides.MuiInput =  {
+  underline: {
+    '&:before': {
+      borderBottomColor: '#d4d4d4'
+    },
+    '&:hover:before': {
+      borderBottomColor: '#ffffff!important'
+    },
+    '&:focus': {
+      borderBottomColor: '#ffffff!important'
+    },
+    '&:after': {
+      borderBottomColor: '#b6dddc'
+    },
+  }
+}
+
+class InitialScreenStory extends PureComponent {
+  state = {
+    value: '',
+    password: '',
+    initialFields: true,
+    insertEmail: false,
+    sendedEmail: false,
+    email: '',
+  }
+
+  handleEmail = (e) => {
+    this.setState({value: e})
+  }
+
+  handlePassword = (e) => {
+    this.setState({password: e})
+  }
+
+  handleForgotPassword = () => {
+    this.setState({insertEmail: true})
+  }
+
+  /* Password input has a bug, needed to put this css to solve */
+  getStyle () {
+    return {
+      marginTop: '13px'
+    }
+  }
+
+  render() {
+    const {value, password, initialFields, email, sendedEmail} = this.state
+
+    return (
+    <MuiThemeProvider theme={seeThemeOverride}>
+      <InitialScreen
+        imageSrc={text('imageSrc', 'https://static.parmais.com.br/images/background.jpg')}
+        middleBoxColor={text('middleBoxColor', '#347A7C')}
+        middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
+        middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}>
+        <div className='flex z-2 justify-center w-100 h-100 justify-center items-center'>
+          <div className='white pv4 pl4 mr5 dn db-ns'>
+            <div className='brandon-regular lh-copy'>
+              <p className='f4 mb2 rounded-elegance'>#ClienteMais</p>
+              <p className='f3 ttu mt2 mb1'>Trabalhamos <br /> <span className='brandon-bold'>para você <br /></span>e para o
+                seu dinheiro</p>
+              <p className='f6 ttu mt2 lh-copy'>Seus investimentos e vida financeira <br /> aos cuidados de especialistas</p>
+            </div>
+            <p className='roboto-bold f6 b'>Conheça a Par Mais</p>
+          </div>
+
+          {initialFields ?
+            <div className='bl-ns b--white-20 white roboto-medium pl5-ns pr5-ns mt4-ns'>
+              <p className='f2 mb4 mt3 rounded-elegance dn-ns'>#ClienteMais</p>
+              <p className='roboto-light f4'>Acesse sua conta</p>
+              <div>
+                <InputLabel>E-mail</InputLabel>
+                <TextField
+                  required
+                  validator={{ validator, type: validation.types.email }}
+                  style={{ width: '100%', marginTop: 0, marginBottom: '1rem'  }}
+                  type='email'
+                  value={value}
+                  InputProps={{
+                    className: 'input2'
+                  }}
+                  onChange={(e) => {
+                    this.handleEmail(e.target.value)
+                  }} />
+
+                <br />
+
+                <InputLabel >Password</InputLabel>
+                <TextField
+                  style={{ width: '100%', marginTop: 0}}
+                  id='PasswordId'
+                  autoComplete='current-password'
+                  type='password'
+                  value={password}
+                  inputProps={{style: this.getStyle()}}
+                  onChange={(e) => {
+                    this.handlePassword(e.target.value)
+                  }}/>
+
+                <a className='f7 f6-ns roboto-bold b mt4 mb4 lh-copy'
+                   onClick={() => {
+                     this.handleForgotPassword()
+                   }}>
+                  Esqueceu sua senha?<br />
+                  Clique para receber uma nova em seu e-mail
+                </a>
+                <div className='flex justify-end'>
+                  <Button
+                    classes={{
+                      contained: seeThemeOverride.styles.buttonStyles.contained,
+                      outlined: seeThemeOverride.styles.buttonStyles.outlined
+                    }}
+                    variant='contained'
+                    color='secondary'>
+                    Continuar
+                  </Button>
+                </div>
+              </div>
+            </div> : ''
+          }
+
+          {sendedEmail ?
+            <div className='bl-ns b--white-20 white roboto-medium pl5-ns pr5-ns mt4-ns'>
+              <p className='f2 mb4 mt3 rounded-elegance dn-ns'>#ClienteMais</p>
+              <Typography variant='headline'> Confira o seu e-mail </Typography>
+              <Typography variant='subheading'> As instruções foram enviadas para </Typography>
+              <Typography variant='subheading'> {email} </Typography>
+
+              <div>
+                <Grid container
+                      direction='row'
+                      justify='space-between'
+                      alignItems='flex-end'
+                      id={'last-grid'}
+                      style={{ height: '100%', marginTop: '5rem' }}>
+                  <Grid item>
+                    <Button variant='contained' color='secondary'>
+                      Cancelar
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button variant='contained' color='secondary'>
+                      Continuar
+                    </Button>
+                  </Grid>
+                </Grid>
+              </div>
+            </div> : ''
+          }
+
+
+        </div>
+      </InitialScreen>
+    </MuiThemeProvider>
+  )
+  }
+}
 
 storiesOf('InitialScreen', module)
   .addDecorator(withKnobs)
@@ -67,57 +234,7 @@ storiesOf('InitialScreen', module)
   })
   .add('Minha Carteira', () => {
     return (
-      <MuiThemeProvider theme={BioFinanceiraTheme}>
-      <InitialScreen
-        imageSrc={text('imageSrc', 'https://static.parmais.com.br/images/background.jpg')}
-        middleBoxColor={text('middleBoxColor', '#347A7C')}
-        middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
-        middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}>
-        <div className='flex z-2 justify-center w-100 h-100 justify-center items-center'>
-          <div className='white pv4 pl4 mr5 dn db-ns'>
-            <div className='brandon-regular lh-copy'>
-              <p className='f4 mb2 rounded-elegance'>#ClienteMais</p>
-              <p className='f3 ttu mt2 mb1'>Trabalhamos <br /> <span className='brandon-bold'>para você <br /></span>e para o
-                seu dinheiro</p>
-              <p className='f6 ttu mt2 lh-copy'>Seus investimentos e vida financeira <br /> aos cuidados de especialistas</p>
-            </div>
-            <p className='roboto-bold f6 b'>Conheça a Par Mais</p>
-          </div>
-          <div className='bl-ns b--white-20 white roboto-medium pl5-ns pr5-ns mt4-ns'>
-            <p className='f2 mb4 mt3 rounded-elegance dn-ns'>#ClienteMais</p>
-            <p className='roboto-light f4'>Acesse sua conta</p>
-            <div>
-              <InputLabel>E-mail</InputLabel>
-              <TextField
-                required
-                validator={{ validator, type: emailValidation }}
-                style={{ width: '100%', marginTop: 0 }}
-                value={email}
-                type='email'
-                InputProps={{
-                  className: 'input2'
-                }}
-                onChange={(e) => {
-                  this.handleEmail(e.target.value)
-                }} />
-              <br />
-              <Input
-                placeholder='Senha'
-                fullWidth
-              />
-              <p className='f7 f6-ns roboto-bold b mt4 mb4 lh-copy'>
-                Esqueceu sua senha?<br />
-                Clique para receber uma nova em seu e-mail
-              </p>
-              <div className='flex justify-end'>
-                <Button variant='contained' color='secondary'>
-                  Continuar
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </InitialScreen>
-      </MuiThemeProvider>
+      <InitialScreenStory />
     )
   })
+

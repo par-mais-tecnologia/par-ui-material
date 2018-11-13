@@ -51,7 +51,7 @@ export const seeTheme = createMuiTheme({
     },
     MuiInputLabel: {
       root: {
-        fontFamily: 'Roboto'
+        fontFamily: 'Roboto Regular'
       }
     },
     MuiFormLabel: {

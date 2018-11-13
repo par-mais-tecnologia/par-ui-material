@@ -130,9 +130,9 @@ const fonts = {
     color: colors.purple
   },
   subheading: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '1rem',
-    color: colors.pink
+    fontFamily: '\'Roboto Regular\', sans-serif',
+    fontSize: '16px',
+    color: colors.white
   },
   mainTitle: {
     fontFamily: "'Brandon Light', sans-serif",
@@ -140,14 +140,14 @@ const fonts = {
     color: colors.white
   },
   footerText: {
-    fontFamily: 'Roboto-Light, sans-serif',
+    fontFamily: 'Roboto Light, sans-serif',
     fontSize: '0.875rem',
     color: colors.gray_04
   },
   headline: {
-    fontFamily: 'Roboto-Light, sans-serif',
-    fontSize: '1.25rem',
-    color: colors.gray_01
+    fontFamily: 'Roboto Light, sans-serif',
+    fontSize: '16px',
+    color: colors.white
   },
   overline: {
     fontFamily: 'Roboto Bold, sans-serif',
@@ -156,8 +156,34 @@ const fonts = {
   }
 }
 
+const buttonStyles = {
+  contained: {
+    color: 'white',
+    backgroundColor: '#632B7D',
+    '&$contained:hover': {
+      backgroundColor: '#491760'
+    },
+    '&$contained:focus': {
+      backgroundColor: '#8849A5'
+    }
+  },
+  outlined: {
+    color: '#D4436B',
+    backgroundColor: 'white',
+    borderStyle: 'hidden solid solid solid',
+    boxShadow: '0px 1px #C1C1C1',
+    '&$outlined:hover': {
+      backgroundColor: '#F7F7F7'
+    },
+    '&$outlined:focus': {
+      backgroundColor: '#F0F0F0'
+    }
+  }
+}
+
 export const styles = {
   colors,
   classes,
-  fonts
+  fonts,
+  buttonStyles
 }

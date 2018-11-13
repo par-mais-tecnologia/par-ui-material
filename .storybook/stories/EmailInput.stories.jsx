@@ -92,7 +92,6 @@ class EmailInputStory extends PureComponent {
           </Button>
         </MuiThemeProvider>
       </div>
-
     )
   }
 }
