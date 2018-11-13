@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react'
 import Button from '@material-ui/core/Button'
 
 import { SeeMenu, MuiThemeProvider, SeeTheme } from '../../src'
+import withTests from './withTests'
 
 const menuItems = [
   {
@@ -64,6 +65,7 @@ class MenuStories extends React.Component {
 }
 
 storiesOf('SeeMenu', module)
+  .addDecorator(withTests('SeeMenu'))
   .add('SeeMenu', () => {
     return (
       <MenuStories />

@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeeMenu shallow shallow Stepper match Snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WithStyles(SeeMenu)
+    handleClose={[Function]}
+    isOpen={true}
+    lastUpdate={
+      Object {
+        "date": "29/09/1989",
+        "time": "14:34",
+      }
+    }
+    menuItems={
+      Array [
+        Object {
+          "item": "SEUS OBJETIVOS",
+          "onClick": [Function],
+        },
+        Object {
+          "item": "INTELIGÊNCIA EM INVESTIMENTOS",
+          "onClick": [Function],
+        },
+        Object {
+          "item": "INFORMAÇÕES",
+          "onClick": [Function],
+        },
+        Object {
+          "item": "CONTATO",
+          "onClick": [Function],
+        },
+      ]
+    }
+    name="Rui Cavaleiro"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "classes": Object {},
+      "handleClose": [Function],
+      "isOpen": true,
+      "lastUpdate": Object {
+        "date": "29/09/1989",
+        "time": "14:34",
+      },
+      "menuItems": Array [
+        Object {
+          "item": "SEUS OBJETIVOS",
+          "onClick": [Function],
+        },
+        Object {
+          "item": "INTELIGÊNCIA EM INVESTIMENTOS",
+          "onClick": [Function],
+        },
+        Object {
+          "item": "INFORMAÇÕES",
+          "onClick": [Function],
+        },
+        Object {
+          "item": "CONTATO",
+          "onClick": [Function],
+        },
+      ],
+      "name": "Rui Cavaleiro",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "classes": Object {},
+        "handleClose": [Function],
+        "isOpen": true,
+        "lastUpdate": Object {
+          "date": "29/09/1989",
+          "time": "14:34",
+        },
+        "menuItems": Array [
+          Object {
+            "item": "SEUS OBJETIVOS",
+            "onClick": [Function],
+          },
+          Object {
+            "item": "INTELIGÊNCIA EM INVESTIMENTOS",
+            "onClick": [Function],
+          },
+          Object {
+            "item": "INFORMAÇÕES",
+            "onClick": [Function],
+          },
+          Object {
+            "item": "CONTATO",
+            "onClick": [Function],
+          },
+        ],
+        "name": "Rui Cavaleiro",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

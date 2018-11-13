@@ -41,6 +41,7 @@ const SeeMenu = ({ name, lastUpdate, menuItems, handleClose, handleExit, isOpen,
             classes={{
               root: classes.menuItem
             }}
+            key={`menuItemMobile-${item.item}`}
           >
             <Typography
               variant='body1'

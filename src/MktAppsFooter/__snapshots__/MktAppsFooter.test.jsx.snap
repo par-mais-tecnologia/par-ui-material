@@ -27,6 +27,30 @@ ShallowWrapper {
           },
           "width": [Function],
         },
+        "buttonStyle": Object {
+          "contained": Object {
+            "&$contained:focus": Object {
+              "backgroundColor": "#BB5679",
+            },
+            "&$contained:hover": Object {
+              "backgroundColor": "#9D0238",
+            },
+            "backgroundColor": "#D4436B",
+            "color": "white",
+          },
+          "outlined": Object {
+            "&$outlined:focus": Object {
+              "backgroundColor": "#F0F0F0",
+            },
+            "&$outlined:hover": Object {
+              "backgroundColor": "#F7F7F7",
+            },
+            "backgroundColor": "white",
+            "borderStyle": "hidden solid solid solid",
+            "boxShadow": "0px 1px #C1C1C1",
+            "color": "#D4436B",
+          },
+        },
         "direction": "ltr",
         "mixins": Object {
           "gutters": [Function],
