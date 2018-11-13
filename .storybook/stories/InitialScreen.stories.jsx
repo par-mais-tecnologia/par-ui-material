@@ -122,8 +122,10 @@ class InitialScreenStory extends PureComponent {
                 <div className='flex justify-end'>
                   <Button
                     classes={{
-                      contained: seeThemeOverride.styles.buttonStyles.contained,
-                      outlined: seeThemeOverride.styles.buttonStyles.outlined
+                      classes: {
+                        contained: seeThemeOverride.styles.buttonStyles.contained,
+                        outlined: seeThemeOverride.styles.buttonStyles.outlined
+                      }
                     }}
                     variant='contained'
                     color='secondary'>

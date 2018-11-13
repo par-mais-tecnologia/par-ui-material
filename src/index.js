@@ -37,7 +37,6 @@ export { default as MaskedInput } from './MaskedInput'
 export { default as MyWalletLoading } from './MyWalletLoading'
 export { default as SeeMenu } from './SeeMenu'
 export { default as SeeAppBar } from './AppBar'
-export { default as SeeTheme } from './SeeTheme'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'
