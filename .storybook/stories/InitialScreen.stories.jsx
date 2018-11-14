@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
-import { InitialScreen, Grid, Button, MuiThemeProvider, InputLabel, TextField, SeeTheme, Typography } from '../../src'
+import { InitialScreen, Grid, Button, MuiThemeProvider, InputLabel, TextField, SeeTheme, Typography, BioFinanceiraTheme } from '../../src'
 import withTests from './withTests'
 import * as validation from '../../src/Core/validation'
 
@@ -29,7 +29,7 @@ seeThemeOverride.overrides.MuiInput =  {
   }
 }
 
-class InitialScreenStory extends PureComponent {
+class InitialScreenStory extends React.Component {
   state = {
     value: '',
     password: '',
@@ -40,7 +40,7 @@ class InitialScreenStory extends PureComponent {
   }
 
   handleEmail = (e) => {
-    this.setState({value: e})
+    this.setState({email: e})
   }
 
   handlePassword = (e) => {
@@ -48,7 +48,15 @@ class InitialScreenStory extends PureComponent {
   }
 
   handleForgotPassword = () => {
-    this.setState({insertEmail: true})
+    this.setState({insertEmail: true, initialFields: false})
+  }
+
+  handleSendEmail = () => {
+    this.setState({insertEmail: false, sendedEmail: true})
+  }
+
+  handleCancel = () => {
+    this.setState({insertEmail: false, sendedEmail: false, initialFields: true})
   }
 
   /* Password input has a bug, needed to put this css to solve */
@@ -59,7 +67,7 @@ class InitialScreenStory extends PureComponent {
   }
 
   render() {
-    const {value, password, initialFields, email, sendedEmail} = this.state
+    const {value, password, initialFields, email, sendedEmail, insertEmail} = this.state
 
     return (
     <MuiThemeProvider theme={seeThemeOverride}>
@@ -107,7 +115,6 @@ class InitialScreenStory extends PureComponent {
                   autoComplete='current-password'
                   type='password'
                   value={password}
-                  inputProps={{style: this.getStyle()}}
                   onChange={(e) => {
                     this.handlePassword(e.target.value)
                   }}/>
@@ -121,17 +128,59 @@ class InitialScreenStory extends PureComponent {
                 </a>
                 <div className='flex justify-end'>
                   <Button
-                    classes={{
-                      classes: {
-                        contained: seeThemeOverride.styles.buttonStyles.contained,
-                        outlined: seeThemeOverride.styles.buttonStyles.outlined
-                      }
-                    }}
-                    variant='contained'
-                    color='secondary'>
+                    variant='contained'>
                     Continuar
                   </Button>
                 </div>
+              </div>
+            </div> : ''
+          }
+
+          {insertEmail ?
+            <div className='bl-ns b--white-20 white roboto-medium pl5-ns pr5-ns mt4-ns'>
+              <p className='f2 mb4 mt3 rounded-elegance dn-ns'>#ClienteMais</p>
+              <Typography variant='headline'> Enviaremos para o seu e-mail um link </Typography>
+              <Typography variant='headline'> para você criar uma nova senha </Typography>
+
+              <div className='mv3'>
+                <InputLabel>Digite seu e-mail</InputLabel>
+                <TextField
+                  required
+                  validator={{ validator, type: validation.types.email }}
+                  style={{ width: '100%', marginTop: 0, marginBottom: '1rem'  }}
+                  type='email'
+                  value={email}
+                  InputProps={{
+                    className: 'input2'
+                  }}
+                  onChange={(e) => {
+                    this.handleEmail(e.target.value)
+                  }} />
+
+                <Grid container
+                      direction='row'
+                      justify='space-between'
+                      alignItems='flex-end'
+                      id={'last-grid'}
+                      style={{ height: '100%', marginTop: '5rem' }}>
+                  <Grid item>
+                    <Button variant='outlined'
+                            color='secondary'
+                            onClick={() => {
+                              this.handleCancel()
+                            }}>
+                      Cancelar
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button variant='contained'
+                            onClick={() => {
+                              this.handleSendEmail()
+                            }}>
+                      Continuar
+                    </Button>
+                  </Grid>
+                </Grid>
               </div>
             </div> : ''
           }
@@ -143,28 +192,19 @@ class InitialScreenStory extends PureComponent {
               <Typography variant='subheading'> As instruções foram enviadas para </Typography>
               <Typography variant='subheading'> {email} </Typography>
 
-              <div>
-                <Grid container
-                      direction='row'
-                      justify='space-between'
-                      alignItems='flex-end'
-                      id={'last-grid'}
-                      style={{ height: '100%', marginTop: '5rem' }}>
-                  <Grid item>
-                    <Button variant='contained' color='secondary'>
-                      Cancelar
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button variant='contained' color='secondary'>
-                      Continuar
-                    </Button>
-                  </Grid>
-                </Grid>
+              <div className='mt6'>
+                <div className='flex justify-end'>
+                  <Button
+                    variant='contained'
+                    onClick={() => {
+                      this.handleCancel()
+                    }}>
+                    Continuar
+                  </Button>
+                </div>
               </div>
             </div> : ''
           }
-
 
         </div>
       </InitialScreen>
@@ -191,7 +231,8 @@ storiesOf('InitialScreen', module)
   })
   .add('BIO Financeira', () => {
     return (
-      <InitialScreen
+      <MuiThemeProvider theme={BioFinanceiraTheme}>
+        <InitialScreen
         imageSrc={text('imageSrc', 'https://static.parmais.com.br/images/background.jpg')}
         middleBoxColor={text('middleBoxColor', '#347A7C')}
         middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
@@ -225,18 +266,21 @@ storiesOf('InitialScreen', module)
               <Button
                 onClick={() => console.log('Clicou no botão "COMECE AGORA"')}
                 variant='contained'
-                color='secondary'>
+              >
                 COMECE AGORA
               </Button>
             </Grid>
           </Grid>
         </Grid>
       </InitialScreen>
+      </MuiThemeProvider>
     )
   })
   .add('Minha Carteira', () => {
     return (
-      <InitialScreenStory />
+      <MuiThemeProvider theme={SeeTheme}>
+        <InitialScreenStory />
+      </MuiThemeProvider>
     )
   })
 
