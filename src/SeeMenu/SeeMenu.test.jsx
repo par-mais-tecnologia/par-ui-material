@@ -37,12 +37,12 @@ export const testShallow = describe('SeeMenu shallow', () => {
     />
   )
 
-  it(`shallow Stepper`, () => {
+  it(`shallow SeeMenu`, () => {
     const wrapper = shallow(getShallow())
     expect(wrapper).toBeTruthy()
   })
 
-  it('shallow Stepper match Snapshot', () => {
+  it('shallow SeeMenu match Snapshot', () => {
     const wrapper = shallow(getShallow())
     expect(wrapper).toMatchSnapshot()
   })

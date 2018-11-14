@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeeMenu shallow shallow SeeMenu match Snapshot 1`] = `
+exports[`SeeAppBar match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(SeeMenu)
-    handleClose={[Function]}
-    isOpen={true}
+  Symbol(enzyme.__unrendered__): <WithStyles(SeeAppBar)
+    handleExit={[Function]}
     lastUpdate={
       Object {
         "date": "29/09/1989",
@@ -45,11 +44,10 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
       "classes": Object {},
-      "handleClose": [Function],
-      "isOpen": true,
+      "handleExit": [Function],
       "lastUpdate": Object {
         "date": "29/09/1989",
         "time": "14:34",
@@ -82,11 +80,10 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "classes": Object {},
-        "handleClose": [Function],
-        "isOpen": true,
+        "handleExit": [Function],
         "lastUpdate": Object {
           "date": "29/09/1989",
           "time": "14:34",

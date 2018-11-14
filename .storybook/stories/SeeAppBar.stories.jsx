@@ -6,6 +6,8 @@ import {
   SeeAppBar,
 } from '../../src'
 
+import withTests from './withTests'
+
 class AppBarStories extends React.Component {
   render() {
     const name = 'Rui Cavaleiro'
@@ -45,6 +47,7 @@ class AppBarStories extends React.Component {
 }
 
 storiesOf('SeeAppBar', module)
+  .addDecorator(withTests('AppBar'))
   .add('SeeAppBar', () => {
     return (
       <MuiThemeProvider theme={SeeTheme}>

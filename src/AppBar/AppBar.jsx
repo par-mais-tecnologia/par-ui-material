@@ -62,6 +62,7 @@ class SeeAppBar extends React.Component {
         <Toolbar>
           <div className='flex items-center justify-between w-100'>
             <div
+              id='seeMenuMobile'
               className='dn-l'
               style={menuItems.length === 0 ? { visibility: 'hidden' } : {}}
             >
