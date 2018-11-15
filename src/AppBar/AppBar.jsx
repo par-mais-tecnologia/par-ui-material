@@ -15,23 +15,6 @@ import {
 const styles = theme => (theme.menu)
 
 class SeeAppBar extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      menuIsOpen: false
-    }
-    this.closeMenu = this.closeMenu.bind(this)
-    this.openMenu = this.openMenu.bind(this)
-  }
-
-  closeMenu = () => {
-    this.setState({ menuIsOpen: false })
-  }
-
-  openMenu = () => {
-    this.setState({ menuIsOpen: true })
-  }
-
   renderMenuItems = (menuItems, classes) =>
     (
       [...menuItems].map((item, index) => (
@@ -53,7 +36,17 @@ class SeeAppBar extends React.Component {
     )
 
   render () {
-    const { name, lastUpdate, menuItems, handleExit, classes } = this.props
+    const {
+      name,
+      lastUpdate,
+      menuItems,
+      handleExit,
+      menuIsOpen,
+      closeMenu,
+      openMenu,
+      classes
+    } = this.props
+
     return (
       <AppBar
         position='static'
@@ -68,7 +61,7 @@ class SeeAppBar extends React.Component {
             >
               <IconButton
                 style={{ transform: 'scale(0.5)', marginLeft: '-20px' }}
-                onClick={this.openMenu}
+                onClick={openMenu}
               >
                 <i className='gray par-icon-menu' />
               </IconButton>
@@ -76,9 +69,10 @@ class SeeAppBar extends React.Component {
                 name={name}
                 lastUpdate={lastUpdate}
                 menuItems={menuItems}
-                isOpen={this.state.menuIsOpen}
-                handleClose={this.closeMenu}
+                isOpen={menuIsOpen}
+                handleClose={closeMenu}
                 handleExit={handleExit}
+                className='dn-l'
               />
             </div>
             <div>

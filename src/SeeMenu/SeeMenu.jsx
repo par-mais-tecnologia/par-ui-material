@@ -11,14 +11,25 @@ import {
 
 const styles = theme => (theme.menu)
 
-const SeeMenu = ({ name, lastUpdate, menuItems, handleClose, handleExit, isOpen, classes }) => (
+const SeeMenu = ({
+  name,
+  lastUpdate,
+  menuItems,
+  handleClose,
+  handleExit,
+  isOpen,
+  className,
+  classes
+}) => (
   <Menu
     id='simple-menu'
     open={isOpen}
     onClose={handleClose}
     disableAutoFocusItem
     anchorReference='anchorPosition'
-    anchorPosition='left'>
+    anchorPosition='left'
+    className={className}
+  >
     <div className='pl3 pt2'>
       <i className='gray par-icon-close' onClick={handleClose} />
     </div>
