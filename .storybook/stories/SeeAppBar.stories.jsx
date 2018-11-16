@@ -7,6 +7,7 @@ import {
 } from '../../src'
 
 import withTests from './withTests'
+import {isMobile} from '../../src/Core/functions'
 
 class AppBarStories extends React.Component {
   constructor (props) {
@@ -73,11 +74,17 @@ class AppBarStories extends React.Component {
           style={{
             height:'400px',
             width:'100%',
-            backgroundColor: 'red'
+            backgroundColor: 'red',
+            filter: this.state.menuIsOpen && isMobile() ? 'blur(2px)' : ''
           }}
           onPointerUp={this.onUp}
           onPointerDown={this.onDown}
-        />
+        >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Vestibulum elementum lorem sapien, eget euismod neque pellentesque eget. 
+        Pellentesque ac quam vitae mi auctor aliquet. 
+        Nam felis ante, lacinia eget elit nec, sollicitudin fringilla leo. 
+        </div>
       </div>
     )
   }
