@@ -19,6 +19,7 @@ const SeeMenu = ({
   handleExit,
   isOpen,
   className,
+  selectedIndex,
   classes
 }) => (
   <Menu
@@ -45,7 +46,7 @@ const SeeMenu = ({
     </div>
     <div className='mt1 mh3 bt bb bw-1' style={{ borderColor: '#E2E2E2' }}>
       {
-        [...menuItems].map(item => (
+        [...menuItems].map((item, index) => (
           <MenuItem
             onClick={item.onClick}
             disableGutters
@@ -58,6 +59,9 @@ const SeeMenu = ({
               variant='body1'
               className='w-100'
               color='inherit'
+              style={selectedIndex === index
+                ? { color: '#347A7C', fontFamily: '\'Roboto Bold\', sans-serif' }
+                : {}}
             >
               {item.item}
             </Typography>

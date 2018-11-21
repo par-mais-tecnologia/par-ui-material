@@ -15,7 +15,7 @@ import {
 const styles = theme => (theme.menu)
 
 class SeeAppBar extends React.Component {
-  renderMenuItems = (menuItems, classes) =>
+  renderMenuItems = (menuItems, classes, selectedIndex) =>
     (
       [...menuItems].map((item, index) => (
         <MenuItem
@@ -28,6 +28,9 @@ class SeeAppBar extends React.Component {
             className='ph3'
             color='inherit'
             key={`menuItemDesktop-${index}`}
+            style={selectedIndex === index
+              ? { color: '#347A7C', fontFamily: '\'Roboto Bold\', sans-serif' }
+              : {}}
           >
             {item.item}
           </Typography>
@@ -44,6 +47,7 @@ class SeeAppBar extends React.Component {
       menuIsOpen,
       closeMenu,
       openMenu,
+      selectedIndex,
       classes
     } = this.props
 
@@ -72,6 +76,7 @@ class SeeAppBar extends React.Component {
                 isOpen={menuIsOpen}
                 handleClose={closeMenu}
                 handleExit={handleExit}
+                selectedIndex={selectedIndex}
                 className='dn-l'
               />
             </div>
@@ -82,7 +87,7 @@ class SeeAppBar extends React.Component {
               />
             </div>
             <div className='dn flex-l'>
-              {this.renderMenuItems(menuItems, classes)}
+              {this.renderMenuItems(menuItems, classes, selectedIndex)}
             </div>
             <div className='flex items-center'>
               <div className='dn flex-l'>

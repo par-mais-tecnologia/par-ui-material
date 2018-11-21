@@ -15,7 +15,8 @@ class AppBarStories extends React.Component {
     this.state = {
       initialX: 0,
       isDragging: false,
-      menuIsOpen: false
+      menuIsOpen: false,
+      selectedIndex: ''
     }
     this.closeMenu = this.closeMenu.bind(this)
     this.openMenu = this.openMenu.bind(this)
@@ -44,19 +45,19 @@ class AppBarStories extends React.Component {
     const menuItems = [
       {
         item: 'SEUS OBJETIVOS',
-        onClick: () => console.log('objetivos')
+        onClick: () => this.setState({selectedIndex: 0})
       },
       {
         item: 'INTELIGÊNCIA EM INVESTIMENTOS',
-        onClick: () => console.log('inteligencia')
+        onClick: () => this.setState({selectedIndex: 1})
       },
       {
         item: 'INFORMAÇÕES',
-        onClick: () => console.log('info')
+        onClick: () => this.setState({selectedIndex: 2})
       },
       {
         item: 'CONTATO',
-        onClick: () => console.log('contato')
+        onClick: () => this.setState({selectedIndex: 3})
       }
     ]
     return (
@@ -69,6 +70,7 @@ class AppBarStories extends React.Component {
           menuIsOpen={this.state.menuIsOpen}
           closeMenu={this.closeMenu}
           openMenu={this.openMenu}
+          selectedIndex={this.state.selectedIndex}
         />
         <div 
           style={{

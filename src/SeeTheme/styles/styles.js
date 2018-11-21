@@ -92,7 +92,7 @@ const fonts = {
   body2: {
     fontFamily: '\'Roboto Regular\', sans-serif',
     fontSize: '16px',
-    color: colors.gray_02
+    color: colors.gray_01
   },
   body3: {
     fontFamily: '\'Roboto Medium\', sans-serif',
