@@ -77,7 +77,7 @@ class AppBarStories extends React.Component {
             height:'400px',
             width:'100%',
             backgroundColor: 'red',
-            filter: this.state.menuIsOpen && isMobile() && !withoutMenuItems ? 'blur(2px)' : ''
+            filter: this.state.menuIsOpen && isMobile() ? 'blur(2px)' : ''
           }}
           onPointerUp={this.onUp}
           onPointerDown={this.onDown}
