@@ -33,7 +33,7 @@ const classes = {
   title1: 'f4 brandon-regular pink',
   title2: 'f1 roboto-medium gray_01',
   title3: 'f1 roboto-medium turquise',
-  subtitle1: 'f3 roboto-light gray_01',
+  subtitle1: 'f2 roboto-light gray_01',
   subtitle2: 'f3 roboto-medium turquise',
   subtitle3: 'f4 brandon-regular turquise',
   subtitle4: 'f6 brandon-bold turquise',
