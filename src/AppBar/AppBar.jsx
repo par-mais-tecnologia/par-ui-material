@@ -77,7 +77,7 @@ class SeeAppBar extends React.Component {
                 handleClose={closeMenu}
                 handleExit={handleExit}
                 selectedIndex={selectedIndex}
-                className='dn-l'
+                className={`dn-l ${menuItems.length === 0 ? 'dn' : ''}`}
               />
             </div>
             <div>
