@@ -22,7 +22,7 @@ class PasswordDefinitionView extends PureComponent {
       <MuiThemeProvider theme={SeeTheme}>
         <div className='flex justify-center mb5'>
           <div className='w-100 w-40-ns'>
-            <Typography variant='subtitle1' className='tc pa4'>
+            <Typography variant='title' className='tc pa4'>
               Defina sua senha
             </Typography>
             <Paper className='pt4 ph4 pb5 ph5-l pb6-l'>
