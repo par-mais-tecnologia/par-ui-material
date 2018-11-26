@@ -50,9 +50,9 @@ const classes = {
 
 const fonts = {
   title1: {
-    fontFamily: '\'Brandon Regular\', sans-serif',
-    fontSize: '1.25rem',
-    color: colors.pink
+    fontFamily: '\'Roboto Light\', sans-serif',
+    fontSize: '36px',
+    color: colors.gray_01
   },
   title2: {
     fontFamily: '\'Roboto Medium\', sans-serif',
