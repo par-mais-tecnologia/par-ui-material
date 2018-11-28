@@ -7,6 +7,7 @@ function ButtonPar (props) {
   const { classes, variant, onClick, href, target } = props
   return (
     <Button
+      {...props}
       target={target}
       href={href}
       variant={variant}
