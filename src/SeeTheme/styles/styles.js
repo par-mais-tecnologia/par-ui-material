@@ -15,9 +15,11 @@ const colors = {
   siren: '#019193',
   see: '#347A7C',
 
-  pink: '#D4436B',
+  pink: '#D2436C',
 
   green: '#94BA1D',
+
+  lightGreen: '#7FBC42',
 
   purple: '#632B7D',
 
@@ -25,64 +27,48 @@ const colors = {
 
   white: '#ffffff',
 
+  yellow: '#F8DB02',
+
   seeGradient: 'linear-gradient(26deg, #347A7C, #8ACAC7)',
   bgFooter: '#383838'
 }
 
 const classes = {
-  title1: 'f4 brandon-regular pink',
-  title2: 'f1 roboto-medium gray_01',
-  title3: 'f1 roboto-medium turquise',
-  subtitle1: 'f2 roboto-light gray_01',
-  subtitle2: 'f3 roboto-medium turquise',
-  subtitle3: 'f4 brandon-regular turquise',
-  subtitle4: 'f6 brandon-bold turquise',
-  subtitle5: 'f7 roboto-light gray_04',
-  body1: 'f5 roboto-light gray_01',
-  body2: 'f4 roboto-light gray_01',
-  body4: 'f5 roboto-medium gray_01',
-  highlight1: 'f5 roboto-medium pink',
-  highlight2: 'f6 roboto-regular gray_01',
-  highlight3: 'f5 roboto-light pink',
-  links: 'f6 roboto-bold gray_02',
-  button: 'f6 roboto-medium pink toUppercase'
+  h1Style: 'f2 roboto-light gray_01',
+  h2Style: 'f3 roboto-light gray_01',
+  h3Style: 'f3 roboto-light white',
+  h4Style: 'f5 roboto-regular white',
+  h5Style: 'f5 roboto-light white',
+  h6Style: 'f2 brandon-regular white',
 }
 
 const fonts = {
   title1: {
-    fontFamily: '\'Roboto Light\', sans-serif',
-    fontSize: '36px',
-    color: colors.gray_01
+    fontFamily: '\'Brandon Regular\', sans-serif',
+    fontSize: '20px',
+    color: colors.turquise
   },
   title2: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '3rem',
-    color: colors.gray_01
+    /* free to use */
   },
   title3: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '3rem',
-    color: colors.turquise
+    /* free to use */
   },
   subtitle1: {
-    fontFamily: '\'Roboto Light\', sans-serif',
-    fontSize: '1.5rem',
-    color: colors.gray_01
+    fontFamily: '\'Roboto Regular\', sans-serif',
+    fontSize: '16px',
+    color: colors.white
   },
   subtitle2: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '1.5rem',
-    color: colors.turquise
+    fontFamily: '\'Roboto Regular\', sans-serif',
+    fontSize: '14px',
+    color: colors.white
   },
   subtitle3: {
-    fontFamily: '\'Roboto Regular\', sans-serif',
-    fontSize: '1.25rem',
-    color: colors.turquise
+    /* free to use */
   },
   subtitle4: {
-    fontFamily: '\'Roboto Regular\', sans-serif',
-    fontSize: '.875rem',
-    color: colors.turquise
+    /* free to use */
   },
   body1: {
     fontFamily: '\'Roboto Light\', sans-serif',
@@ -95,64 +81,67 @@ const fonts = {
     color: colors.gray_01
   },
   body3: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '3rem',
-    color: colors.turquise
+    /* free to use */
   },
   body4: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '1rem',
-    color: colors.gray_01
+    /* free to use */
   },
   highlight1: {
-    fontFamily: '\'Roboto Medium\', sans-serif',
-    fontSize: '1rem',
-    color: colors.pink
+    /* free to use */
   },
   highlight2: {
-    fontFamily: '\'Roboto Regular\', sans-serif',
-    fontSize: '.875rem',
-    color: colors.gray_01
+    /* free to use */
   },
   highlight3: {
-    fontFamily: '\'Roboto Light\', sans-serif',
-    fontSize: '1rem',
-    color: colors.pink
+    /* free to use */
   },
   links: {
-    fontFamily: '\'Brandon Regular\', sans-serif',
-    fontSize: '1.25rem',
-    color: colors.pink
-  },
-  button: {
-    fontFamily: '\'Roboto Bold\', sans-serif',
-    fontSize: '14px',
-    color: colors.purple
+    /* free to use */
   },
   subheading: {
     fontFamily: '\'Roboto Regular\', sans-serif',
-    fontSize: '16px',
+    fontSize: '12px',
     color: colors.white
-  },
-  mainTitle: {
-    fontFamily: "'Brandon Light', sans-serif",
-    fontSize: '1.6rem',
-    color: colors.white
-  },
-  footerText: {
-    fontFamily: 'Roboto Light, sans-serif',
-    fontSize: '0.875rem',
-    color: colors.gray_04
   },
   headline: {
-    fontFamily: 'Roboto Light, sans-serif',
-    fontSize: '16px',
+    fontFamily: 'Brandon Regular, sans-serif',
+    fontSize: '20px',
     color: colors.white
   },
   overline: {
     fontFamily: 'Roboto Bold, sans-serif',
     fontSize: '16px',
     color: colors.gray_02
+  },
+  caption: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    fontSize: '14px',
+    color: colors.gray_02
+  },
+  button: {
+    fontFamily: 'Roboto Bold, sans-serif',
+    fontSize: '14px',
+    color: colors.purple
+  },
+  display4: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    fontSize: '16px',
+    color: colors.cobalt
+  },
+  display3: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    fontSize: '16px',
+    color: colors.purple
+  },
+  display2: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    fontSize: '16px',
+    color: colors.lightGreen
+  },
+  display1: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    fontSize: '16px',
+    color: colors.pink
   }
 }
 
