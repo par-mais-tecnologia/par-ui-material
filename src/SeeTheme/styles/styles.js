@@ -39,7 +39,7 @@ const classes = {
   h3Style: 'f3 roboto-light white',
   h4Style: 'f5 roboto-regular white',
   h5Style: 'f5 roboto-light white',
-  h6Style: 'f2 brandon-regular white',
+  h6Style: 'f2 brandon-regular white'
 }
 
 const fonts = {
