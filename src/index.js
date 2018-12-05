@@ -38,6 +38,7 @@ export { default as MyWalletLoading } from './MyWalletLoading'
 export { default as SeeMenu } from './SeeMenu'
 export { default as SeeAppBar } from './AppBar'
 export { default as ParallaxPage } from './ParallaxPage'
+export { default as RentabilityBar } from './RentabilityBar'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'
