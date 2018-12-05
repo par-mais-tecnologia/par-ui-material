@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
+import { boolean, withKnobs } from '@storybook/addon-knobs'
 import {
   MuiThemeProvider,
   BioFinanceiraTheme,
@@ -25,14 +26,31 @@ class LegendChartStory extends PureComponent {
 }
 
 storiesOf('LegendChart', module)
+  .addDecorator(withKnobs)
   .addDecorator(withTests('LegendChart'))
   .add('shallow', () => {
+    const initialInvestment = 200000
+    const strategies = getStrategies(initialInvestment, walletExample)
+    return (
+      <LegendChartStory>
+        <LegendChart 
+          initialInvestment={initialInvestment} 
+          strategies={strategies} 
+          showPercentage={boolean('showPercentage', true)}/>
+      </LegendChartStory>
+    )
+  })
+  .add('Minha Carteira', () => {
     const initialInvestment = 200000
     const strategies = getStrategies(initialInvestment, walletExample)
 
     return (
       <LegendChartStory>
-        <LegendChart initialInvestment={initialInvestment} strategies={strategies} />
+        <LegendChart 
+          initialInvestment={initialInvestment} 
+          strategies={strategies} 
+          showPercentage={boolean('showPercentage', false)}
+          />
       </LegendChartStory>
     )
   })

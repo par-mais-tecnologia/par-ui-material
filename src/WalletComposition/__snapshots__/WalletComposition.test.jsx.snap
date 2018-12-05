@@ -1,0 +1,1056 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WalletComposition shallow WalletComposition match Snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WalletComposition
+    data={
+      Array [
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS FORTEM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.071",
+          "product": Object {
+            "cnpj": "19.782.311/0001-88",
+            "createdAt": "2018-07-17T19:55:43.202Z",
+            "evaluation": "- Rentabilidade dos últimos 24 meses – 106% do CDI
+- Carteira – Títulos públicos, privados e títulos de instituições financeiras de grande e médio porte
+- PL atual – R$ 241 milhões
+- CNPJ do fundo: 19.782.311/0001-88",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Tem como objetivo superar o CDI. Carteira com exposição a títulos públicos, privados e de instituições financeiras de médio e grande porte. Sua performance histórica supera o CDI e possui uma taxa de administração baixa em relação aos pares.",
+              },
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "- Rentabilidade dos últimos 24 meses – 106% do CDI
+- Carteira – Títulos públicos, privados e títulos de instituições financeiras de grande e médio porte
+- PL atual – R$ 241 milhões
+- CNPJ do fundo: 19.782.311/0001-88",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-10-02T16:16:45.349Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4b6ce00130emmeafwb2n7",
+            "institution": "Az Quest",
+            "liquidity": 5,
+            "name": "*AZ QUEST VALORE FI RENDA FIXA CP",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Crédito",
+            "updatedAt": "2018-10-02T16:16:45.372Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS FORTEM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.017",
+          "product": Object {
+            "cnpj": "09.141.893/0001-60",
+            "createdAt": "2017-11-14T16:56:44.143Z",
+            "evaluation": "Fundo Long Short neutro, ou seja, busca auferir ganhos com operações compradas e vendidas no mercado de ações, porém sem exposição direcional em bolsa. Fundo de média volatilidade e ótima rentabilidade histórica.",
+            "id": "cj9zv1au0003ah0je0p1n1xm1",
+            "institution": "Az Quest",
+            "liquidity": 6,
+            "name": "AZ QUEST EQUITY HEDGE FIC FIM",
+            "observations": "Fundo Long Short neutro, com visão fundamentalista e baixa volatilidade",
+            "status": "Recomendado",
+            "strategy": "Multimercado",
+            "subStrategy": "Long Short",
+            "updatedAt": "2017-11-14T16:56:44.143Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS IMPERIUM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.104",
+          "product": Object {
+            "cnpj": "23.556.185/0001-10",
+            "createdAt": "2017-11-14T16:56:44.297Z",
+            "evaluation": "- Rentabilidade dos últimos 24 meses – 106% do CDI
+- Carteira – Títulos públicos, privados e títulos de instituições financeiras de grande e médio porte
+- PL atual – R$ 4,1 bilhões
+- CNPJ do fundo: 23.556.185/0001-10",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              },
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo de renda fixa que acompanha o CDI. Sua carteira é composta por títulos públicos, títulos de instituições financeiras de grande e médio porte e títulos privados. Possui um patrimônio acima de R$1bi, e baixa volatilidade. A performance histórica supera o CDI e possui baixa taxa de administração.",
+              },
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "- Rentabilidade dos últimos 24 meses – 106% do CDI
+- Carteira – Títulos públicos, privados e títulos de instituições financeiras de grande e médio porte
+- PL atual – R$ 4,1 bilhões
+- CNPJ do fundo: 23.556.185/0001-10",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-10-02T16:08:27.405Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cj9zv1b3j003jh0je250o00xg",
+            "institution": "Az Quest",
+            "liquidity": 1,
+            "name": "AZ QUEST LUCE FIC FI RF CRÉDITO PRIVADO LP",
+            "observations": "Fundo renda fixa DI com alta exposição ao Setor financeiro e debentures 'obvias', ou seja, com alta classificação de risco",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Liquidez",
+            "updatedAt": "2018-10-02T16:08:27.431Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS IMPERIUM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.052",
+          "product": Object {
+            "cnpj": "21.185.984/0001-00",
+            "createdAt": "2018-07-17T19:57:34.943Z",
+            "evaluation": "Tem como objetivo superar o CDI. Carteira com exposição a títulos públicos, privados e de instituições financeiras de médio e grande porte. Sua performance histórica supera o CDI e possui uma taxa de administração baixa em relação aos pares",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Tem como objetivo superar o CDI. Carteira com exposição a títulos públicos, privados e de instituições financeiras de médio e grande porte. Sua performance histórica supera o CDI e possui uma taxa de administração baixa em relação aos pares",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-07-17T19:57:34.901Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4dkxi00140emmpawyu7xh",
+            "institution": "BNP",
+            "liquidity": 10,
+            "name": "BNP PARIBAS RUBI FIC FI RENDA FIXA CR",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Crédito",
+            "updatedAt": "2018-07-17T19:57:34.943Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAXIMUM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.118",
+          "product": Object {
+            "cnpj": "16.565.016/0001-81",
+            "createdAt": "2017-11-14T16:56:42.606Z",
+            "evaluation": "- Rentabilidade dos últimos 24 meses – 103% do CDI
+- Carteira – Títulos públicos federais e títulos de instituições financeiras de grande porte
+- PL atual – R$ 2,2 bilhões
+- CNPJ do fundo: 16.565.016/0001-81",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "- Rentabilidade dos últimos 24 meses – 103% do CDI
+- Carteira – Títulos públicos federais e títulos de instituições financeiras de grande porte
+- PL atual – R$ 2,2 bilhões
+- CNPJ do fundo: 16.565.016/0001-81",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-10-02T16:11:20.227Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cj9zv19rt0011h0jeh8xy4n6x",
+            "institution": "BTG Pactual",
+            "liquidity": 0,
+            "name": "BTG PACTUAL CDB I FIC RENDA FIXA CRÉDITO",
+            "observations": "Fundo DI com carteira composta apenas por CDBs de grandes bancos: Caixa, Itaú, Bradesco, BB e Santander",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Liquidez",
+            "updatedAt": "2018-10-02T16:11:25.059Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAXIMUM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.011",
+          "product": Object {
+            "cnpj": "10.705.335/0001-69",
+            "createdAt": "2017-11-14T16:56:43.306Z",
+            "evaluation": "Fundo multimercado com estratégia Macro, com baixa volatilidade e alta liquidez. Investe em diversos ativos do mercado brasileiro, como ações, moeda, juros e inflação. Performance consideravelmente acima do CDI, levando em conta a estratégia do fundo.",
+            "id": "cj9zv1a8f0023h0je7bsdi237",
+            "institution": "Claritas",
+            "liquidity": 1,
+            "name": "CLARITAS INSTITUCIONAL FIM",
+            "observations": "Fundo multimercado macro com baixa exposição e alta liquidez. Enquadrado nas regras de previdencia (3792)",
+            "status": "Recomendado",
+            "strategy": "Multimercado",
+            "subStrategy": "Macro",
+            "updatedAt": "2017-11-14T16:56:43.306Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAXIMUM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.011",
+          "product": Object {
+            "cnpj": "05.109.839/0001-86",
+            "createdAt": "2018-07-17T19:58:58.079Z",
+            "evaluation": "Fundo multimercado que investe em ações com estratégia long short. Leva em conta aspectos macroeconômicos e análise fundamentalista dos diversos fatores de risco de mercado. Baixa volatilidade, levando em conta a estratégia do fundo. Média taxa de administração e performance histórica que supera o CDI no longo prazo.",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo multimercado que investe em ações com estratégia long short. Leva em conta aspectos macroeconômicos e análise fundamentalista dos diversos fatores de risco de mercado. Baixa volatilidade, levando em conta a estratégia do fundo. Média taxa de administração e performance histórica que supera o CDI no longo prazo.",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-07-17T19:58:57.976Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4fd1400150emmeipu2vth",
+            "institution": "Claritas",
+            "liquidity": 34,
+            "name": "CLARITAS LONG SHORT FIC FIM",
+            "observations": "Bom fundo, histórico desde 2002. Objetivo de 3% a 4% acima do CDI.
+Tributação de FIA.",
+            "reference": Array [],
+            "status": "Recomendado/Fechado",
+            "strategy": "Multimercado",
+            "subStrategy": "Long Short",
+            "updatedAt": "2018-07-17T19:58:58.079Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAXIMUM FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.138",
+          "product": Object {
+            "createdAt": "2018-04-02T15:09:27.282Z",
+            "evaluation": "- Rentabilidade dos últimos 24 meses – 111% do CDI
+- Carteira – Títulos públicos, títulos privados e operações estruturadas de renda fixa
+- PL atual – R$ 1,7 bilhão
+- CNPJ do fundo: 20.879.578/0001-77",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "luisa.reis@parmais.com.br",
+                "evaluation": "O fundo tem como objetivo superar o CDI. Sua carteira é composta de títulos públicos, títulos privados e operações estruturadas de renda fixa. A taxa de administração é consistente com os pares e a sua rentabilidade vem superando o CDI, conseguindo atingir o objetivo do fundo.",
+              },
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "- Rentabilidade dos últimos 24 meses – 111% do CDI
+- Carteira – Títulos públicos, títulos privados e operações estruturadas de renda fixa
+- PL atual – R$ 1,7 bilhão
+- CNPJ do fundo: 20.879.578/0001-77",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-10-02T16:12:20.859Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjfideqzw00050emo99h6nbpu",
+            "institution": "Não se aplica",
+            "liquidity": 1,
+            "name": "DLM HEDGE CONSERVADOR II FIM CRÉDITO PRIVADO",
+            "observations": "Fundo Multimercado que apresenta uma concentração maior de 50% em crédito privado, faz operações de renda fixa na bolsa (como Box 3 e 4 pontas, termo de ações e financiamento em opções), para buscar seu objetivo de rentabilidade acima do CDI.",
+            "reference": Array [],
+            "status": "Recomendado/Gestão",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Crédito",
+            "updatedAt": "2018-10-02T16:12:20.860Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAGISTER FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.090",
+          "product": Object {
+            "cnpj": "09.720.710/0001-60",
+            "createdAt": "2018-07-17T20:00:01.457Z",
+            "evaluation": "Fundo Multimercado que se utiliza principalmente da estratégia de financiador de operações a termo no mercado de bolsa para buscar seu objetivo de rentabilidade acima do CDI. Possui crédito privado em carteira abaixo de 50%. Possui baixa volatilidade, e baixa taxa de administração e no histórico de rentabilidade vem superando o CDI. ",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo Multimercado que se utiliza principalmente da estratégia de financiador de operações a termo no mercado de bolsa para buscar seu objetivo de rentabilidade acima do CDI. Possui crédito privado em carteira abaixo de 50%. Possui baixa volatilidade, e baixa taxa de administração e no histórico de rentabilidade vem superando o CDI. ",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-07-17T20:00:01.393Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4gpyp00160emmes3ny2e2",
+            "institution": "DLM Investimentos",
+            "liquidity": 1,
+            "name": "DLM HEDGE CONSERVADOR FIM",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Liquidez",
+            "updatedAt": "2018-07-17T20:00:01.457Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAGISTER FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.021",
+          "product": Object {
+            "cnpj": "10.320.188/0001-09",
+            "createdAt": "2018-07-17T20:01:08.117Z",
+            "evaluation": "Fundo multimercado de arbitragem em ações com foco em distorções de preços e spreads, sem exposições direcionais. Possui baixa volatilidade, média taxa de administração e performance histórica superior ao CDI. ",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo multimercado de arbitragem em ações com foco em distorções de preços e spreads, sem exposições direcionais. Possui baixa volatilidade, média taxa de administração e performance histórica superior ao CDI. ",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-07-17T20:01:07.982Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4i5ce00170emm0zzrxsan",
+            "institution": "Az Quest",
+            "liquidity": 1,
+            "name": "AZ QUEST LEGAN LOW VOL FIM",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Multimercado",
+            "subStrategy": "Arbitragem",
+            "updatedAt": "2018-07-17T20:01:08.117Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAGISTER FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.085",
+          "product": Object {
+            "cnpj": "09.543.255/0001-75",
+            "createdAt": "2018-07-17T20:01:54.994Z",
+            "evaluation": "Fundo de renda fixa que busca acompanhar o CDI. Sua carteira possui exposição em títulos privados, principalmente em títulos de dívidas corporativas. Investe também em títulos de instituições financeiras, títulos públicos e possui baixa exposição em direitos creditórios.",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo de renda fixa que busca acompanhar o CDI. Sua carteira possui exposição em títulos privados, principalmente em títulos de dívidas corporativas. Investe também em títulos de instituições financeiras, títulos públicos e possui baixa exposição em direitos creditórios.",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-07-17T20:01:54.789Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4j5gl00180emmkebxgkmk",
+            "institution": "Rio Bravo",
+            "liquidity": 1,
+            "name": "RIO BRAVO RENDA FIXA CRÉDITO",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Crédito",
+            "updatedAt": "2018-07-17T20:01:54.994Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAGISTER FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.101",
+          "product": Object {
+            "cnpj": "25.274.966/0001-48",
+            "createdAt": "2017-11-14T16:56:45.229Z",
+            "evaluation": "Fundo de renda fixa com exposição a títulos corporativos e de instituições financeiras de médio porte. Rentabilidade consideravelmente acima do CDI. Apesar de ter pouco histórico, segue a expertise da casa em crédito privado.",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "- Rentabilidade – Fundo aberto a menos de 24 meses
+- Carteira – Títulos corporativos e de instituições financeiras de médio porte
+- PL atual – R$ 138 milhões
+- CNPJ do fundo: 25.274.966/0001-48",
+              },
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo de renda fixa com exposição a títulos corporativos e de instituições financeiras de médio porte. Rentabilidade consideravelmente acima do CDI. Apesar de ter pouco histórico, segue a expertise da casa em crédito privado.",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-10-05T19:15:15.284Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cj9zv1bsu004nh0jeh9ddrl6p",
+            "institution": "Quatá",
+            "liquidity": 30,
+            "name": "SELECT LIGHT RENDA FIXA CRÉDITO",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Fundo Imobiliário",
+            "subStrategy": "Crédito",
+            "updatedAt": "2018-10-05T19:15:15.325Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAGISTER FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.025",
+          "product": Object {
+            "cnpj": "11.458.131/0001-33",
+            "createdAt": "2018-07-17T20:03:05.091Z",
+            "evaluation": "Fundo multimercado Macro com foco em operações de arbitragem entre moedas, porém pode possuir posições em Juros. Seu objetivo de longo prazo é superar o CDI. A volatilidade está em linha com os pares e a taxa de administração é baixa.  ",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo multimercado Macro com foco em operações de arbitragem entre moedas, porém pode possuir posições em Juros. Seu objetivo de longo prazo é superar o CDI. A volatilidade está em linha com os pares e a taxa de administração é baixa.  ",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-07-17T20:03:05.043Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4kno300190emmmbs68vtm",
+            "institution": "SulAmérica",
+            "liquidity": 5,
+            "name": "SUL AMÉRICA ENDURANCE FIM",
+            "reference": Array [],
+            "status": "Recomendado/Gestão",
+            "strategy": "Multimercado",
+            "subStrategy": "Macro",
+            "updatedAt": "2018-07-17T20:03:05.091Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAGISTER FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.010",
+          "product": Object {
+            "cnpj": "13.823.084/0001-05",
+            "createdAt": "2018-07-17T20:03:53.400Z",
+            "evaluation": "Fundo de renda fixa com exposição em títulos corporativos, porém com ótima gestão de risco. Investe também em títulos públicos, títulos de instituições financeiras de grande e médio porte e direito creditórios com baixa exposição. Rentabilidade acima do CDI.",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "Fundo de renda fixa com exposição em títulos corporativos, porém com ótima gestão de risco. Investe também em títulos públicos, títulos de instituições financeiras de grande e médio porte e direito creditórios com baixa exposição. Rentabilidade acima do CDI.",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-07-17T20:03:53.330Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cjjq4loxe001a0emmh52gfb1g",
+            "institution": "SulAmérica",
+            "liquidity": 30,
+            "name": "SUL AMÉRICA CRÉDITO ATIVO FIM CRÉDITO",
+            "observations": "Fundo para Investidores Qualificados",
+            "reference": Array [],
+            "status": "Recomendado/Gestão",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Crédito",
+            "updatedAt": "2018-07-17T20:03:53.400Z",
+          },
+        },
+        Object {
+          "fundCnpj": "28.626.302/0001-99",
+          "fundId": "cj9zv1aiu002nh0jemsftak7m",
+          "fundLiquidity": 2,
+          "fundName": "PAR MAIS MAGISTER FIC FIM",
+          "nri": "Faixa 1",
+          "percentual": "0.146",
+          "product": Object {
+            "cnpj": "14.188.162/0001-00",
+            "createdAt": "2017-11-14T16:56:42.183Z",
+            "evaluation": "- Rentabilidade dos últimos 24 meses – 112% do CDI
+- Carteira – Títulos corporativos e direitos creditórios, com ótima pulverização
+- PL atual – R$ 2,8 bilhões
+- CNPJ do fundo: 14.188.162/0001-00",
+            "evaluationHistory": Array [
+              Object {
+                "date": Object {},
+                "email": "vagner.bellenzier@parmais.com.br",
+                "evaluation": "- Rentabilidade dos últimos 24 meses – 112% do CDI
+- Carteira – Títulos corporativos e direitos creditórios, com ótima pulverização
+- PL atual – R$ 2,8 bilhões
+- CNPJ do fundo: 14.188.162/0001-00",
+              },
+            ],
+            "evaluationUpdatedAt": "2018-10-02T16:15:36.797Z",
+            "evaluationUpdatedById": "vagner.bellenzier@parmais.com.br",
+            "id": "cj9zv191o0003h0je0qi6s6i1",
+            "institution": "Sparta",
+            "liquidity": 32,
+            "name": "SPARTA TOP FI EM COTAS DE RI RF CRED PRIV LP",
+            "reference": Array [],
+            "status": "Recomendado",
+            "strategy": "Renda Fixa Pós-Fixado",
+            "subStrategy": "Crédito",
+            "updatedAt": "2018-10-02T16:15:36.819Z",
+          },
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Typography
+          variant="body2"
+        >
+          Composição da carteira
+        </Typography>,
+        Array [
+          <div
+            className="mt2"
+          >
+            <Typography>
+              PAR MAIS FORTEM FIC FIM
+               
+              <br />
+              13.33%
+            </Typography>
+          </div>,
+          <div
+            className="mt2"
+          >
+            <Typography>
+              PAR MAIS IMPERIUM FIC FIM
+               
+              <br />
+              13.33%
+            </Typography>
+          </div>,
+          <div
+            className="mt2"
+          >
+            <Typography>
+              PAR MAIS MAGISTER FIC FIM
+               
+              <br />
+              46.67%
+            </Typography>
+          </div>,
+          <div
+            className="mt2"
+          >
+            <Typography>
+              PAR MAIS MAXIMUM FIC FIM
+               
+              <br />
+              26.67%
+            </Typography>
+          </div>,
+        ],
+      ],
+      "className": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Composição da carteira",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Composição da carteira",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Typography>
+            PAR MAIS FORTEM FIC FIM
+             
+            <br />
+            13.33%
+          </Typography>,
+          "className": "mt2",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "PAR MAIS FORTEM FIC FIM",
+              " ",
+              <br />,
+              "13.33%",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "PAR MAIS FORTEM FIC FIM",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "13.33%",
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Typography>
+            PAR MAIS IMPERIUM FIC FIM
+             
+            <br />
+            13.33%
+          </Typography>,
+          "className": "mt2",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "PAR MAIS IMPERIUM FIC FIM",
+              " ",
+              <br />,
+              "13.33%",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "PAR MAIS IMPERIUM FIC FIM",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "13.33%",
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Typography>
+            PAR MAIS MAGISTER FIC FIM
+             
+            <br />
+            46.67%
+          </Typography>,
+          "className": "mt2",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "PAR MAIS MAGISTER FIC FIM",
+              " ",
+              <br />,
+              "46.67%",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "PAR MAIS MAGISTER FIC FIM",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "46.67%",
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Typography>
+            PAR MAIS MAXIMUM FIC FIM
+             
+            <br />
+            26.67%
+          </Typography>,
+          "className": "mt2",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "PAR MAIS MAXIMUM FIC FIM",
+              " ",
+              <br />,
+              "26.67%",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "PAR MAIS MAXIMUM FIC FIM",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "26.67%",
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Typography
+            variant="body2"
+          >
+            Composição da carteira
+          </Typography>,
+          Array [
+            <div
+              className="mt2"
+            >
+              <Typography>
+                PAR MAIS FORTEM FIC FIM
+                 
+                <br />
+                13.33%
+              </Typography>
+            </div>,
+            <div
+              className="mt2"
+            >
+              <Typography>
+                PAR MAIS IMPERIUM FIC FIM
+                 
+                <br />
+                13.33%
+              </Typography>
+            </div>,
+            <div
+              className="mt2"
+            >
+              <Typography>
+                PAR MAIS MAGISTER FIC FIM
+                 
+                <br />
+                46.67%
+              </Typography>
+            </div>,
+            <div
+              className="mt2"
+            >
+              <Typography>
+                PAR MAIS MAXIMUM FIC FIM
+                 
+                <br />
+                26.67%
+              </Typography>
+            </div>,
+          ],
+        ],
+        "className": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Composição da carteira",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Composição da carteira",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Typography>
+              PAR MAIS FORTEM FIC FIM
+               
+              <br />
+              13.33%
+            </Typography>,
+            "className": "mt2",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "PAR MAIS FORTEM FIC FIM",
+                " ",
+                <br />,
+                "13.33%",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "PAR MAIS FORTEM FIC FIM",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              "13.33%",
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Typography>
+              PAR MAIS IMPERIUM FIC FIM
+               
+              <br />
+              13.33%
+            </Typography>,
+            "className": "mt2",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "PAR MAIS IMPERIUM FIC FIM",
+                " ",
+                <br />,
+                "13.33%",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "PAR MAIS IMPERIUM FIC FIM",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              "13.33%",
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Typography>
+              PAR MAIS MAGISTER FIC FIM
+               
+              <br />
+              46.67%
+            </Typography>,
+            "className": "mt2",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "PAR MAIS MAGISTER FIC FIM",
+                " ",
+                <br />,
+                "46.67%",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "PAR MAIS MAGISTER FIC FIM",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              "46.67%",
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Typography>
+              PAR MAIS MAXIMUM FIC FIM
+               
+              <br />
+              26.67%
+            </Typography>,
+            "className": "mt2",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "PAR MAIS MAXIMUM FIC FIM",
+                " ",
+                <br />,
+                "26.67%",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "PAR MAIS MAXIMUM FIC FIM",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              "26.67%",
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

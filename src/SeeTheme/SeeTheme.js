@@ -16,32 +16,71 @@ export const seeTheme = createMuiTheme({
     fontFamily: '\'Roboto Light\', \'sans-serif\'',
     fontSize: '1rem',
     color: styles.colors.gray_01,
-    headline: {
-      ...styles.fonts.headline
-    },
     body1: {
       ...styles.fonts.body1
     },
     body2: {
       ...styles.fonts.body2
     },
-    subheading: {
-      ...styles.fonts.subheading
-    },
-    display1: {
-      ...styles.fonts.title2
-    },
-    display2: {
-      ...styles.fonts.body3
-    },
     button: {
       ...styles.fonts.button
     },
-    title: {
-      ...styles.fonts.title1
+    caption: {
+      ...styles.fonts.caption
+    },
+    display1: {
+      ...styles.fonts.display1
+    },
+    display2: {
+      ...styles.fonts.display2
+    },
+    display3: {
+      ...styles.fonts.display3
+    },
+    display4: {
+      ...styles.fonts.display4
+    },
+    h1: {
+      ...styles.fonts.h1
+    },
+    h2: {
+      ...styles.fonts.h2
+    },
+    h3: {
+      ...styles.fonts.h3
+    },
+    h4: {
+      ...styles.fonts.h4
+    },
+    h5: {
+      ...styles.fonts.h5
+    },
+    h6: {
+      ...styles.fonts.h6
+    },
+    headline: {
+      ...styles.fonts.headline
+    },
+    inherit: {
+      /* free to use */
+    },
+    overline: {
+      ...styles.fonts.overline
+    },
+    srOnly: {
+      /* free to use */
     },
     subtitle1: {
       ...styles.fonts.subtitle1
+    },
+    subtitle2: {
+      ...styles.fonts.subtitle2
+    },
+    subheading: {
+      ...styles.fonts.subheading
+    },
+    title: {
+      ...styles.fonts.title
     }
   },
   overrides: {

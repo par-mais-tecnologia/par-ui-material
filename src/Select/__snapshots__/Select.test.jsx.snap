@@ -26,10 +26,10 @@ ShallowWrapper {
     "props": Object {
       "aria-describedby": "select-form-control",
       "children": Array [
-        <WithStyles(WithFormControlContext(InputLabel))
+        <WithStyles(InputLabel)
           htmlFor="1"
         />,
-        <WithStyles(WithFormControlContext(Select))
+        <WithStyles(Select)
           error={false}
           id="1"
           inputProps={
@@ -103,10 +103,10 @@ ShallowWrapper {
       "props": Object {
         "aria-describedby": "select-form-control",
         "children": Array [
-          <WithStyles(WithFormControlContext(InputLabel))
+          <WithStyles(InputLabel)
             htmlFor="1"
           />,
-          <WithStyles(WithFormControlContext(Select))
+          <WithStyles(Select)
             error={false}
             id="1"
             inputProps={

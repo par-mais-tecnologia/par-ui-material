@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <LegendChart
     initialInvestment={200000}
+    showPercentage={true}
     strategies={
       Array [
         Array [
@@ -82,16 +83,17 @@ ShallowWrapper {
                 %
               </Typography>
             </Grid>
-          </Grid>
-          <Grid
-            className="roboto-medium"
-            style={
-              Object {
-                "color": "#94ba1d",
+            <Grid
+              className="roboto-medium"
+              container={true}
+              style={
+                Object {
+                  "color": "#94ba1d",
+                }
               }
-            }
-          >
-            Renda Fixa Pós-Fixado
+            >
+              Renda Fixa Pós-Fixado
+            </Grid>
           </Grid>
         </Grid>,
         <Grid
@@ -120,16 +122,17 @@ ShallowWrapper {
                 %
               </Typography>
             </Grid>
-          </Grid>
-          <Grid
-            className="roboto-medium"
-            style={
-              Object {
-                "color": "#007CA3",
+            <Grid
+              className="roboto-medium"
+              container={true}
+              style={
+                Object {
+                  "color": "#007CA3",
+                }
               }
-            }
-          >
-            Multimercado
+            >
+              Multimercado
+            </Grid>
           </Grid>
         </Grid>,
         <Grid
@@ -158,16 +161,17 @@ ShallowWrapper {
                 %
               </Typography>
             </Grid>
-          </Grid>
-          <Grid
-            className="roboto-medium"
-            style={
-              Object {
-                "color": "#632B7D",
+            <Grid
+              className="roboto-medium"
+              container={true}
+              style={
+                Object {
+                  "color": "#632B7D",
+                }
               }
-            }
-          >
-            Fundo Imobiliário
+            >
+              Fundo Imobiliário
+            </Grid>
           </Grid>
         </Grid>,
       ],
@@ -181,7 +185,466 @@ ShallowWrapper {
         "key": "Renda Fixa Pós-Fixado",
         "nodeType": "class",
         "props": Object {
-          "children": Array [
+          "children": <Grid
+            alignItems="center"
+            container={true}
+            direction="row"
+          >
+            <Grid
+              className="mr2"
+              style={
+                Object {
+                  "backgroundColor": "#94ba1d",
+                  "height": 15,
+                  "width": 15,
+                }
+              }
+            />
+            <Grid>
+              <Typography>
+                81,4
+                %
+              </Typography>
+            </Grid>
+            <Grid
+              className="roboto-medium"
+              container={true}
+              style={
+                Object {
+                  "color": "#94ba1d",
+                }
+              }
+            >
+              Renda Fixa Pós-Fixado
+            </Grid>
+          </Grid>,
+          "className": "mb3 ml3",
+          "container": true,
+          "direction": "column",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "alignItems": "center",
+            "children": Array [
+              <Grid
+                className="mr2"
+                style={
+                  Object {
+                    "backgroundColor": "#94ba1d",
+                    "height": 15,
+                    "width": 15,
+                  }
+                }
+              />,
+              <Grid>
+                <Typography>
+                  81,4
+                  %
+                </Typography>
+              </Grid>,
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#94ba1d",
+                  }
+                }
+              >
+                Renda Fixa Pós-Fixado
+              </Grid>,
+            ],
+            "container": true,
+            "direction": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "mr2",
+                "style": Object {
+                  "backgroundColor": "#94ba1d",
+                  "height": 15,
+                  "width": 15,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Typography>
+                  81,4
+                  %
+                </Typography>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "81,4",
+                    "%",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "81,4",
+                  "%",
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Renda Fixa Pós-Fixado",
+                "className": "roboto-medium",
+                "container": true,
+                "style": Object {
+                  "color": "#94ba1d",
+                },
+              },
+              "ref": null,
+              "rendered": "Renda Fixa Pós-Fixado",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Multimercado",
+        "nodeType": "class",
+        "props": Object {
+          "children": <Grid
+            alignItems="center"
+            container={true}
+            direction="row"
+          >
+            <Grid
+              className="mr2"
+              style={
+                Object {
+                  "backgroundColor": "#007CA3",
+                  "height": 15,
+                  "width": 15,
+                }
+              }
+            />
+            <Grid>
+              <Typography>
+                8,5
+                %
+              </Typography>
+            </Grid>
+            <Grid
+              className="roboto-medium"
+              container={true}
+              style={
+                Object {
+                  "color": "#007CA3",
+                }
+              }
+            >
+              Multimercado
+            </Grid>
+          </Grid>,
+          "className": "mb3 ml3",
+          "container": true,
+          "direction": "column",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "alignItems": "center",
+            "children": Array [
+              <Grid
+                className="mr2"
+                style={
+                  Object {
+                    "backgroundColor": "#007CA3",
+                    "height": 15,
+                    "width": 15,
+                  }
+                }
+              />,
+              <Grid>
+                <Typography>
+                  8,5
+                  %
+                </Typography>
+              </Grid>,
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#007CA3",
+                  }
+                }
+              >
+                Multimercado
+              </Grid>,
+            ],
+            "container": true,
+            "direction": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "mr2",
+                "style": Object {
+                  "backgroundColor": "#007CA3",
+                  "height": 15,
+                  "width": 15,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Typography>
+                  8,5
+                  %
+                </Typography>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "8,5",
+                    "%",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "8,5",
+                  "%",
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Multimercado",
+                "className": "roboto-medium",
+                "container": true,
+                "style": Object {
+                  "color": "#007CA3",
+                },
+              },
+              "ref": null,
+              "rendered": "Multimercado",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Fundo Imobiliário",
+        "nodeType": "class",
+        "props": Object {
+          "children": <Grid
+            alignItems="center"
+            container={true}
+            direction="row"
+          >
+            <Grid
+              className="mr2"
+              style={
+                Object {
+                  "backgroundColor": "#632B7D",
+                  "height": 15,
+                  "width": 15,
+                }
+              }
+            />
+            <Grid>
+              <Typography>
+                10,1
+                %
+              </Typography>
+            </Grid>
+            <Grid
+              className="roboto-medium"
+              container={true}
+              style={
+                Object {
+                  "color": "#632B7D",
+                }
+              }
+            >
+              Fundo Imobiliário
+            </Grid>
+          </Grid>,
+          "className": "mb3 ml3",
+          "container": true,
+          "direction": "column",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "alignItems": "center",
+            "children": Array [
+              <Grid
+                className="mr2"
+                style={
+                  Object {
+                    "backgroundColor": "#632B7D",
+                    "height": 15,
+                    "width": 15,
+                  }
+                }
+              />,
+              <Grid>
+                <Typography>
+                  10,1
+                  %
+                </Typography>
+              </Grid>,
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#632B7D",
+                  }
+                }
+              >
+                Fundo Imobiliário
+              </Grid>,
+            ],
+            "container": true,
+            "direction": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "mr2",
+                "style": Object {
+                  "backgroundColor": "#632B7D",
+                  "height": 15,
+                  "width": 15,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Typography>
+                  10,1
+                  %
+                </Typography>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "10,1",
+                    "%",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "10,1",
+                  "%",
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Fundo Imobiliário",
+                "className": "roboto-medium",
+                "container": true,
+                "style": Object {
+                  "color": "#632B7D",
+                },
+              },
+              "ref": null,
+              "rendered": "Fundo Imobiliário",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Grid
+            className="mb3 ml3"
+            container={true}
+            direction="column"
+          >
             <Grid
               alignItems="center"
               container={true}
@@ -203,25 +666,147 @@ ShallowWrapper {
                   %
                 </Typography>
               </Grid>
-            </Grid>,
-            <Grid
-              className="roboto-medium"
-              style={
-                Object {
-                  "color": "#94ba1d",
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#94ba1d",
+                  }
                 }
-              }
+              >
+                Renda Fixa Pós-Fixado
+              </Grid>
+            </Grid>
+          </Grid>,
+          <Grid
+            className="mb3 ml3"
+            container={true}
+            direction="column"
+          >
+            <Grid
+              alignItems="center"
+              container={true}
+              direction="row"
             >
-              Renda Fixa Pós-Fixado
+              <Grid
+                className="mr2"
+                style={
+                  Object {
+                    "backgroundColor": "#007CA3",
+                    "height": 15,
+                    "width": 15,
+                  }
+                }
+              />
+              <Grid>
+                <Typography>
+                  8,5
+                  %
+                </Typography>
+              </Grid>
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#007CA3",
+                  }
+                }
+              >
+                Multimercado
+              </Grid>
+            </Grid>
+          </Grid>,
+          <Grid
+            className="mb3 ml3"
+            container={true}
+            direction="column"
+          >
+            <Grid
+              alignItems="center"
+              container={true}
+              direction="row"
+            >
+              <Grid
+                className="mr2"
+                style={
+                  Object {
+                    "backgroundColor": "#632B7D",
+                    "height": 15,
+                    "width": 15,
+                  }
+                }
+              />
+              <Grid>
+                <Typography>
+                  10,1
+                  %
+                </Typography>
+              </Grid>
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#632B7D",
+                  }
+                }
+              >
+                Fundo Imobiliário
+              </Grid>
+            </Grid>
+          </Grid>,
+        ],
+        "container": true,
+        "direction": "column",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Renda Fixa Pós-Fixado",
+          "nodeType": "class",
+          "props": Object {
+            "children": <Grid
+              alignItems="center"
+              container={true}
+              direction="row"
+            >
+              <Grid
+                className="mr2"
+                style={
+                  Object {
+                    "backgroundColor": "#94ba1d",
+                    "height": 15,
+                    "width": 15,
+                  }
+                }
+              />
+              <Grid>
+                <Typography>
+                  81,4
+                  %
+                </Typography>
+              </Grid>
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#94ba1d",
+                  }
+                }
+              >
+                Renda Fixa Pós-Fixado
+              </Grid>
             </Grid>,
-          ],
-          "className": "mb3 ml3",
-          "container": true,
-          "direction": "column",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
+            "className": "mb3 ml3",
+            "container": true,
+            "direction": "column",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
@@ -243,6 +828,17 @@ ShallowWrapper {
                     81,4
                     %
                   </Typography>
+                </Grid>,
+                <Grid
+                  className="roboto-medium"
+                  container={true}
+                  style={
+                    Object {
+                      "color": "#94ba1d",
+                    }
+                  }
+                >
+                  Renda Fixa Pós-Fixado
                 </Grid>,
               ],
               "container": true,
@@ -296,34 +892,33 @@ ShallowWrapper {
                 },
                 "type": [Function],
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Renda Fixa Pós-Fixado",
+                  "className": "roboto-medium",
+                  "container": true,
+                  "style": Object {
+                    "color": "#94ba1d",
+                  },
+                },
+                "ref": null,
+                "rendered": "Renda Fixa Pós-Fixado",
+                "type": [Function],
+              },
             ],
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Renda Fixa Pós-Fixado",
-              "className": "roboto-medium",
-              "style": Object {
-                "color": "#94ba1d",
-              },
-            },
-            "ref": null,
-            "rendered": "Renda Fixa Pós-Fixado",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "Multimercado",
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Grid
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Multimercado",
+          "nodeType": "class",
+          "props": Object {
+            "children": <Grid
               alignItems="center"
               container={true}
               direction="row"
@@ -344,25 +939,24 @@ ShallowWrapper {
                   %
                 </Typography>
               </Grid>
-            </Grid>,
-            <Grid
-              className="roboto-medium"
-              style={
-                Object {
-                  "color": "#007CA3",
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#007CA3",
+                  }
                 }
-              }
-            >
-              Multimercado
+              >
+                Multimercado
+              </Grid>
             </Grid>,
-          ],
-          "className": "mb3 ml3",
-          "container": true,
-          "direction": "column",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
+            "className": "mb3 ml3",
+            "container": true,
+            "direction": "column",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
@@ -384,6 +978,17 @@ ShallowWrapper {
                     8,5
                     %
                   </Typography>
+                </Grid>,
+                <Grid
+                  className="roboto-medium"
+                  container={true}
+                  style={
+                    Object {
+                      "color": "#007CA3",
+                    }
+                  }
+                >
+                  Multimercado
                 </Grid>,
               ],
               "container": true,
@@ -437,34 +1042,33 @@ ShallowWrapper {
                 },
                 "type": [Function],
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Multimercado",
+                  "className": "roboto-medium",
+                  "container": true,
+                  "style": Object {
+                    "color": "#007CA3",
+                  },
+                },
+                "ref": null,
+                "rendered": "Multimercado",
+                "type": [Function],
+              },
             ],
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Multimercado",
-              "className": "roboto-medium",
-              "style": Object {
-                "color": "#007CA3",
-              },
-            },
-            "ref": null,
-            "rendered": "Multimercado",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "Fundo Imobiliário",
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Grid
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Fundo Imobiliário",
+          "nodeType": "class",
+          "props": Object {
+            "children": <Grid
               alignItems="center"
               container={true}
               direction="row"
@@ -485,25 +1089,24 @@ ShallowWrapper {
                   %
                 </Typography>
               </Grid>
-            </Grid>,
-            <Grid
-              className="roboto-medium"
-              style={
-                Object {
-                  "color": "#632B7D",
+              <Grid
+                className="roboto-medium"
+                container={true}
+                style={
+                  Object {
+                    "color": "#632B7D",
+                  }
                 }
-              }
-            >
-              Fundo Imobiliário
+              >
+                Fundo Imobiliário
+              </Grid>
             </Grid>,
-          ],
-          "className": "mb3 ml3",
-          "container": true,
-          "direction": "column",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
+            "className": "mb3 ml3",
+            "container": true,
+            "direction": "column",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
@@ -525,6 +1128,17 @@ ShallowWrapper {
                     10,1
                     %
                   </Typography>
+                </Grid>,
+                <Grid
+                  className="roboto-medium"
+                  container={true}
+                  style={
+                    Object {
+                      "color": "#632B7D",
+                    }
+                  }
+                >
+                  Fundo Imobiliário
                 </Grid>,
               ],
               "container": true,
@@ -578,578 +1192,25 @@ ShallowWrapper {
                 },
                 "type": [Function],
               },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Fundo Imobiliário",
-              "className": "roboto-medium",
-              "style": Object {
-                "color": "#632B7D",
-              },
-            },
-            "ref": null,
-            "rendered": "Fundo Imobiliário",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Grid
-            className="mb3 ml3"
-            container={true}
-            direction="column"
-          >
-            <Grid
-              alignItems="center"
-              container={true}
-              direction="row"
-            >
-              <Grid
-                className="mr2"
-                style={
-                  Object {
-                    "backgroundColor": "#94ba1d",
-                    "height": 15,
-                    "width": 15,
-                  }
-                }
-              />
-              <Grid>
-                <Typography>
-                  81,4
-                  %
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid
-              className="roboto-medium"
-              style={
-                Object {
-                  "color": "#94ba1d",
-                }
-              }
-            >
-              Renda Fixa Pós-Fixado
-            </Grid>
-          </Grid>,
-          <Grid
-            className="mb3 ml3"
-            container={true}
-            direction="column"
-          >
-            <Grid
-              alignItems="center"
-              container={true}
-              direction="row"
-            >
-              <Grid
-                className="mr2"
-                style={
-                  Object {
-                    "backgroundColor": "#007CA3",
-                    "height": 15,
-                    "width": 15,
-                  }
-                }
-              />
-              <Grid>
-                <Typography>
-                  8,5
-                  %
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid
-              className="roboto-medium"
-              style={
-                Object {
-                  "color": "#007CA3",
-                }
-              }
-            >
-              Multimercado
-            </Grid>
-          </Grid>,
-          <Grid
-            className="mb3 ml3"
-            container={true}
-            direction="column"
-          >
-            <Grid
-              alignItems="center"
-              container={true}
-              direction="row"
-            >
-              <Grid
-                className="mr2"
-                style={
-                  Object {
-                    "backgroundColor": "#632B7D",
-                    "height": 15,
-                    "width": 15,
-                  }
-                }
-              />
-              <Grid>
-                <Typography>
-                  10,1
-                  %
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid
-              className="roboto-medium"
-              style={
-                Object {
-                  "color": "#632B7D",
-                }
-              }
-            >
-              Fundo Imobiliário
-            </Grid>
-          </Grid>,
-        ],
-        "container": true,
-        "direction": "column",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "Renda Fixa Pós-Fixado",
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Grid
-                alignItems="center"
-                container={true}
-                direction="row"
-              >
-                <Grid
-                  className="mr2"
-                  style={
-                    Object {
-                      "backgroundColor": "#94ba1d",
-                      "height": 15,
-                      "width": 15,
-                    }
-                  }
-                />
-                <Grid>
-                  <Typography>
-                    81,4
-                    %
-                  </Typography>
-                </Grid>
-              </Grid>,
-              <Grid
-                className="roboto-medium"
-                style={
-                  Object {
-                    "color": "#94ba1d",
-                  }
-                }
-              >
-                Renda Fixa Pós-Fixado
-              </Grid>,
-            ],
-            "className": "mb3 ml3",
-            "container": true,
-            "direction": "column",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignItems": "center",
-                "children": Array [
-                  <Grid
-                    className="mr2"
-                    style={
-                      Object {
-                        "backgroundColor": "#94ba1d",
-                        "height": 15,
-                        "width": 15,
-                      }
-                    }
-                  />,
-                  <Grid>
-                    <Typography>
-                      81,4
-                      %
-                    </Typography>
-                  </Grid>,
-                ],
-                "container": true,
-                "direction": "row",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "className": "mr2",
-                    "style": Object {
-                      "backgroundColor": "#94ba1d",
-                      "height": 15,
-                      "width": 15,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Typography>
-                      81,4
-                      %
-                    </Typography>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        "81,4",
-                        "%",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "81,4",
-                      "%",
-                    ],
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Renda Fixa Pós-Fixado",
-                "className": "roboto-medium",
-                "style": Object {
-                  "color": "#94ba1d",
-                },
-              },
-              "ref": null,
-              "rendered": "Renda Fixa Pós-Fixado",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "Multimercado",
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Grid
-                alignItems="center"
-                container={true}
-                direction="row"
-              >
-                <Grid
-                  className="mr2"
-                  style={
-                    Object {
-                      "backgroundColor": "#007CA3",
-                      "height": 15,
-                      "width": 15,
-                    }
-                  }
-                />
-                <Grid>
-                  <Typography>
-                    8,5
-                    %
-                  </Typography>
-                </Grid>
-              </Grid>,
-              <Grid
-                className="roboto-medium"
-                style={
-                  Object {
-                    "color": "#007CA3",
-                  }
-                }
-              >
-                Multimercado
-              </Grid>,
-            ],
-            "className": "mb3 ml3",
-            "container": true,
-            "direction": "column",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignItems": "center",
-                "children": Array [
-                  <Grid
-                    className="mr2"
-                    style={
-                      Object {
-                        "backgroundColor": "#007CA3",
-                        "height": 15,
-                        "width": 15,
-                      }
-                    }
-                  />,
-                  <Grid>
-                    <Typography>
-                      8,5
-                      %
-                    </Typography>
-                  </Grid>,
-                ],
-                "container": true,
-                "direction": "row",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "className": "mr2",
-                    "style": Object {
-                      "backgroundColor": "#007CA3",
-                      "height": 15,
-                      "width": 15,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Typography>
-                      8,5
-                      %
-                    </Typography>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        "8,5",
-                        "%",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "8,5",
-                      "%",
-                    ],
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Multimercado",
-                "className": "roboto-medium",
-                "style": Object {
-                  "color": "#007CA3",
-                },
-              },
-              "ref": null,
-              "rendered": "Multimercado",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "Fundo Imobiliário",
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Grid
-                alignItems="center"
-                container={true}
-                direction="row"
-              >
-                <Grid
-                  className="mr2"
-                  style={
-                    Object {
-                      "backgroundColor": "#632B7D",
-                      "height": 15,
-                      "width": 15,
-                    }
-                  }
-                />
-                <Grid>
-                  <Typography>
-                    10,1
-                    %
-                  </Typography>
-                </Grid>
-              </Grid>,
-              <Grid
-                className="roboto-medium"
-                style={
-                  Object {
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Fundo Imobiliário",
+                  "className": "roboto-medium",
+                  "container": true,
+                  "style": Object {
                     "color": "#632B7D",
-                  }
-                }
-              >
-                Fundo Imobiliário
-              </Grid>,
+                  },
+                },
+                "ref": null,
+                "rendered": "Fundo Imobiliário",
+                "type": [Function],
+              },
             ],
-            "className": "mb3 ml3",
-            "container": true,
-            "direction": "column",
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignItems": "center",
-                "children": Array [
-                  <Grid
-                    className="mr2"
-                    style={
-                      Object {
-                        "backgroundColor": "#632B7D",
-                        "height": 15,
-                        "width": 15,
-                      }
-                    }
-                  />,
-                  <Grid>
-                    <Typography>
-                      10,1
-                      %
-                    </Typography>
-                  </Grid>,
-                ],
-                "container": true,
-                "direction": "row",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "className": "mr2",
-                    "style": Object {
-                      "backgroundColor": "#632B7D",
-                      "height": 15,
-                      "width": 15,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Typography>
-                      10,1
-                      %
-                    </Typography>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        "10,1",
-                        "%",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "10,1",
-                      "%",
-                    ],
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Fundo Imobiliário",
-                "className": "roboto-medium",
-                "style": Object {
-                  "color": "#632B7D",
-                },
-              },
-              "ref": null,
-              "rendered": "Fundo Imobiliário",
-              "type": [Function],
-            },
-          ],
           "type": [Function],
         },
       ],

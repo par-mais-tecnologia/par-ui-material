@@ -41,7 +41,7 @@ export const walletExample = [
     },
     'percentual': '0.071',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS FORTEM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
@@ -63,7 +63,7 @@ export const walletExample = [
     },
     'percentual': '0.017',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS FORTEM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
@@ -105,7 +105,7 @@ export const walletExample = [
     },
     'percentual': '0.104',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS IMPERIUM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
@@ -136,7 +136,7 @@ export const walletExample = [
     },
     'percentual': '0.052',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS IMPERIUM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
@@ -168,7 +168,7 @@ export const walletExample = [
     },
     'percentual': '0.118',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS MAXIMUM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
@@ -190,7 +190,7 @@ export const walletExample = [
     },
     'percentual': '0.011',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS MAXIMUM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
@@ -222,7 +222,7 @@ export const walletExample = [
     },
     'percentual': '0.011',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS MAXIMUM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
@@ -258,7 +258,7 @@ export const walletExample = [
     },
     'percentual': '0.138',
     'nri': 'Faixa 1',
-    'fundName': 'PAR MAIS MAGISTER FIC FIM',
+    'fundName': 'PAR MAIS MAXIMUM FIC FIM',
     'fundCnpj': '28.626.302/0001-99',
     'fundLiquidity': 2,
     'fundId': 'cj9zv1aiu002nh0jemsftak7m'
