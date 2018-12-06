@@ -3,6 +3,7 @@ import { styles } from './styles/styles'
 import buttonStyle from './styles/button'
 import menu from './styles/menu'
 import rentabilityBar from './styles/rentabilityBar'
+import financialPanel from './styles/financialPanel'
 
 export const seeTheme = createMuiTheme({
   styles,
@@ -69,11 +70,17 @@ export const seeTheme = createMuiTheme({
       required: {
         color: '#f44336'
       }
+    },
+    MuiExpansionPanelDetails: {
+      root: {
+        flexDirection: 'column'
+      }
     }
   },
   buttonStyle,
   menu,
-  rentabilityBar
+  rentabilityBar,
+  financialPanel
 })
 
 export default seeTheme

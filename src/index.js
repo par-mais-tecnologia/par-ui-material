@@ -40,6 +40,7 @@ export { default as SeeAppBar } from './AppBar'
 export { default as ParallaxPage } from './ParallaxPage'
 export { default as RentabilityBar } from './RentabilityBar'
 export { default as SummaryHeader } from './SummaryHeader'
+export { default as FinancialPanel } from './FinancialPanel'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'

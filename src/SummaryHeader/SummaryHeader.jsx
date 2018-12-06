@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-import Grid from '@material-ui/core/Grid'
 
 class SummaryHeader extends PureComponent {
   getStyle (props) {
