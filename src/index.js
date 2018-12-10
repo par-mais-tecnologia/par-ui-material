@@ -43,6 +43,7 @@ export { default as SummaryHeader } from './SummaryHeader'
 export { default as FinancialPanel } from './FinancialPanel'
 export { default as Donut } from './Charts/Donut'
 export { default as WalletComposition } from './WalletComposition'
+export { default as ParallaxPageCss } from './ParallaxPageCss'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
 } from '@material-ui/core/styles'

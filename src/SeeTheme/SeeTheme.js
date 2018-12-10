@@ -4,6 +4,7 @@ import buttonStyle from './styles/button'
 import menu from './styles/menu'
 import rentabilityBar from './styles/rentabilityBar'
 import financialPanel from './styles/financialPanel'
+import parallax from './styles/parallax'
 
 export const seeTheme = createMuiTheme({
   styles,
@@ -119,7 +120,8 @@ export const seeTheme = createMuiTheme({
   buttonStyle,
   menu,
   rentabilityBar,
-  financialPanel
+  financialPanel,
+  parallax
 })
 
 export default seeTheme
