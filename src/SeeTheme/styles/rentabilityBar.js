@@ -14,6 +14,13 @@ export default {
     margin: '0',
     textTransform: 'uppercase'
   },
+  negativeState: {
+    color: '#BA2B31',
+    fontSize: '16px',
+    fontFamily: 'Roboto Regular',
+    margin: '0',
+    textTransform: 'uppercase'
+  },
   neutralState: {
     color: '#636363',
     fontSize: '16px',
