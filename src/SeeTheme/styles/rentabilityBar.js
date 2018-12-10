@@ -5,7 +5,7 @@ export default {
     padding: '1rem 0'
   },
   subBoxStyles: {
-    minWidth: '50%'
+    minWidth: '75%'
   },
   positiveState: {
     color: '#7FBD42',

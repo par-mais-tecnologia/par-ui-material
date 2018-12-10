@@ -10,11 +10,9 @@ const styles = theme => (theme.rentabilityBar)
 const RentabilityBar = (props) => {
   const { classes } = props
   return (
-    <div className={MainBoxClasses} classes={{
-      root: classes.mainBoxStyles
-    }}
+    <div className={[ MainBoxClasses, classes.mainBoxStyles ].join(' ')}
     >
-      <div className={SubBoxClasses} classes={{ root: classes.subBoxStyles }}>
+      <div className={[SubBoxClasses, classes.subBoxStyles].join(' ')}>
         <div className={ColumnsClasses}>
           <h1 className={classes.title}>
             {props.firstTitle}
