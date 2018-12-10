@@ -13,9 +13,9 @@ function PatrimonyResultChart (props) {
   const createObjects = (investments, realState, movableAssets, props) => {
     const total = investments + realState + movableAssets
 
-    const percentinv = Number(((investments / total) * 100).toFixed(1))
-    const percentreal = Number(((realState / total) * 100).toFixed(1))
-    const percentmov = Number(((movableAssets / total) * 100).toFixed(1))
+    const percentinv = Number(((investments / total) * 100).toFixed(1)) || 0
+    const percentreal = Number(((realState / total) * 100).toFixed(1)) || 0
+    const percentmov = Number(((movableAssets / total) * 100).toFixed(1)) || 0
 
     const inv = {
       amount: `R$ ${getCurrencyFormat(investments)}`,
