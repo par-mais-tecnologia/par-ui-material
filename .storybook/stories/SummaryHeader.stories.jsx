@@ -5,6 +5,9 @@ import withTests from './withTests'
 import { SummaryHeader, SeeTheme, IconButton } from '../../src'
 import Typography from '@material-ui/core/Typography/Typography'
 import RepeatIcon from '@material-ui/icons/Repeat'
+import { CSSTransitionGroup } from 'react-transition-group'
+import '../../src/Core/styles/transitions.css'
+import { MuiThemeProvider } from '@material-ui/core'
 
 class SummaryHeaderStory extends PureComponent {
 
@@ -29,9 +32,9 @@ class SummaryHeaderStory extends PureComponent {
 
   getHelperText() {
     if(this.state.liquidGross) {
-      return 'É O VALOR LÍQUIDO TOTAL APLICADO'
+      return 'É o valor líquido total aplicado'
     } else {
-      return 'É O VALOR BRUTO TOTAL APLICADO'
+      return 'É o valor bruto total aplicado'
     }
   }
 
@@ -43,6 +46,7 @@ class SummaryHeaderStory extends PureComponent {
     const { value } = this.state
 
     return (
+      <MuiThemeProvider theme={SeeTheme}>
       <SummaryHeader
         classes='justify-center'
         boxShadow={'0px -3px 20px 0px'}
@@ -56,26 +60,33 @@ class SummaryHeaderStory extends PureComponent {
               <p style={{marginTop:'117px', marginBottom:'0px'}}>INVESTIMENTOS TOTAIS</p>
             </Typography>
           </div>
+
           <div className='flex flex-row'>
-            <div className='left'>
-              <p style={{marginTop:'18px', color:'white', fontSize:'24px',fontFamily:'Roboto Light', marginBottom:'0' }}>
-                {this.numberFormat(value)}
-              </p>
-            </div>
+                <div className='left'>
+                  <p style={{marginTop:'18px', color:'white', fontSize:'24px',fontFamily:'Roboto Light', marginBottom:'0' }}
+                     className={this.state.liquidGross? 'frame1' : 'frame2'}>
+                    {this.numberFormat(value)}
+                  </p>
+                </div>
+
             <div className='right'>
-              <IconButton onClick={() => this.handleChangeTypes()}>
+              <IconButton style={{ padding: '12px 0px 12px 12px' }} onClick={() => this.handleChangeTypes()}>
                 <RepeatIcon style={{color:'white', fontSize:'24px', marginTop:'6px'}} />
               </IconButton>
             </div>
           </div>
           <div>
-            <Typography align='center' style={SeeTheme.styles.fonts.subtitle1}>
-              <p style={{marginBottom:'117px', marginTop:'0'}}> {this.getHelperText()} </p>
-            </Typography>
+              <Typography align='center' style={SeeTheme.styles.fonts.subtitle1} >
+                <p style={{marginBottom:'117px', marginTop:'0', animationFillMode: 'backwards'}}
+                  className={this.state.liquidGross? 'frame1' : 'frame2'}>
+                  {this.getHelperText()}
+                </p>
+              </Typography>
           </div>
         </div>
 
       </SummaryHeader>
+      </MuiThemeProvider>
     )
   }
 }

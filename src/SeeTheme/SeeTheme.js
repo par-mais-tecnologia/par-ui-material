@@ -111,6 +111,21 @@ export const seeTheme = createMuiTheme({
         color: '#f44336'
       }
     },
+    MuiIconButton: {
+      root: {
+        '&:hover': {
+          backgroundColor: 'none'
+        },
+        '&:link': {
+          backgroundColor: 'none'
+        }
+      }
+    },
+    MuiTouchRipple: {
+      root: {
+        color: 'transparent'
+      }
+    },
     MuiExpansionPanelDetails: {
       root: {
         flexDirection: 'column'
