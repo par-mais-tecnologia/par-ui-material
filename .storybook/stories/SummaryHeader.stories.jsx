@@ -8,6 +8,23 @@ import RepeatIcon from '@material-ui/icons/Repeat'
 import '../../src/Core/styles/transitions.css'
 import { MuiThemeProvider } from '@material-ui/core'
 
+let seeThemeOverride = SeeTheme;
+seeThemeOverride.overrides.MuiIconButton = {
+  root: {
+    '&:hover': {
+      backgroundColor: 'none'
+    },
+    '&:link': {
+      backgroundColor: 'none'
+    }
+  }
+},
+  seeThemeOverride.overrides.MuiTouchRipple = {
+    root: {
+      color: 'transparent'
+    }
+  }
+
 class SummaryHeaderStory extends PureComponent {
 
   state = {
@@ -45,7 +62,7 @@ class SummaryHeaderStory extends PureComponent {
     const { value } = this.state
 
     return (
-      <MuiThemeProvider theme={SeeTheme}>
+      <MuiThemeProvider theme={seeThemeOverride}>
       <SummaryHeader
         classes='justify-center'
         boxShadow={'0px -3px 20px 0px'}
