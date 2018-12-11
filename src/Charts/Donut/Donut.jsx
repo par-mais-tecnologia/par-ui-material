@@ -9,7 +9,8 @@ class Donut extends Component {
     return generate({
       bindto: '#wallet-chart',
       size: {
-        width: this.props.size
+        width: this.props.size,
+        height: this.props.size
       },
       data: {
         columns: this.props.columns,
@@ -52,7 +53,7 @@ class Donut extends Component {
   }
 
   render () {
-    return <div id='wallet-chart' />
+    return <div id='wallet-chart' style={{fontFamily: 'sans-serif'}}/>
   }
 }
 
