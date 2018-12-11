@@ -5,7 +5,6 @@ import withTests from './withTests'
 import { SummaryHeader, SeeTheme, IconButton } from '../../src'
 import Typography from '@material-ui/core/Typography/Typography'
 import RepeatIcon from '@material-ui/icons/Repeat'
-import { CSSTransitionGroup } from 'react-transition-group'
 import '../../src/Core/styles/transitions.css'
 import { MuiThemeProvider } from '@material-ui/core'
 

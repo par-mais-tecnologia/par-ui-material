@@ -53,7 +53,7 @@ class Donut extends Component {
   }
 
   render () {
-    return <div id='wallet-chart' style={{fontFamily: 'sans-serif'}}/>
+    return <div id='wallet-chart' style={{ fontFamily: 'sans-serif' }} />
   }
 }
 
