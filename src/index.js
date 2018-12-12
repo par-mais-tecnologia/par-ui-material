@@ -143,3 +143,7 @@ export {
   withMobileDialog,
   withWidth,
   Zoom } from '@material-ui/core'
+
+export {
+  default as RepeatIcon
+} from '@material-ui/icons/Repeat'
