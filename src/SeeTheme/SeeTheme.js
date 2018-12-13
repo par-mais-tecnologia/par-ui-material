@@ -91,29 +91,69 @@ export const seeTheme = createMuiTheme({
         fontSize: '12px'
       }
     },
+    MuiExpansionPanelDetails: {
+      root: {
+        flexDirection: 'column'
+      }
+    },
+    MuiInput: {
+      underline: {
+        '&:after': {
+          borderBottomColor: styles.colors.siren
+        },
+        '&:before': {
+          borderBottom: `1px solid ${styles.colors.gray_02}`
+        },
+        '&$error:after': {
+          borderBottomColor: styles.colors.red
+        },
+        '&:hover:not($disabled):not($focused):not($error):before': {
+          borderBottomColor: styles.colors.turquise
+        }
+      }
+    },
     MuiInputBase: {
       input: {
-        fontFamily: 'Roboto Light'
+        ...styles.fonts.body1,
+        padding: '10px 0 7px',
+        caretColor: styles.colors.siren
+      },
+      inputType: {
+        height: '2rem'
       }
     },
     MuiInputLabel: {
       root: {
-        fontFamily: 'Roboto Regular'
+        ...styles.fonts.caption
+      },
+      shrink: {
+        transform: 'translate(0, 1.5px) scale(1)'
       }
     },
     MuiFormLabel: {
+      root: {
+        '&$focused': {
+          color: styles.colors.siren
+        },
+        '&$error': {
+          color: styles.colors.red
+        }
+      },
       asterisk: {
         display: 'none'
       }
     },
     MuiFormHelperText: {
       required: {
-        color: '#f44336'
+        ...styles.fonts.caption,
+        color: styles.colors.red,
+        marginTop: 0
       }
     },
-    MuiExpansionPanelDetails: {
-      root: {
-        flexDirection: 'column'
+    MuiFormControl: {
+      marginNormal: {
+        marginTop: 0,
+        marginBottom: '10px'
       }
     }
   },

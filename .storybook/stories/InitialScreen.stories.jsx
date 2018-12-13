@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
+import { styles } from '../../src/SeeTheme/styles/styles'
 import { InitialScreen, Grid, Button, MuiThemeProvider, InputLabel, TextField, SeeTheme, Typography, BioFinanceiraTheme } from '../../src'
 import withTests from './withTests'
 import * as validation from '../../src/Core/validation'
@@ -8,30 +9,33 @@ import * as validation from '../../src/Core/validation'
 const validator = new validation.Validator()
 
 let seeThemeOverride = SeeTheme;
-seeThemeOverride.overrides.MuiInputLabel.root =  {...seeThemeOverride.overrides.MuiInputLabel.root, color: '#d4d4d4' }
-seeThemeOverride.overrides.MuiInputBase.root =  {...seeThemeOverride.overrides.MuiInputLabel.root, color: '#ffffff' }
-seeThemeOverride.overrides.MuiInputBase.inputType =  {...seeThemeOverride.overrides.MuiInputLabel.inputType, height: '2.1875em' }
-seeThemeOverride.overrides.MuiFormHelperText.root =  {...seeThemeOverride.overrides.MuiFormHelperText.root, fontFamily:  'Roboto Regular'}
-seeThemeOverride.overrides.MuiInput =  {
-  underline: {
-    '&:before': {
-      borderBottomColor: '#d4d4d4'
-    },
-    '&:hover:before': {
-      borderBottomColor: '#ffffff!important'
-    },
-    '&:focus': {
-      borderBottomColor: '#ffffff!important'
-    },
-    '&:after': {
-      borderBottomColor: '#b6dddc'
-    },
+seeThemeOverride.overrides.MuiInputLabel.root = { ...seeThemeOverride.overrides.MuiInputLabel.root, color: styles.colors.white }
+seeThemeOverride.overrides.MuiInputBase.input =  { ...seeThemeOverride.overrides.MuiInputBase.input, color: styles.colors.white }
+seeThemeOverride.overrides.MuiFormLabel.root = {
+  '&$focused': {
+    color: styles.colors.gray_04
+  },
+  '&$error': {
+    color: styles.colors.red
+  }
+}
+seeThemeOverride.overrides.MuiInput.underline = {
+  '&:after': {
+    borderBottomColor: styles.colors.gray_04
+  },
+  '&:before': {
+    borderBottom: `1px solid ${styles.colors.gray_03}`
+  },
+  '&$error:after': {
+    borderBottomColor: styles.colors.red
+  },
+  '&:hover:not($disabled):not($focused):not($error):before': {
+    borderBottomColor: styles.colors.white
   }
 }
 
 class InitialScreenStory extends React.Component {
   state = {
-    value: '',
     password: '',
     initialFields: true,
     insertEmail: false,
@@ -67,13 +71,13 @@ class InitialScreenStory extends React.Component {
   }
 
   render() {
-    const {value, password, initialFields, email, sendedEmail, insertEmail} = this.state
+    const {password, initialFields, email, sendedEmail, insertEmail} = this.state
 
     return (
     <MuiThemeProvider theme={seeThemeOverride}>
       <InitialScreen
         imageSrc={text('imageSrc', 'https://static.parmais.com.br/images/background.jpg')}
-        middleBoxColor={text('middleBoxColor', '#347A7C')}
+        middleBoxColor={text('middleBoxColor', '#347a7c')}
         middleBoxFullScreen={boolean('middleBoxFullScreen', false)}
         middleBoxFullScreenMobile={boolean('middleBoxFullScreenMobile', true)}>
         <div className='flex z-2 justify-center w-100 h-100 justify-center items-center'>
@@ -92,13 +96,16 @@ class InitialScreenStory extends React.Component {
               <p className='f2 mb4 mt3 rounded-elegance dn-ns'>#ClienteMais</p>
               <p className='roboto-light f4'>Acesse sua conta</p>
               <div>
-                <InputLabel>E-mail</InputLabel>
                 <TextField
                   required
                   validator={{ validator, type: validation.types.email }}
-                  style={{ width: '100%', marginTop: 0, marginBottom: '1rem'  }}
+                  style={{ width: '100%' }}
                   type='email'
-                  value={value}
+                  value={email}
+                  label='E-mail'
+                  InputLabelProps={{
+                    shrink: true
+                  }}
                   InputProps={{
                     className: 'input2'
                   }}
@@ -106,13 +113,16 @@ class InitialScreenStory extends React.Component {
                     this.handleEmail(e.target.value)
                   }} />
 
-                <br />
+                <br/>
 
-                <InputLabel >Password</InputLabel>
                 <TextField
-                  style={{ width: '100%', marginTop: 0}}
+                  style={{ width: '100%', marginTop: '10px'}}
                   id='PasswordId'
                   autoComplete='current-password'
+                  label='Senha'
+                  InputLabelProps={{
+                    shrink: true
+                  }}
                   type='password'
                   value={password}
                   onChange={(e) => {

@@ -21,6 +21,8 @@ const colors = {
 
   lightGreen: '#7FBC42',
 
+  red: '#BA2B31',
+
   purple: '#632B7D',
 
   cobalt: '#0880C4',

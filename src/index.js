@@ -45,7 +45,7 @@ export { default as Donut } from './Charts/Donut'
 export { default as WalletComposition } from './WalletComposition'
 export { default as ParallaxPageCss } from './ParallaxPageCss'
 
-export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, withStyles, withTheme
+export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, ThemeProvider, makeStyles, withStyles, withTheme
 } from '@material-ui/core/styles'
 export {
   colors,
