@@ -5,6 +5,7 @@ import menu from './styles/menu'
 import rentabilityBar from './styles/rentabilityBar'
 import financialPanel from './styles/financialPanel'
 import parallax from './styles/parallax'
+import lineGraph from './styles/lineGraph'
 
 export const seeTheme = createMuiTheme({
   styles,
@@ -169,7 +170,8 @@ export const seeTheme = createMuiTheme({
   menu,
   rentabilityBar,
   financialPanel,
-  parallax
+  parallax,
+  lineGraph
 })
 
 export default seeTheme

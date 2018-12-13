@@ -831,13 +831,21 @@ ShallowWrapper {
       }
     }
   >
-    <WithStyles(RentabilityBar)
-      firstTitle="Rentabilidade em R$"
-      firstValue="100.000"
-      secondTitle="Rentabilidade em %"
-      secondValue="0"
-      thirthTitle="cdi"
-      thirthValue="100"
+    <WithStyles(LineChart)
+      height={400}
+      lineFill="none"
+      lineStroke={
+        Array [
+          "#5EB8C0",
+          "#d3d3d3",
+        ]
+      }
+      lineStrokeWidth={4}
+      paddingH={100}
+      paddingW={100}
+      width={900}
+      xTicks={10}
+      yTicks={6}
     />
   </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
@@ -853,12 +861,18 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "firstTitle": "Rentabilidade em R$",
-      "firstValue": "100.000",
-      "secondTitle": "Rentabilidade em %",
-      "secondValue": "0",
-      "thirthTitle": "cdi",
-      "thirthValue": "100",
+      "height": 400,
+      "lineFill": "none",
+      "lineStroke": Array [
+        "#5EB8C0",
+        "#d3d3d3",
+      ],
+      "lineStrokeWidth": 4,
+      "paddingH": 100,
+      "paddingW": 100,
+      "width": 900,
+      "xTicks": 10,
+      "yTicks": 6,
     },
     "ref": null,
     "rendered": null,
@@ -870,12 +884,18 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "firstTitle": "Rentabilidade em R$",
-        "firstValue": "100.000",
-        "secondTitle": "Rentabilidade em %",
-        "secondValue": "0",
-        "thirthTitle": "cdi",
-        "thirthValue": "100",
+        "height": 400,
+        "lineFill": "none",
+        "lineStroke": Array [
+          "#5EB8C0",
+          "#d3d3d3",
+        ],
+        "lineStrokeWidth": 4,
+        "paddingH": 100,
+        "paddingW": 100,
+        "width": 900,
+        "xTicks": 10,
+        "yTicks": 6,
       },
       "ref": null,
       "rendered": null,

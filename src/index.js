@@ -44,6 +44,7 @@ export { default as FinancialPanel } from './FinancialPanel'
 export { default as Donut } from './Charts/Donut'
 export { default as WalletComposition } from './WalletComposition'
 export { default as ParallaxPageCss } from './ParallaxPageCss'
+export { default as LineChart } from './LineChart'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, ThemeProvider, makeStyles, withStyles, withTheme
 } from '@material-ui/core/styles'
