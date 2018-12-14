@@ -1,21 +1,25 @@
 export default {
   parallaxContainer: {
-    minHeight: '20rem',
-    overflow: 'hidden'
+    height: '100vh',
+    overflowX: 'hidden',
+    overflowY: 'auto',
+    perspective: '5px'
   },
-  parallax: {
+  parallaxSection: {
+    position: 'relative',
+    height: '50vh'
+  },
+  parallaxContent: {
     position: 'absolute',
-    top: '0',
-    right: '0',
-    bottom: '0',
-    left: '0',
-    zIndex: '-1'
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    transform: 'translateZ(-1px) scale(1.5)'
   },
   content: {
-    zIndex: '-99',
-    position: 'fixed',
-    height: '100%',
-    width: '100%'
+    position: 'relative',
+    height: '100vh'
   },
   mobile: {
     height: '100vh'

@@ -10,10 +10,13 @@ const ParallaxPageCss = (props) => {
       props.mobile
         ? [classes.parallaxContainer, classes.mobile].join(' ') : classes.parallaxContainer
     }>
-      <div className={classes.parallax}>
-        <div className={classes.content}>
-          {props.children}
+      <div className={classes.parallaxSection}>
+        <div className={classes.parallaxContent}>
+          {props.header}
         </div>
+      </div>
+      <div className={classes.content}>
+        {props.content}
       </div>
     </div>
   )
