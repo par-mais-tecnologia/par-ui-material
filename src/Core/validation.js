@@ -27,11 +27,15 @@ export class Validator {
   }
 
   validate = (instance, evt) => {
+    // TODO: Improve validation instance resolution
+    instance = instance.component && instance.component.props.id
+      ? instance
+      : this.instances.filter((_instance) => _instance.component.props.id === instance.id)[0]
     if (instance && instance.id) {
       let componentValue = evt.target ? evt.target.textContent || evt.target.value || instance.component.props.value : instance.component.props.value
       componentValue = moment.isMoment(evt) ? evt.toISOString() : componentValue
 
-      validateComponent(instance, componentValue)
+      return !validateComponent(instance, componentValue).error.hasError
     } else {
       const mountedInstances = this.instances
         .filter(instance => instance.component.updater.isMounted(instance.component))
