@@ -155,6 +155,14 @@ export const seeTheme = createMuiTheme({
         marginTop: 0,
         marginBottom: '10px'
       }
+    },
+    MuiButton: {
+      outlinedSecondary: {
+        border: '1px solid transparent',
+        '&:hover': {
+          border: '1px solid transparent'
+        }
+      }
     }
   },
   buttonStyle,

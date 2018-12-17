@@ -22,8 +22,7 @@ class SummaryHeader extends PureComponent {
 
 SummaryHeader.defaultProps = {
   height: 'auto',
-  backgroundImage: 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))',
-  boxShadow: '0px -3px 20px 0px'
+  backgroundImage: 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))'
 }
 
 export default SummaryHeader
