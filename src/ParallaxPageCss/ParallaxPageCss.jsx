@@ -18,6 +18,9 @@ const ParallaxPageCss = (props) => {
       <div className={classes.content}>
         {props.content}
       </div>
+      <div>
+        {props.footer}
+      </div>
     </div>
   )
 }

@@ -40,12 +40,15 @@ const ParallaxPageStory = ( props ) => (
       }
 
       content={
+
         <Typography style={{ height: '100%', width:'100%', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           Conteudo
         </Typography>
       }
+      footer={
+        props.footer
+      }
     />
-    {props.footer}
   </MuiThemeProvider>
 )
 

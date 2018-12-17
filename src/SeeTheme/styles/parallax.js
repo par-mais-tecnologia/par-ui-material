@@ -3,7 +3,7 @@ export default {
     height: '100vh',
     overflowX: 'hidden',
     overflowY: 'auto',
-    perspective: '5px'
+    perspective: '1px'
   },
   parallaxSection: {
     position: 'relative',
@@ -15,7 +15,7 @@ export default {
     right: 0,
     bottom: 0,
     left: 0,
-    transform: 'translateZ(-1px) scale(1.5)'
+    transform: 'translateZ(-1px) scale(2.5)'
   },
   content: {
     position: 'relative',
