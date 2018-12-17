@@ -12,7 +12,22 @@ import {
   SeeMenu
 } from '../'
 
-const styles = theme => (theme.menu)
+const styles = theme => ({
+  ...theme.menu,
+  toolbar: {
+    paddingRight: '1em',
+    paddingLeft: '1em',
+    [theme.breakpoints.up('sm')]: {
+      paddingRight: '4em',
+      paddingLeft: '4em'
+    }
+  },
+  iconButton: {
+    [theme.breakpoints.up('md')]: {
+      marginRight: '-15px'
+    }
+  }
+})
 
 class SeeAppBar extends React.Component {
   renderMenuItems = (menuItems, classes, selectedIndex) =>
@@ -53,10 +68,10 @@ class SeeAppBar extends React.Component {
 
     return (
       <AppBar
-        position='static'
+        position='fixed'
         color='white'
       >
-        <Toolbar>
+        <Toolbar classes={{ gutters: classes.toolbar }}>
           <div className='flex items-center justify-between w-100'>
             <div
               id='seeMenuMobile'
@@ -64,7 +79,7 @@ class SeeAppBar extends React.Component {
               style={menuItems.length === 0 ? { visibility: 'hidden' } : {}}
             >
               <IconButton
-                style={{ transform: 'scale(0.5)', marginLeft: '-20px' }}
+                style={{ transform: 'scale(0.5)' }}
                 onClick={openMenu}
               >
                 <i className='gray par-icon-menu' />
@@ -91,18 +106,18 @@ class SeeAppBar extends React.Component {
             </div>
             <div className='flex items-center'>
               <div className='dn flex-l'>
-                <Typography variant='body2'>
+                <Typography variant='body2' style={{ paddingBottom: '2px' }}>
                   {name}
                 </Typography>
               </div>
               <IconButton
                 onClick={handleExit}
-                className='flex'
-                style={{ marginRight: '-16px' }}
+                className='flex ph0 ph5-ns'
+                style={{ backgroundColor: 'transparent', borderRadius: 0, outline: 0 }}
               >
                 <div className='flex'>
-                  <i style={{ transform: 'scale(0.9)' }} className='purple par-icon-leave pr1' />
-                  <Typography variant='button'>SAIR</Typography>
+                  <i style={{ transform: 'scale(0.9)', paddingTop: '1px' }} className='purple par-icon-leave pr1' />
+                  <Typography variant='button' style={{ paddingTop: '1px' }}>SAIR</Typography>
                 </div>
               </IconButton>
             </div>

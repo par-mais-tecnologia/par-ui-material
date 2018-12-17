@@ -46,7 +46,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "classes": Object {},
+      "classes": Object {
+        "iconButton": "SeeAppBar-iconButton-2",
+        "toolbar": "SeeAppBar-toolbar-1",
+      },
       "handleExit": [Function],
       "lastUpdate": Object {
         "date": "29/09/1989",
@@ -82,7 +85,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "classes": Object {},
+        "classes": Object {
+          "iconButton": "SeeAppBar-iconButton-2",
+          "toolbar": "SeeAppBar-toolbar-1",
+        },
         "handleExit": [Function],
         "lastUpdate": Object {
           "date": "29/09/1989",
