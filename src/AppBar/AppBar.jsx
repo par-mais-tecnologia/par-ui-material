@@ -79,7 +79,7 @@ class SeeAppBar extends React.Component {
               style={menuItems.length === 0 ? { visibility: 'hidden' } : {}}
             >
               <IconButton
-                style={{ transform: 'scale(0.5)' }}
+                style={{ transform: 'scale(0.5)', marginRight: '27px' }}
                 onClick={openMenu}
               >
                 <i className='gray par-icon-menu' />
