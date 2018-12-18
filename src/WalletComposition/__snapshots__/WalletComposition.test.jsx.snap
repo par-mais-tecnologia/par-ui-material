@@ -540,7 +540,7 @@ Tributação de FIA.",
         </Typography>,
         Array [
           <div
-            className="mt2"
+            className="mt3"
           >
             <Typography
               variant="caption"
@@ -548,11 +548,15 @@ Tributação de FIA.",
               PAR MAIS FORTEM FIC FIM
                
               <br />
-              13.33%
+              <Typography
+                variant="body1"
+              >
+                13.33%
+              </Typography>
             </Typography>
           </div>,
           <div
-            className="mt2"
+            className="mt3"
           >
             <Typography
               variant="caption"
@@ -560,11 +564,15 @@ Tributação de FIA.",
               PAR MAIS IMPERIUM FIC FIM
                
               <br />
-              13.33%
+              <Typography
+                variant="body1"
+              >
+                13.33%
+              </Typography>
             </Typography>
           </div>,
           <div
-            className="mt2"
+            className="mt3"
           >
             <Typography
               variant="caption"
@@ -572,11 +580,15 @@ Tributação de FIA.",
               PAR MAIS MAGISTER FIC FIM
                
               <br />
-              46.67%
+              <Typography
+                variant="body1"
+              >
+                46.67%
+              </Typography>
             </Typography>
           </div>,
           <div
-            className="mt2"
+            className="mt3"
           >
             <Typography
               variant="caption"
@@ -584,7 +596,11 @@ Tributação de FIA.",
               PAR MAIS MAXIMUM FIC FIM
                
               <br />
-              26.67%
+              <Typography
+                variant="body1"
+              >
+                26.67%
+              </Typography>
             </Typography>
           </div>,
         ],
@@ -616,9 +632,13 @@ Tributação de FIA.",
             PAR MAIS FORTEM FIC FIM
              
             <br />
-            13.33%
+            <Typography
+              variant="body1"
+            >
+              13.33%
+            </Typography>
           </Typography>,
-          "className": "mt2",
+          "className": "mt3",
         },
         "ref": null,
         "rendered": Object {
@@ -630,7 +650,11 @@ Tributação de FIA.",
               "PAR MAIS FORTEM FIC FIM",
               " ",
               <br />,
-              "13.33%",
+              <Typography
+                variant="body1"
+              >
+                13.33%
+              </Typography>,
             ],
             "variant": "caption",
           },
@@ -647,7 +671,18 @@ Tributação de FIA.",
               "rendered": null,
               "type": "br",
             },
-            "13.33%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "13.33%",
+                "variant": "body1",
+              },
+              "ref": null,
+              "rendered": "13.33%",
+              "type": [Function],
+            },
           ],
           "type": [Function],
         },
@@ -664,9 +699,13 @@ Tributação de FIA.",
             PAR MAIS IMPERIUM FIC FIM
              
             <br />
-            13.33%
+            <Typography
+              variant="body1"
+            >
+              13.33%
+            </Typography>
           </Typography>,
-          "className": "mt2",
+          "className": "mt3",
         },
         "ref": null,
         "rendered": Object {
@@ -678,7 +717,11 @@ Tributação de FIA.",
               "PAR MAIS IMPERIUM FIC FIM",
               " ",
               <br />,
-              "13.33%",
+              <Typography
+                variant="body1"
+              >
+                13.33%
+              </Typography>,
             ],
             "variant": "caption",
           },
@@ -695,7 +738,18 @@ Tributação de FIA.",
               "rendered": null,
               "type": "br",
             },
-            "13.33%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "13.33%",
+                "variant": "body1",
+              },
+              "ref": null,
+              "rendered": "13.33%",
+              "type": [Function],
+            },
           ],
           "type": [Function],
         },
@@ -712,9 +766,13 @@ Tributação de FIA.",
             PAR MAIS MAGISTER FIC FIM
              
             <br />
-            46.67%
+            <Typography
+              variant="body1"
+            >
+              46.67%
+            </Typography>
           </Typography>,
-          "className": "mt2",
+          "className": "mt3",
         },
         "ref": null,
         "rendered": Object {
@@ -726,7 +784,11 @@ Tributação de FIA.",
               "PAR MAIS MAGISTER FIC FIM",
               " ",
               <br />,
-              "46.67%",
+              <Typography
+                variant="body1"
+              >
+                46.67%
+              </Typography>,
             ],
             "variant": "caption",
           },
@@ -743,7 +805,18 @@ Tributação de FIA.",
               "rendered": null,
               "type": "br",
             },
-            "46.67%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "46.67%",
+                "variant": "body1",
+              },
+              "ref": null,
+              "rendered": "46.67%",
+              "type": [Function],
+            },
           ],
           "type": [Function],
         },
@@ -760,9 +833,13 @@ Tributação de FIA.",
             PAR MAIS MAXIMUM FIC FIM
              
             <br />
-            26.67%
+            <Typography
+              variant="body1"
+            >
+              26.67%
+            </Typography>
           </Typography>,
-          "className": "mt2",
+          "className": "mt3",
         },
         "ref": null,
         "rendered": Object {
@@ -774,7 +851,11 @@ Tributação de FIA.",
               "PAR MAIS MAXIMUM FIC FIM",
               " ",
               <br />,
-              "26.67%",
+              <Typography
+                variant="body1"
+              >
+                26.67%
+              </Typography>,
             ],
             "variant": "caption",
           },
@@ -791,7 +872,18 @@ Tributação de FIA.",
               "rendered": null,
               "type": "br",
             },
-            "26.67%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "26.67%",
+                "variant": "body1",
+              },
+              "ref": null,
+              "rendered": "26.67%",
+              "type": [Function],
+            },
           ],
           "type": [Function],
         },
@@ -814,7 +906,7 @@ Tributação de FIA.",
           </Typography>,
           Array [
             <div
-              className="mt2"
+              className="mt3"
             >
               <Typography
                 variant="caption"
@@ -822,11 +914,15 @@ Tributação de FIA.",
                 PAR MAIS FORTEM FIC FIM
                  
                 <br />
-                13.33%
+                <Typography
+                  variant="body1"
+                >
+                  13.33%
+                </Typography>
               </Typography>
             </div>,
             <div
-              className="mt2"
+              className="mt3"
             >
               <Typography
                 variant="caption"
@@ -834,11 +930,15 @@ Tributação de FIA.",
                 PAR MAIS IMPERIUM FIC FIM
                  
                 <br />
-                13.33%
+                <Typography
+                  variant="body1"
+                >
+                  13.33%
+                </Typography>
               </Typography>
             </div>,
             <div
-              className="mt2"
+              className="mt3"
             >
               <Typography
                 variant="caption"
@@ -846,11 +946,15 @@ Tributação de FIA.",
                 PAR MAIS MAGISTER FIC FIM
                  
                 <br />
-                46.67%
+                <Typography
+                  variant="body1"
+                >
+                  46.67%
+                </Typography>
               </Typography>
             </div>,
             <div
-              className="mt2"
+              className="mt3"
             >
               <Typography
                 variant="caption"
@@ -858,7 +962,11 @@ Tributação de FIA.",
                 PAR MAIS MAXIMUM FIC FIM
                  
                 <br />
-                26.67%
+                <Typography
+                  variant="body1"
+                >
+                  26.67%
+                </Typography>
               </Typography>
             </div>,
           ],
@@ -890,9 +998,13 @@ Tributação de FIA.",
               PAR MAIS FORTEM FIC FIM
                
               <br />
-              13.33%
+              <Typography
+                variant="body1"
+              >
+                13.33%
+              </Typography>
             </Typography>,
-            "className": "mt2",
+            "className": "mt3",
           },
           "ref": null,
           "rendered": Object {
@@ -904,7 +1016,11 @@ Tributação de FIA.",
                 "PAR MAIS FORTEM FIC FIM",
                 " ",
                 <br />,
-                "13.33%",
+                <Typography
+                  variant="body1"
+                >
+                  13.33%
+                </Typography>,
               ],
               "variant": "caption",
             },
@@ -921,7 +1037,18 @@ Tributação de FIA.",
                 "rendered": null,
                 "type": "br",
               },
-              "13.33%",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "13.33%",
+                  "variant": "body1",
+                },
+                "ref": null,
+                "rendered": "13.33%",
+                "type": [Function],
+              },
             ],
             "type": [Function],
           },
@@ -938,9 +1065,13 @@ Tributação de FIA.",
               PAR MAIS IMPERIUM FIC FIM
                
               <br />
-              13.33%
+              <Typography
+                variant="body1"
+              >
+                13.33%
+              </Typography>
             </Typography>,
-            "className": "mt2",
+            "className": "mt3",
           },
           "ref": null,
           "rendered": Object {
@@ -952,7 +1083,11 @@ Tributação de FIA.",
                 "PAR MAIS IMPERIUM FIC FIM",
                 " ",
                 <br />,
-                "13.33%",
+                <Typography
+                  variant="body1"
+                >
+                  13.33%
+                </Typography>,
               ],
               "variant": "caption",
             },
@@ -969,7 +1104,18 @@ Tributação de FIA.",
                 "rendered": null,
                 "type": "br",
               },
-              "13.33%",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "13.33%",
+                  "variant": "body1",
+                },
+                "ref": null,
+                "rendered": "13.33%",
+                "type": [Function],
+              },
             ],
             "type": [Function],
           },
@@ -986,9 +1132,13 @@ Tributação de FIA.",
               PAR MAIS MAGISTER FIC FIM
                
               <br />
-              46.67%
+              <Typography
+                variant="body1"
+              >
+                46.67%
+              </Typography>
             </Typography>,
-            "className": "mt2",
+            "className": "mt3",
           },
           "ref": null,
           "rendered": Object {
@@ -1000,7 +1150,11 @@ Tributação de FIA.",
                 "PAR MAIS MAGISTER FIC FIM",
                 " ",
                 <br />,
-                "46.67%",
+                <Typography
+                  variant="body1"
+                >
+                  46.67%
+                </Typography>,
               ],
               "variant": "caption",
             },
@@ -1017,7 +1171,18 @@ Tributação de FIA.",
                 "rendered": null,
                 "type": "br",
               },
-              "46.67%",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "46.67%",
+                  "variant": "body1",
+                },
+                "ref": null,
+                "rendered": "46.67%",
+                "type": [Function],
+              },
             ],
             "type": [Function],
           },
@@ -1034,9 +1199,13 @@ Tributação de FIA.",
               PAR MAIS MAXIMUM FIC FIM
                
               <br />
-              26.67%
+              <Typography
+                variant="body1"
+              >
+                26.67%
+              </Typography>
             </Typography>,
-            "className": "mt2",
+            "className": "mt3",
           },
           "ref": null,
           "rendered": Object {
@@ -1048,7 +1217,11 @@ Tributação de FIA.",
                 "PAR MAIS MAXIMUM FIC FIM",
                 " ",
                 <br />,
-                "26.67%",
+                <Typography
+                  variant="body1"
+                >
+                  26.67%
+                </Typography>,
               ],
               "variant": "caption",
             },
@@ -1065,7 +1238,18 @@ Tributação de FIA.",
                 "rendered": null,
                 "type": "br",
               },
-              "26.67%",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "26.67%",
+                  "variant": "body1",
+                },
+                "ref": null,
+                "rendered": "26.67%",
+                "type": [Function],
+              },
             ],
             "type": [Function],
           },

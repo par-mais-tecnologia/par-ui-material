@@ -2,10 +2,36 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core'
 
-const MainBoxClasses = 'flex items-center justify-center shadow-3'
+const MainBoxClasses = 'flex items-center justify-center'
 const SubBoxClasses = 'flex items-center justify-between'
 const ColumnsClasses = 'flex flex-column ph2'
-const styles = theme => (theme.rentabilityBar)
+const styles = theme => ({
+  ...theme.rentabilityBar,
+  positiveState: {
+    ...theme.rentabilityBar.positiveState,
+    [theme.breakpoints.down(700)]: {
+      fontSize: '12px'
+    }
+  },
+  negativeState: {
+    ...theme.rentabilityBar.negativeState,
+    [theme.breakpoints.down(700)]: {
+      fontSize: '12px'
+    }
+  },
+  neutralState: {
+    ...theme.rentabilityBar.neutralState,
+    [theme.breakpoints.down(700)]: {
+      fontSize: '12px'
+    }
+  },
+  title: {
+    ...theme.rentabilityBar.title,
+    [theme.breakpoints.down(700)]: {
+      fontSize: '12px'
+    }
+  }
+})
 
 const RentabilityBar = (props) => {
   const { classes } = props
@@ -60,9 +86,8 @@ const RentabilityBar = (props) => {
             {props.thirdTitle}
           </h1>
 
-          <p className={stateClasses.third.class}>
-            <small>{stateClasses.third.sign}</small>
-            {percentageFormater(props.thirdValue)}
+          <p className={classes.neutralState}>
+            {props.thirdValue + '%'}
           </p>
         </div>
       </div>

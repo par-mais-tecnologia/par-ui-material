@@ -11,8 +11,8 @@ class WalletComposition extends PureComponent {
       <div className={containerClasses}>
         <Typography variant='body2'>Composição da carteira</Typography>
         {walletComposition.map(item => (
-          <div className='mt2'>
-            <Typography variant='caption'>{item.fundName} <br />{item.percentage}</Typography>
+          <div className='mt3'>
+            <Typography variant='caption'>{item.fundName} <br /><Typography variant='body1'>{item.percentage}</Typography></Typography>
           </div>
         ))}
       </div>

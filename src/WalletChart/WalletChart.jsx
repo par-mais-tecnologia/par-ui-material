@@ -3,10 +3,27 @@ import PropTypes from 'prop-types'
 import { Grid, Donut } from '../index'
 import { getStrategiesColors, getStrategies } from './functions'
 import LegendChart from '../LegendChart'
+import { withStyles } from '@material-ui/core/styles'
+
+const styles = theme => ({
+  legendChartContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '2rem',
+    marginLeft: 0,
+    width: '100%',
+    [theme.breakpoints.up(700)]: {
+      marginLeft: '4rem',
+      marginTop: 0,
+      width: 'auto',
+      display: 'block'
+    }
+  }
+})
 
 class WalletChart extends Component {
   render () {
-    const { initialInvestment, wallet, legend, showLegendPercentage, labelFirstLine, labelSecondLine } = this.props
+    const { classes, initialInvestment, wallet, legend, showLegendPercentage, labelFirstLine, labelSecondLine } = this.props
 
     const strategies = getStrategies(initialInvestment, wallet)
 
@@ -17,7 +34,7 @@ class WalletChart extends Component {
           colors={getStrategiesColors()}
           labelFirstLine={labelFirstLine}
           labelSecondLine={labelSecondLine} />
-        <Grid className='flex db-ns w-100 w-auto-ns justify-center justify-left-ns ml0 ml5-ns'>
+        <Grid className={classes.legendChartContainer}>
           {legend && <Grid className>
             <LegendChart initialInvestment={initialInvestment} strategies={strategies} showPercentage={showLegendPercentage} />
           </Grid>}
@@ -28,6 +45,7 @@ class WalletChart extends Component {
 }
 
 WalletChart.propTypes = {
+  classes: PropTypes.object.isRequired,
   initialInvestment: PropTypes.number,
   labelFirstLine: PropTypes.string,
   labelSecondLine: PropTypes.string,
@@ -41,4 +59,4 @@ WalletChart.defaultProps = {
   labelSecondLine: ''
 }
 
-export default WalletChart
+export default withStyles(styles)(WalletChart)
