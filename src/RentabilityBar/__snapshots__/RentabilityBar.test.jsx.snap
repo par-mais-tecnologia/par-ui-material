@@ -374,7 +374,7 @@ ShallowWrapper {
             "transform": "translateZ(-1px) scale(2.5)",
           },
           "parallaxSection": Object {
-            "height": "50vh",
+            "height": "60vh",
             "position": "relative",
           },
         },
