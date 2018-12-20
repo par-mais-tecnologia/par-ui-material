@@ -1,0 +1,121 @@
+const helpers = (context, d3) => {
+  const state = context.state
+  const props = context.props
+  const bisectDate = d3.bisector((d) => d.date).left
+
+  const xScale = d3.scaleTime()
+    .domain(d3.extent(state.data, d => d.date))
+    .rangeRound([0, state.width < 400 ? state.width - (props.paddingW / 4) : state.width - props.paddingW])
+
+  const yScale = d3.scaleLinear()
+    .domain([d3.min(state.data, d => d.walletQuota),
+      d3.max(state.data, d => d.walletQuota)])
+    .range([state.height - props.paddingH, 0])
+
+  const xAxis = d3.axisBottom()
+    .scale(xScale)
+    .tickSizeOuter(0)
+    .ticks(props.xTicks)
+    .tickFormat(d => state.data.length > 30 ? `${d.getMonth() + 1}/${d.getFullYear()}` : `${d.getDate()}/${d.getMonth() + 1}`)
+
+  const yAxis = d3.axisLeft()
+    .scale(yScale)
+    .tickSizeOuter(0)
+    .ticks(props.yTicks)
+    .tickSize(state.width - props.paddingW)
+    .tickFormat(d => `${d.toFixed(2)}%`)
+
+  function customYAxis (g) {
+    g.call(yAxis)
+    g.select('.domain').remove()
+    g.selectAll('.tick line')
+      .style('stroke', '#F0F0F0')
+    g.selectAll('.tick text')
+      .attr('dy', 4)
+      .attr('class', 'roboto-regular')
+      .style('fill', '#9C9C9C')
+  }
+
+  function customXAxis (g) {
+    g.call(xAxis)
+    g.select('.domain').style('stroke', 'rgba(0,0,0, .4)')
+    g.selectAll('.tick line').remove()
+    g.selectAll('.tick text')
+      .attr('class', 'roboto-regular')
+      .style('fill', '#9C9C9C')
+      .style('text-transform', 'capitalize')
+  }
+  const handlePathAnimation = (node) => {
+    let totalLength = d3.select(node).node().getTotalLength()
+    d3.select(node).attr('stroke-dasharray', totalLength + ' ' + totalLength)
+      .attr('stroke-dashoffset', totalLength)
+      .transition()
+      .duration(5000)
+      .attr('stroke-dashoffset', 0)
+  }
+
+  const graphMainLineGenerator = d3.line()
+    .x(d => xScale(d.date))
+    .y(d => yScale(d.walletQuota))
+
+  const graphCdiLineGenerator = d3.line()
+    .x(d => xScale(d.date))
+    .y(d => yScale(d.idxQuota))
+    .curve(d3.curveBundle)
+
+  const mousemove = () => {
+    let x0 = xScale.invert(d3.mouse(d3.event.currentTarget)[0])
+    let i = bisectDate(state.data, x0, 1)
+    let d = state.data[i - 1]
+    if (i < (state.data.length * 0.10)) {
+      d3.select('.svgTooltipElement')
+        .style('transform', 'translate(0rem, -3rem)')
+    } else if (i > (state.data.length * 0.70)) {
+      d3.select('.svgTooltipElement')
+        .style('transform', 'translate(-12rem, 0rem)')
+    } else {
+      d3.select('.svgTooltipElement')
+        .style('transform', 'translate(0rem, 0rem)')
+    }
+
+    d3.select('.focus')
+      .attr('transform', 'translate(' + xScale(d.date) + ',' + yScale(d.walletQuota) + ')')
+
+    d3.select('.focus')
+      .select('line')
+      .attr('y2', (state.height - props.paddingH) - yScale(d.walletQuota))
+      .attr('y1', -1 * yScale(d.walletQuota))
+
+    d3.select('.focus')
+      .select('.tooltip')
+      .html(
+        ` <div className='pb1 white f-0-875 roboto-bold'>R$ 000.000,00</div>
+            <div className='flex flex-row roboto-regular'>
+              <div className='flex flex-column items-start pb1'>
+                <div className='f7 white pb1'>
+                  ${state.cdi ? `${(d.walletQuota - d.idxQuota).toFixed(2)} % <br>  ${d.idxQuota.toFixed(2)}% CDI` : ''}
+                </div>
+                <div className='f7 white pb1'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
+              </div>
+            </div>`
+      )
+
+    d3.select('.focus')
+      .select('.focusDate')
+      .text(function () { return `em ${d.date.toLocaleDateString('pt-BR')}` })
+  }
+
+  const translateXPercentage = (width, paddingW) => width > 400 ? (width - (width * ((paddingW / 2) / 100))) / 100 : 14
+
+  return {
+    customYAxis,
+    customXAxis,
+    handlePathAnimation,
+    graphMainLineGenerator,
+    graphCdiLineGenerator,
+    translateXPercentage,
+    mousemove
+  }
+}
+
+export default helpers

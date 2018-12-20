@@ -37,7 +37,7 @@ export default {
   },
   buttonsRow: {
     minWidth: '15rem',
-    margin: '2rem',
+    margin: '0rem 2rem',
     justifyContent: 'space-evenly'
   },
   buttonDefault: {
@@ -61,5 +61,9 @@ export default {
     '&:hover': {
       background: '#5EB8C0'
     }
+  },
+  axis: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    fontSize: '14px'
   }
 }

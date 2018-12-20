@@ -30,7 +30,7 @@
     "test:generate-output": "npm run lint && jest --json --outputFile=.jest-test-results.json || true",
     "test:generate-output:watch": "onchange 'src/**/*.js?' -- npm run test:generate-output",
     "prebuild:storybook": "npm run test:generate-output",
-    "build:storybook": "build-storybook -c .storybook -o .storybookbuild/",
+    "build:storybook": "build-storybook -c .storybook -o .storybookbuild/ && cp -r \"./.storybook/assets\" \"./.storybookbuild\"",
     "predeploy": "npm run build:storybook",
     "deploy": "gh-pages -d .storybookbuild/",
     "update:snaphots": "npm test -- -u"

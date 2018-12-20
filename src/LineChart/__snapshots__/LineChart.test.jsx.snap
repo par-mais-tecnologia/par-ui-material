@@ -112,6 +112,10 @@ ShallowWrapper {
           },
         },
         "lineGraph": Object {
+          "axis": Object {
+            "fontFamily": "Roboto Regular, sans-serif",
+            "fontSize": "14px",
+          },
           "buttonActive": Object {
             "&:hover": Object {
               "background": "#5EB8C0",
