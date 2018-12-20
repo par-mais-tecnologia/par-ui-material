@@ -7,7 +7,7 @@ export default {
   },
   parallaxSection: {
     position: 'relative',
-    height: '50vh'
+    height: '60vh'
   },
   parallaxContent: {
     position: 'absolute',
