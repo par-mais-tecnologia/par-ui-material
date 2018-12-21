@@ -50,7 +50,7 @@ const helpers = (context, d3) => {
     d3.select(node).attr('stroke-dasharray', totalLength + ' ' + totalLength)
       .attr('stroke-dashoffset', totalLength)
       .transition()
-      .duration(5000)
+      .duration(3000)
       .attr('stroke-dashoffset', 0)
   }
 
@@ -89,13 +89,15 @@ const helpers = (context, d3) => {
     d3.select('.focus')
       .select('.tooltip')
       .html(
-        ` <div className='pb1 white f-0-875 roboto-bold'>R$ 000.000,00</div>
-            <div className='flex flex-row roboto-regular'>
+        `   <div className='flex flex-row'>
               <div className='flex flex-column items-start pb1'>
-                <div className='f7 white pb1'>
+                 <div className='f7 white pb1 roboto-regular'>
+                  ${d.walletQuota.toFixed(2)}
+                </div>
+                <div className='f7 white pb1 roboto-regular'>
                   ${state.cdi ? `${(d.walletQuota - d.idxQuota).toFixed(2)} % <br>  ${d.idxQuota.toFixed(2)}% CDI` : ''}
                 </div>
-                <div className='f7 white pb1'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
+                <div className='f7 white pb1 roboto-regular'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
               </div>
             </div>`
       )

@@ -140,7 +140,7 @@ ShallowWrapper {
           },
           "buttonsRow": Object {
             "justifyContent": "space-evenly",
-            "margin": "2rem",
+            "margin": "0rem 2rem",
             "minWidth": "15rem",
           },
           "buttonsWrapper": Object {
@@ -375,7 +375,7 @@ ShallowWrapper {
             "position": "absolute",
             "right": 0,
             "top": 0,
-            "transform": "translateZ(-1px) scale(2.5)",
+            "transform": "translate3d(0rem, -4rem, -0.5px) scale(1.5",
           },
           "parallaxSection": Object {
             "height": "60vh",

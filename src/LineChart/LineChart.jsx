@@ -12,8 +12,8 @@ class LineChart extends Component {
     data: null,
     fullData: null,
     cdi: false,
-    width: window.screen.width,
-    height: window.screen.height
+    width: 0,
+    height: 0
   }
 
   componentWillMount () {
@@ -25,10 +25,20 @@ class LineChart extends Component {
     this.setState({ data, fullData: data })
     window.addEventListener('resize', (event) => {
       let state = this.state
-      state.width = event.target.screen.width
-      state.height = (event.target.screen.height * 0.8)
+      console.log(document.querySelector('#main-graph').getBoundingClientRect())
+      let parentDiv = document.querySelector('#main-graph')
+      state.width = parentDiv.getBoundingClientRect().width > 600 ? Math.max(parentDiv.getBoundingClientRect().width, 1000) : 700
+      state.height = parentDiv.getBoundingClientRect().height > 500 ? Math.max(parentDiv.getBoundingClientRect().height, 700) : 800
       this.setState({ state })
     })
+  }
+
+  componentDidMount () {
+    let state = this.state
+    let parentDiv = document.querySelector('#main-graph')
+    state.width = Math.max(parentDiv.getBoundingClientRect().width, 1000)
+    state.height = Math.max(parentDiv.getBoundingClientRect().height, 600)
+    this.setState({ state })
   }
 
   handleChange = (event, value) => {
@@ -77,18 +87,15 @@ class LineChart extends Component {
                 label='30 dias' />
               <Tab
                 classes={{ selected: classes.tabLabel }}
-                value={12}
-                label='12 meses' />
-              <Tab
-                classes={{ selected: classes.tabLabel }}
                 value={moment(moment.now()).diff(moment().startOf('year'), 'months', true).toFixed(2)}
                 label='No ano' />
             </Tabs>
           </div>
         </div>
 
-        <div className='flex justify-center'>
+        <div className='flex justify-center' id='main-graph'>
 
+          {/* <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width} ${this.state.height}`}> */}
           <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width} ${this.state.height}`}>
 
             <g className='graphicGroup' style={{ transform: `translate(${helper.translateXPercentage(this.state.width, this.props.paddingW)}%, ${10}%)` }}>

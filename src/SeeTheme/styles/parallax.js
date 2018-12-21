@@ -15,7 +15,7 @@ export default {
     right: 0,
     bottom: 0,
     left: 0,
-    transform: 'translate3d(0rem, -4rem, -0.5px) scale(1.5'
+    transform: 'translate3d(0rem, -4rem, -0.5px) scale(1.5)'
   },
   content: {
     position: 'relative',
