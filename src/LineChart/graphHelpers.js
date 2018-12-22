@@ -5,11 +5,11 @@ const helpers = (context, d3) => {
 
   const xScale = d3.scaleTime()
     .domain(d3.extent(state.data, d => d.date))
-    .rangeRound([0, state.width < 400 ? state.width - (props.paddingW / 4) : state.width - props.paddingW])
+    .rangeRound([0, state.width - props.paddingW])
 
   const yScale = d3.scaleLinear()
-    .domain([d3.min(state.data, d => d.walletQuota),
-      d3.max(state.data, d => d.walletQuota)])
+    .domain([d3.min(state.data, d => Math.min(d.walletQuota, d.idxQuota)),
+      d3.max(state.data, d => Math.max(d.walletQuota, d.idxQuota))])
     .range([state.height - props.paddingH, 0])
 
   const xAxis = d3.axisBottom()
@@ -45,13 +45,25 @@ const helpers = (context, d3) => {
       .style('fill', '#9C9C9C')
       .style('text-transform', 'capitalize')
   }
-  const handlePathAnimation = (node) => {
+
+  const handlePathChange = (node, animate) => {
     let totalLength = d3.select(node).node().getTotalLength()
-    d3.select(node).attr('stroke-dasharray', totalLength + ' ' + totalLength)
-      .attr('stroke-dashoffset', totalLength)
-      .transition()
-      .duration(3000)
-      .attr('stroke-dashoffset', 0)
+
+    return new Promise((resolve) => {
+      if (animate) {
+        d3.select(node).attr('stroke-dasharray', totalLength + ' ' + totalLength)
+          .attr('stroke-dashoffset', totalLength)
+          .transition()
+          .duration(3000)
+          .attr('stroke-dashoffset', 0)
+          .each('end', resolve())
+      } else {
+        d3.select(node).attr('stroke-dasharray', totalLength + ' ' + totalLength)
+          .attr('stroke-dashoffset', totalLength)
+          .attr('stroke-dashoffset', 0)
+          .each('end', resolve())
+      }
+    })
   }
 
   const graphMainLineGenerator = d3.line()
@@ -69,13 +81,13 @@ const helpers = (context, d3) => {
     let d = state.data[i - 1]
     if (i < (state.data.length * 0.10)) {
       d3.select('.svgTooltipElement')
-        .style('transform', 'translate(0rem, -3rem)')
+        .style('transform', 'translate(0px, -30px)')
     } else if (i > (state.data.length * 0.70)) {
       d3.select('.svgTooltipElement')
-        .style('transform', 'translate(-12rem, 0rem)')
+        .style('transform', 'translate(-170px, 0px)')
     } else {
       d3.select('.svgTooltipElement')
-        .style('transform', 'translate(0rem, 0rem)')
+        .style('transform', 'translate(0px, 0px)')
     }
 
     d3.select('.focus')
@@ -91,13 +103,14 @@ const helpers = (context, d3) => {
       .html(
         `   <div className='flex flex-row'>
               <div className='flex flex-column items-start pb1'>
-                 <div className='f7 white pb1 roboto-regular'>
-                  ${d.walletQuota.toFixed(2)}
+                 <div style="font-family: 'Roboto Light', sans-serif" className='f7 white pb1 roboto-regular'>
+                  <span style="font-family: 'Roboto Regular', sans-serif">Valorização:</span> ${d.walletQuota.toFixed(2)}%
                 </div>
-                <div className='f7 white pb1 roboto-regular'>
-                  ${state.cdi ? `${(d.walletQuota - d.idxQuota).toFixed(2)} % <br>  ${d.idxQuota.toFixed(2)}% CDI` : ''}
+                <div style="font-family: 'Roboto Light', sans-serif" className='f7 white pb1 roboto-regular'>
+                  ${state.cdi ? `<span style="font-family: 'Roboto Regular', sans-serif">Diferença:</span> ${(d.walletQuota - d.idxQuota).toFixed(2)}% <br>  
+                  <span style="font-family: 'Roboto Regular', sans-serif">CDI: </span>${d.idxQuota.toFixed(2)}%` : ''}
                 </div>
-                <div className='f7 white pb1 roboto-regular'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
+                <div style="font-family: 'Roboto Regular', sans-serif" className='f7 white pb1 roboto-regular'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
               </div>
             </div>`
       )
@@ -107,12 +120,12 @@ const helpers = (context, d3) => {
       .text(function () { return `em ${d.date.toLocaleDateString('pt-BR')}` })
   }
 
-  const translateXPercentage = (width, paddingW) => width > 400 ? (width - (width * ((paddingW / 2) / 100))) / 100 : 14
+  const translateXPercentage = (width, paddingW) => 10// (width - (width * ((paddingW / 2) / 100)))//width > 400 ?  / 100 : 14
 
   return {
     customYAxis,
     customXAxis,
-    handlePathAnimation,
+    handlePathChange,
     graphMainLineGenerator,
     graphCdiLineGenerator,
     translateXPercentage,

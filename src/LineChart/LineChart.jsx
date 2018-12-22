@@ -16,6 +16,9 @@ class LineChart extends Component {
     height: 0
   }
 
+  animateWallet = true
+  animateCDI = true
+
   componentWillMount () {
     let data = this.props.dataset
     data.map(obj => {
@@ -24,28 +27,38 @@ class LineChart extends Component {
     })
     this.setState({ data, fullData: data })
     window.addEventListener('resize', (event) => {
-      let state = this.state
-      console.log(document.querySelector('#main-graph').getBoundingClientRect())
-      let parentDiv = document.querySelector('#main-graph')
-      state.width = parentDiv.getBoundingClientRect().width > 600 ? Math.max(parentDiv.getBoundingClientRect().width, 1000) : 700
-      state.height = parentDiv.getBoundingClientRect().height > 500 ? Math.max(parentDiv.getBoundingClientRect().height, 700) : 800
-      this.setState({ state })
+      this.resizeGraph()
     })
   }
 
-  componentDidMount () {
+  resizeGraph () {
     let state = this.state
-    let parentDiv = document.querySelector('#main-graph')
-    state.width = Math.max(parentDiv.getBoundingClientRect().width, 1000)
-    state.height = Math.max(parentDiv.getBoundingClientRect().height, 600)
+    let parentDivRect = document.querySelector('#main-graph').getBoundingClientRect()
+    state.width = parentDivRect.width
+    state.height = Math.max(parentDivRect.height / 2.5, 344)
     this.setState({ state })
   }
 
-  handleChange = (event, value) => {
-    let data = value === 0
-      ? this.state.fullData
-      : this.state.fullData.filter(d => d.date > moment().subtract(value, 'month') ? d.date : null)
+  componentDidMount () {
+    this.resizeGraph()
+  }
 
+  handleChange = (event, value) => {
+    this.animateWallet = true
+    this.animateCDI = true
+    let data = this.state.fullData
+      .filter(d => value.date.isBefore(d.date))
+      .map((d, idx, arr) => {
+        return {
+          date: d.date,
+          idxQuota: d.idxQuota - arr[0].idxQuota,
+          walletQuota: d.walletQuota - arr[0].walletQuota
+        }
+      })
+
+    if (this.props.changePeriod) {
+      this.props.changePeriod(data, value.label)
+    }
     this.setState({ value, data })
   }
 
@@ -79,15 +92,15 @@ class LineChart extends Component {
             >
               <Tab
                 classes={{ selected: classes.tabLabel }}
-                value={0}
+                value={{ date: moment('1900-01-01'), label: 'totalResult' }}
                 label='Desde o início' />
               <Tab
                 classes={{ selected: classes.tabLabel }}
-                value={moment(moment.now()).diff(moment().subtract(30, 'days'), 'months', true).toFixed(2)}
-                label='30 dias' />
+                value={{ date: moment().startOf('month'), label: 'monthlyResult' }}
+                label='No mês' />
               <Tab
                 classes={{ selected: classes.tabLabel }}
-                value={moment(moment.now()).diff(moment().startOf('year'), 'months', true).toFixed(2)}
+                value={{ date: moment().startOf('year'), label: 'yearlyResult' }}
                 label='No ano' />
             </Tabs>
           </div>
@@ -95,10 +108,12 @@ class LineChart extends Component {
 
         <div className='flex justify-center' id='main-graph'>
 
-          {/* <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width} ${this.state.height}`}> */}
-          <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width} ${this.state.height}`}>
+          <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width - 40} ${this.state.height}`}>
 
-            <g className='graphicGroup' style={{ transform: `translate(${helper.translateXPercentage(this.state.width, this.props.paddingW)}%, ${10}%)` }}>
+            <g className='graphicGroup'
+              // style={{ transform: `translate(${helper.translateXPercentage(this.state.width, this.props.paddingW)}%, ${10}%)` }}
+              style={{ transform: `translate(55px, 40px)` }}
+            >
               <g className={['xAxis', classes.axis].join(' ')}
                 ref={node => d3.select(node).call(helper.customXAxis)}
                 style={{ transform: `translateY(${this.state.height - this.props.paddingH}px)` }}
@@ -118,7 +133,8 @@ class LineChart extends Component {
                       strokeWidth={this.props.lineStrokeWidth[1]}
                       fill={this.props.lineFill[1]}
                       className='Path'
-                      ref={node => node === null ? '' : helper.handlePathAnimation(node)}
+                      ref={node => node !== null ? helper.handlePathChange(node, this.animateCDI)
+                        .then(() => { this.animateCDI = false }) : ''}
                     /> : ''
                 }
                 <path
@@ -127,7 +143,8 @@ class LineChart extends Component {
                   strokeWidth={this.props.lineStrokeWidth[0]}
                   fill={this.props.lineFill[0]}
                   className='Path'
-                  ref={node => node === null ? '' : helper.handlePathAnimation(node)}
+                  ref={node => node !== null ? helper.handlePathChange(node, this.animateWallet)
+                    .then(() => { this.animateWallet = false }) : ''}
                 />
               </g>
 
@@ -138,7 +155,9 @@ class LineChart extends Component {
                 {tooltip}
               </g>
 
-              <rect className='overlay' width={this.state.width - this.props.paddingW} height={this.state.height - this.props.paddingH} fill='transparent'
+              <rect className='overlay'
+                width={this.state.width - this.props.paddingW}
+                height={this.state.height - this.props.paddingH} fill='transparent'
                 ref={
                   node => {
                     let focus = d3.select('.focus')
@@ -167,7 +186,7 @@ class LineChart extends Component {
                 variant='contained'
                 classes={{
                   root: this.state.cdi
-                    ? classes.buttonActive
+                    ? classes.buttonCDIActive
                     : classes.buttonDefault
                 }}
                 onClick={() => this.toggleGraphLines('cdi')}

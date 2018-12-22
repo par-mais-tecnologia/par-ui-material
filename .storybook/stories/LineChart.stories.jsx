@@ -39,7 +39,7 @@ const ParallaxPageStory = ( props ) => (
             </Typography>
           </div>
 
-        </SummaryHeader>          
+        </SummaryHeader>
       }
 
       content={
@@ -47,14 +47,15 @@ const ParallaxPageStory = ( props ) => (
 <div className='flex flex-column mt3' style={{ background: 'white' }}>
                 <Paper className='mh5-ns mh3 mt5'>
                   <LineChart
-                      dataset={dataset} 
-                      lineStroke={['#5EB8C0', '#d3d3d3']}
+                      dataset={dataset}
+                      lineStroke={['#5EB8C0', '#94ba1d']}
                       lineStrokeWidth={[4, 2]}
                       lineFill={['none', 'none']}
                       paddingH={100}
                       paddingW={100}
                       yTicks={9}
                       xTicks={5}
+                      changePeriod={(data) => console.log('Changed graph period. Datapoints:', data.length)}
                   />
                 </Paper>
                 </div>

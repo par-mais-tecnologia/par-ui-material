@@ -4,7 +4,7 @@ export default {
     borderRadius: '3px',
     padding: '15px',
     color: '#fff',
-    minWidth: '10rem',
+    minWidth: '150px',
     fontWeight: '14px'
   },
   tooltip: {
@@ -60,6 +60,17 @@ export default {
     transition: 'all .5s ease',
     '&:hover': {
       background: '#5EB8C0'
+    }
+  },
+  buttonCDIActive: {
+    color: '#fff',
+    border: 'none',
+    background: '#94ba1d',
+    borderRadius: '20px',
+    boxShadow: 'none',
+    transition: 'all .5s ease',
+    '&:hover': {
+      background: '#819e08'
     }
   },
   axis: {

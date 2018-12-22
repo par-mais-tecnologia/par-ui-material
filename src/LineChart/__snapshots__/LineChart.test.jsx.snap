@@ -3,7 +3,7 @@
 exports[`RentabilityBar shallow RentabilityBar match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
+  Symbol(enzyme.__unrendered__): <MuiThemeProvider
     theme={
       Object {
         "breakpoints": Object {
@@ -127,6 +127,17 @@ ShallowWrapper {
             "color": "#fff",
             "transition": "all .5s ease",
           },
+          "buttonCDIActive": Object {
+            "&:hover": Object {
+              "background": "#819e08",
+            },
+            "background": "#94ba1d",
+            "border": "none",
+            "borderRadius": "20px",
+            "boxShadow": "none",
+            "color": "#fff",
+            "transition": "all .5s ease",
+          },
           "buttonDefault": Object {
             "&:hover": Object {
               "background": "transparent",
@@ -176,7 +187,7 @@ ShallowWrapper {
             "borderRadius": "3px",
             "color": "#fff",
             "fontWeight": "14px",
-            "minWidth": "10rem",
+            "minWidth": "150px",
             "padding": "15px",
           },
         },
@@ -375,7 +386,7 @@ ShallowWrapper {
             "position": "absolute",
             "right": 0,
             "top": 0,
-            "transform": "translate3d(0rem, -4rem, -0.5px) scale(1.5",
+            "transform": "translate3d(0rem, -4rem, -0.5px) scale(1.5)",
           },
           "parallaxSection": Object {
             "height": "60vh",
@@ -851,7 +862,7 @@ ShallowWrapper {
       xTicks={10}
       yTicks={6}
     />
-  </MuiThemeProviderOld>,
+  </MuiThemeProvider>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

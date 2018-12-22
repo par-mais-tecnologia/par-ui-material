@@ -79,6 +79,7 @@ export {
   ExpansionPanelActions,
   ExpansionPanelDetails,
   ExpansionPanelSummary,
+
   Fade,
   FilledInput,
   FormControl,
@@ -148,3 +149,7 @@ export {
 export {
   default as RepeatIcon
 } from '@material-ui/icons/Repeat'
+
+export {
+  default as ExpandMoreIcon
+} from '@material-ui/icons/ExpandMore'
