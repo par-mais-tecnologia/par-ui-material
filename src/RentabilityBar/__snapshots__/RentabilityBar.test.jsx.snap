@@ -3,7 +3,7 @@
 exports[`RentabilityBar shallow RentabilityBar match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MuiThemeProvider
+  Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
     theme={
       Object {
         "breakpoints": Object {
@@ -854,7 +854,7 @@ ShallowWrapper {
       thirthTitle="cdi"
       thirthValue="100"
     />
-  </MuiThemeProvider>,
+  </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

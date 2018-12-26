@@ -106,7 +106,7 @@ class SeeAppBar extends React.Component {
             </div>
             <div className='flex items-center'>
               <div className='dn flex-l'>
-                <Typography variant='body2' style={{ paddingBottom: '2px' }}>
+                <Typography variant='body2' style={{ paddingBottom: '4px' }}>
                   {name}
                 </Typography>
               </div>
@@ -116,8 +116,8 @@ class SeeAppBar extends React.Component {
                 style={{ backgroundColor: 'transparent', borderRadius: 0, outline: 0 }}
               >
                 <div className='flex'>
-                  <i style={{ transform: 'scale(0.9)', paddingTop: '1px' }} className='purple par-icon-leave pr1' />
-                  <Typography variant='button' style={{ paddingTop: '1px' }}>SAIR</Typography>
+                  <i className='purple par-icon-leave pr1' />
+                  <Typography variant='button'>SAIR</Typography>
                 </div>
               </IconButton>
             </div>
