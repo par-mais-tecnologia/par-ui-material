@@ -13,7 +13,12 @@ class LineChart extends Component {
     fullData: null,
     cdi: false,
     width: 0,
-    height: 0
+    height: 0,
+    tab: [
+      { key: 0, label: 'Desde o início', filter: { date: moment('1900-01-01'), label: 'totalResult' } },
+      { key: 1, label: 'No mês', filter: { date: moment().startOf('month'), label: 'monthlyResult' } },
+      { key: 2, label: 'No ano', filter: { date: moment().startOf('year'), label: 'yearlyResult' } }
+    ]
   }
 
   animateWallet = true
@@ -46,8 +51,9 @@ class LineChart extends Component {
   handleChange = (event, value) => {
     this.animateWallet = true
     this.animateCDI = true
+    let filter = this.state.tab[value].filter
     let data = this.state.fullData
-      .filter(d => value.date.isBefore(d.date))
+      .filter(d => filter.date.isBefore(d.date))
       .map((d, idx, arr) => {
         return {
           date: d.date,
@@ -57,7 +63,7 @@ class LineChart extends Component {
       })
 
     if (this.props.changePeriod) {
-      this.props.changePeriod(data, value.label)
+      this.props.changePeriod(data, filter.label)
     }
     this.setState({ value, data })
   }
@@ -73,7 +79,7 @@ class LineChart extends Component {
 
     const helper = grapHelper(this, d3)
 
-    const tooltip = <foreignObject x='10' y='-50' width='auto' height='auto' className='svgTooltipElement'>
+    const tooltip = <foreignObject x='10' y='-50' width='169px' height={this.state.cdi ? '100px' : '89px'} className='svgTooltipElement'>
       <div className={['flex flex-column items-start tooltip', classes.tooltipWrapper].join(' ')} />
     </foreignObject>
 
@@ -87,21 +93,21 @@ class LineChart extends Component {
               onChange={this.handleChange}
               fullWidth
               classes={{
+                root: classes.tabsRoot,
                 indicator: classes.tabsIndicator
               }}
             >
-              <Tab
-                classes={{ selected: classes.tabLabel }}
-                value={{ date: moment('1900-01-01'), label: 'totalResult' }}
-                label='Desde o início' />
-              <Tab
-                classes={{ selected: classes.tabLabel }}
-                value={{ date: moment().startOf('month'), label: 'monthlyResult' }}
-                label='No mês' />
-              <Tab
-                classes={{ selected: classes.tabLabel }}
-                value={{ date: moment().startOf('year'), label: 'yearlyResult' }}
-                label='No ano' />
+              {
+                this.state.tab.map((tab, index) => <Tab
+                  classes={{
+                    root: classes.tabsRoot,
+                    selected: classes.tabLabel
+                  }}
+                  value={index}
+                  label={tab.label}
+                />
+                )
+              }
             </Tabs>
           </div>
         </div>
@@ -111,7 +117,6 @@ class LineChart extends Component {
           <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width - 40} ${this.state.height}`}>
 
             <g className='graphicGroup'
-              // style={{ transform: `translate(${helper.translateXPercentage(this.state.width, this.props.paddingW)}%, ${10}%)` }}
               style={{ transform: `translate(55px, 40px)` }}
             >
               <g className={['xAxis', classes.axis].join(' ')}

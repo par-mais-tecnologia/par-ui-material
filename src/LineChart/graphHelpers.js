@@ -34,6 +34,10 @@ const helpers = (context, d3) => {
       .attr('dy', 4)
       .attr('class', 'roboto-regular')
       .style('fill', '#9C9C9C')
+    if (window.screen.width < 370) {
+      g.selectAll('.tick text')
+        .style('font-size', '12px')
+    }
   }
 
   function customXAxis (g) {
@@ -44,6 +48,11 @@ const helpers = (context, d3) => {
       .attr('class', 'roboto-regular')
       .style('fill', '#9C9C9C')
       .style('text-transform', 'capitalize')
+    if (window.screen.width < 370) {
+      g.selectAll('.tick text')
+        .style('font-size', '12px')
+        .style('transform', 'translate(-.5rem, 10px) rotate(-30deg)')
+    }
   }
 
   const handlePathChange = (node, animate) => {
@@ -84,7 +93,7 @@ const helpers = (context, d3) => {
         .style('transform', 'translate(0px, -30px)')
     } else if (i > (state.data.length * 0.70)) {
       d3.select('.svgTooltipElement')
-        .style('transform', 'translate(-170px, 0px)')
+        .style('transform', 'translate(-190px, 0px)')
     } else {
       d3.select('.svgTooltipElement')
         .style('transform', 'translate(0px, 0px)')

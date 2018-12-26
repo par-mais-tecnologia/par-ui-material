@@ -26,6 +26,9 @@ export default {
     borderBottom: '#E2E2E2 solid 1px',
     margin: '2rem'
   },
+  tabsRoot: {
+    color: '#9C9C9C'
+  },
   tabsIndicator: {
     backgroundColor: '#632B7D'
   },
@@ -33,7 +36,7 @@ export default {
     color: '#632B7D'
   },
   buttonsWrapper: {
-    margin: '2rem'
+    marginBottom: '1rem'
   },
   buttonsRow: {
     minWidth: '15rem',
