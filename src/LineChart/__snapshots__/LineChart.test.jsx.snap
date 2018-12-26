@@ -155,7 +155,7 @@ ShallowWrapper {
             "minWidth": "15rem",
           },
           "buttonsWrapper": Object {
-            "margin": "2rem",
+            "marginBottom": "1rem",
           },
           "filterTabsRow": Object {
             "borderBottom": "#E2E2E2 solid 1px",
@@ -166,6 +166,9 @@ ShallowWrapper {
           },
           "tabsIndicator": Object {
             "backgroundColor": "#632B7D",
+          },
+          "tabsRoot": Object {
+            "color": "#9C9C9C",
           },
           "tooltip": Object {
             "fill": "#333333",
@@ -386,7 +389,7 @@ ShallowWrapper {
             "position": "absolute",
             "right": 0,
             "top": 0,
-            "transform": "translate3d(0rem, -4rem, -0.5px) scale(1.5)",
+            "transform": "translateZ(-1px) scale(2.0) translateY(-4rem)",
           },
           "parallaxSection": Object {
             "height": "60vh",
