@@ -5,6 +5,21 @@ import { select } from 'd3'
 import 'c3/c3.css'
 
 class Donut extends Component {
+  constructor (props) {
+    super(props)
+
+    this.onMouseMoveHandler = this.onMouseMoveHandler.bind(this)
+  }
+
+  onMouseMoveHandler (e) {
+    const screenWidth = window.innerWidth / 2
+    screenWidth < e.screenX
+      ? select('.c3-tooltip-container')
+        .style('transform', 'translateX(-5rem)')
+      : select('.c3-tooltip-container')
+        .style('transform', 'translateX(0)')
+  }
+
   generateChart () {
     return generate({
       bindto: '#wallet-chart',
@@ -26,7 +41,6 @@ class Donut extends Component {
       legend: {
         show: false
       }
-
     })
   };
 
@@ -53,7 +67,7 @@ class Donut extends Component {
   }
 
   render () {
-    return <div id='wallet-chart' style={{ fontFamily: 'sans-serif' }} />
+    return <div id='wallet-chart' onMouseMove={this.onMouseMoveHandler} style={{ fontFamily: 'sans-serif' }} />
   }
 }
 
