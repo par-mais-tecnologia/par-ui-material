@@ -424,9 +424,9 @@ ShallowWrapper {
           },
           "parallaxSection": Object {
             "-moz-transform-style": "preserve-3d",
+            "-webkit-transform-style": "preserve-3d",
             "height": "45vh",
             "position": "relative",
-            "webkit-transform-style": "preserve-3d",
           },
         },
         "props": Object {},
