@@ -27,10 +27,20 @@ export default {
     margin: '2rem'
   },
   tabsRoot: {
-    color: '#9C9C9C'
+    color: '#9C9C9C',
+    '&:hover': {
+      outline: '0'
+    },
+    '&:active': {
+      outline: '0'
+    },
+    '&:focus': {
+      outline: '0'
+    }
   },
   tabsIndicator: {
-    backgroundColor: '#632B7D'
+    backgroundColor: '#632B7D',
+    outline: '0'
   },
   tabLabel: {
     color: '#632B7D'
@@ -51,7 +61,14 @@ export default {
     boxShadow: 'none',
     transition: 'all .5s ease',
     '&:hover': {
-      background: 'transparent'
+      background: 'transparent',
+      outline: '0'
+    },
+    '&:active': {
+      outline: '0'
+    },
+    '&:focus': {
+      outline: '0'
     }
   },
   buttonActive: {
@@ -62,7 +79,14 @@ export default {
     boxShadow: 'none',
     transition: 'all .5s ease',
     '&:hover': {
-      background: '#5EB8C0'
+      background: '#5EB8C0',
+      outline: '0'
+    },
+    '&:active': {
+      outline: '0'
+    },
+    '&:focus': {
+      outline: '0'
     }
   },
   buttonCDIActive: {
@@ -73,7 +97,14 @@ export default {
     boxShadow: 'none',
     transition: 'all .5s ease',
     '&:hover': {
-      background: '#819e08'
+      background: '#819e08',
+      outline: '0'
+    },
+    '&:active': {
+      outline: '0'
+    },
+    '&:focus': {
+      outline: '0'
     }
   },
   axis: {

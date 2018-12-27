@@ -117,8 +117,15 @@ ShallowWrapper {
             "fontSize": "14px",
           },
           "buttonActive": Object {
+            "&:active": Object {
+              "outline": "0",
+            },
+            "&:focus": Object {
+              "outline": "0",
+            },
             "&:hover": Object {
               "background": "#5EB8C0",
+              "outline": "0",
             },
             "background": "#5EB8C0",
             "border": "none",
@@ -128,8 +135,15 @@ ShallowWrapper {
             "transition": "all .5s ease",
           },
           "buttonCDIActive": Object {
+            "&:active": Object {
+              "outline": "0",
+            },
+            "&:focus": Object {
+              "outline": "0",
+            },
             "&:hover": Object {
               "background": "#819e08",
+              "outline": "0",
             },
             "background": "#94ba1d",
             "border": "none",
@@ -139,8 +153,15 @@ ShallowWrapper {
             "transition": "all .5s ease",
           },
           "buttonDefault": Object {
+            "&:active": Object {
+              "outline": "0",
+            },
+            "&:focus": Object {
+              "outline": "0",
+            },
             "&:hover": Object {
               "background": "transparent",
+              "outline": "0",
             },
             "background": "transparent",
             "border": "1px solid #9C9C9C",
@@ -166,8 +187,18 @@ ShallowWrapper {
           },
           "tabsIndicator": Object {
             "backgroundColor": "#632B7D",
+            "outline": "0",
           },
           "tabsRoot": Object {
+            "&:active": Object {
+              "outline": "0",
+            },
+            "&:focus": Object {
+              "outline": "0",
+            },
+            "&:hover": Object {
+              "outline": "0",
+            },
             "color": "#9C9C9C",
           },
           "tooltip": Object {
@@ -389,11 +420,13 @@ ShallowWrapper {
             "position": "absolute",
             "right": 0,
             "top": 0,
-            "transform": "translateZ(-1px) scale(2.0) translateY(-4rem)",
+            "transform": "translateZ(-1px) scale(2.0) translateY(-7rem)",
           },
           "parallaxSection": Object {
-            "height": "60vh",
+            "-moz-transform-style": "preserve-3d",
+            "height": "45vh",
             "position": "relative",
+            "webkit-transform-style": "preserve-3d",
           },
         },
         "props": Object {},
