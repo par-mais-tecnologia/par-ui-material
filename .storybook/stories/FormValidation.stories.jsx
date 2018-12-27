@@ -47,6 +47,7 @@ class FormValidationStory extends PureComponent {
         <div>
         <Select
           required
+          id='selectForm'
           validator={{validator, type: validation.types.required}}
           value={value}
           onChange={this.handleSelectChange('valor selecionado')}
@@ -64,6 +65,7 @@ class FormValidationStory extends PureComponent {
         <div>
         <TextField
           required
+          id='emailForm'
           label='Email'
           onChange={this.handleEmailChange('Email Modificado')}
           name='email'
@@ -78,6 +80,7 @@ class FormValidationStory extends PureComponent {
           keyboard
           showTodayButton
           clearable
+          id='DatePickerForm'
           mask={value => (value ? [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/] : [])}
           validator={{validator, type: validation.types.required}}
           label='Campo de Data'
