@@ -31,7 +31,7 @@ export class Validator {
       ? instance
       : this.instances.filter((_instance) => _instance.component.props.id === instance.id)[0] : instance
     if (instance && instance.id) {
-      let componentValue = evt.target ? evt.target.textContent || evt.target.value || instance.component.props.value : instance.component.props.value
+      let componentValue = getComponentValue(evt.target, instance)
       componentValue = moment.isMoment(evt) ? evt.toISOString() : componentValue
 
       return !validateComponent(instance, componentValue).error.hasError
@@ -59,6 +59,20 @@ export class Validator {
         return true
       }
     }
+  }
+}
+
+function getComponentValue (targetValue, instance) {
+  if (exist(targetValue)) {
+    if (existOrZero(targetValue.textContent)) {
+      return targetValue.textContent
+    } else if (existOrZero(targetValue.value)) {
+      return targetValue.value
+    } else {
+      return instance.component.props.value
+    }
+  } else {
+    return instance.component.props.value
   }
 }
 
@@ -102,6 +116,10 @@ function requiredField (value, isRequired) {
 
 function exist (value) {
   return !!value
+}
+
+function existOrZero (value) {
+  return value === 0 ? true : !!value
 }
 
 function uuidv4 () {

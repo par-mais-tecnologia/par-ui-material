@@ -20,6 +20,7 @@ class SliderStories extends PureComponent {
       <MuiThemeProvider theme={BioFinanceiraTheme}>
         <div style={{width: '400px', padding: '10px 10px 10px 10px', marginTop: 100, marginLeft: 40}}>
           <Slider
+            id='Slider'
             required={true}
             validator={{validator, type: validation.types.required}}
             errorMessage={errorMessage}

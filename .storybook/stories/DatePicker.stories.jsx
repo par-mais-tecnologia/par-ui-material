@@ -118,6 +118,7 @@ class DatePickerStory extends PureComponent {
             keyboard
             showTodayButton
             clearable
+            id='DatePickerWithValidation'
             mask={value => (value ? [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/] : [])}
             validator={{validator, type: validation.types.required}}
             label='Campo de Data'
