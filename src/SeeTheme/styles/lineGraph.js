@@ -5,7 +5,8 @@ export default {
     padding: '15px',
     color: '#fff',
     minWidth: '150px',
-    fontWeight: '14px'
+    fontSize: '14px',
+    fontFamily: 'Roboto Regular, sans-serif'
   },
   tooltip: {
     transform: 'translate(5px,-70px)',
@@ -24,7 +25,7 @@ export default {
   },
   filterTabsRow: {
     borderBottom: '#E2E2E2 solid 1px',
-    margin: '2rem'
+    margin: '2rem 2rem 0'
   },
   tabsRoot: {
     color: '#9C9C9C',
@@ -46,7 +47,7 @@ export default {
     color: '#632B7D'
   },
   buttonsWrapper: {
-    marginBottom: '1rem'
+    marginBottom: '2rem'
   },
   buttonsRow: {
     minWidth: '15rem',

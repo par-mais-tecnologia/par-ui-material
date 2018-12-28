@@ -3,7 +3,7 @@
 exports[`RentabilityBar shallow RentabilityBar match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MuiThemeProvider
+  Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
     theme={
       Object {
         "breakpoints": Object {
@@ -176,11 +176,11 @@ ShallowWrapper {
             "minWidth": "15rem",
           },
           "buttonsWrapper": Object {
-            "marginBottom": "1rem",
+            "marginBottom": "2rem",
           },
           "filterTabsRow": Object {
             "borderBottom": "#E2E2E2 solid 1px",
-            "margin": "2rem",
+            "margin": "2rem 2rem 0",
           },
           "tabLabel": Object {
             "color": "#632B7D",
@@ -220,7 +220,8 @@ ShallowWrapper {
             "background": "rgba(99, 43, 125, .8)",
             "borderRadius": "3px",
             "color": "#fff",
-            "fontWeight": "14px",
+            "fontFamily": "Roboto Regular, sans-serif",
+            "fontSize": "14px",
             "minWidth": "150px",
             "padding": "15px",
           },
@@ -890,7 +891,7 @@ ShallowWrapper {
       thirthTitle="cdi"
       thirthValue="100"
     />
-  </MuiThemeProvider>,
+  </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

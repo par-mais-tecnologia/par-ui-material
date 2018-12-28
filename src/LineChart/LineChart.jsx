@@ -79,7 +79,7 @@ class LineChart extends Component {
 
     const helper = grapHelper(this, d3)
 
-    const tooltip = <foreignObject x='10' y='-50' width='169px' height={this.state.cdi ? '100px' : '89px'} className='svgTooltipElement'>
+    const tooltip = <foreignObject x='10' y='-50' width='169px' height={this.state.cdi ? '110px' : '89px'} className='svgTooltipElement'>
       <div className={['flex flex-column items-start tooltip', classes.tooltipWrapper].join(' ')} />
     </foreignObject>
 
@@ -117,7 +117,7 @@ class LineChart extends Component {
           <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width - 40} ${this.state.height}`}>
 
             <g className='graphicGroup'
-              style={{ transform: `translate(55px, 40px)` }}
+              style={{ transform: `translate(40px, 40px)` }}
             >
               <g className={['xAxis', classes.axis].join(' ')}
                 ref={node => d3.select(node).call(helper.customXAxis)}

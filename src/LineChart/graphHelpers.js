@@ -85,19 +85,27 @@ const helpers = (context, d3) => {
     .curve(d3.curveBundle)
 
   const mousemove = () => {
-    let x0 = xScale.invert(d3.mouse(d3.event.currentTarget)[0])
+    let mouse = d3.mouse(d3.event.currentTarget)
+    let x0 = xScale.invert(mouse[0])
     let i = bisectDate(state.data, x0, 1)
     let d = state.data[i - 1]
-    if (i < (state.data.length * 0.10)) {
-      d3.select('.svgTooltipElement')
-        .style('transform', 'translate(0px, -30px)')
-    } else if (i > (state.data.length * 0.70)) {
-      d3.select('.svgTooltipElement')
-        .style('transform', 'translate(-190px, 0px)')
-    } else {
-      d3.select('.svgTooltipElement')
-        .style('transform', 'translate(0px, 0px)')
-    }
+    let maxW = state.width - props.paddingW
+    let maxH = state.height - props.paddingH
+
+    mouse[1] + 60 > maxH
+      ? d3.select('.svgTooltipElement')
+        .style('transform', 'translateY(-2rem)')
+      : d3.select('.svgTooltipElement')
+        .style('transform', 'translateY(0rem)')
+
+    mouse[0] + 170 - maxW > 0
+      ? mouse[0] + 170 - maxW < 85
+        ? d3.select('.svgTooltipElement')
+          .style('transform', `translate(-90px, ${state.cdi ? '-4rem' : '-2rem'})`)
+        : d3.select('.svgTooltipElement')
+          .style('transform', 'translateX(-190px)')
+      : d3.select('.svgTooltipElement')
+        .style('transform', 'translateX(0px)')
 
     d3.select('.focus')
       .attr('transform', 'translate(' + xScale(d.date) + ',' + yScale(d.walletQuota) + ')')
@@ -112,14 +120,14 @@ const helpers = (context, d3) => {
       .html(
         `   <div className='flex flex-row'>
               <div className='flex flex-column items-start pb1'>
-                 <div style="font-family: 'Roboto Light', sans-serif" className='f7 white pb1 roboto-regular'>
-                  <span style="font-family: 'Roboto Regular', sans-serif">Valorização:</span> ${d.walletQuota.toFixed(2)}%
+                 <div className='f7 white pb1 roboto-regular'>
+                  <span>Valorização:</span> ${d.walletQuota.toFixed(2)}%
                 </div>
-                <div style="font-family: 'Roboto Light', sans-serif" className='f7 white pb1 roboto-regular'>
-                  ${state.cdi ? `<span style="font-family: 'Roboto Regular', sans-serif">Diferença:</span> ${(d.walletQuota - d.idxQuota).toFixed(2)}% <br>  
-                  <span style="font-family: 'Roboto Regular', sans-serif">CDI: </span>${d.idxQuota.toFixed(2)}%` : ''}
+                <div className='f7 white pb1 roboto-regular'>
+                  ${state.cdi ? `<span>Diferença:</span> ${(d.walletQuota - d.idxQuota).toFixed(2)}% <br>
+                  <span>CDI: </span>${d.idxQuota.toFixed(2)}%` : ''}
                 </div>
-                <div style="font-family: 'Roboto Regular', sans-serif" className='f7 white pb1 roboto-regular'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
+                <div className='f7 white pb1 roboto-regular'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
               </div>
             </div>`
       )
