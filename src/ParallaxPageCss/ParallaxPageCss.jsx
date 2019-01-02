@@ -1,6 +1,13 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core'
-const styles = theme => (theme.parallax)
+const styles = theme => ({
+  ...theme.parallax,
+  parallaxSection: {
+    [theme.breakpoints.down(700)]: {
+      minHeight: '50vh'
+    }
+  }
+})
 
 const ParallaxPageCss = (props) => {
   const { classes } = props

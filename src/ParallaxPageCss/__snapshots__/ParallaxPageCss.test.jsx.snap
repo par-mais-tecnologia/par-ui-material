@@ -56,7 +56,9 @@ ShallowWrapper {
           uuuuuuuuuuu
         </div>
       </div>,
-      "classes": Object {},
+      "classes": Object {
+        "parallaxSection": "ParallaxPageCss-parallaxSection-1",
+      },
     },
     "ref": null,
     "rendered": Object {
@@ -146,7 +148,9 @@ ShallowWrapper {
             uuuuuuuuuuu
           </div>
         </div>,
-        "classes": Object {},
+        "classes": Object {
+          "parallaxSection": "ParallaxPageCss-parallaxSection-1",
+        },
       },
       "ref": null,
       "rendered": Object {
