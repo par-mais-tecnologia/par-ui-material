@@ -100,8 +100,8 @@ const helpers = (context, d3) => {
         ? tooltip.style.transform = 'translateY(2rem)'
         : tooltip.style.transform = 'translateY(0rem)'
 
-    mouse[0] + 170 - maxW > 0
-      ? mouse[0] + 170 - maxW < 85
+    mouse[0] + 170 > maxW
+      ? mouse[0] - 170 < 0
         ? tooltip.style.transform = `translate(-90px, ${state.cdi ? '-4rem' : '-2rem'})`
         : tooltip.style.transform += 'translateX(-190px)'
       : tooltip.style.transform += 'translateX(0px)'
