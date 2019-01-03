@@ -402,32 +402,12 @@ ShallowWrapper {
           "type": "light",
         },
         "parallax": Object {
-          "content": Object {
-            "height": "100vh",
-            "position": "relative",
-          },
-          "mobile": Object {
-            "height": "100vh",
-          },
-          "parallaxContainer": Object {
-            "height": "100vh",
-            "overflowX": "hidden",
-            "overflowY": "auto",
-            "perspective": "1px",
-          },
-          "parallaxContent": Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "transform": "translateZ(-1px) scale(2.0) translateY(-7rem)",
-          },
-          "parallaxSection": Object {
-            "-moz-transform-style": "preserve-3d",
-            "-webkit-transform-style": "preserve-3d",
-            "height": "45vh",
-            "position": "relative",
+          "parallax": Object {
+            "&:first-child": Object {
+              "height": "45vh",
+            },
+            "position": "sticky",
+            "top": "0",
           },
         },
         "props": Object {},

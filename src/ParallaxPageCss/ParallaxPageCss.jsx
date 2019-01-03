@@ -1,33 +1,13 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core'
-const styles = theme => ({
-  ...theme.parallax,
-  parallaxSection: {
-    [theme.breakpoints.down(700)]: {
-      minHeight: '50vh'
-    }
-  }
-})
+const styles = theme => (theme.parallax)
 
 const ParallaxPageCss = (props) => {
   const { classes } = props
 
   return (
-    <div className={
-      props.mobile
-        ? [classes.parallaxContainer, classes.mobile].join(' ') : classes.parallaxContainer
-    }>
-      <div className={classes.parallaxSection}>
-        <div className={classes.parallaxContent}>
-          {props.header}
-        </div>
-      </div>
-      <div className={classes.content}>
-        {props.content}
-      </div>
-      <div>
-        {props.footer}
-      </div>
+    <div className={[classes.parallax, props.className].join(' ')}>
+      {props.children}
     </div>
   )
 }
