@@ -1,16 +1,16 @@
 const helpers = (context, d3) => {
   const state = context.state
   const props = context.props
-  const bisectDate = d3.bisector((d) => d.date).left
+  const bisectDate = d3.bisector((d) => d.date).right
 
   const xScale = d3.scaleTime()
     .domain(d3.extent(state.data, d => d.date))
-    .rangeRound([0, state.width - props.paddingW])
+    .rangeRound([props.paddingW, state.width - props.paddingW])
 
   const yScale = d3.scaleLinear()
     .domain([d3.min(state.data, d => Math.min(d.walletQuota, d.idxQuota)),
       d3.max(state.data, d => Math.max(d.walletQuota, d.idxQuota))])
-    .range([state.height - props.paddingH, 0])
+    .range([state.height - props.paddingH, (props.paddingH / 2)])
 
   const xAxis = d3.axisBottom()
     .scale(xScale)
@@ -22,7 +22,7 @@ const helpers = (context, d3) => {
     .scale(yScale)
     .tickSizeOuter(0)
     .ticks(props.yTicks)
-    .tickSize(state.width - props.paddingW)
+    .tickSize(state.width - (props.paddingW * 2))
     .tickFormat(d => `${d.toFixed(2)}%`)
 
   function customYAxis (g) {
@@ -85,35 +85,34 @@ const helpers = (context, d3) => {
     .curve(d3.curveBundle)
 
   const mousemove = () => {
+    let maxW = state.width - props.paddingW
+    let maxH = state.height - props.paddingH
     let mouse = d3.mouse(d3.event.currentTarget)
     let x0 = xScale.invert(mouse[0])
     let i = bisectDate(state.data, x0, 1)
     let d = state.data[i - 1]
-    let maxW = state.width - props.paddingW
-    let maxH = state.height - props.paddingH
 
-    mouse[1] + 60 > maxH
-      ? d3.select('.svgTooltipElement')
-        .style('transform', 'translateY(-2rem)')
-      : d3.select('.svgTooltipElement')
-        .style('transform', 'translateY(0rem)')
+    let tooltip = document.querySelector('.svgTooltipElement')
+
+    mouse[1] + 100 > maxH
+      ? tooltip.style.transform = 'translateY(-1rem)'
+      : mouse[1] - 100 < 0
+        ? tooltip.style.transform = 'translateY(2rem)'
+        : tooltip.style.transform = 'translateY(0rem)'
 
     mouse[0] + 170 - maxW > 0
       ? mouse[0] + 170 - maxW < 85
-        ? d3.select('.svgTooltipElement')
-          .style('transform', `translate(-90px, ${state.cdi ? '-4rem' : '-2rem'})`)
-        : d3.select('.svgTooltipElement')
-          .style('transform', 'translateX(-190px)')
-      : d3.select('.svgTooltipElement')
-        .style('transform', 'translateX(0px)')
+        ? tooltip.style.transform = `translate(-90px, ${state.cdi ? '-4rem' : '-2rem'})`
+        : tooltip.style.transform += 'translateX(-190px)'
+      : tooltip.style.transform += 'translateX(0px)'
 
     d3.select('.focus')
-      .attr('transform', 'translate(' + xScale(d.date) + ',' + yScale(d.walletQuota) + ')')
+      .attr('transform', `translate( ${xScale(d.date)}, ${yScale(d.walletQuota)})`)
 
     d3.select('.focus')
       .select('line')
-      .attr('y2', (state.height - props.paddingH) - yScale(d.walletQuota))
-      .attr('y1', -1 * yScale(d.walletQuota))
+      .attr('y2', (state.height - (props.paddingH * 0.8)) - yScale(d.walletQuota))
+      .attr('y1', -1 * (yScale(d.walletQuota) - (props.paddingH * 0.4)))
 
     d3.select('.focus')
       .select('.tooltip')
@@ -137,7 +136,7 @@ const helpers = (context, d3) => {
       .text(function () { return `em ${d.date.toLocaleDateString('pt-BR')}` })
   }
 
-  const translateXPercentage = (width, paddingW) => 10// (width - (width * ((paddingW / 2) / 100)))//width > 400 ?  / 100 : 14
+  const translateXPercentage = (width, paddingW) => 10
 
   return {
     customYAxis,

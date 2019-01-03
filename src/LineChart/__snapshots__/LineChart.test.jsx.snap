@@ -176,11 +176,11 @@ ShallowWrapper {
             "minWidth": "15rem",
           },
           "buttonsWrapper": Object {
-            "marginBottom": "2rem",
+            "margin": "2rem 0",
           },
           "filterTabsRow": Object {
             "borderBottom": "#E2E2E2 solid 1px",
-            "margin": "2rem 2rem 0",
+            "margin": "2rem 2rem",
           },
           "tabLabel": Object {
             "color": "#632B7D",
@@ -210,7 +210,7 @@ ShallowWrapper {
             "fill": "#632B7D",
           },
           "tooltipElement": Object {
-            "transition": "all .0s ease-in",
+            "transition": "all 0.9s ease 0s",
           },
           "tooltipLine": Object {
             "stroke": "#636363",

@@ -77,8 +77,8 @@ storiesOf('LineChart', module)
           lineStroke={['#5EB8C0', '#94ba1d']}
           lineStrokeWidth={[4, 2]}
           lineFill={['none', 'none']}
-          paddingH={100}
-          paddingW={100}
+          paddingH={50}
+          paddingW={50}
           yTicks={9}
           xTicks={5}
           changePeriod={(data) => console.log('Changed graph period. Datapoints:', data.length)}

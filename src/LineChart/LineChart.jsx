@@ -79,7 +79,7 @@ class LineChart extends Component {
 
     const helper = grapHelper(this, d3)
 
-    const tooltip = <foreignObject x='10' y='-50' width='169px' height={this.state.cdi ? '110px' : '89px'} className='svgTooltipElement'>
+    const tooltip = <foreignObject x='10' y='-50' width='169px' height={this.state.cdi ? '110px' : '89px'} className={['svgTooltipElement', classes.tooltipElement].join(' ')}>
       <div className={['flex flex-column items-start tooltip', classes.tooltipWrapper].join(' ')} />
     </foreignObject>
 
@@ -116,64 +116,60 @@ class LineChart extends Component {
 
           <svg width='90%' height='90%' viewBox={`0 0 ${this.state.width - 40} ${this.state.height}`}>
 
-            <g className='graphicGroup'
-              style={{ transform: `translate(40px, 40px)` }}
-            >
-              <g className={['xAxis', classes.axis].join(' ')}
-                ref={node => d3.select(node).call(helper.customXAxis)}
-                style={{ transform: `translateY(${this.state.height - this.props.paddingH}px)` }}
-              />
+            <g className={['xAxis', classes.axis].join(' ')}
+              ref={node => d3.select(node).call(helper.customXAxis)}
+              style={{ transform: `translateY(${this.state.height - (this.props.paddingH / 1.25)}px)` }}
+            />
 
-              <g className={['yAxis', classes.axis].join(' ')}
-                ref={node => d3.select(node).call(helper.customYAxis)}
-                style={{ transform: `translateX(${this.state.width - this.props.paddingW}px)` }}
-              />
+            <g className={['yAxis', classes.axis].join(' ')}
+              ref={node => d3.select(node).call(helper.customYAxis)}
+              style={{ transform: `translateX(${this.state.width - this.props.paddingW}px)` }}
+            />
 
-              <g className='Lines'>
-                {
-                  this.state.cdi
-                    ? <path
-                      d={helper.graphCdiLineGenerator(this.state.data)}
-                      stroke={this.props.lineStroke[1]}
-                      strokeWidth={this.props.lineStrokeWidth[1]}
-                      fill={this.props.lineFill[1]}
-                      className='Path'
-                      ref={node => node !== null ? helper.handlePathChange(node, this.animateCDI)
-                        .then(() => { this.animateCDI = false }) : ''}
-                    /> : ''
-                }
-                <path
-                  d={helper.graphMainLineGenerator(this.state.data)}
-                  stroke={this.props.lineStroke[0]}
-                  strokeWidth={this.props.lineStrokeWidth[0]}
-                  fill={this.props.lineFill[0]}
-                  className='Path'
-                  ref={node => node !== null ? helper.handlePathChange(node, this.animateWallet)
-                    .then(() => { this.animateWallet = false }) : ''}
-                />
-              </g>
-
-              <g className={['focus', classes.tooltipElement].join(' ')} style={{ display: 'none' }}>
-
-                <line x1='0' x2='0'className={classes.tooltipLine} />
-                <circle r='7.5' className={classes.tooltipCircle} />
-                {tooltip}
-              </g>
-
-              <rect className='overlay'
-                width={this.state.width - this.props.paddingW}
-                height={this.state.height - this.props.paddingH} fill='transparent'
-                ref={
-                  node => {
-                    let focus = d3.select('.focus')
-                    d3.select(node)
-                      .on('mouseover', () => focus.style('display', null))
-                      .on('mouseout', () => focus.style('display', 'none'))
-                      .on('mousemove', helper.mousemove)
-                  }
-                }
+            <g className='Lines'>
+              {
+                this.state.cdi
+                  ? <path
+                    d={helper.graphCdiLineGenerator(this.state.data)}
+                    stroke={this.props.lineStroke[1]}
+                    strokeWidth={this.props.lineStrokeWidth[1]}
+                    fill={this.props.lineFill[1]}
+                    className='Path'
+                    ref={node => node !== null ? helper.handlePathChange(node, this.animateCDI)
+                      .then(() => { this.animateCDI = false }) : ''}
+                  /> : ''
+              }
+              <path
+                d={helper.graphMainLineGenerator(this.state.data)}
+                stroke={this.props.lineStroke[0]}
+                strokeWidth={this.props.lineStrokeWidth[0]}
+                fill={this.props.lineFill[0]}
+                className='Path'
+                ref={node => node !== null ? helper.handlePathChange(node, this.animateWallet)
+                  .then(() => { this.animateWallet = false }) : ''}
               />
             </g>
+
+            <g className='focus' style={{ display: 'none' }}>
+
+              <line x1='0' x2='0'className={classes.tooltipLine} />
+              <circle r='7.5' className={classes.tooltipCircle} />
+              {tooltip}
+            </g>
+
+            <rect className='overlay'
+              width={this.state.width - this.props.paddingW}
+              height={this.state.height - this.props.paddingH} fill='transparent'
+              ref={
+                node => {
+                  let focus = d3.select('.focus')
+                  d3.select(node)
+                    .on('mouseover', () => focus.style('display', null))
+                    .on('mouseout', () => focus.style('display', 'none'))
+                    .on('mousemove', helper.mousemove)
+                }
+              }
+            />
 
           </svg>
         </div>

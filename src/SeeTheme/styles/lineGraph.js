@@ -21,11 +21,11 @@ export default {
     strokeWidth: '1px'
   },
   tooltipElement: {
-    transition: 'all .0s ease-in'
+    transition: 'all 0.9s ease 0s'
   },
   filterTabsRow: {
     borderBottom: '#E2E2E2 solid 1px',
-    margin: '2rem 2rem 0'
+    margin: '2rem 2rem'
   },
   tabsRoot: {
     color: '#9C9C9C',
@@ -47,7 +47,7 @@ export default {
     color: '#632B7D'
   },
   buttonsWrapper: {
-    marginBottom: '2rem'
+    margin: '2rem 0'
   },
   buttonsRow: {
     minWidth: '15rem',
