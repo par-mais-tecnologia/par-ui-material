@@ -1,0 +1,461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconBar shallow IconBar match Snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <IconBar />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "alignItems": "center",
+      "children": Array [
+        <a
+          className="no-underline mh1 mh4-ns"
+          href="https://www.facebook.com/parmais"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/facebook_contact.svg"
+            width="50"
+          />
+        </a>,
+        <a
+          className="no-underline mh1 mh4-ns"
+          href="https://www.instagram.com/parmais"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/instagram_contact.svg"
+            width="50"
+          />
+        </a>,
+        <a
+          className="no-underline mh1 mh4-ns"
+          href="https://www.youtube.com/parmais"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Youtube"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/youtube_contact.svg"
+            width="50"
+          />
+        </a>,
+        <a
+          className="no-underline mh1 mh4-ns"
+          href="https://br.linkedin.com/company/par-mais"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/linkedin_contact.svg"
+            width="50"
+          />
+        </a>,
+      ],
+      "className": "mt2",
+      "container": true,
+      "justify": "center",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Facebook"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/facebook_contact.svg"
+            width="50"
+          />,
+          "className": "no-underline mh1 mh4-ns",
+          "href": "https://www.facebook.com/parmais",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Facebook",
+            "border": "0",
+            "height": "50",
+            "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/facebook_contact.svg",
+            "width": "50",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Instagram"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/instagram_contact.svg"
+            width="50"
+          />,
+          "className": "no-underline mh1 mh4-ns",
+          "href": "https://www.instagram.com/parmais",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Instagram",
+            "border": "0",
+            "height": "50",
+            "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/instagram_contact.svg",
+            "width": "50",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Youtube"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/youtube_contact.svg"
+            width="50"
+          />,
+          "className": "no-underline mh1 mh4-ns",
+          "href": "https://www.youtube.com/parmais",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Youtube",
+            "border": "0",
+            "height": "50",
+            "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/youtube_contact.svg",
+            "width": "50",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Linkedin"
+            border="0"
+            height="50"
+            src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/linkedin_contact.svg"
+            width="50"
+          />,
+          "className": "no-underline mh1 mh4-ns",
+          "href": "https://br.linkedin.com/company/par-mais",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Linkedin",
+            "border": "0",
+            "height": "50",
+            "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/linkedin_contact.svg",
+            "width": "50",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "a",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "alignItems": "center",
+        "children": Array [
+          <a
+            className="no-underline mh1 mh4-ns"
+            href="https://www.facebook.com/parmais"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Facebook"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/facebook_contact.svg"
+              width="50"
+            />
+          </a>,
+          <a
+            className="no-underline mh1 mh4-ns"
+            href="https://www.instagram.com/parmais"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Instagram"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/instagram_contact.svg"
+              width="50"
+            />
+          </a>,
+          <a
+            className="no-underline mh1 mh4-ns"
+            href="https://www.youtube.com/parmais"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Youtube"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/youtube_contact.svg"
+              width="50"
+            />
+          </a>,
+          <a
+            className="no-underline mh1 mh4-ns"
+            href="https://br.linkedin.com/company/par-mais"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Linkedin"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/linkedin_contact.svg"
+              width="50"
+            />
+          </a>,
+        ],
+        "className": "mt2",
+        "container": true,
+        "justify": "center",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Facebook"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/facebook_contact.svg"
+              width="50"
+            />,
+            "className": "no-underline mh1 mh4-ns",
+            "href": "https://www.facebook.com/parmais",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Facebook",
+              "border": "0",
+              "height": "50",
+              "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/facebook_contact.svg",
+              "width": "50",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Instagram"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/instagram_contact.svg"
+              width="50"
+            />,
+            "className": "no-underline mh1 mh4-ns",
+            "href": "https://www.instagram.com/parmais",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Instagram",
+              "border": "0",
+              "height": "50",
+              "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/instagram_contact.svg",
+              "width": "50",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Youtube"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/youtube_contact.svg"
+              width="50"
+            />,
+            "className": "no-underline mh1 mh4-ns",
+            "href": "https://www.youtube.com/parmais",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Youtube",
+              "border": "0",
+              "height": "50",
+              "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/youtube_contact.svg",
+              "width": "50",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Linkedin"
+              border="0"
+              height="50"
+              src="https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/linkedin_contact.svg"
+              width="50"
+            />,
+            "className": "no-underline mh1 mh4-ns",
+            "href": "https://br.linkedin.com/company/par-mais",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Linkedin",
+              "border": "0",
+              "height": "50",
+              "src": "https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/linkedin_contact.svg",
+              "width": "50",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "a",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
