@@ -12,6 +12,7 @@ class LineChart extends Component {
     data: null,
     fullData: null,
     cdi: false,
+    mainLine: false,
     width: 0,
     height: 0,
     tab: [
@@ -21,8 +22,7 @@ class LineChart extends Component {
     ]
   }
 
-  animateWallet = true
-  animateCDI = true
+  animateLine = true
 
   componentWillMount () {
     let data = this.props.dataset
@@ -49,8 +49,7 @@ class LineChart extends Component {
   }
 
   handleChange = (event, value) => {
-    this.animateWallet = true
-    this.animateCDI = true
+    this.animateLine = true
     let filter = this.state.tab[value].filter
     let data = this.state.fullData
       .filter(d => filter.date.isBefore(d.date))

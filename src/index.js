@@ -47,6 +47,7 @@ export { default as ParallaxPageCss } from './ParallaxPageCss'
 export { default as LineChart } from './LineChart'
 export { default as IconBar } from './IconBar'
 export { default as ObjectiveCard } from './ObjectiveCard'
+export { default as MyWalletLineChart } from './MyWalletLineChart'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, ThemeProvider, makeStyles, withStyles, withTheme
 } from '@material-ui/core/styles'

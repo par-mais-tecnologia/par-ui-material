@@ -3,7 +3,7 @@
 exports[`RentabilityBar shallow RentabilityBar match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MuiThemeProvider
+  Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
     theme={
       Object {
         "breakpoints": Object {
@@ -132,9 +132,11 @@ ShallowWrapper {
             "borderRadius": "20px",
             "boxShadow": "none",
             "color": "#fff",
+            "fontFamily": "Roboto Regular, sans-serif",
+            "textTransform": "none",
             "transition": "all .5s ease",
           },
-          "buttonCDIActive": Object {
+          "buttonAreaActive": Object {
             "&:active": Object {
               "outline": "0",
             },
@@ -142,14 +144,16 @@ ShallowWrapper {
               "outline": "0",
             },
             "&:hover": Object {
-              "background": "#819e08",
+              "background": "#8ACAC7",
               "outline": "0",
             },
-            "background": "#94ba1d",
+            "background": "#8ACAC7",
             "border": "none",
             "borderRadius": "20px",
             "boxShadow": "none",
             "color": "#fff",
+            "fontFamily": "Roboto Regular, sans-serif",
+            "textTransform": "none",
             "transition": "all .5s ease",
           },
           "buttonDefault": Object {
@@ -168,12 +172,35 @@ ShallowWrapper {
             "borderRadius": "20px",
             "boxShadow": "none",
             "color": "#9C9C9C",
+            "fontFamily": "Roboto Regular, sans-serif",
+            "padding": "8px 10px",
+            "textTransform": "none",
+            "transition": "all .5s ease",
+          },
+          "buttonIndexActive": Object {
+            "&:active": Object {
+              "outline": "0",
+            },
+            "&:focus": Object {
+              "outline": "0",
+            },
+            "&:hover": Object {
+              "background": "#819e08",
+              "outline": "0",
+            },
+            "background": "#94ba1d",
+            "border": "none",
+            "borderRadius": "20px",
+            "boxShadow": "none",
+            "color": "#fff",
+            "fontFamily": "Roboto Regular, sans-serif",
+            "textTransform": "none",
             "transition": "all .5s ease",
           },
           "buttonsRow": Object {
             "justifyContent": "space-evenly",
             "margin": "0rem 2rem",
-            "minWidth": "15rem",
+            "minWidth": "20rem",
           },
           "buttonsWrapper": Object {
             "margin": "2rem 0",
@@ -871,7 +898,7 @@ ShallowWrapper {
       thirthTitle="cdi"
       thirthValue="100"
     />
-  </MuiThemeProvider>,
+  </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

@@ -50,11 +50,14 @@ export default {
     margin: '2rem 0'
   },
   buttonsRow: {
-    minWidth: '15rem',
+    minWidth: '20rem',
     margin: '0rem 2rem',
     justifyContent: 'space-evenly'
   },
   buttonDefault: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    textTransform: 'none',
+    padding: '8px 10px',
     color: '#9C9C9C',
     border: '1px solid #9C9C9C',
     borderRadius: '20px',
@@ -73,6 +76,8 @@ export default {
     }
   },
   buttonActive: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    textTransform: 'none',
     color: '#fff',
     border: 'none',
     background: '#5EB8C0',
@@ -90,7 +95,9 @@ export default {
       outline: '0'
     }
   },
-  buttonCDIActive: {
+  buttonIndexActive: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    textTransform: 'none',
     color: '#fff',
     border: 'none',
     background: '#94ba1d',
@@ -99,6 +106,26 @@ export default {
     transition: 'all .5s ease',
     '&:hover': {
       background: '#819e08',
+      outline: '0'
+    },
+    '&:active': {
+      outline: '0'
+    },
+    '&:focus': {
+      outline: '0'
+    }
+  },
+  buttonAreaActive: {
+    fontFamily: 'Roboto Regular, sans-serif',
+    textTransform: 'none',
+    color: '#fff',
+    border: 'none',
+    background: '#8ACAC7',
+    borderRadius: '20px',
+    boxShadow: 'none',
+    transition: 'all .5s ease',
+    '&:hover': {
+      background: '#8ACAC7',
       outline: '0'
     },
     '&:active': {

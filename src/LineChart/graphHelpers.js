@@ -75,9 +75,15 @@ const helpers = (context, d3) => {
     })
   }
 
+  const graphAreaGenerator = d3.area()
+    .x(d => xScale(d.date))
+    .y0(d => yScale(d.walletQuota) * 1.5)
+    .y1(state.height - props.paddingH)
+
   const graphMainLineGenerator = d3.line()
     .x(d => xScale(d.date))
     .y(d => yScale(d.walletQuota))
+    .curve(d3.curveBundle)
 
   const graphCdiLineGenerator = d3.line()
     .x(d => xScale(d.date))
@@ -144,6 +150,7 @@ const helpers = (context, d3) => {
     handlePathChange,
     graphMainLineGenerator,
     graphCdiLineGenerator,
+    graphAreaGenerator,
     translateXPercentage,
     mousemove
   }
