@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RentabilityBar shallow RentabilityBar match Snapshot 1`] = `
+exports[`GoalSummary shallow GoalSummary match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
@@ -161,11 +161,9 @@ ShallowWrapper {
             "borderRadius": "20px",
             "boxShadow": "none",
             "color": "#fff",
-            "fontFamily": "Roboto Regular, sans-serif",
-            "textTransform": "none",
             "transition": "all .5s ease",
           },
-          "buttonAreaActive": Object {
+          "buttonCDIActive": Object {
             "&:active": Object {
               "outline": "0",
             },
@@ -173,16 +171,14 @@ ShallowWrapper {
               "outline": "0",
             },
             "&:hover": Object {
-              "background": "#8ACAC7",
+              "background": "#819e08",
               "outline": "0",
             },
-            "background": "#8ACAC7",
+            "background": "#94ba1d",
             "border": "none",
             "borderRadius": "20px",
             "boxShadow": "none",
             "color": "#fff",
-            "fontFamily": "Roboto Regular, sans-serif",
-            "textTransform": "none",
             "transition": "all .5s ease",
           },
           "buttonDefault": Object {
@@ -201,35 +197,12 @@ ShallowWrapper {
             "borderRadius": "20px",
             "boxShadow": "none",
             "color": "#9C9C9C",
-            "fontFamily": "Roboto Regular, sans-serif",
-            "padding": "8px 10px",
-            "textTransform": "none",
-            "transition": "all .5s ease",
-          },
-          "buttonIndexActive": Object {
-            "&:active": Object {
-              "outline": "0",
-            },
-            "&:focus": Object {
-              "outline": "0",
-            },
-            "&:hover": Object {
-              "background": "#819e08",
-              "outline": "0",
-            },
-            "background": "#94ba1d",
-            "border": "none",
-            "borderRadius": "20px",
-            "boxShadow": "none",
-            "color": "#fff",
-            "fontFamily": "Roboto Regular, sans-serif",
-            "textTransform": "none",
             "transition": "all .5s ease",
           },
           "buttonsRow": Object {
             "justifyContent": "space-evenly",
             "margin": "0rem 2rem",
-            "minWidth": "20rem",
+            "minWidth": "15rem",
           },
           "buttonsWrapper": Object {
             "margin": "2rem 0",
@@ -919,21 +892,14 @@ ShallowWrapper {
       }
     }
   >
-    <WithStyles(LineChart)
-      height={400}
-      lineFill="none"
-      lineStroke={
-        Array [
-          "#5EB8C0",
-          "#d3d3d3",
-        ]
-      }
-      lineStrokeWidth={4}
-      paddingH={100}
-      paddingW={100}
-      width={900}
-      xTicks={10}
-      yTicks={6}
+    <WithStyles(GoalSummary)
+      firstTitle="Aportar mensalmente"
+      firstValue={10000}
+      secondTitle="Para ter"
+      secondValue={10000}
+      thirdTitle="Em"
+      thirdValueMonths={5}
+      thirdValueYears={2}
     />
   </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
@@ -949,18 +915,13 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "height": 400,
-      "lineFill": "none",
-      "lineStroke": Array [
-        "#5EB8C0",
-        "#d3d3d3",
-      ],
-      "lineStrokeWidth": 4,
-      "paddingH": 100,
-      "paddingW": 100,
-      "width": 900,
-      "xTicks": 10,
-      "yTicks": 6,
+      "firstTitle": "Aportar mensalmente",
+      "firstValue": 10000,
+      "secondTitle": "Para ter",
+      "secondValue": 10000,
+      "thirdTitle": "Em",
+      "thirdValueMonths": 5,
+      "thirdValueYears": 2,
     },
     "ref": null,
     "rendered": null,
@@ -972,18 +933,13 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "height": 400,
-        "lineFill": "none",
-        "lineStroke": Array [
-          "#5EB8C0",
-          "#d3d3d3",
-        ],
-        "lineStrokeWidth": 4,
-        "paddingH": 100,
-        "paddingW": 100,
-        "width": 900,
-        "xTicks": 10,
-        "yTicks": 6,
+        "firstTitle": "Aportar mensalmente",
+        "firstValue": 10000,
+        "secondTitle": "Para ter",
+        "secondValue": 10000,
+        "thirdTitle": "Em",
+        "thirdValueMonths": 5,
+        "thirdValueYears": 2,
       },
       "ref": null,
       "rendered": null,

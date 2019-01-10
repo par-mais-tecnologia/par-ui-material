@@ -111,6 +111,35 @@ ShallowWrapper {
             "fontSize": "1rem",
           },
         },
+        "goalSummary": Object {
+          "divisor": Object {
+            "alignSelf": "center",
+            "background": "rgba(255, 255, 255, .3)",
+            "display": "flex",
+            "height": "50px",
+            "width": "1px",
+          },
+          "section": Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "minHeight": "5rem",
+          },
+          "typography": Object {
+            "color": "#fff",
+          },
+          "wrapper": Object {
+            "alignItems": "stretch",
+            "border": "1px solid rgba(255, 255, 255, .3)",
+            "borderRadius": "3px",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-evenly",
+            "minHeight": "5rem",
+            "width": "100%",
+          },
+        },
         "lineGraph": Object {
           "axis": Object {
             "fontFamily": "Roboto Regular, sans-serif",
