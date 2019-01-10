@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import { Grid, Paper, SeeTheme, Typography } from '../../src'
 import { getCurrencyFormat } from '../Core/masks'
+import * as PropTypes from 'prop-types'
 
 export default class ObjectiveCard extends PureComponent {
   getObjectiveType (type) {
@@ -98,4 +99,17 @@ export default class ObjectiveCard extends PureComponent {
       </Paper>
     )
   }
+}
+
+ObjectiveCard.propTypes = {
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+  value: PropTypes.number,
+  alt: PropTypes.string,
+  iconSrc: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
+  titleProps: PropTypes.object,
+  objectiveType: PropTypes.string,
+  classes: PropTypes.string
 }
