@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { PureComponent } from 'react'
 import withTests from './withTests'
-import IconBar from '../../src/IconBar'
+import { IconBar } from '../../src'
 
 class IconBarStory extends PureComponent {
 

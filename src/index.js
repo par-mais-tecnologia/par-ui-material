@@ -45,6 +45,8 @@ export { default as Donut } from './Charts/Donut'
 export { default as WalletComposition } from './WalletComposition'
 export { default as ParallaxPageCss } from './ParallaxPageCss'
 export { default as LineChart } from './LineChart'
+export { default as IconBar } from './IconBar'
+export { default as ObjectiveCard } from './ObjectiveCard'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, ThemeProvider, makeStyles, withStyles, withTheme
 } from '@material-ui/core/styles'
@@ -79,7 +81,6 @@ export {
   ExpansionPanelActions,
   ExpansionPanelDetails,
   ExpansionPanelSummary,
-
   Fade,
   FilledInput,
   FormControl,

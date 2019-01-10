@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import Grid from '../Grid'
 
-class IconBar extends PureComponent {
+export default class IconBar extends PureComponent {
   render () {
     return (
       <Grid container justify='center' alignItems='center' className='mt2'>
@@ -53,5 +53,3 @@ class IconBar extends PureComponent {
     )
   }
 }
-
-export default IconBar

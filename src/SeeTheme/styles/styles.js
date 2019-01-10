@@ -118,7 +118,7 @@ const fonts = {
   },
   headline: {
     fontFamily: 'Brandon Regular, sans-serif',
-    fontSize: '20px',
+    fontSize: '18px',
     color: colors.white
   },
   inherit: {
