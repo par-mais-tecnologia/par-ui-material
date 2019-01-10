@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Grid, Paper, SeeTheme, Typography } from '../../src'
+import { Grid, Paper, SeeTheme, Typography } from '../index'
 import { getCurrencyFormat } from '../Core/masks'
 import * as PropTypes from 'prop-types'
 
