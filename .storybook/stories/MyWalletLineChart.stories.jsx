@@ -29,8 +29,8 @@ storiesOf('MyWalletLineChart', module)
           }}
 
           idxRange={{
-            min: number('Minimun value of Index','0.86'),
-            max: number('Maximun value of Index', '1.18'),
+            min: number('Minimun value of Index', 0.7),
+            max: number('Maximun value of Index', 1.6),
             strokeWidth: number('Area Stroke Width','2'),
             stroke: text('Area Stroke Color (HEX)','#b6dddc'),
             fill: text('Area Fill Color (HEX)','#b6dddc4d')

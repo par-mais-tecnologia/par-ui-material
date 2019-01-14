@@ -4,12 +4,26 @@ const helpers = (context, d3) => {
 
   const xScale = d3.scaleTime()
     .domain(d3.extent(state.dateRange.filtered, d => d))
-    .rangeRound([props.paddingW, state.width - props.paddingW])
+    .rangeRound([props.paddingW, state.width - (props.paddingW * 1.5)])
 
   const yScale = d3.scaleLinear()
-    .domain([d3.min(state.mainLine.filtered),
-      d3.max(state.indexLine.filtered)])
-    .range([state.height - props.paddingH, (props.paddingH / 2)])
+    .domain(
+      d3.extent(
+        state.areaLine.min
+          ? state.mainLine.filtered.concat(
+            state.indexLine.filtered.map(
+              value => value * state.areaLine.min
+            ).concat(
+              state.indexLine.filtered.map(
+                value => value * state.areaLine.max
+              )
+            )
+          )
+          : state.mainLine.filtered.concat(state.indexLine.filtered),
+        d => d
+      )
+    )
+    .range([state.height - props.paddingH, (props.paddingH / 1.5)])
 
   const lineGenerator = d3.line()
     .x((data, index) => xScale(state.dateRange.filtered[index]))

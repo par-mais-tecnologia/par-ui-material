@@ -84,7 +84,7 @@ class MyWalletLineChart extends Component {
     let parentDivRect = document.querySelector('#main-graph').getBoundingClientRect()
     state.width = parentDivRect.width
     state.height = Math.max(parentDivRect.height / 2.5, 344)
-    this.setState({ state })
+    this.setState(state)
   }
 
   componentDidMount () {
@@ -99,9 +99,8 @@ class MyWalletLineChart extends Component {
     let mainLine = this.state.mainLine
     let dateRange = this.state.dateRange
 
-    let filter = this.state.tab[value].filter.date
-    let arrayStart = this.state.dateRange.data.map(Number).indexOf(+filter) < 0
-      ? 0 : this.state.dateRange.data.map(Number).indexOf(+filter)
+    let dateFilter = this.state.dateRange.data.filter(date => date.isAfter(this.state.tab[value].filter.date))
+    let arrayStart = this.state.dateRange.data.map(Number).indexOf(+dateFilter[0])
 
     indexLine.filtered = indexLine.data.slice(arrayStart)
     mainLine.filtered = mainLine.data.slice(arrayStart)
@@ -168,7 +167,7 @@ class MyWalletLineChart extends Component {
 
             <g className={['yAxis', classes.axis].join(' ')}
               ref={node => d3.select(node).call(helper.customYAxis)}
-              style={{ transform: `translateX(${this.state.width - this.props.paddingW}px)` }}
+              style={{ transform: `translateX(${this.state.width - (this.props.paddingW * 0.9)}px)` }}
             />
 
             <g className='Lines'>
