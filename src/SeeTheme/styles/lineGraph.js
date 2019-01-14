@@ -51,13 +51,12 @@ export default {
   },
   buttonsRow: {
     minWidth: '20rem',
-    margin: '0rem 2rem',
     justifyContent: 'space-evenly'
   },
   buttonDefault: {
     fontFamily: 'Roboto Regular, sans-serif',
     textTransform: 'none',
-    padding: '8px 10px',
+    padding: '5px 5px',
     color: '#9C9C9C',
     border: '1px solid #9C9C9C',
     borderRadius: '20px',

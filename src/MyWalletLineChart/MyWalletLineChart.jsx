@@ -4,7 +4,33 @@ import { Button, Tab, Tabs, withStyles } from '@material-ui/core'
 import moment from 'moment'
 import graphHelper from './helpers'
 
-const styles = theme => (theme.lineGraph)
+const styles = theme => (({
+  ...theme.lineGraph,
+  buttonsRow: {
+    ...theme.lineGraph.buttonsRow,
+    [theme.breakpoints.down(700)]: {
+      minWidth: '18rem'
+    }
+  },
+  buttonAreaActive: {
+    ...theme.lineGraph.buttonAreaActive,
+    [theme.breakpoints.down(700)]: {
+      fontSize: '12px'
+    }
+  },
+  buttonIndexActive: {
+    ...theme.lineGraph.buttonIndexActive,
+    [theme.breakpoints.down(700)]: {
+      fontSize: '12px'
+    }
+  },
+  buttonDefault: {
+    ...theme.lineGraph.buttonDefault,
+    [theme.breakpoints.down(700)]: {
+      fontSize: '12px'
+    }
+  }
+}))
 
 class MyWalletLineChart extends Component {
   state = {
