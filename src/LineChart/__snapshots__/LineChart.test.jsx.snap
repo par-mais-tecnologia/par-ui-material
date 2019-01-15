@@ -202,7 +202,7 @@ ShallowWrapper {
             "boxShadow": "none",
             "color": "#9C9C9C",
             "fontFamily": "Roboto Regular, sans-serif",
-            "padding": "8px 10px",
+            "padding": "5px 5px",
             "textTransform": "none",
             "transition": "all .5s ease",
           },
@@ -228,7 +228,6 @@ ShallowWrapper {
           },
           "buttonsRow": Object {
             "justifyContent": "space-evenly",
-            "margin": "0rem 2rem",
             "minWidth": "20rem",
           },
           "buttonsWrapper": Object {
