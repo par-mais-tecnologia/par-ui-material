@@ -50,13 +50,11 @@ const SeeMenu = ({
           <MenuItem
             onClick={item.onClick}
             disableGutters
-            classes={{
-              root: classes.menuItem
-            }}
+            classes={{ root: classes.menuItem }}
             key={`menuItemMobile-${item.item}`}
           >
             <Typography
-              variant='body1'
+              variant='caption'
               className='w-100'
               color='inherit'
               style={selectedIndex === index

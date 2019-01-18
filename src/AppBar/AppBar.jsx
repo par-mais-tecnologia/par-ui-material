@@ -37,9 +37,10 @@ class SeeAppBar extends React.Component {
           onClick={item.onClick}
           classes={{ root: classes.menuItem }}
           key={`menuButtonDesktop-${index}`}
+          style={selectedIndex === index ? { backgroundColor: '#F0F0F0' } : {}}
         >
           <Typography
-            variant='body1'
+            variant='caption'
             className='ph3'
             color='inherit'
             key={`menuItemDesktop-${index}`}
