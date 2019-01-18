@@ -3,10 +3,7 @@
 exports[`SummaryHeader shallow Header match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SummaryHeader
-    backgroundImage="linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))"
-    height="auto"
-  />,
+  Symbol(enzyme.__unrendered__): <SummaryHeader />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -24,7 +21,6 @@ ShallowWrapper {
       "className": "flex items-center w-100 undefined",
       "style": Object {
         "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
-        "boxShadow": undefined,
         "height": "auto",
       },
     },
@@ -42,7 +38,6 @@ ShallowWrapper {
         "className": "flex items-center w-100 undefined",
         "style": Object {
           "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
-          "boxShadow": undefined,
           "height": "auto",
         },
       },

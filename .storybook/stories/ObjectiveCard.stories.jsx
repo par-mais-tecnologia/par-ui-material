@@ -10,19 +10,24 @@ class ObjectiveCardStory extends PureComponent {
       <MuiThemeProvider theme={SeeTheme}>
         <div className={'flex-column flex'}>
           <ObjectiveCard
-            objectiveType={'EmergencyReserve'}
+            objectiveType={'SECURITY_RESERVE'}
             value={8450.045}
           />
           <ObjectiveCard
-            objectiveType={'DreamsAndGoals'}
+            objectiveType={'TIMED_OBJECTIVE'}
             value={8450.045}
           />
           <ObjectiveCard
-            objectiveType={'LivingInCome'}
+            objectiveType={'FINANCIAL_INDEPENDENCE'}
             value={8450.045}
           />
           <ObjectiveCard
-            objectiveType={'UnderMeasure'}
+            objectiveType={'IMPROVE_PROFITABILITY'}
+            value={8450.045}
+          />
+          <ObjectiveCard
+            title={'CARD DE SEGURANÇA'}
+            objectiveType={'SECURITY_RESERVE'}
             value={8450.045}
           />
         </div>

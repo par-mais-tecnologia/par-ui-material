@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
+import * as PropTypes from 'prop-types'
 import Typography from '../Typography'
 import { getWalletComposition } from './functions'
 
@@ -11,8 +11,13 @@ class WalletComposition extends PureComponent {
       <div className={containerClasses}>
         <Typography variant='body2'>Composição da carteira</Typography>
         {walletComposition.map(item => (
-          <div className='mt3'>
-            <Typography variant='caption'>{item.fundName} <br /><Typography variant='body1'>{item.percentage}</Typography></Typography>
+          <div className='mt3' id={item.fundName}>
+            <Typography variant='caption'>
+              {item.fundName}<br />
+              <Typography variant='body1'>
+                {item.percentage}
+              </Typography>
+            </Typography>
           </div>
         ))}
       </div>
@@ -20,7 +25,7 @@ class WalletComposition extends PureComponent {
   }
 }
 
-WalletComposition.PropTypes = {
+WalletComposition.propTypes = {
   data: PropTypes.array,
   containerClasses: PropTypes.string
 }

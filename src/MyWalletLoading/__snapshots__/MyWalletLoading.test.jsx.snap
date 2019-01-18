@@ -23,7 +23,7 @@ ShallowWrapper {
         className="flex justify-center items-center"
       >
         <div
-          class="container"
+          className="container"
           style={
             Object {
               "fontSize": "3em",
@@ -31,33 +31,33 @@ ShallowWrapper {
           }
         >
           <div
-            class="back-layer"
+            className="back-layer"
           >
             <p
               className="rounded-elegance"
             >
               <span
-                class="hashtag"
+                className="hashtag"
               >
                 #
               </span>
               <span
-                class="cliente"
+                className="cliente"
               >
                 Cliente
               </span>
               <span
-                class="mais"
+                className="mais"
               >
                 Mais
               </span>
             </p>
           </div>
           <div
-            class="front-layer"
+            className="front-layer"
           >
             <p
-              class="linear-wipe rounded-elegance"
+              className="linear-wipe rounded-elegance"
             >
               <span>
                 #ClienteMais
@@ -78,7 +78,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          class="container"
+          className="container"
           style={
             Object {
               "fontSize": "3em",
@@ -86,33 +86,33 @@ ShallowWrapper {
           }
         >
           <div
-            class="back-layer"
+            className="back-layer"
           >
             <p
               className="rounded-elegance"
             >
               <span
-                class="hashtag"
+                className="hashtag"
               >
                 #
               </span>
               <span
-                class="cliente"
+                className="cliente"
               >
                 Cliente
               </span>
               <span
-                class="mais"
+                className="mais"
               >
                 Mais
               </span>
             </p>
           </div>
           <div
-            class="front-layer"
+            className="front-layer"
           >
             <p
-              class="linear-wipe rounded-elegance"
+              className="linear-wipe rounded-elegance"
             >
               <span>
                 #ClienteMais
@@ -130,33 +130,33 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              class="back-layer"
+              className="back-layer"
             >
               <p
                 className="rounded-elegance"
               >
                 <span
-                  class="hashtag"
+                  className="hashtag"
                 >
                   #
                 </span>
                 <span
-                  class="cliente"
+                  className="cliente"
                 >
                   Cliente
                 </span>
                 <span
-                  class="mais"
+                  className="mais"
                 >
                   Mais
                 </span>
               </p>
             </div>,
             <div
-              class="front-layer"
+              className="front-layer"
             >
               <p
-                class="linear-wipe rounded-elegance"
+                className="linear-wipe rounded-elegance"
               >
                 <span>
                   #ClienteMais
@@ -164,7 +164,7 @@ ShallowWrapper {
               </p>
             </div>,
           ],
-          "class": "container",
+          "className": "container",
           "style": Object {
             "fontSize": "3em",
           },
@@ -180,22 +180,22 @@ ShallowWrapper {
                 className="rounded-elegance"
               >
                 <span
-                  class="hashtag"
+                  className="hashtag"
                 >
                   #
                 </span>
                 <span
-                  class="cliente"
+                  className="cliente"
                 >
                   Cliente
                 </span>
                 <span
-                  class="mais"
+                  className="mais"
                 >
                   Mais
                 </span>
               </p>,
-              "class": "back-layer",
+              "className": "back-layer",
             },
             "ref": null,
             "rendered": Object {
@@ -205,17 +205,17 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <span
-                    class="hashtag"
+                    className="hashtag"
                   >
                     #
                   </span>,
                   <span
-                    class="cliente"
+                    className="cliente"
                   >
                     Cliente
                   </span>,
                   <span
-                    class="mais"
+                    className="mais"
                   >
                     Mais
                   </span>,
@@ -230,7 +230,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "#",
-                    "class": "hashtag",
+                    "className": "hashtag",
                   },
                   "ref": null,
                   "rendered": "#",
@@ -242,7 +242,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Cliente",
-                    "class": "cliente",
+                    "className": "cliente",
                   },
                   "ref": null,
                   "rendered": "Cliente",
@@ -254,7 +254,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mais",
-                    "class": "mais",
+                    "className": "mais",
                   },
                   "ref": null,
                   "rendered": "Mais",
@@ -271,13 +271,13 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <p
-                class="linear-wipe rounded-elegance"
+                className="linear-wipe rounded-elegance"
               >
                 <span>
                   #ClienteMais
                 </span>
               </p>,
-              "class": "front-layer",
+              "className": "front-layer",
             },
             "ref": null,
             "rendered": Object {
@@ -288,7 +288,7 @@ ShallowWrapper {
                 "children": <span>
                   #ClienteMais
                 </span>,
-                "class": "linear-wipe rounded-elegance",
+                "className": "linear-wipe rounded-elegance",
               },
               "ref": null,
               "rendered": Object {
@@ -323,7 +323,7 @@ ShallowWrapper {
           className="flex justify-center items-center"
         >
           <div
-            class="container"
+            className="container"
             style={
               Object {
                 "fontSize": "3em",
@@ -331,33 +331,33 @@ ShallowWrapper {
             }
           >
             <div
-              class="back-layer"
+              className="back-layer"
             >
               <p
                 className="rounded-elegance"
               >
                 <span
-                  class="hashtag"
+                  className="hashtag"
                 >
                   #
                 </span>
                 <span
-                  class="cliente"
+                  className="cliente"
                 >
                   Cliente
                 </span>
                 <span
-                  class="mais"
+                  className="mais"
                 >
                   Mais
                 </span>
               </p>
             </div>
             <div
-              class="front-layer"
+              className="front-layer"
             >
               <p
-                class="linear-wipe rounded-elegance"
+                className="linear-wipe rounded-elegance"
               >
                 <span>
                   #ClienteMais
@@ -378,7 +378,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <div
-            class="container"
+            className="container"
             style={
               Object {
                 "fontSize": "3em",
@@ -386,33 +386,33 @@ ShallowWrapper {
             }
           >
             <div
-              class="back-layer"
+              className="back-layer"
             >
               <p
                 className="rounded-elegance"
               >
                 <span
-                  class="hashtag"
+                  className="hashtag"
                 >
                   #
                 </span>
                 <span
-                  class="cliente"
+                  className="cliente"
                 >
                   Cliente
                 </span>
                 <span
-                  class="mais"
+                  className="mais"
                 >
                   Mais
                 </span>
               </p>
             </div>
             <div
-              class="front-layer"
+              className="front-layer"
             >
               <p
-                class="linear-wipe rounded-elegance"
+                className="linear-wipe rounded-elegance"
               >
                 <span>
                   #ClienteMais
@@ -430,33 +430,33 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                class="back-layer"
+                className="back-layer"
               >
                 <p
                   className="rounded-elegance"
                 >
                   <span
-                    class="hashtag"
+                    className="hashtag"
                   >
                     #
                   </span>
                   <span
-                    class="cliente"
+                    className="cliente"
                   >
                     Cliente
                   </span>
                   <span
-                    class="mais"
+                    className="mais"
                   >
                     Mais
                   </span>
                 </p>
               </div>,
               <div
-                class="front-layer"
+                className="front-layer"
               >
                 <p
-                  class="linear-wipe rounded-elegance"
+                  className="linear-wipe rounded-elegance"
                 >
                   <span>
                     #ClienteMais
@@ -464,7 +464,7 @@ ShallowWrapper {
                 </p>
               </div>,
             ],
-            "class": "container",
+            "className": "container",
             "style": Object {
               "fontSize": "3em",
             },
@@ -480,22 +480,22 @@ ShallowWrapper {
                   className="rounded-elegance"
                 >
                   <span
-                    class="hashtag"
+                    className="hashtag"
                   >
                     #
                   </span>
                   <span
-                    class="cliente"
+                    className="cliente"
                   >
                     Cliente
                   </span>
                   <span
-                    class="mais"
+                    className="mais"
                   >
                     Mais
                   </span>
                 </p>,
-                "class": "back-layer",
+                "className": "back-layer",
               },
               "ref": null,
               "rendered": Object {
@@ -505,17 +505,17 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <span
-                      class="hashtag"
+                      className="hashtag"
                     >
                       #
                     </span>,
                     <span
-                      class="cliente"
+                      className="cliente"
                     >
                       Cliente
                     </span>,
                     <span
-                      class="mais"
+                      className="mais"
                     >
                       Mais
                     </span>,
@@ -530,7 +530,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "#",
-                      "class": "hashtag",
+                      "className": "hashtag",
                     },
                     "ref": null,
                     "rendered": "#",
@@ -542,7 +542,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "Cliente",
-                      "class": "cliente",
+                      "className": "cliente",
                     },
                     "ref": null,
                     "rendered": "Cliente",
@@ -554,7 +554,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "Mais",
-                      "class": "mais",
+                      "className": "mais",
                     },
                     "ref": null,
                     "rendered": "Mais",
@@ -571,13 +571,13 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <p
-                  class="linear-wipe rounded-elegance"
+                  className="linear-wipe rounded-elegance"
                 >
                   <span>
                     #ClienteMais
                   </span>
                 </p>,
-                "class": "front-layer",
+                "className": "front-layer",
               },
               "ref": null,
               "rendered": Object {
@@ -588,7 +588,7 @@ ShallowWrapper {
                   "children": <span>
                     #ClienteMais
                   </span>,
-                  "class": "linear-wipe rounded-elegance",
+                  "className": "linear-wipe rounded-elegance",
                 },
                 "ref": null,
                 "rendered": Object {

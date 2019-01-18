@@ -65,15 +65,19 @@ class SummaryHeaderStory extends PureComponent {
       <MuiThemeProvider theme={seeThemeOverride}>
       <SummaryHeader
         classes='justify-center'
-        boxShadow={'0px -3px 20px 0px'}
-        backgroundImage={SeeTheme.styles.colors.seeGradient}
-        margin='16px'
-        justifyContent='center'>
+        headerProps={{
+          boxShadow:'0px -3px 20px 0px',
+          backgroundImage:SeeTheme.styles.colors.seeGradient,
+          margin:'16px',
+          justifyContent:'center'
+        }}>
 
         <div className='flex justify-center items-center flex-column'>
           <div>
-            <Typography align='center' style={SeeTheme.styles.fonts.headline}>
-              <p style={{marginTop:'117px', marginBottom:'0px'}}>INVESTIMENTOS TOTAIS</p>
+            <Typography
+              align='center'
+              style={{...SeeTheme.styles.fonts.headline, marginTop:'117px', marginBottom:'0px'}}>
+              INVESTIMENTOS TOTAIS
             </Typography>
           </div>
 
@@ -92,11 +96,10 @@ class SummaryHeaderStory extends PureComponent {
             </div>
           </div>
           <div>
-              <Typography align='center' style={SeeTheme.styles.fonts.subtitle1} >
-                <p style={{marginBottom:'117px', marginTop:'0', animationFillMode: 'backwards'}}
-                  className={this.state.liquidGross? 'frame1' : 'frame2'}>
+              <Typography align='center'
+                          style={{...SeeTheme.styles.fonts.subtitle1, marginBottom:'117px', marginTop:'0', animationFillMode: 'backwards'}}
+                          className={this.state.liquidGross? 'frame1' : 'frame2'}>
                   {this.getHelperText()}
-                </p>
               </Typography>
           </div>
         </div>

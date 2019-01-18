@@ -1,28 +1,23 @@
 import React, { PureComponent } from 'react'
 
 class SummaryHeader extends PureComponent {
-  getStyle (props) {
+  getStyle (headerProps) {
     return {
-      height: props.height,
-      backgroundImage: props.backgroundImage,
-      boxShadow: props.boxShadow
+      ...headerProps,
+      height: headerProps && headerProps.heigth ? headerProps.heigth : 'auto',
+      backgroundImage: headerProps && headerProps.backgroundImage ? headerProps.backgroundImage : 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))'
     }
   }
 
   render () {
-    const { classes } = this.props
+    const { classes, headerProps } = this.props
 
     return (
-      <div className={`flex items-center w-100 ${classes}`} style={this.getStyle(this.props)}>
+      <div className={`flex items-center w-100 ${classes}`} style={this.getStyle(headerProps)}>
         {this.props.children}
       </div>
     )
   }
-}
-
-SummaryHeader.defaultProps = {
-  height: 'auto',
-  backgroundImage: 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))'
 }
 
 export default SummaryHeader

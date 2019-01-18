@@ -28,7 +28,7 @@ const SeeMenu = ({
     onClose={handleClose}
     disableAutoFocusItem
     anchorReference='anchorPosition'
-    anchorPosition='left'
+    anchorPosition={{ left: 'left' }}
     className={className}
   >
     <div className='pl3 pt2'>

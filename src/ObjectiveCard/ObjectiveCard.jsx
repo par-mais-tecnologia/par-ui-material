@@ -6,7 +6,7 @@ import * as PropTypes from 'prop-types'
 export default class ObjectiveCard extends PureComponent {
   getObjectiveType (type) {
     switch (type) {
-      case 'EmergencyReserve':
+      case 'SECURITY_RESERVE':
         return {
           title: 'RESERVA DE EMERGÊNCIA',
           titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
@@ -16,7 +16,7 @@ export default class ObjectiveCard extends PureComponent {
           width: 21,
           heigth: 21
         }
-      case 'DreamsAndGoals':
+      case 'TIMED_OBJECTIVE':
         return {
           title: 'SONHOS E METAS',
           titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
@@ -26,7 +26,7 @@ export default class ObjectiveCard extends PureComponent {
           width: 27,
           heigth: 27
         }
-      case 'LivingInCome':
+      case 'FINANCIAL_INDEPENDENCE':
         return {
           title: 'VIVER DE RENDA',
           titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px' },
@@ -36,7 +36,7 @@ export default class ObjectiveCard extends PureComponent {
           width: 30,
           heigth: 30
         }
-      case 'UnderMeasure':
+      case 'IMPROVE_PROFITABILITY':
         return {
           title: 'INVESTIR MELHOR',
           titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '1px' },
@@ -51,6 +51,17 @@ export default class ObjectiveCard extends PureComponent {
     }
   }
 
+  verifyTitle (standardType, title) {
+    if (standardType) {
+      if (title) {
+        return title
+      } else {
+        return standardType.title
+      }
+    }
+    return title
+  }
+
   render () {
     const { title, subTitle, value, alt, iconSrc, width, height, titleProps, objectiveType, classes } = this.props
 
@@ -59,7 +70,7 @@ export default class ObjectiveCard extends PureComponent {
       standardType = this.getObjectiveType(objectiveType)
     }
 
-    let titleValue = standardType ? standardType.title : title
+    let titleValue = this.verifyTitle(standardType, title)
     let subTitleValue = standardType ? standardType.subTitle : subTitle
     let titlePropsValue = standardType ? standardType.titleProps : titleProps
     let altValue = standardType ? standardType.alt : alt

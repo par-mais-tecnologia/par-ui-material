@@ -35,7 +35,7 @@ class WalletChart extends Component {
           labelFirstLine={labelFirstLine}
           labelSecondLine={labelSecondLine} />
         <Grid className={classes.legendChartContainer}>
-          {legend && <Grid className>
+          {legend && <Grid>
             <LegendChart initialInvestment={initialInvestment} strategies={strategies} showPercentage={showLegendPercentage} />
           </Grid>}
         </Grid>

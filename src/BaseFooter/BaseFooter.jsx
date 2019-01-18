@@ -16,10 +16,10 @@ const styles = theme => ({
 
 class BaseFooter extends PureComponent {
   render () {
-    const { children, classes, height } = this.props
+    const { children, classes, footerProps } = this.props
 
     return (
-      <Grid container justify='center' style={{ height }} className={classes.footer}>
+      <Grid container justify='center' style={{ footerProps }} className={classes.footer}>
         {children}
       </Grid>
     )
@@ -30,8 +30,7 @@ BaseFooter.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-  ]).isRequired,
-  height: PropTypes.number.isRequired
+  ]).isRequired
 }
 
 export default withStyles(styles)(BaseFooter)

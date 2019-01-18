@@ -134,7 +134,7 @@ class MyWalletLineChart extends Component {
             <Tabs
               value={this.state.value}
               onChange={this.handleChange}
-              fullWidth
+              variant='fullWidth'
               classes={{
                 root: classes.tabsRoot,
                 indicator: classes.tabsIndicator

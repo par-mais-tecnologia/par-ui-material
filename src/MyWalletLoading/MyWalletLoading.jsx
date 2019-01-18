@@ -9,16 +9,16 @@ export default class MyWalletLoading extends PureComponent {
     return (
       <div style={{ height: '100%' }} className='flex justify-center items-center'>
         <div className='flex justify-center items-center'>
-          <div class='container' style={{ fontSize }}>
-            <div class='back-layer'>
+          <div className='container' style={{ fontSize }}>
+            <div className='back-layer'>
               <p className='rounded-elegance'>
-                <span class='hashtag'>#</span>
-                <span class='cliente'>Cliente</span>
-                <span class='mais'>Mais</span>
+                <span className='hashtag'>#</span>
+                <span className='cliente'>Cliente</span>
+                <span className='mais'>Mais</span>
               </p>
             </div>
-            <div class='front-layer'>
-              <p class='linear-wipe rounded-elegance'>
+            <div className='front-layer'>
+              <p className='linear-wipe rounded-elegance'>
                 <span>#ClienteMais</span>
               </p>
             </div>

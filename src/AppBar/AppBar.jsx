@@ -64,13 +64,14 @@ class SeeAppBar extends React.Component {
       closeMenu,
       openMenu,
       selectedIndex,
-      classes
+      classes,
+      color
     } = this.props
 
     return (
       <AppBar
         position='fixed'
-        color='white'
+        color={color || 'inherit'}
       >
         <Toolbar classes={{ gutters: classes.toolbar }}>
           <div className='flex items-center justify-between w-100'>

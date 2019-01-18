@@ -9,7 +9,7 @@ class BaseFooterStory extends PureComponent {
 
   render () {
 
-    const { children, height } = this.props
+    const { children } = this.props
 
     return (
       <MuiThemeProvider theme={finBioTheme}>
@@ -19,7 +19,7 @@ class BaseFooterStory extends PureComponent {
             <h2>Content here</h2>
             <h2>Content here</h2>
           </div>
-            <BaseFooter height={height}>
+            <BaseFooter>
               {children}
             </BaseFooter>
         </div>
