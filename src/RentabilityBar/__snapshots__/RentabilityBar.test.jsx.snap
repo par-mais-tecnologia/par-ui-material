@@ -459,7 +459,7 @@ ShallowWrapper {
         "parallax": Object {
           "parallax": Object {
             "&:first-child": Object {
-              "height": "45vh",
+              "minHeight": "45vh",
             },
             "position": "sticky",
             "top": "0",

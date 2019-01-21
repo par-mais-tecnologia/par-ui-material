@@ -3,7 +3,7 @@ export default {
     position: 'sticky',
     top: '0',
     '&:first-child': {
-      height: '45vh'
+      minHeight: '45vh'
     }
   }
 }

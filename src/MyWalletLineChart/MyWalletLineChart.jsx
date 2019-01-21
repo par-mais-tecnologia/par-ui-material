@@ -58,9 +58,9 @@ class MyWalletLineChart extends Component {
     height: 0,
 
     tab: [
-      { key: 0, label: 'Desde o início', filter: { date: moment('1900-01-01'), label: 'totalResult' } },
-      { key: 1, label: 'No mês', filter: { date: moment().startOf('month'), label: 'monthlyResult' } },
-      { key: 2, label: 'No ano', filter: { date: moment().startOf('year'), label: 'yearlyResult' } }
+      { key: 0, label: 'Desde o início', filter: { date: moment('1900-01-01'), label: 'total' } },
+      { key: 1, label: 'No mês', filter: { date: moment().startOf('month'), label: 'monthly' } },
+      { key: 2, label: 'No ano', filter: { date: moment().startOf('year'), label: 'yearly' } }
     ]
   }
 
@@ -105,6 +105,8 @@ class MyWalletLineChart extends Component {
     indexLine.filtered = indexLine.data.slice(arrayStart)
     mainLine.filtered = mainLine.data.slice(arrayStart)
     dateRange.filtered = dateRange.data.slice(arrayStart)
+    
+    this.props.onChangePeriod(this.state.tab[value].filter.label)
 
     this.setState({ value, mainLine, indexLine, dateRange })
   }

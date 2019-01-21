@@ -55,8 +55,7 @@ storiesOf('GoalSummary', module)
                 secondTitle={text('Second Title', 'Para ter')}
                 secondValue={number('Second Value', '000 000 000,00')}
                 thirdTitle={text('Third Title','Em')}
-                thirdValueMonths={number('Third Months Value', 5)}
-                thirdValueYears={number('Third Years Value', 2)}
+                thirdValue={text('Third Title','2 anos e 5 meses')}
             />
           </div>
         </div>
