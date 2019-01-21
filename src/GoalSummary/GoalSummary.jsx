@@ -24,22 +24,6 @@ const GoalSummary = (props) => {
   const { classes } = props
 
   const currencyFormater = value => `R$ ${value}`
-  const timeCounterFormater = (years, months) => {
-    let phrase = years > 0
-      ? years > 1
-        ? `${years} anos `
-        : `${years} ano `
-      : ''
-
-    phrase += years && months > 0 ? ' e ' : ''
-
-    phrase += months > 0
-      ? months > 1
-        ? `${months} meses`
-        : `${months} mês`
-      : ''
-    return phrase
-  }
 
   return (
     <div className={classes.wrapper}>
@@ -90,7 +74,7 @@ const GoalSummary = (props) => {
         <Typography classes={{
           root: classes.typography
         }}>
-          {timeCounterFormater(props.thirdValueYears, props.thirdValueMonths)}
+          {props.thirdValue}
         </Typography>
       </div>
     </div>
@@ -100,6 +84,6 @@ const GoalSummary = (props) => {
 GoalSummary.propTypes = {
   firstValue: PropTypes.number,
   secondValue: PropTypes.number,
-  thirthValue: PropTypes.number
+  thirthValue: PropTypes.string
 }
 export default withStyles(styles)(GoalSummary)

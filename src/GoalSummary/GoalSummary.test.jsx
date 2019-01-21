@@ -15,8 +15,7 @@ export const test = describe('GoalSummary', () => {
         secondTitle='Para ter'
         secondValue={10000}
         thirdTitle='Em'
-        thirdValueMonths={5}
-        thirdValueYears={2}
+        thirdValue={'2 anos e 3 meses'}
       />
     </MuiThemeProvider>
   )

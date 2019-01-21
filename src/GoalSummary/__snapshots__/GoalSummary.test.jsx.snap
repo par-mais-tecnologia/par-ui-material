@@ -3,7 +3,7 @@
 exports[`GoalSummary shallow GoalSummary match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MuiThemeProvider
+  Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
     theme={
       Object {
         "breakpoints": Object {
@@ -924,10 +924,9 @@ ShallowWrapper {
       secondTitle="Para ter"
       secondValue={10000}
       thirdTitle="Em"
-      thirdValueMonths={5}
-      thirdValueYears={2}
+      thirdValue="2 anos e 3 meses"
     />
-  </MuiThemeProvider>,
+  </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -946,8 +945,7 @@ ShallowWrapper {
       "secondTitle": "Para ter",
       "secondValue": 10000,
       "thirdTitle": "Em",
-      "thirdValueMonths": 5,
-      "thirdValueYears": 2,
+      "thirdValue": "2 anos e 3 meses",
     },
     "ref": null,
     "rendered": null,
@@ -964,8 +962,7 @@ ShallowWrapper {
         "secondTitle": "Para ter",
         "secondValue": 10000,
         "thirdTitle": "Em",
-        "thirdValueMonths": 5,
-        "thirdValueYears": 2,
+        "thirdValue": "2 anos e 3 meses",
       },
       "ref": null,
       "rendered": null,
