@@ -919,12 +919,24 @@ ShallowWrapper {
     }
   >
     <WithStyles(GoalSummary)
-      firstTitle="Aportar mensalmente"
-      firstValue={10000}
-      secondTitle="Para ter"
-      secondValue={10000}
-      thirdTitle="Em"
-      thirdValue="2 anos e 3 meses"
+      data={
+        Array [
+          Object {
+            "title": "Aportar mensalmente",
+            "type": "currency",
+            "value": 10000,
+          },
+          Object {
+            "title": "Para ter",
+            "type": "currency",
+            "value": 10000,
+          },
+          Object {
+            "title": "Em",
+            "value": "2 anos e 3 meses",
+          },
+        ]
+      }
     />
   </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
@@ -940,12 +952,22 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "firstTitle": "Aportar mensalmente",
-      "firstValue": 10000,
-      "secondTitle": "Para ter",
-      "secondValue": 10000,
-      "thirdTitle": "Em",
-      "thirdValue": "2 anos e 3 meses",
+      "data": Array [
+        Object {
+          "title": "Aportar mensalmente",
+          "type": "currency",
+          "value": 10000,
+        },
+        Object {
+          "title": "Para ter",
+          "type": "currency",
+          "value": 10000,
+        },
+        Object {
+          "title": "Em",
+          "value": "2 anos e 3 meses",
+        },
+      ],
     },
     "ref": null,
     "rendered": null,
@@ -957,12 +979,22 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "firstTitle": "Aportar mensalmente",
-        "firstValue": 10000,
-        "secondTitle": "Para ter",
-        "secondValue": 10000,
-        "thirdTitle": "Em",
-        "thirdValue": "2 anos e 3 meses",
+        "data": Array [
+          Object {
+            "title": "Aportar mensalmente",
+            "type": "currency",
+            "value": 10000,
+          },
+          Object {
+            "title": "Para ter",
+            "type": "currency",
+            "value": 10000,
+          },
+          Object {
+            "title": "Em",
+            "value": "2 anos e 3 meses",
+          },
+        ],
       },
       "ref": null,
       "rendered": null,

@@ -7,7 +7,7 @@ import {
     MuiThemeProvider,
     Typography
 } from '../../src'
-import { withKnobs, text, number} from '@storybook/addon-knobs'
+import { withKnobs, array} from '@storybook/addon-knobs'
 
 storiesOf('GoalSummary', module)
   .addDecorator(withKnobs)
@@ -15,13 +15,10 @@ storiesOf('GoalSummary', module)
     <div style={{background: '#3d3d3d', width: '100vw', height: '100vh'}}>
       <MuiThemeProvider theme={SeeTheme}>
         <GoalSummary
-            firstTitle={text('First Title', 'Aportar mensalmente')}
-            firstValue={text('First Value', '000 000 000,00')}
-            secondTitle={text('Second Title', 'Para ter')}
-            secondValue={number('Second Value', '000 000 000,00')}
-            thirdTitle={text('Third Title','Em')}
-            thirdValueMonths={number('Third Months Value', 5)}
-            thirdValueYears={number('Third Years Value', 2)}
+          data={array('data', [
+            { title: 'Aportar mensalmente', value: 10000, type: 'currency' },
+            { title: 'Em', value: '2 anos e 3 meses' }
+          ])}
         />
       </MuiThemeProvider>
     </div>
@@ -50,12 +47,11 @@ storiesOf('GoalSummary', module)
           </div>
           <div className='mt4' style={{width: '100%'}}>
             <GoalSummary
-                firstTitle={text('First Title', 'Aportar mensalmente')}
-                firstValue={text('First Value', '000 000 000,00')}
-                secondTitle={text('Second Title', 'Para ter')}
-                secondValue={number('Second Value', '000 000 000,00')}
-                thirdTitle={text('Third Title','Em')}
-                thirdValue={text('Third Title','2 anos e 5 meses')}
+              data={array('data', [
+                { title: 'Aportar mensalmente', value: 10000, type: 'currency' },
+                { title: 'Para ter', value: 10000, type: 'currency' },
+                { title: 'Em', value: '2 anos e 3 meses' }
+              ])}
             />
           </div>
         </div>

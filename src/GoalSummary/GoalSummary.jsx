@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core'
 import { Typography } from '..'
@@ -21,69 +21,37 @@ const styles = theme => ({
 })
 
 const GoalSummary = (props) => {
-  const { classes } = props
+  const { classes, data } = props
 
   const currencyFormater = value => `R$ ${value}`
 
   return (
     <div className={classes.wrapper}>
-
-      <div className={classes.section}>
-        <Typography classes={{
-          root: classes.typography
-        }}>
-          <b>
-            {props.firstTitle}
-          </b>
-        </Typography>
-        <Typography classes={{
-          root: classes.typography
-        }}>
-          {currencyFormater(props.firstValue)}
-        </Typography>
-      </div>
-
-      <div className={classes.divisor} />
-
-      <div className={classes.section}>
-        <Typography classes={{
-          root: classes.typography
-        }}>
-          <b>
-            {props.secondTitle}
-          </b>
-        </Typography>
-        <Typography classes={{
-          root: classes.typography
-        }}>
-          {currencyFormater(props.secondValue)}
-        </Typography>
-
-      </div>
-
-      <div className={classes.divisor} />
-
-      <div className={classes.section}>
-        <Typography classes={{
-          root: classes.typography
-        }}>
-          <b>
-            {props.thirdTitle}
-          </b>
-        </Typography>
-        <Typography classes={{
-          root: classes.typography
-        }}>
-          {props.thirdValue}
-        </Typography>
-      </div>
+      {data.map((d, i) => (
+        <Fragment>
+          <div className={classes.section}>
+            <Typography classes={{
+              root: classes.typography
+            }}>
+              <b>
+                {d.title}
+              </b>
+            </Typography>
+            <Typography classes={{
+              root: classes.typography
+            }}>
+              {d.type === 'currency' ? currencyFormater(d.value) : d.value}
+            </Typography>
+          </div>
+          {i !== (data.length - 1) && <div className={classes.divisor} />}
+        </Fragment>
+      ))}
     </div>
   )
 }
 
 GoalSummary.propTypes = {
-  firstValue: PropTypes.number,
-  secondValue: PropTypes.number,
-  thirthValue: PropTypes.string
+  classes: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired
 }
 export default withStyles(styles)(GoalSummary)

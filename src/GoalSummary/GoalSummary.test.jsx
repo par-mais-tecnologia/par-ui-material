@@ -10,12 +10,11 @@ export const test = describe('GoalSummary', () => {
   const getShallow = () => (
     <MuiThemeProvider theme={SeeTheme}>
       <GoalSummary
-        firstTitle='Aportar mensalmente'
-        firstValue={10000}
-        secondTitle='Para ter'
-        secondValue={10000}
-        thirdTitle='Em'
-        thirdValue={'2 anos e 3 meses'}
+        data={[
+          { title: 'Aportar mensalmente', value: 10000, type: 'currency' },
+          { title: 'Para ter', value: 10000, type: 'currency' },
+          { title: 'Em', value: '2 anos e 3 meses' }
+        ]}
       />
     </MuiThemeProvider>
   )
