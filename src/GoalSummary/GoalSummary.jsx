@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core'
 import { Typography } from '..'
+import { getCurrencyFormat } from '../Core/masks'
 
 const styles = theme => ({
   ...theme.goalSummary,
@@ -23,7 +24,7 @@ const styles = theme => ({
 const GoalSummary = (props) => {
   const { classes, data } = props
 
-  const currencyFormater = value => `R$ ${value}`
+  const currencyFormater = value => `R$ ${getCurrencyFormat(value, '', 0, ' ')}`
 
   return (
     <div className={classes.wrapper}>

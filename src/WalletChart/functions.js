@@ -7,7 +7,7 @@ export function getStrategiesData (strategiesWithValues, initialInvestment) {
     let object = {
       name: item[0],
       amount: item[1].toFixed(2),
-      percentual: ((item[1] * 100) / initialInvestment).toFixed(2)
+      percentual: ((item[1] * 100) / initialInvestment).toFixed(1)
     }
 
     strategiesArray.push(object)

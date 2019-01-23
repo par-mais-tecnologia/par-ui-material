@@ -40,3 +40,15 @@ export function getWalletComposition (arr) {
 
   return objRes
 }
+
+export function percentageFormater (value) {
+  let valueToFormat = 0;
+  if(typeof value === 'string') {
+    valueToFormat = Number(value.replace('%', ''))
+  } else {
+    valueToFormat = value;
+  }
+  const nCasas = 1
+
+  return (Number((valueToFormat).toFixed(nCasas)) + '%')
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core'
+import { getCurrencyFormat } from '../Core/masks'
 
 const MainBoxClasses = 'flex items-center justify-center'
 const SubBoxClasses = 'flex items-center justify-between'
@@ -38,12 +39,12 @@ const RentabilityBar = (props) => {
 
   const percentageFormater = (value) => {
     const decimal = value
-    const nCasas = 2
+    const nCasas = 1
 
     return (Number((decimal * 100).toFixed(nCasas)) + '%')
   }
 
-  const currencyFormater = (value) => ('R$' + value)
+  const currencyFormater = value => `R$ ${getCurrencyFormat(value, '', 0, ' ')}`
 
   const checkState = (property) => (
     props[property] > 0
