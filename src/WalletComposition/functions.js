@@ -42,11 +42,11 @@ export function getWalletComposition (arr) {
 }
 
 export function percentageFormater (value) {
-  let valueToFormat = 0;
-  if(typeof value === 'string') {
+  let valueToFormat = 0
+  if (typeof value === 'string') {
     valueToFormat = Number(value.replace('%', ''))
   } else {
-    valueToFormat = value;
+    valueToFormat = value
   }
   const nCasas = 1
 

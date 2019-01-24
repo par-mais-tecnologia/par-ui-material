@@ -105,7 +105,7 @@ class MyWalletLineChart extends Component {
     indexLine.filtered = indexLine.data.slice(arrayStart)
     mainLine.filtered = mainLine.data.slice(arrayStart)
     dateRange.filtered = dateRange.data.slice(arrayStart)
-    
+
     this.props.onChangePeriod(this.state.tab[value].filter.label)
 
     this.setState({ value, mainLine, indexLine, dateRange })

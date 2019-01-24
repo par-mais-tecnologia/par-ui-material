@@ -48,6 +48,7 @@ ShallowWrapper {
             variant="body1"
           >
             R$ 
+            0
           </Typography>
         </div>,
       ],
@@ -174,6 +175,7 @@ ShallowWrapper {
             variant="body1"
           >
             R$ 
+            0
           </Typography>,
         },
         "ref": null,
@@ -184,14 +186,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "R$ ",
-              undefined,
+              0,
             ],
             "variant": "body1",
           },
           "ref": null,
           "rendered": Array [
             "R$ ",
-            undefined,
+            0,
           ],
           "type": [Function],
         },
@@ -237,6 +239,7 @@ ShallowWrapper {
               variant="body1"
             >
               R$ 
+              0
             </Typography>
           </div>,
         ],
@@ -363,6 +366,7 @@ ShallowWrapper {
               variant="body1"
             >
               R$ 
+              0
             </Typography>,
           },
           "ref": null,
@@ -373,14 +377,14 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "R$ ",
-                undefined,
+                0,
               ],
               "variant": "body1",
             },
             "ref": null,
             "rendered": Array [
               "R$ ",
-              undefined,
+              0,
             ],
             "type": [Function],
           },
