@@ -129,14 +129,14 @@ const helpers = (context, d3) => {
                   ${state.indexLine.active ? `<span>Diferença:</span> ${(data.wallet - data.index).toFixed(2)}% <br>
                   <span>CDI: </span>${data.index.toFixed(2)}%` : ''}
                 </div>
-                <div className='f7 white pb1 roboto-regular'>em ${data.date.local().format('d/MM/YYYY')}</div>
+                <div className='f7 white pb1 roboto-regular'>em ${data.date.local().format('DD/MM/YYYY')}</div>
               </div>
             </div>`
       )
 
     d3.select('.focus')
       .select('.focusDate')
-      .text(function () { return `em ${data.date.local().format('d/MM/YYYY')}` })
+      .text(function () { return `em ${data.date.local().format('DD/MM/YYYY')}` })
   }
 
   const handlePathChange = (node, animate) => {
