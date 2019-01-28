@@ -33,16 +33,52 @@ NumberFormatCustom.propTypes = {
   onChange: PropTypes.func.isRequired
 }
 
-export const getCurrencyFormat = (number, prefix = '', defaultValue, separator) => {
-  if (isNaN(number) || number === null) {
+export function getCurrencyFormat (number, prefix = '', defaultValue = 0, separator = ',') {
+  if (number === null || typeof number === 'undefined') {
     return defaultValue
   }
 
-  const value = prefix + number.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+  let numbervalue
+  if (typeof number === 'string') {
+    numbervalue = Number(number.replace(/\s/g, '').replace(',', '.'))
+  } else {
+    numbervalue = number
+  }
+
+  const value = `${prefix} ${numbervalue.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 
   if (separator) {
     return value.replace(/\./g, separator)
   }
 
   return value
+}
+
+export function formatDecAsPercent (value, nCasas = 1, separator = ',', defaultValue = 0) {
+  return (getPercentageFormat(value, nCasas, separator, defaultValue, true))
+}
+
+export function formatPercent (value, nCasas = 1, separator = ',', defaultValue = 0) {
+  return (getPercentageFormat(value, nCasas, separator, defaultValue, false))
+}
+
+function getPercentageFormat (value, nCasas = 1, separator = ',', defaultValue = 0, isDecimal = false) {
+  if (value === null || typeof value === 'undefined') {
+    return defaultValue
+  }
+
+  let numbervalue
+  if (typeof value === 'string') {
+    numbervalue = Number(value.replace('%', '').replace(/\s/g, '').replace(',', '.'))
+  } else {
+    numbervalue = value
+  }
+
+  let valueFormatted
+  if (isDecimal) {
+    valueFormatted = (numbervalue * 100).toFixed(nCasas)
+  } else {
+    valueFormatted = (numbervalue).toFixed(nCasas)
+  }
+  return `${valueFormatted.replace('.', separator)}% `
 }

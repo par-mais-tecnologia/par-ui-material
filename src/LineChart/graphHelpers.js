@@ -1,3 +1,5 @@
+import { formatPercent } from '../Core/masks'
+
 const helpers = (context, d3) => {
   const state = context.state
   const props = context.props
@@ -23,7 +25,7 @@ const helpers = (context, d3) => {
     .tickSizeOuter(0)
     .ticks(props.yTicks)
     .tickSize(state.width - (props.paddingW * 2))
-    .tickFormat(d => `${d.toFixed(2)}%`)
+    .tickFormat(d => formatPercent(d, 1, ',', 0))
 
   function customYAxis (g) {
     g.call(yAxis)
@@ -126,15 +128,16 @@ const helpers = (context, d3) => {
         `   <div className='flex flex-row'>
               <div className='flex flex-column items-start pb1'>
                  <div className='f7 white pb1 roboto-regular'>
-                  <span>Valorização:</span> ${d.walletQuota.toFixed(2)}%
+                  <span>Valorização:</span> ${formatPercent(d.walletQuota)}
                 </div>
                 <div className='f7 white pb1 roboto-regular'>
-                  ${state.cdi ? `<span>Diferença:</span> ${(d.walletQuota - d.idxQuota).toFixed(2)}% <br>
-                  <span>CDI: </span>${d.idxQuota.toFixed(2)}%` : ''}
+                  ${state.cdi ? `<span>Diferença:</span> ${formatPercent((d.walletQuota - d.idxQuota))} <br>
+                  <span>CDI: </span>${formatPercent(d.idxQuota)}` : ''}
                 </div>
                 <div className='f7 white pb1 roboto-regular'>em ${(d.date.toLocaleDateString('pt-BR'))}</div>
               </div>
-            </div>`
+            </div>
+        `
       )
 
     d3.select('.focus')

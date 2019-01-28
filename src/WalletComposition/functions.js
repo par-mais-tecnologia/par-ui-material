@@ -1,3 +1,5 @@
+import { formatDecAsPercent } from '../Core/masks'
+
 export function getWalletComposition (arr) {
   var a = []; var b = []; var prev
 
@@ -26,7 +28,7 @@ export function getWalletComposition (arr) {
   })
 
   result[1].forEach((item, i) => {
-    let itemPercent = ((item / total) * 100).toFixed(2) + '%'
+    let itemPercent = formatDecAsPercent((item / total))
     percentages.push(itemPercent)
   })
 
@@ -39,16 +41,4 @@ export function getWalletComposition (arr) {
   }
 
   return objRes
-}
-
-export function percentageFormater (value) {
-  let valueToFormat = 0
-  if (typeof value === 'string') {
-    valueToFormat = Number(value.replace('%', ''))
-  } else {
-    valueToFormat = value
-  }
-  const nCasas = 1
-
-  return (Number((valueToFormat).toFixed(nCasas)) + '%')
 }

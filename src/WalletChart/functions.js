@@ -68,24 +68,3 @@ export function getStrategiesColors () {
     'Previdência': '#BA2B31'
   }
 }
-
-export function formatValue (value) {
-  let valueString = value.toString()
-  let tmpDiv = valueString.replace(/([0-9]{2})$/g, '$1')
-  let tmp = tmpDiv.replace('.', ',')
-  if (tmp.length > 6) {
-    tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ' $1,$2')
-  }
-  return tmp
-}
-
-export function formatPercent (cdi) {
-  let cdiPercent = ''
-  if (typeof cdi === 'string') {
-    cdiPercent = cdi.replace('.', ',')
-  } else {
-    cdiPercent = cdi.toString().replace('.', ',')
-  }
-
-  return `${cdiPercent}`
-}

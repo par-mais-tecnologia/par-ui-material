@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react'
 import * as PropTypes from 'prop-types'
 import Typography from '../Typography'
-import { getWalletComposition, percentageFormater } from './functions'
+import { getWalletComposition } from './functions'
+import { formatPercent } from '../Core/masks'
 
 class WalletComposition extends PureComponent {
   render () {
@@ -15,7 +16,7 @@ class WalletComposition extends PureComponent {
             <Typography variant='caption'>
               {item.fundName}<br />
               <Typography variant='body1'>
-                {percentageFormater(item.percentage)}
+                {formatPercent(item.percentage)}
               </Typography>
             </Typography>
           </div>

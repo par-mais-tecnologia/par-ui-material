@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core'
-import { getCurrencyFormat } from '../Core/masks'
+import { formatDecAsPercent, getCurrencyFormat } from '../Core/masks'
 
 const MainBoxClasses = 'flex items-center justify-center'
 const SubBoxClasses = 'flex items-center justify-between'
@@ -37,15 +37,6 @@ const styles = theme => ({
 const RentabilityBar = (props) => {
   const { classes } = props
 
-  const percentageFormater = (value) => {
-    const decimal = value
-    const nCasas = 1
-
-    return (Number((decimal * 100).toFixed(nCasas)) + '%')
-  }
-
-  const currencyFormater = value => `R$ ${getCurrencyFormat(value, '', 0, ' ')}`
-
   const checkState = (property) => (
     props[property] > 0
       ? { class: classes.positiveState, sign: '+' }
@@ -70,7 +61,7 @@ const RentabilityBar = (props) => {
           </h1>
           <p className={stateClasses.first.class}>
             <small>{stateClasses.first.sign}</small>
-            {currencyFormater(props.firstValue)}
+            {getCurrencyFormat(props.firstValue, 'R$', 0, ' ')}
           </p>
         </div>
         <div className={ColumnsClasses}>
@@ -79,7 +70,7 @@ const RentabilityBar = (props) => {
           </h1>
           <p className={stateClasses.second.class}>
             <small>{stateClasses.second.sign}</small>
-            {percentageFormater(props.secondValue)}
+            {formatDecAsPercent(props.secondValue)}
           </p>
         </div>
         <div className={ColumnsClasses}>
@@ -88,7 +79,7 @@ const RentabilityBar = (props) => {
           </h1>
 
           <p className={classes.neutralState}>
-            {props.thirdValue + '%'}
+            {formatDecAsPercent(props.thirdValue)}
           </p>
         </div>
       </div>
@@ -105,7 +96,7 @@ RentabilityBar.defaultProps = {
 RentabilityBar.propTypes = {
   firstValue: PropTypes.number,
   secondValue: PropTypes.number,
-  thirthValue: PropTypes.number
+  thirdValue: PropTypes.number
 }
 
 export default withStyles(styles)(RentabilityBar)

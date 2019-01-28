@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core'
 
 import { Grid, Typography } from '../index'
-import { getCurrencyFormat } from '../Core/masks'
+import { getCurrencyFormat, formatPercent } from '../Core/masks'
 
 const styles = (theme) => ({
   patrimony: theme.patrimonyResultChart ? theme.patrimonyResultChart : {}
@@ -18,23 +18,23 @@ function PatrimonyResultChart (props) {
     const percentmov = Number(((movableAssets / total) * 100).toFixed(1)) || 0
 
     const inv = {
-      amount: `R$ ${getCurrencyFormat(investments)}`,
+      amount: getCurrencyFormat(investments, 'R$', 0, ' '),
       desc: 'Investimentos',
-      percentage: `${percentinv}%`,
+      percentage: `${formatPercent(percentinv)}`,
       backgroundColor: props.investmentColor,
       class: 'investment'
     }
     const rs = {
-      amount: `R$ ${getCurrencyFormat(realState)}`,
+      amount: getCurrencyFormat(realState, 'R$', 0, ' '),
       desc: 'Imóveis',
-      percentage: `${percentreal}%`,
+      percentage: `${formatPercent(percentreal)}`,
       backgroundColor: props.realStateColor,
       class: 'realstate'
     }
     const ma = {
-      amount: `R$ ${getCurrencyFormat(movableAssets)}`,
+      amount: getCurrencyFormat(movableAssets, 'R$', 0, ' '),
       desc: 'Outros bens',
-      percentage: `${percentmov}%`,
+      percentage: `${formatPercent(percentmov)}`,
       backgroundColor: props.movableAssetsColor,
       class: 'movable'
     }

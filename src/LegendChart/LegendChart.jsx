@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { getStrategiesData, getStrategieColorLegend, formatPercent } from '../WalletChart/functions'
+import { getStrategiesData, getStrategieColorLegend } from '../WalletChart/functions'
 import { Grid, Typography } from '../index'
 import PropTypes from 'prop-types'
+import { formatPercent } from '../Core/masks'
 
 class LegendChart extends Component {
   render () {
@@ -18,7 +19,7 @@ class LegendChart extends Component {
                 <Grid className='mr2' style={{ backgroundColor: getStrategieColorLegend(strategy.name), width: 15, height: 15 }} />
                 {showPercentage && <Grid>
                   <Typography>
-                    {formatPercent(Number(strategy.percentual).toFixed(1))}%
+                    {formatPercent(strategy.percentual, 1, ',', 0)}
                   </Typography>
                 </Grid>}
                 <Grid container={showPercentage} style={{ color: getStrategieColorLegend(strategy.name) }} className='roboto-medium'>

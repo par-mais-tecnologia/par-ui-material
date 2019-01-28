@@ -104,7 +104,7 @@ export default class ObjectiveCard extends PureComponent {
         </div>
         <div>
           <Typography variant={'body1'}>
-            R$ {getCurrencyFormat(value, '', 0, ' ')}
+            {getCurrencyFormat(value, 'R$', 0, ' ')}
           </Typography>
         </div>
       </Paper>

@@ -1,3 +1,5 @@
+import { formatPercent } from '../Core/masks'
+
 const helpers = (context, d3) => {
   const state = context.state
   const props = context.props
@@ -68,7 +70,9 @@ const helpers = (context, d3) => {
     .tickSizeOuter(0)
     .ticks(props.yTicks)
     .tickSize(state.width - (props.paddingW * 2))
-    .tickFormat(d => `${d.toFixed(2)}%`)
+    .tickFormat(d => {
+      return `${formatPercent(d)}`
+    })
 
   function customYAxis (g) {
     g.call(yAxis)
@@ -123,11 +127,11 @@ const helpers = (context, d3) => {
         `   <div className='flex flex-row'>
               <div className='flex flex-column items-start pb1'>
                  <div className='f7 white pb1 roboto-regular'>
-                  <span>Valorização:</span> ${data.wallet.toFixed(2)}%
+                  <span>Valorização:</span> ${formatPercent(data.wallet)}
                 </div>
                 <div className='f7 white pb1 roboto-regular'>
-                  ${state.indexLine.active ? `<span>Diferença:</span> ${(data.wallet - data.index).toFixed(2)}% <br>
-                  <span>CDI: </span>${data.index.toFixed(2)}%` : ''}
+                  ${state.indexLine.active ? `<span>Diferença:</span> ${formatPercent(data.wallet - data.index)} <br>
+                  <span>CDI: </span>${formatPercent(data.index)}` : ''}
                 </div>
                 <div className='f7 white pb1 roboto-regular'>em ${data.date.local().format('DD/MM/YYYY')}</div>
               </div>

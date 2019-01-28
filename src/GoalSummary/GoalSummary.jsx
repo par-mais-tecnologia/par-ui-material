@@ -24,8 +24,6 @@ const styles = theme => ({
 const GoalSummary = (props) => {
   const { classes, data } = props
 
-  const currencyFormater = value => `R$ ${getCurrencyFormat(value, '', 0, ' ')}`
-
   return (
     <div className={classes.wrapper}>
       {data.map((d, i) => (
@@ -41,7 +39,7 @@ const GoalSummary = (props) => {
             <Typography classes={{
               root: classes.typography
             }}>
-              {d.type === 'currency' ? currencyFormater(d.value) : d.value}
+              {d.type === 'currency' ? getCurrencyFormat(d.value, 'R$', 0, ' ') : d.value}
             </Typography>
           </div>
           {i !== (data.length - 1) && <div className={classes.divisor} />}

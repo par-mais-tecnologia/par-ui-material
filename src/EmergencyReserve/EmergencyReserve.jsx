@@ -17,7 +17,7 @@ class EmergencyReserve extends PureComponent {
           <Typography>Recomendamos que você tenha uma reserva de emergência de</Typography>
         </Grid>
         <Grid item className='pv3'>
-          <Typography className={classes.reserve}>R$ {getCurrencyFormat(reserve)}</Typography>
+          <Typography className={classes.reserve}>{getCurrencyFormat(reserve, 'R$', 0, ' ')}</Typography>
           <Typography>Valor suficiente para cobrir</Typography>
         </Grid>
         <Grid item className='pv3'>

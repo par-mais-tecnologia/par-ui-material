@@ -79,8 +79,7 @@ ShallowWrapper {
             />
             <Grid>
               <Typography>
-                81,4
-                %
+                81,4% 
               </Typography>
             </Grid>
             <Grid
@@ -118,8 +117,7 @@ ShallowWrapper {
             />
             <Grid>
               <Typography>
-                8,5
-                %
+                8,5% 
               </Typography>
             </Grid>
             <Grid
@@ -157,8 +155,7 @@ ShallowWrapper {
             />
             <Grid>
               <Typography>
-                10,1
-                %
+                10,1% 
               </Typography>
             </Grid>
             <Grid
@@ -202,8 +199,7 @@ ShallowWrapper {
             />
             <Grid>
               <Typography>
-                81,4
-                %
+                81,4% 
               </Typography>
             </Grid>
             <Grid
@@ -242,8 +238,7 @@ ShallowWrapper {
               />,
               <Grid>
                 <Typography>
-                  81,4
-                  %
+                  81,4% 
                 </Typography>
               </Grid>,
               <Grid
@@ -285,8 +280,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Typography>
-                  81,4
-                  %
+                  81,4% 
                 </Typography>,
               },
               "ref": null,
@@ -295,16 +289,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": Array [
-                    "81,4",
-                    "%",
-                  ],
+                  "children": "81,4% ",
                 },
                 "ref": null,
-                "rendered": Array [
-                  "81,4",
-                  "%",
-                ],
+                "rendered": "81,4% ",
                 "type": [Function],
               },
               "type": [Function],
@@ -352,8 +340,7 @@ ShallowWrapper {
             />
             <Grid>
               <Typography>
-                8,5
-                %
+                8,5% 
               </Typography>
             </Grid>
             <Grid
@@ -392,8 +379,7 @@ ShallowWrapper {
               />,
               <Grid>
                 <Typography>
-                  8,5
-                  %
+                  8,5% 
                 </Typography>
               </Grid>,
               <Grid
@@ -435,8 +421,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Typography>
-                  8,5
-                  %
+                  8,5% 
                 </Typography>,
               },
               "ref": null,
@@ -445,16 +430,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": Array [
-                    "8,5",
-                    "%",
-                  ],
+                  "children": "8,5% ",
                 },
                 "ref": null,
-                "rendered": Array [
-                  "8,5",
-                  "%",
-                ],
+                "rendered": "8,5% ",
                 "type": [Function],
               },
               "type": [Function],
@@ -502,8 +481,7 @@ ShallowWrapper {
             />
             <Grid>
               <Typography>
-                10,1
-                %
+                10,1% 
               </Typography>
             </Grid>
             <Grid
@@ -542,8 +520,7 @@ ShallowWrapper {
               />,
               <Grid>
                 <Typography>
-                  10,1
-                  %
+                  10,1% 
                 </Typography>
               </Grid>,
               <Grid
@@ -585,8 +562,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Typography>
-                  10,1
-                  %
+                  10,1% 
                 </Typography>,
               },
               "ref": null,
@@ -595,16 +571,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": Array [
-                    "10,1",
-                    "%",
-                  ],
+                  "children": "10,1% ",
                 },
                 "ref": null,
-                "rendered": Array [
-                  "10,1",
-                  "%",
-                ],
+                "rendered": "10,1% ",
                 "type": [Function],
               },
               "type": [Function],
@@ -662,8 +632,7 @@ ShallowWrapper {
               />
               <Grid>
                 <Typography>
-                  81,4
-                  %
+                  81,4% 
                 </Typography>
               </Grid>
               <Grid
@@ -701,8 +670,7 @@ ShallowWrapper {
               />
               <Grid>
                 <Typography>
-                  8,5
-                  %
+                  8,5% 
                 </Typography>
               </Grid>
               <Grid
@@ -740,8 +708,7 @@ ShallowWrapper {
               />
               <Grid>
                 <Typography>
-                  10,1
-                  %
+                  10,1% 
                 </Typography>
               </Grid>
               <Grid
@@ -785,8 +752,7 @@ ShallowWrapper {
               />
               <Grid>
                 <Typography>
-                  81,4
-                  %
+                  81,4% 
                 </Typography>
               </Grid>
               <Grid
@@ -825,8 +791,7 @@ ShallowWrapper {
                 />,
                 <Grid>
                   <Typography>
-                    81,4
-                    %
+                    81,4% 
                   </Typography>
                 </Grid>,
                 <Grid
@@ -868,8 +833,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <Typography>
-                    81,4
-                    %
+                    81,4% 
                   </Typography>,
                 },
                 "ref": null,
@@ -878,16 +842,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": Array [
-                      "81,4",
-                      "%",
-                    ],
+                    "children": "81,4% ",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    "81,4",
-                    "%",
-                  ],
+                  "rendered": "81,4% ",
                   "type": [Function],
                 },
                 "type": [Function],
@@ -935,8 +893,7 @@ ShallowWrapper {
               />
               <Grid>
                 <Typography>
-                  8,5
-                  %
+                  8,5% 
                 </Typography>
               </Grid>
               <Grid
@@ -975,8 +932,7 @@ ShallowWrapper {
                 />,
                 <Grid>
                   <Typography>
-                    8,5
-                    %
+                    8,5% 
                   </Typography>
                 </Grid>,
                 <Grid
@@ -1018,8 +974,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <Typography>
-                    8,5
-                    %
+                    8,5% 
                   </Typography>,
                 },
                 "ref": null,
@@ -1028,16 +983,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": Array [
-                      "8,5",
-                      "%",
-                    ],
+                    "children": "8,5% ",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    "8,5",
-                    "%",
-                  ],
+                  "rendered": "8,5% ",
                   "type": [Function],
                 },
                 "type": [Function],
@@ -1085,8 +1034,7 @@ ShallowWrapper {
               />
               <Grid>
                 <Typography>
-                  10,1
-                  %
+                  10,1% 
                 </Typography>
               </Grid>
               <Grid
@@ -1125,8 +1073,7 @@ ShallowWrapper {
                 />,
                 <Grid>
                   <Typography>
-                    10,1
-                    %
+                    10,1% 
                   </Typography>
                 </Grid>,
                 <Grid
@@ -1168,8 +1115,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <Typography>
-                    10,1
-                    %
+                    10,1% 
                   </Typography>,
                 },
                 "ref": null,
@@ -1178,16 +1124,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": Array [
-                      "10,1",
-                      "%",
-                    ],
+                    "children": "10,1% ",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    "10,1",
-                    "%",
-                  ],
+                  "rendered": "10,1% ",
                   "type": [Function],
                 },
                 "type": [Function],

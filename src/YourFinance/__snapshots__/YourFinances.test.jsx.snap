@@ -29,8 +29,7 @@ ShallowWrapper {
             Rendas 
           </Typography>
           <Typography>
-            R$ 
-            4,500.00
+            R$ 4,500 00
           </Typography>
         </Grid>,
         <Grid
@@ -51,8 +50,7 @@ ShallowWrapper {
             Despesas
           </Typography>
           <Typography>
-            R$ 
-            1,000.00
+            R$ 1,000 00
           </Typography>
         </Grid>,
         <Grid
@@ -77,8 +75,7 @@ ShallowWrapper {
             </Typography>
             <Typography>
               <b>
-                R$ 
-                3,500.00
+                R$ 3,500 00
               </b>
             </Typography>
           </Grid>
@@ -110,8 +107,7 @@ ShallowWrapper {
               Rendas 
             </Typography>,
             <Typography>
-              R$ 
-              4,500.00
+              R$ 4,500 00
             </Typography>,
           ],
           "container": true,
@@ -135,16 +131,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [
-                "R$ ",
-                "4,500.00",
-              ],
+              "children": "R$ 4,500 00",
             },
             "ref": null,
-            "rendered": Array [
-              "R$ ",
-              "4,500.00",
-            ],
+            "rendered": "R$ 4,500 00",
             "type": [Function],
           },
         ],
@@ -176,8 +166,7 @@ ShallowWrapper {
               Despesas
             </Typography>,
             <Typography>
-              R$ 
-              1,000.00
+              R$ 1,000 00
             </Typography>,
           ],
           "container": true,
@@ -201,16 +190,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [
-                "R$ ",
-                "1,000.00",
-              ],
+              "children": "R$ 1,000 00",
             },
             "ref": null,
-            "rendered": Array [
-              "R$ ",
-              "1,000.00",
-            ],
+            "rendered": "R$ 1,000 00",
             "type": [Function],
           },
         ],
@@ -249,8 +232,7 @@ ShallowWrapper {
               </Typography>
               <Typography>
                 <b>
-                  R$ 
-                  3,500.00
+                  R$ 3,500 00
                 </b>
               </Typography>
             </Grid>,
@@ -281,8 +263,7 @@ ShallowWrapper {
                 </Typography>,
                 <Typography>
                   <b>
-                    R$ 
-                    3,500.00
+                    R$ 3,500 00
                   </b>
                 </Typography>,
               ],
@@ -320,8 +301,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <b>
-                    R$ 
-                    3,500.00
+                    R$ 3,500 00
                   </b>,
                 },
                 "ref": null,
@@ -330,16 +310,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      "R$ ",
-                      "3,500.00",
-                    ],
+                    "children": "R$ 3,500 00",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    "R$ ",
-                    "3,500.00",
-                  ],
+                  "rendered": "R$ 3,500 00",
                   "type": "b",
                 },
                 "type": [Function],
@@ -384,8 +358,7 @@ ShallowWrapper {
               Rendas 
             </Typography>
             <Typography>
-              R$ 
-              4,500.00
+              R$ 4,500 00
             </Typography>
           </Grid>,
           <Grid
@@ -406,8 +379,7 @@ ShallowWrapper {
               Despesas
             </Typography>
             <Typography>
-              R$ 
-              1,000.00
+              R$ 1,000 00
             </Typography>
           </Grid>,
           <Grid
@@ -432,8 +404,7 @@ ShallowWrapper {
               </Typography>
               <Typography>
                 <b>
-                  R$ 
-                  3,500.00
+                  R$ 3,500 00
                 </b>
               </Typography>
             </Grid>
@@ -465,8 +436,7 @@ ShallowWrapper {
                 Rendas 
               </Typography>,
               <Typography>
-                R$ 
-                4,500.00
+                R$ 4,500 00
               </Typography>,
             ],
             "container": true,
@@ -490,16 +460,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  "R$ ",
-                  "4,500.00",
-                ],
+                "children": "R$ 4,500 00",
               },
               "ref": null,
-              "rendered": Array [
-                "R$ ",
-                "4,500.00",
-              ],
+              "rendered": "R$ 4,500 00",
               "type": [Function],
             },
           ],
@@ -531,8 +495,7 @@ ShallowWrapper {
                 Despesas
               </Typography>,
               <Typography>
-                R$ 
-                1,000.00
+                R$ 1,000 00
               </Typography>,
             ],
             "container": true,
@@ -556,16 +519,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  "R$ ",
-                  "1,000.00",
-                ],
+                "children": "R$ 1,000 00",
               },
               "ref": null,
-              "rendered": Array [
-                "R$ ",
-                "1,000.00",
-              ],
+              "rendered": "R$ 1,000 00",
               "type": [Function],
             },
           ],
@@ -604,8 +561,7 @@ ShallowWrapper {
                 </Typography>
                 <Typography>
                   <b>
-                    R$ 
-                    3,500.00
+                    R$ 3,500 00
                   </b>
                 </Typography>
               </Grid>,
@@ -636,8 +592,7 @@ ShallowWrapper {
                   </Typography>,
                   <Typography>
                     <b>
-                      R$ 
-                      3,500.00
+                      R$ 3,500 00
                     </b>
                   </Typography>,
                 ],
@@ -675,8 +630,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": <b>
-                      R$ 
-                      3,500.00
+                      R$ 3,500 00
                     </b>,
                   },
                   "ref": null,
@@ -685,16 +639,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        "R$ ",
-                        "3,500.00",
-                      ],
+                      "children": "R$ 3,500 00",
                     },
                     "ref": null,
-                    "rendered": Array [
-                      "R$ ",
-                      "3,500.00",
-                    ],
+                    "rendered": "R$ 3,500 00",
                     "type": "b",
                   },
                   "type": [Function],

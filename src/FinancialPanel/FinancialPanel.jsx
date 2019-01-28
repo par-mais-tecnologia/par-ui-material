@@ -5,7 +5,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
 import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import { getCurrencyFormat } from '../Core/masks'
+import { getCurrencyFormat, formatDecAsPercent } from '../Core/masks'
 
 const styles = theme => (theme.financialPanel)
 
@@ -37,7 +37,7 @@ class FinancialPanel extends Component {
               <Typography
                 variant='title'
                 className={classes.value}>
-                {this.props.headerPercentage * 100}%
+                {formatDecAsPercent(this.props.headerPercentage, 1, ',', 0)}
               </Typography>
               <Typography
                 variant='title'
@@ -66,7 +66,7 @@ class FinancialPanel extends Component {
                     <Typography
                       variant='title'
                       className={classes.walletComposition}>
-                      {obj.walletComposition * 100}%
+                      {formatDecAsPercent(obj.walletComposition, 1, ',', 0)}
                     </Typography>
                   </div>
                 </ExpansionPanelSummary>
@@ -77,7 +77,7 @@ class FinancialPanel extends Component {
                         Rentabilidade dos últimos 24 meses
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {obj.cdi * 100}% do {obj.index}
+                      {formatDecAsPercent(obj.cdi, 1, ',', 0)}do {obj.index}
                     </Typography>
                   </div>
 
@@ -95,7 +95,7 @@ class FinancialPanel extends Component {
                         Pl atual
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                        R$ {getCurrencyFormat(obj.gross)}
+                      {getCurrencyFormat(obj.gross, 'R$', 0, ' ')}
                     </Typography>
                   </div>
 
