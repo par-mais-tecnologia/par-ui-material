@@ -70,7 +70,7 @@ const SeeMenu = ({
     <div className='flex flex-column ph3 mv3'>
       <Typography variant='overline'>AMBIENTE ATUALIZADO DIARIAMENTE</Typography>
       <Typography variant='body1'>Última atualização</Typography>
-      <Typography variant='body1'>{`${lastUpdate.date} às ${lastUpdate.time}`}</Typography>
+      <Typography variant='body1'>{`${lastUpdate.date} ${lastUpdate.time !== undefined ? `às ${lastUpdate.time}` : ''}`}</Typography>
     </div>
   </Menu>
 )

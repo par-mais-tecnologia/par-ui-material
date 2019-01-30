@@ -3,7 +3,7 @@
 exports[`GoalSummary shallow GoalSummary match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MuiThemeProvider
+  Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
     theme={
       Object {
         "breakpoints": Object {
@@ -938,7 +938,7 @@ ShallowWrapper {
         ]
       }
     />
-  </MuiThemeProvider>,
+  </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
