@@ -71,6 +71,7 @@ class AppBarStories extends React.Component {
           closeMenu={this.closeMenu}
           openMenu={this.openMenu}
           selectedIndex={this.state.selectedIndex}
+          disabledExit={this.props.disabledExit}
         />
         <div 
           style={{
@@ -105,6 +106,13 @@ storiesOf('SeeAppBar', module)
     return (
       <MuiThemeProvider theme={SeeTheme}>
         <AppBarStories withoutMenuItems/>
+      </MuiThemeProvider>
+    )
+  })
+  .add('SeeAppBar without Exit Button', () => {
+    return (
+      <MuiThemeProvider theme={SeeTheme}>
+        <AppBarStories disabledExit = {true}/>
       </MuiThemeProvider>
     )
   })

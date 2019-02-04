@@ -16,7 +16,7 @@ storiesOf('RentabilityBar', module)
           secondValue={text('Second Value',0)}
 
           thirdTitle={text('Third Title','cdi')}
-          thirdValue={text('Third Value',1)}
+          thirdValue={text('Third Value',0.4786554)}
         />
       </MuiThemeProvider>
     )

@@ -17,6 +17,7 @@ const styles = theme => ({
   toolbar: {
     paddingRight: '1em',
     paddingLeft: '1em',
+    minHeight: '70px',
     [theme.breakpoints.up('sm')]: {
       paddingRight: '4em',
       paddingLeft: '4em'
@@ -65,7 +66,8 @@ class SeeAppBar extends React.Component {
       openMenu,
       selectedIndex,
       classes,
-      color
+      color,
+      disabledExit
     } = this.props
 
     return (
@@ -112,16 +114,16 @@ class SeeAppBar extends React.Component {
                   {name}
                 </Typography>
               </div>
-              <IconButton
-                onClick={handleExit}
-                className='flex ph0 ph5-ns'
-                style={{ backgroundColor: 'transparent', borderRadius: 0, outline: 0 }}
-              >
-                <div className='flex'>
-                  <i className='purple par-icon-leave pr1' />
-                  <Typography variant='button'>SAIR</Typography>
-                </div>
-              </IconButton>
+              {disabledExit ? ''
+                : <IconButton
+                  onClick={handleExit}
+                  className='flex ph0 ph5-ns'
+                  style={{ backgroundColor: 'transparent', borderRadius: 0, outline: 0 }}>
+                  <div className='flex'>
+                    <i className='purple par-icon-leave pr1' />
+                    <Typography variant='button'>SAIR</Typography>
+                  </div>
+                </IconButton>}
             </div>
           </div>
         </Toolbar>
