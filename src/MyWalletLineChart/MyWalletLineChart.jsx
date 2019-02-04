@@ -169,7 +169,7 @@ class MyWalletLineChart extends Component {
 
             <g className={['yAxis', classes.axis].join(' ')}
               ref={node => d3.select(node).call(helper.customYAxis)}
-              style={{ transform: `translateX(${this.state.width - (this.props.paddingW * 0.9)}px)` }}
+              style={{ transform: `translateX(${this.state.width - (this.props.paddingW * 1.5)}px)` }}
             />
 
             <g className='Lines'>
@@ -285,6 +285,7 @@ class MyWalletLineChart extends Component {
                 <Button
                   disableRipple
                   variant='contained'
+                  style={{ width: '170px' }}
                   classes={{
                     root: this.state.areaLine.active
                       ? classes.buttonAreaActive

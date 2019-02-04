@@ -50,7 +50,7 @@ export default {
     margin: '2rem 0'
   },
   buttonsRow: {
-    minWidth: '20rem',
+    minWidth: '22rem',
     justifyContent: 'space-evenly'
   },
   buttonDefault: {

@@ -6,12 +6,6 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <WithStyles(SeeMenu)
     handleClose={[Function]}
     isOpen={true}
-    lastUpdate={
-      Object {
-        "date": "29/09/1989",
-        "time": "14:34",
-      }
-    }
     menuItems={
       Array [
         Object {
@@ -32,6 +26,9 @@ ShallowWrapper {
         },
       ]
     }
+    mobileFooterBody="Última atualização 
+20/09/1989"
+    mobileFooterTitle="Ambiente atualizado diariamente"
     name="Rui Cavaleiro"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -50,10 +47,6 @@ ShallowWrapper {
       "classes": Object {},
       "handleClose": [Function],
       "isOpen": true,
-      "lastUpdate": Object {
-        "date": "29/09/1989",
-        "time": "14:34",
-      },
       "menuItems": Array [
         Object {
           "item": "SEUS OBJETIVOS",
@@ -72,6 +65,9 @@ ShallowWrapper {
           "onClick": [Function],
         },
       ],
+      "mobileFooterBody": "Última atualização 
+20/09/1989",
+      "mobileFooterTitle": "Ambiente atualizado diariamente",
       "name": "Rui Cavaleiro",
     },
     "ref": null,
@@ -87,10 +83,6 @@ ShallowWrapper {
         "classes": Object {},
         "handleClose": [Function],
         "isOpen": true,
-        "lastUpdate": Object {
-          "date": "29/09/1989",
-          "time": "14:34",
-        },
         "menuItems": Array [
           Object {
             "item": "SEUS OBJETIVOS",
@@ -109,6 +101,9 @@ ShallowWrapper {
             "onClick": [Function],
           },
         ],
+        "mobileFooterBody": "Última atualização 
+20/09/1989",
+        "mobileFooterTitle": "Ambiente atualizado diariamente",
         "name": "Rui Cavaleiro",
       },
       "ref": null,

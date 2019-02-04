@@ -69,7 +69,7 @@ const helpers = (context, d3) => {
     .scale(yScale)
     .tickSizeOuter(0)
     .ticks(props.yTicks)
-    .tickSize(state.width - (props.paddingW * 2))
+    .tickSize(state.width - (props.paddingW * 2.5))
     .tickFormat(d => {
       return `${formatPercent(d)}`
     })

@@ -54,7 +54,8 @@ class MenuStories extends React.Component {
         </Button>
         <SeeMenu 
           name='Rui Cavaleiro'
-          lastUpdate={{date: '29/09/1989', time: '14:34'}}
+          mobileFooterTitle='Ambiente atualizado diariamente'
+          mobileFooterBody={`Última atualização \n20/09/1989`}
           menuItems={menuItems}
           isOpen={this.state.isOpen}
           handleClose={ this.handleClose }

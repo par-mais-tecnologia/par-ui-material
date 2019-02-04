@@ -8,7 +8,8 @@ import { MenuItem } from '@material-ui/core'
 configure({ adapter: new Adapter() })
 
 const name = 'Rui Cavaleiro'
-const lastUpdate = { date: '29/09/1989', time: '14:34' }
+const mobileFooterTitle = 'Ambiente atualizado diariamente'
+const mobileFooterBody = `Última atualização \n20/09/1989`
 const menuItems = [
   {
     item: 'SEUS OBJETIVOS',
@@ -32,7 +33,8 @@ export const testShallow = describe('SeeAppBar', () => {
   const getSeeAppBar = () => (
     <SeeAppBar
       name={name}
-      lastUpdate={lastUpdate}
+      mobileFooterTitle={mobileFooterTitle}
+      mobileFooterBody={mobileFooterBody}
       menuItems={menuItems}
       handleExit={() => {}}
     />
@@ -41,7 +43,8 @@ export const testShallow = describe('SeeAppBar', () => {
   const getSeeAppBarWithoutMenuItems = () => (
     <SeeAppBar
       name={name}
-      lastUpdate={lastUpdate}
+      mobileFooterTitle={mobileFooterTitle}
+      mobileFooterBody={mobileFooterBody}
       menuItems={[]}
       handleExit={() => {}}
     />

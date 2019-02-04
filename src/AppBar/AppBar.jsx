@@ -58,7 +58,8 @@ class SeeAppBar extends React.Component {
   render () {
     const {
       name,
-      lastUpdate,
+      mobileFooterTitle,
+      mobileFooterBody,
       menuItems,
       handleExit,
       menuIsOpen,
@@ -90,7 +91,8 @@ class SeeAppBar extends React.Component {
               </IconButton>
               <SeeMenu
                 name={name}
-                lastUpdate={lastUpdate}
+                mobileFooterTitle={mobileFooterTitle}
+                mobileFooterBody={mobileFooterBody}
                 menuItems={menuItems}
                 isOpen={menuIsOpen}
                 handleClose={closeMenu}

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Button from '../Button'
 import Typography from '@material-ui/core/Typography'
@@ -13,13 +14,14 @@ const styles = theme => (theme.menu)
 
 const SeeMenu = ({
   name,
-  lastUpdate,
   menuItems,
   handleClose,
   handleExit,
   isOpen,
   className,
   selectedIndex,
+  mobileFooterTitle,
+  mobileFooterBody,
   classes
 }) => (
   <Menu
@@ -68,11 +70,27 @@ const SeeMenu = ({
       }
     </div>
     <div className='flex flex-column ph3 mv3'>
-      <Typography variant='overline'>AMBIENTE ATUALIZADO DIARIAMENTE</Typography>
-      <Typography variant='body1'>Última atualização</Typography>
-      <Typography variant='body1'>{`${lastUpdate.date} ${lastUpdate.time !== undefined ? `às ${lastUpdate.time}` : ''}`}</Typography>
+      <Typography variant='overline'>{mobileFooterTitle.toUpperCase()}</Typography>
+      <Typography variant='body1' style={{ whiteSpace: 'pre-line' }}>{mobileFooterBody}</Typography>
     </div>
   </Menu>
 )
+
+SeeMenu.defaultProps = {
+  isOpen: false
+}
+
+SeeMenu.propTypes = {
+  name: PropTypes.string,
+  menuItems: PropTypes.array,
+  handleClose: PropTypes.func,
+  handleExit: PropTypes.func,
+  isOpen: PropTypes.bool.isRequired,
+  className: PropTypes.string,
+  selectedIndex: PropTypes.number,
+  mobileFooterTitle: PropTypes.string,
+  mobileFooterBody: PropTypes.string,
+  classes: PropTypes.object.isRequired
+}
 
 export default withStyles(styles)(SeeMenu)

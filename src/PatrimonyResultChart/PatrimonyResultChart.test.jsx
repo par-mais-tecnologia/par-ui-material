@@ -26,7 +26,6 @@ export const testShallow = describe('PatrimonyResultChart shallow', () => {
 
   it(`shallow PatrimonyResultChart`, () => {
     const wrapper = shallow(getShallow())
-    console.log(wrapper.props())
     expect(wrapper).toBeTruthy()
   })
 

@@ -5,12 +5,6 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <WithStyles(SeeAppBar)
     handleExit={[Function]}
-    lastUpdate={
-      Object {
-        "date": "29/09/1989",
-        "time": "14:34",
-      }
-    }
     menuItems={
       Array [
         Object {
@@ -31,6 +25,9 @@ ShallowWrapper {
         },
       ]
     }
+    mobileFooterBody="Última atualização 
+20/09/1989"
+    mobileFooterTitle="Ambiente atualizado diariamente"
     name="Rui Cavaleiro"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -51,10 +48,6 @@ ShallowWrapper {
         "toolbar": "SeeAppBar-toolbar-1",
       },
       "handleExit": [Function],
-      "lastUpdate": Object {
-        "date": "29/09/1989",
-        "time": "14:34",
-      },
       "menuItems": Array [
         Object {
           "item": "SEUS OBJETIVOS",
@@ -73,6 +66,9 @@ ShallowWrapper {
           "onClick": [Function],
         },
       ],
+      "mobileFooterBody": "Última atualização 
+20/09/1989",
+      "mobileFooterTitle": "Ambiente atualizado diariamente",
       "name": "Rui Cavaleiro",
     },
     "ref": null,
@@ -90,10 +86,6 @@ ShallowWrapper {
           "toolbar": "SeeAppBar-toolbar-1",
         },
         "handleExit": [Function],
-        "lastUpdate": Object {
-          "date": "29/09/1989",
-          "time": "14:34",
-        },
         "menuItems": Array [
           Object {
             "item": "SEUS OBJETIVOS",
@@ -112,6 +104,9 @@ ShallowWrapper {
             "onClick": [Function],
           },
         ],
+        "mobileFooterBody": "Última atualização 
+20/09/1989",
+        "mobileFooterTitle": "Ambiente atualizado diariamente",
         "name": "Rui Cavaleiro",
       },
       "ref": null,

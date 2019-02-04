@@ -30,7 +30,8 @@ export const testShallow = describe('SeeMenu shallow', () => {
   const getShallow = () => (
     <SeeMenu
       name='Rui Cavaleiro'
-      lastUpdate={{ date: '29/09/1989', time: '14:34' }}
+      mobileFooterTitle='Ambiente atualizado diariamente'
+      mobileFooterBody={`Última atualização \n20/09/1989`}
       menuItems={menuItems}
       isOpen
       handleClose={() => {}}
@@ -50,7 +51,8 @@ export const testShallow = describe('SeeMenu shallow', () => {
   it(`should have the number of <MenuItem/>'s equals the number of steps`, () => {
     const wrapper = mount(<SeeMenu
       name='Rui Cavaleiro'
-      lastUpdate={{ date: '29/09/1989', time: '14:34' }}
+      mobileFooterTitle='Ambiente atualizado diariamente'
+      mobileFooterBody={`Última atualização \n20/09/1989`}
       menuItems={menuItems}
       isOpen
       handleClose={() => {}}
