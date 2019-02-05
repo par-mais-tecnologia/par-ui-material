@@ -1,9 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { 
+import {
   MuiThemeProvider,
   SeeTheme,
-  SeeAppBar,
+  SeeAppBar, SeeMenu,
 } from '../../src'
 
 import withTests from './withTests'
@@ -71,7 +71,8 @@ class AppBarStories extends React.Component {
           closeMenu={this.closeMenu}
           openMenu={this.openMenu}
           selectedIndex={this.state.selectedIndex}
-          disabledExit={this.props.disabledExit}
+          mobileFooterTitle={'Ambiente atualizado diariamente'}
+          mobileFooterBody={`Última atualização \n20/09/1989`}
         />
         <div 
           style={{

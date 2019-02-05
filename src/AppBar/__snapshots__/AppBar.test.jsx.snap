@@ -44,7 +44,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "classes": Object {
+        "exitButton": "SeeAppBar-exitButton-4",
         "iconButton": "SeeAppBar-iconButton-2",
+        "menuGutters": "SeeAppBar-menuGutters-3",
         "toolbar": "SeeAppBar-toolbar-1",
       },
       "handleExit": [Function],
@@ -82,7 +84,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "classes": Object {
+          "exitButton": "SeeAppBar-exitButton-4",
           "iconButton": "SeeAppBar-iconButton-2",
+          "menuGutters": "SeeAppBar-menuGutters-3",
           "toolbar": "SeeAppBar-toolbar-1",
         },
         "handleExit": [Function],

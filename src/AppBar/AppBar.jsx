@@ -27,7 +27,20 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       marginRight: '-15px'
     }
+  },
+  menuGutters: {
+    [theme.breakpoints.between('md', 'lg')]: {
+      paddingLeft: 0,
+      paddingRight: 0
+    }
+  },
+  exitButton: {
+    display: 'inline-flex',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   }
+
 })
 
 class SeeAppBar extends React.Component {
@@ -36,7 +49,8 @@ class SeeAppBar extends React.Component {
       [...menuItems].map((item, index) => (
         <MenuItem
           onClick={item.onClick}
-          classes={{ root: classes.menuItem }}
+          classes={{ root: classes.menuItem, gutters: classes.menuGutters }}
+          className={'menuItem'}
           key={`menuButtonDesktop-${index}`}
           style={selectedIndex === index ? { backgroundColor: '#F0F0F0' } : {}}
         >
@@ -67,8 +81,7 @@ class SeeAppBar extends React.Component {
       openMenu,
       selectedIndex,
       classes,
-      color,
-      disabledExit
+      color
     } = this.props
 
     return (
@@ -103,7 +116,8 @@ class SeeAppBar extends React.Component {
             </div>
             <div>
               <img
-                style={{ maxHeight: '20px' }}
+                alt={'Logo Par Mais'}
+                style={{ maxHeight: '20px', minWidth: '125px' }}
                 src='https://static.parmais.com.br/images/clientemais-logo.svg'
               />
             </div>
@@ -116,16 +130,17 @@ class SeeAppBar extends React.Component {
                   {name}
                 </Typography>
               </div>
-              {disabledExit ? ''
-                : <IconButton
-                  onClick={handleExit}
-                  className='flex ph0 ph5-ns'
-                  style={{ backgroundColor: 'transparent', borderRadius: 0, outline: 0 }}>
-                  <div className='flex'>
-                    <i className='purple par-icon-leave pr1' />
-                    <Typography variant='button'>SAIR</Typography>
-                  </div>
-                </IconButton>}
+              <IconButton
+                onClick={handleExit}
+                id={'exitButtonAppBar'}
+                className='flex ph0 ph5-ns'
+                classes={{ root: classes.exitButton }}
+                style={{ backgroundColor: 'transparent', borderRadius: 0, outline: 0 }}>
+                <div className='flex'>
+                  <i className='purple par-icon-leave pr1' />
+                  <Typography variant='button'>SAIR</Typography>
+                </div>
+              </IconButton>
             </div>
           </div>
         </Toolbar>
