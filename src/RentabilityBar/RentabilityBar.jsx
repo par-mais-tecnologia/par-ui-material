@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core'
+import { withStyles, Paper } from '@material-ui/core'
 import { formatDecAsPercent, getCurrencyFormat } from '../Core/masks'
 import moment from 'moment'
 
@@ -67,7 +67,7 @@ class RentabilityBar extends Component {
       ? { class: this.props.classes.positiveState, sign: '+', value }
       : value === 0
         ? { class: this.props.classes.neutralState, sign: '', value }
-        : { class: this.props.classes.negativeState, sign: '', value }
+        : { class: this.props.classes.negativeState, sign: ' ', value }
   )
 
   render () {
@@ -75,55 +75,58 @@ class RentabilityBar extends Component {
 
     return (
       <div>
-        <div className={[ MainBoxClasses, classes.mainBox, this.props.className ].join(' ')}>
-          <div className={[SubBoxClasses, classes.subBox].join(' ')}>
+
+        <Paper>
+          <div className={[ MainBoxClasses, classes.mainBox, this.props.className ].join(' ')}>
+            <div className={[SubBoxClasses, classes.subBox].join(' ')}>
+              {
+                this.state.header.map(column => (
+                  <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
+                    <h1 className={[classes.title, classes.typography].join(' ')}>
+                      {column.title}
+                    </h1>
+                    <p className={[classes.typography, column.value.class].join(' ')}>
+                      <small className={column.value.sign === ''? classes.nonSign : classes.sign}>{column.value.sign}</small>
+                      {this.formatValue(column.value.value, column.type)}
+                    </p>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <input className={classes.toggleInput} type='checkbox' id='toggle' onChange={() => this.handleToggle()} />
+          <div className={classes.collapsableBox}>
             {
-              this.state.header.map(column => (
-                <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
-                  <h1 className={[classes.title, classes.typography].join(' ')}>
-                    {column.title}
-                  </h1>
-                  <p className={[classes.typography, column.value.class].join(' ')}>
-                    <small>{column.value.sign}</small>
-                    {this.formatValue(column.value.value, column.type)}
-                  </p>
+              periods && this.state.data.map(period => (
+                <div className={[ MainBoxClasses, classes.collapsableRow, this.props.className ].join(' ')}>
+                  <div className={[SubBoxClasses, classes.subBox].join(' ')}>
+                    <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
+                      <h1 className={[classes.typography].join(' ')}>
+                        {this.getMonth(period.date)}
+                      </h1>
+                      <p className={[classes.typography, period.rentability.class].join(' ')}>
+                        <small>{period.rentability.sign}</small>
+                        {getCurrencyFormat(period.rentability.value, 'R$', 0, ' ')}
+                      </p>
+                    </div>
+                    <div className={[classes.boxColumn, 'ph2'].join(' ')}>
+                      <p className={[classes.typography, period.walletQuota.class].join(' ')}>
+                        <small className={period.idxQuota.sign === ''? classes.nonSign : classes.sign}>{period.walletQuota.sign}</small>
+                        {formatDecAsPercent(period.walletQuota.value)}
+                      </p>
+                    </div>
+                    <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
+                      <p className={[classes.typography, period.idxQuota.class].join(' ')}>
+                        <small className={period.idxQuota.sign === ''? classes.nonSign : classes.sign}>{period.idxQuota.sign}</small>
+                        {formatDecAsPercent(period.idxQuota.value)}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))
             }
           </div>
-        </div>
-        <input className={classes.toggleInput} type='checkbox' id='toggle' onChange={() => this.handleToggle()} />
-        <div className={classes.collapsableBox}>
-          {
-            periods && this.state.data.map(period => (
-              <div className={[ MainBoxClasses, classes.collapsableRow, this.props.className ].join(' ')}>
-                <div className={[SubBoxClasses, classes.subBox].join(' ')}>
-                  <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
-                    <h1 className={[classes.title, classes.typography].join(' ')}>
-                      {this.getMonth(period.date)}
-                    </h1>
-                    <p className={[classes.typography, period.rentability.class].join(' ')}>
-                      <small>{period.rentability.sign}</small>
-                      {getCurrencyFormat(period.rentability.value, 'R$', 0, ' ')}
-                    </p>
-                  </div>
-                  <div className={[classes.boxColumn].join(' ')}>
-                    <p className={[classes.typography, period.walletQuota.class].join(' ')}>
-                      <small>{period.walletQuota.sign}</small>
-                      {formatDecAsPercent(period.walletQuota.value)}
-                    </p>
-                  </div>
-                  <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
-                    <p className={[classes.typography, period.idxQuota.class].join(' ')}>
-                      <small>{period.idxQuota.sign}</small>
-                      {formatDecAsPercent(period.idxQuota.value)}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+        </Paper>
         {
           periods && <div>
             <label className={classes.toggle} for='toggle'>

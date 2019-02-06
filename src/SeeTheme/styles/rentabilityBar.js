@@ -5,10 +5,16 @@ export default {
     padding: '1rem 0'
   },
   subBox: {
-    minWidth: '100%'
+    width: '100%',
+    maxWidth: '825px'
+  },
+  sign: {
+    marginRight: '2px'
+  },
+  nonSign: {
+    marginRight: '7.75px'
   },
   collapsableRow: {
-    borderBottom: '1px solid #F0F0F0',
     maxHeight: 0,
     transition: 'all 0.4s',
     overflow: 'hidden'
@@ -20,7 +26,8 @@ export default {
   toggleInput: {
     display: 'none',
     '&:checked + div > div': {
-      maxHeight: '5rem'
+      maxHeight: '5rem',
+      borderBottom: '0.75px solid #F0F0F0'
     }
   },
   toggle: {
@@ -37,7 +44,14 @@ export default {
     fontFamily: 'Roboto Regular',
     fontWeight: 300,
     margin: 0,
-    textTransform: 'uppercase'
+    textTransform: 'capitalize',
+    color: '#9C9C9C'
+  },
+  positiveState: {
+    color: '#7FBD42'
+  },
+  negativeState: {
+    color: '#BA2B31'
   },
   positiveState: {
     color: '#7FBD42'
