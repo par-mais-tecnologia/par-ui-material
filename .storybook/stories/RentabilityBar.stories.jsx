@@ -59,7 +59,7 @@ const data = [
       "date": "2018-09-01"
     },
     {
-      "idxQuota": 0.2217983356078923,
+      "idxQuota": -0.2217983356078923,
       "walletQuota": 0.18832739900001005,
       "rentability": 500.00,
       "date": "2018-10-01"
@@ -72,7 +72,7 @@ const data = [
     },
     {
       "idxQuota": 0.27115362299188206,
-      "walletQuota": 0.23889114299999736,
+      "walletQuota": -0.23889114299999736,
       "rentability": 500.00,
       "date": "2018-12-01"
     }

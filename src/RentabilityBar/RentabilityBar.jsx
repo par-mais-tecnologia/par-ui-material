@@ -86,7 +86,11 @@ class RentabilityBar extends Component {
                       {column.title}
                     </h1>
                     <p className={[classes.typography, column.value.class].join(' ')}>
-                      <small className={column.value.sign === '' ? classes.nonSign : classes.sign}>{column.value.sign}</small>
+                      {
+                        column.value.sign !== ''
+                          ? <small className={classes.sign}>{column.value.sign}</small>
+                          : null
+                      }
                       {this.formatValue(column.value.value, column.type)}
                     </p>
                   </div>
@@ -101,23 +105,35 @@ class RentabilityBar extends Component {
                 <div className={[ MainBoxClasses, classes.collapsableRow, this.props.className ].join(' ')}>
                   <div className={[SubBoxClasses, classes.subBox].join(' ')}>
                     <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
-                      <h1 className={[classes.typography].join(' ')}>
+                      <h1 className={[classes.subTitle, classes.typography].join(' ')}>
                         {this.getMonth(period.date)}
                       </h1>
                       <p className={[classes.typography, period.rentability.class].join(' ')}>
-                        <small>{period.rentability.sign}</small>
+                        {
+                          period.rentability.sign !== ''
+                            ? <small className={classes.sign}>{period.rentability.sign}</small>
+                            : null
+                        }
                         {getCurrencyFormat(period.rentability.value, 'R$', 0, ' ')}
                       </p>
                     </div>
                     <div className={[classes.boxColumn, 'ph2'].join(' ')}>
                       <p className={[classes.typography, period.walletQuota.class].join(' ')}>
-                        <small className={period.idxQuota.sign === '' ? classes.nonSign : classes.sign}>{period.walletQuota.sign}</small>
+                        {
+                          period.walletQuota.sign !== ''
+                            ? <small className={classes.sign}>{period.walletQuota.sign}</small>
+                            : null
+                        }
                         {formatDecAsPercent(period.walletQuota.value)}
                       </p>
                     </div>
                     <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
                       <p className={[classes.typography, period.idxQuota.class].join(' ')}>
-                        <small className={period.idxQuota.sign === '' ? classes.nonSign : classes.sign}>{period.idxQuota.sign}</small>
+                        {
+                          period.idxQuota.sign !== ''
+                            ? <small className={classes.sign}>{period.idxQuota.sign}</small>
+                            : null
+                        }
                         {formatDecAsPercent(period.idxQuota.value)}
                       </p>
                     </div>

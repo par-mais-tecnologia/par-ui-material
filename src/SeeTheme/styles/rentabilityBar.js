@@ -11,9 +11,6 @@ export default {
   sign: {
     marginRight: '2px'
   },
-  nonSign: {
-    marginRight: '7.75px'
-  },
   collapsableRow: {
     maxHeight: 0,
     transition: 'all 0.4s',
@@ -51,10 +48,16 @@ export default {
     color: '#7FBD42'
   },
   negativeState: {
-    color: '#BA2B31'
+    color: '#BA2B31',
+    '&::first-letter': {
+      marginRight: '2px'
+    }
   },
   neutralState: {
-    color: '#636363'
+    color: '#636363',
+    '&::first-letter': {
+      marginLeft: '7.75px'
+    }
   },
   title: {
     color: '#9C9C9C',
@@ -62,5 +65,8 @@ export default {
     fontFamily: 'Roboto Regular',
     fontWeight: '300',
     textTransform: 'uppercase'
+  },
+  subTitle: {
+    fontSize: '14px'
   }
 }
