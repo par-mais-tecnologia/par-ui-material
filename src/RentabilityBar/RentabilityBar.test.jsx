@@ -11,14 +11,21 @@ export const test = describe('RentabilityBar', () => {
   const getShallow = () => (
     <MuiThemeProvider theme={SeeTheme}>
       <RentabilityBar
-        firstTitle='Rentabilidade em R$'
-        firstValue='100.000'
-
-        secondTitle='Rentabilidade em %'
-        secondValue='0'
-
-        thirthTitle='cdi'
-        thirthValue='100'
+        header={[
+          {
+            title: 'Rentabilidade em R$',
+            value: 100.00,
+            type: 'currency'
+          },
+          {
+            title: 'Rentabilidade em %',
+            value: -0.01
+          },
+          {
+            title: 'cdi',
+            value: 0.4786554
+          }
+        ]}
       />
     </MuiThemeProvider>
   )

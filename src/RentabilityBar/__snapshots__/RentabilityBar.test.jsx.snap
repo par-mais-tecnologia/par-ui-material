@@ -467,43 +467,60 @@ ShallowWrapper {
         },
         "props": Object {},
         "rentabilityBar": Object {
-          "mainBoxStyles": Object {
+          "boxColumn": Object {
+            "paddingBottom": "5px",
+            "width": "20%",
+          },
+          "collapsableRow": Object {
+            "borderBottom": "1px solid #F0F0F0",
+            "maxHeight": 0,
+            "overflow": "hidden",
+            "transition": "all 0.4s",
+          },
+          "mainBox": Object {
             "backgroundColor": "#F0F0F0",
             "borderRadious": "20px",
             "padding": "1rem 0",
           },
           "negativeState": Object {
             "color": "#BA2B31",
-            "fontFamily": "Roboto Regular",
-            "fontSize": "16px",
-            "fontWeight": "300",
-            "margin": "0",
-            "textTransform": "uppercase",
           },
           "neutralState": Object {
             "color": "#636363",
-            "fontFamily": "Roboto Regular",
-            "fontSize": "16px",
-            "fontWeight": "300",
-            "margin": "0",
-            "textTransform": "uppercase",
           },
           "positiveState": Object {
             "color": "#7FBD42",
-            "fontFamily": "Roboto Regular",
-            "fontSize": "16px",
-            "fontWeight": "300",
-            "margin": "0",
-            "textTransform": "uppercase",
           },
-          "subBoxStyles": Object {
-            "minWidth": "75%",
+          "subBox": Object {
+            "minWidth": "100%",
           },
           "title": Object {
             "color": "#9C9C9C",
             "fontFamily": "Roboto Regular",
             "fontSize": "14px",
             "fontWeight": "300",
+            "textTransform": "uppercase",
+          },
+          "toggle": Object {
+            "color": "#632B7D",
+            "cursor": "pointer",
+            "display": "flex",
+            "fontFamily": "Roboto Regular",
+            "fontSize": "14px",
+            "justifyContent": "center",
+            "margin": "11px 0",
+          },
+          "toggleInput": Object {
+            "&:checked + div > div": Object {
+              "maxHeight": "5rem",
+            },
+            "display": "none",
+          },
+          "typography": Object {
+            "fontFamily": "Roboto Regular",
+            "fontSize": "16px",
+            "fontWeight": 300,
+            "margin": 0,
             "textTransform": "uppercase",
           },
         },
@@ -919,12 +936,23 @@ ShallowWrapper {
     }
   >
     <WithStyles(RentabilityBar)
-      firstTitle="Rentabilidade em R$"
-      firstValue="100.000"
-      secondTitle="Rentabilidade em %"
-      secondValue="0"
-      thirthTitle="cdi"
-      thirthValue="100"
+      header={
+        Array [
+          Object {
+            "title": "Rentabilidade em R$",
+            "type": "currency",
+            "value": 100,
+          },
+          Object {
+            "title": "Rentabilidade em %",
+            "value": -0.01,
+          },
+          Object {
+            "title": "cdi",
+            "value": 0.4786554,
+          },
+        ]
+      }
     />
   </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
@@ -940,12 +968,21 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "firstTitle": "Rentabilidade em R$",
-      "firstValue": "100.000",
-      "secondTitle": "Rentabilidade em %",
-      "secondValue": "0",
-      "thirthTitle": "cdi",
-      "thirthValue": "100",
+      "header": Array [
+        Object {
+          "title": "Rentabilidade em R$",
+          "type": "currency",
+          "value": 100,
+        },
+        Object {
+          "title": "Rentabilidade em %",
+          "value": -0.01,
+        },
+        Object {
+          "title": "cdi",
+          "value": 0.4786554,
+        },
+      ],
     },
     "ref": null,
     "rendered": null,
@@ -957,12 +994,21 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "firstTitle": "Rentabilidade em R$",
-        "firstValue": "100.000",
-        "secondTitle": "Rentabilidade em %",
-        "secondValue": "0",
-        "thirthTitle": "cdi",
-        "thirthValue": "100",
+        "header": Array [
+          Object {
+            "title": "Rentabilidade em R$",
+            "type": "currency",
+            "value": 100,
+          },
+          Object {
+            "title": "Rentabilidade em %",
+            "value": -0.01,
+          },
+          Object {
+            "title": "cdi",
+            "value": 0.4786554,
+          },
+        ],
       },
       "ref": null,
       "rendered": null,
