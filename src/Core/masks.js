@@ -23,7 +23,6 @@ export function NumberFormatCustom (props) {
       }}
       thousandSeparator=' '
       decimalSeparator=','
-      prefix='R$ '
       decimalScale={2}
       fixedDecimalScale />
   )
