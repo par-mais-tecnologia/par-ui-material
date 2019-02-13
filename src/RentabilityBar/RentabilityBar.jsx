@@ -86,7 +86,7 @@ class RentabilityBar extends Component {
                       {column.title}
                     </h1>
                     <p className={[classes.typography, column.value.class].join(' ')}>
-                      <small className={column.value.sign === ''? classes.nonSign : classes.sign}>{column.value.sign}</small>
+                      <small className={column.value.sign === '' ? classes.nonSign : classes.sign}>{column.value.sign}</small>
                       {this.formatValue(column.value.value, column.type)}
                     </p>
                   </div>
@@ -111,13 +111,13 @@ class RentabilityBar extends Component {
                     </div>
                     <div className={[classes.boxColumn, 'ph2'].join(' ')}>
                       <p className={[classes.typography, period.walletQuota.class].join(' ')}>
-                        <small className={period.idxQuota.sign === ''? classes.nonSign : classes.sign}>{period.walletQuota.sign}</small>
+                        <small className={period.idxQuota.sign === '' ? classes.nonSign : classes.sign}>{period.walletQuota.sign}</small>
                         {formatDecAsPercent(period.walletQuota.value)}
                       </p>
                     </div>
                     <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
                       <p className={[classes.typography, period.idxQuota.class].join(' ')}>
-                        <small className={period.idxQuota.sign === ''? classes.nonSign : classes.sign}>{period.idxQuota.sign}</small>
+                        <small className={period.idxQuota.sign === '' ? classes.nonSign : classes.sign}>{period.idxQuota.sign}</small>
                         {formatDecAsPercent(period.idxQuota.value)}
                       </p>
                     </div>

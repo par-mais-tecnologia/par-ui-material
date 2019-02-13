@@ -53,12 +53,6 @@ export default {
   negativeState: {
     color: '#BA2B31'
   },
-  positiveState: {
-    color: '#7FBD42'
-  },
-  negativeState: {
-    color: '#BA2B31'
-  },
   neutralState: {
     color: '#636363'
   },

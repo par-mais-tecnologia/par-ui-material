@@ -3,7 +3,8 @@ import React from 'react'
 import * as PropTypes from 'prop-types'
 
 export function NumberFormatCustom (props) {
-  const { inputRef, onBlur, onChange, ...other } = props
+  console.log('props NumberFOrmatCustom', props)
+  const { inputRef, onBlur, onChange, defaultCurrency = 'R$ ', ...other } = props
 
   return (
     <NumberFormat
@@ -23,6 +24,7 @@ export function NumberFormatCustom (props) {
       }}
       thousandSeparator=' '
       decimalSeparator=','
+      prefix={defaultCurrency}
       decimalScale={2}
       fixedDecimalScale />
   )

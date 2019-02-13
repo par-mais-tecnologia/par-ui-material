@@ -472,7 +472,6 @@ ShallowWrapper {
             "width": "20%",
           },
           "collapsableRow": Object {
-            "borderBottom": "1px solid #F0F0F0",
             "maxHeight": 0,
             "overflow": "hidden",
             "transition": "all 0.4s",
@@ -488,11 +487,18 @@ ShallowWrapper {
           "neutralState": Object {
             "color": "#636363",
           },
+          "nonSign": Object {
+            "marginRight": "7.75px",
+          },
           "positiveState": Object {
             "color": "#7FBD42",
           },
+          "sign": Object {
+            "marginRight": "2px",
+          },
           "subBox": Object {
-            "minWidth": "100%",
+            "maxWidth": "825px",
+            "width": "100%",
           },
           "title": Object {
             "color": "#9C9C9C",
@@ -512,16 +518,18 @@ ShallowWrapper {
           },
           "toggleInput": Object {
             "&:checked + div > div": Object {
+              "borderBottom": "0.75px solid #F0F0F0",
               "maxHeight": "5rem",
             },
             "display": "none",
           },
           "typography": Object {
+            "color": "#9C9C9C",
             "fontFamily": "Roboto Regular",
             "fontSize": "16px",
             "fontWeight": 300,
             "margin": 0,
-            "textTransform": "uppercase",
+            "textTransform": "capitalize",
           },
         },
         "shadows": Array [
