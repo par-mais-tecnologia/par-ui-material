@@ -50,6 +50,8 @@ export { default as MyWalletLineChart } from './MyWalletLineChart'
 export { default as GoalSummary } from './GoalSummary'
 export { default as Input } from './Input'
 export { default as DrawerMenu } from './DrawerMenu'
+export { default as ObjectiveExpandableCard } from './ObjectiveExpandableCard'
+export { default as ObjectiveRescueCard } from './ObjectiveRescueCard'
 
 export { createGenerateClassName, createMuiTheme, createStyles, jssPreset, MuiThemeProvider, ThemeProvider, makeStyles, withStyles, withTheme
 } from '@material-ui/core/styles'

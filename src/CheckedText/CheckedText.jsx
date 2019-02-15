@@ -9,12 +9,12 @@ const styles = (theme) => ({
 
 class CheckedText extends PureComponent {
   render () {
-    const { classes, children, containerClasses } = this.props
+    const { classes, children, containerClasses, iconProps } = this.props
 
     return (
       <Grid container spacing={0} className={containerClasses}>
         <Grid item sm={0} style={{ paddingTop: '4px' }}>
-          <i style={{ fontSize: '0.8em' }} className={`${classes.icon} pr3 par-icon-check`} />
+          <i style={{ fontSize: '0.8em', ...iconProps }} className={`${classes.icon} pr3 par-icon-check`} />
         </Grid>
         <Grid item xs='true'>
           <Typography className={classes.checked}>

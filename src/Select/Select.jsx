@@ -4,6 +4,8 @@ import FormControl from '@material-ui/core/FormControl/FormControl'
 import InputLabel from '@material-ui/core/InputLabel'
 import FormHelperText from '@material-ui/core/FormHelperText/FormHelperText'
 
+const formControlPropsStyle = { minWidth: '100%' }
+
 class Select extends PureComponent {
   state = {
     open: false
@@ -36,18 +38,14 @@ class Select extends PureComponent {
     }
   }
 
-  getStyle (props) {
-    const { minWidth } = props
-    return { minWidth: minWidth || '100%' }
-  }
-
   render () {
     const inputProps = {
       onClose: this.handleClose.bind(this),
       onChange: this.handleChange.bind(this),
       onOpen: this.handleOpen.bind(this)
     }
-    const { required, showLabel, id, label } = this.props
+    const { required, showLabel, id, label, formControlStyle } = this.props
+
     if (this.validationInstance) {
       this.state.errors = {
         ...this.validationInstance.error
@@ -66,7 +64,7 @@ class Select extends PureComponent {
         aria-describedby='select-form-control'
         required={required}
         error={this.state.errors.hasError}
-        style={this.getStyle(this.props)}>
+        style={{ formControlPropsStyle, ...formControlStyle }}>
         {showLabel && label !== undefined
           ? <InputLabel htmlFor={id}>
             {label}

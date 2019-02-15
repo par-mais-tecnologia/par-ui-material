@@ -50,7 +50,9 @@ ShallowWrapper {
       "error": false,
       "required": false,
       "style": Object {
-        "minWidth": "100%",
+        "formControlPropsStyle": Object {
+          "minWidth": "100%",
+        },
       },
     },
     "ref": null,
@@ -114,7 +116,9 @@ ShallowWrapper {
         "error": false,
         "required": false,
         "style": Object {
-          "minWidth": "100%",
+          "formControlPropsStyle": Object {
+            "minWidth": "100%",
+          },
         },
       },
       "ref": null,

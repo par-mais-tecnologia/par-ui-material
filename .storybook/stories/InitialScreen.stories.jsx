@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
 import { styles } from '../../src/SeeTheme/styles/styles'
@@ -8,9 +8,8 @@ import * as validation from '../../src/Core/validation'
 
 const validator = new validation.Validator()
 
-let seeThemeOverride = SeeTheme;
+let seeThemeOverride = Object.assign({}, SeeTheme);
 seeThemeOverride.overrides.MuiInputLabel.root = { ...seeThemeOverride.overrides.MuiInputLabel.root, color: styles.colors.white }
-seeThemeOverride.overrides.MuiInputBase.input =  { ...seeThemeOverride.overrides.MuiInputBase.input, color: styles.colors.white }
 seeThemeOverride.overrides.MuiFormLabel.root = {
   '&$focused': {
     color: styles.colors.gray_04
@@ -107,7 +106,7 @@ class InitialScreenStory extends React.Component {
                     shrink: true
                   }}
                   InputProps={{
-                    className: 'input2'
+                    className: 'emailInput'
                   }}
                   onChange={(e) => {
                     this.handleEmail(e.target.value)
@@ -122,6 +121,9 @@ class InitialScreenStory extends React.Component {
                   label='Senha'
                   InputLabelProps={{
                     shrink: true
+                  }}
+                  InputProps={{
+                    className: 'passwordInput'
                   }}
                   type='password'
                   value={password}
@@ -161,7 +163,7 @@ class InitialScreenStory extends React.Component {
                   type='email'
                   value={email}
                   InputProps={{
-                    className: 'input2'
+                    className: 'emailInput'
                   }}
                   onChange={(e) => {
                     this.handleEmail(e.target.value)
@@ -288,9 +290,7 @@ storiesOf('InitialScreen', module)
   })
   .add('Minha Carteira', () => {
     return (
-      <MuiThemeProvider theme={SeeTheme}>
         <InitialScreenStory />
-      </MuiThemeProvider>
     )
   })
 

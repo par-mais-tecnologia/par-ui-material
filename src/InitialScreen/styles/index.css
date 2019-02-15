@@ -1,3 +1,11 @@
 .img-bg {
     background-position-x: center;
 }
+
+.emailInput input {
+    color: #ffffff
+}
+
+.passwordInput input {
+    color: #ffffff
+}

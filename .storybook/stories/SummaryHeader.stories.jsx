@@ -8,7 +8,7 @@ import { RepeatIcon } from '../../src/index'
 import '../../src/Core/styles/transitions.css'
 import { MuiThemeProvider } from '@material-ui/core'
 
-let seeThemeOverride = SeeTheme;
+let seeThemeOverride = Object.assign({},SeeTheme);
 seeThemeOverride.overrides.MuiIconButton = {
   root: {
     '&:hover': {
