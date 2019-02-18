@@ -3,7 +3,6 @@ import React from 'react'
 import * as PropTypes from 'prop-types'
 
 export function NumberFormatCustom (props) {
-  console.log('props NumberFOrmatCustom', props)
   const { inputRef, onBlur, onChange, defaultCurrency = 'R$ ', ...other } = props
 
   return (

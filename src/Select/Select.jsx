@@ -67,7 +67,7 @@ class Select extends PureComponent {
         required={required}
         error={this.state.errors.hasError}
         style={this.getStyle(this.props)}>
-        {showLabel
+        {showLabel && label !== undefined
           ? <InputLabel htmlFor={id}>
             {label}
           </InputLabel> : ''
@@ -82,7 +82,7 @@ class Select extends PureComponent {
             id: { id }
           }} />
         {this.state.errors.hasError
-          ? <FormHelperText style={{ marginTop: '2px' }}
+          ? <FormHelperText style={{ marginTop: '2px', color: '#BA2B31' }}
             id={id}> {this.state.errors.errorMessage}
           </FormHelperText> : ''
         }

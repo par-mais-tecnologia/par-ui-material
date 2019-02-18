@@ -1,5 +1,9 @@
 .container {
   position: relative;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
 }
 
 .front-layer {
@@ -22,11 +26,8 @@
 
 .linear-wipe {
   text-align: center;
-  
   background: linear-gradient(to right, rgba(255,255,255,0) 38%,rgba(255,255,255,0.38) 43%,rgba(255,255,255,1) 51%,rgba(255,255,255,0.5) 59%,rgba(255,255,255,0) 67%);
   background-size: 200% auto;
-  
-  background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

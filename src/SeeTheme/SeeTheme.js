@@ -104,7 +104,7 @@ export const seeTheme = createMuiTheme({
           borderBottomColor: styles.colors.siren
         },
         '&:before': {
-          borderBottom: `1px solid ${styles.colors.gray_02}`
+          borderBottom: `1px solid ${styles.colors.gray_03}`
         },
         '&$error:after': {
           borderBottomColor: styles.colors.red
@@ -146,10 +146,15 @@ export const seeTheme = createMuiTheme({
       }
     },
     MuiFormHelperText: {
+      root: {
+        ...styles.fonts.caption,
+        color: styles.colors.red,
+        marginTop: 3
+      },
       required: {
         ...styles.fonts.caption,
         color: styles.colors.red,
-        marginTop: 0
+        marginTop: 3
       }
     },
     MuiFormControl: {
@@ -164,6 +169,26 @@ export const seeTheme = createMuiTheme({
         '&:hover': {
           border: '1px solid transparent'
         }
+      }
+    },
+    MuiSwitch: {
+      colorSecondary: {
+        '&$checked': {
+          color: styles.colors.see,
+          '& + $bar': {
+            backgroundColor: styles.colors.see
+          }
+        }
+      },
+      iconChecked: {
+        color: styles.colors.see
+      }
+    },
+    MuiMenuItem: {
+      root: {
+        color: styles.colors.gray_01,
+        fontFamily: 'Roboto Light, sans-serif',
+        fontSize: 16
       }
     }
   },

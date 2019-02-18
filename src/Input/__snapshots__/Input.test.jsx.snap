@@ -1,15 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select shallow Select match Snapshot 1`] = `
+exports[`Input shallow Input match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Select
-    error={false}
-    errorMessage=""
-    id="1"
+  Symbol(enzyme.__unrendered__): <Input
+    id="textField"
+    label=""
+    margin="normal"
+    maxWidth="100%"
+    minWidth="0"
     required={false}
-    showError={true}
-    showLabel={true}
+    showHelper={false}
+    spellCheck={false}
+    value=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -25,61 +28,55 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "aria-describedby": "select-form-control",
+      "aria-describedby": "textField",
       "children": Array [
-        "",
-        <WithStyles(WithFormControlContext(Select))
+        <WithStyles(Input)
           error={false}
-          id="1"
-          inputProps={
-            Object {
-              "id": Object {
-                "id": "1",
-              },
-              "name": undefined,
-            }
-          }
+          id="textField"
+          label=""
+          margin="normal"
+          onBlur={[Function]}
           onChange={[Function]}
-          onClose={[Function]}
-          onOpen={[Function]}
-          open={false}
+          onFocus={[Function]}
           required={false}
+          spellCheck={false}
+          value=""
         />,
-        "",
+        false,
+        false,
       ],
-      "error": false,
       "required": false,
       "style": Object {
-        "minWidth": "100%",
+        "maxWidth": "100%",
+        "minWidth": "0",
       },
     },
     "ref": null,
     "rendered": Array [
-      "",
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "autoFocus": undefined,
           "error": false,
-          "id": "1",
-          "inputProps": Object {
-            "id": Object {
-              "id": "1",
-            },
-            "name": undefined,
-          },
+          "id": "textField",
+          "label": "",
+          "margin": "normal",
+          "onBlur": [Function],
           "onChange": [Function],
-          "onClose": [Function],
-          "onOpen": [Function],
-          "open": false,
+          "onFocus": [Function],
           "required": false,
+          "spellCheck": false,
+          "type": undefined,
+          "value": "",
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
-      "",
+      false,
+      false,
     ],
     "type": [Function],
   },
@@ -89,61 +86,55 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "aria-describedby": "select-form-control",
+        "aria-describedby": "textField",
         "children": Array [
-          "",
-          <WithStyles(WithFormControlContext(Select))
+          <WithStyles(Input)
             error={false}
-            id="1"
-            inputProps={
-              Object {
-                "id": Object {
-                  "id": "1",
-                },
-                "name": undefined,
-              }
-            }
+            id="textField"
+            label=""
+            margin="normal"
+            onBlur={[Function]}
             onChange={[Function]}
-            onClose={[Function]}
-            onOpen={[Function]}
-            open={false}
+            onFocus={[Function]}
             required={false}
+            spellCheck={false}
+            value=""
           />,
-          "",
+          false,
+          false,
         ],
-        "error": false,
         "required": false,
         "style": Object {
-          "minWidth": "100%",
+          "maxWidth": "100%",
+          "minWidth": "0",
         },
       },
       "ref": null,
       "rendered": Array [
-        "",
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "autoFocus": undefined,
             "error": false,
-            "id": "1",
-            "inputProps": Object {
-              "id": Object {
-                "id": "1",
-              },
-              "name": undefined,
-            },
+            "id": "textField",
+            "label": "",
+            "margin": "normal",
+            "onBlur": [Function],
             "onChange": [Function],
-            "onClose": [Function],
-            "onOpen": [Function],
-            "open": false,
+            "onFocus": [Function],
             "required": false,
+            "spellCheck": false,
+            "type": undefined,
+            "value": "",
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        "",
+        false,
+        false,
       ],
       "type": [Function],
     },

@@ -73,9 +73,6 @@ const theme = {
     MuiFormHelperText: {
       root: {
         marginTop: '2px'
-      },
-      required: {
-        color: '#f44336'
       }
     }
   },
