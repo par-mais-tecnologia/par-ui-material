@@ -1,3 +1,5 @@
+import * as styles from './styles'
+
 export default {
   menuItem: {
     color: '#9C9C9C',
@@ -7,7 +9,11 @@ export default {
     },
     '&:focus': {
       color: '#347A7C',
-      backgroundColor: '#F0F0F0'
+      backgroundColor: '#F0F0F0',
+      fontFamily: 'Roboto Bold, sans-serif'
     }
+  },
+  closeIconButton: {
+    color: styles.styles.colors.gray_02
   }
 }

@@ -1,59 +1,25 @@
 import React from 'react'
-import {
-  Toolbar,
-  IconButton,
-  AppBar,
-  Typography,
-  withStyles,
-  MenuItem
-} from '@material-ui/core'
-
-import {
-  SeeMenu
-} from '../'
+import { withStyles } from '@material-ui/core/styles'
+import { AppBar, Toolbar, IconButton, Typography, MenuItem } from '@material-ui/core'
+import MenuIcon from '@material-ui/icons/Menu'
+import ExitIcon from '@material-ui/icons/ExitToApp'
+import DrawerMenu from '../DrawerMenu'
 
 const styles = theme => ({
-  ...theme.menu,
-  toolbar: {
-    paddingRight: '1em',
-    paddingLeft: '1em',
-    minHeight: '70px',
-    [theme.breakpoints.up('sm')]: {
-      paddingRight: '4em',
-      paddingLeft: '4em'
-    }
-  },
-  iconButton: {
-    [theme.breakpoints.up('md')]: {
-      marginRight: '-15px'
-    }
-  },
-  menuGutters: {
-    [theme.breakpoints.between('md', 'lg')]: {
-      paddingLeft: 0,
-      paddingRight: 0
-    }
-  },
-  exitButton: {
-    display: 'inline-flex',
-    [theme.breakpoints.down('sm')]: {
-      display: 'none'
-    }
-  }
-
+  ...theme.appBar
 })
 
-class SeeAppBar extends React.Component {
-  renderMenuItems = (menuItems, classes, selectedIndex) =>
-    (
+const SeeAppBar = (
+  { classes, menuItems, selectedIndex, isOpen, openMenu, handleExit,
+    closeMenu, name, lastUpdateDate }) => {
+  const renderMenuItems = (menuItems, selectedIndex) => {
+    return (
       [...menuItems].map((item, index) => (
         <MenuItem
           onClick={item.onClick}
-          classes={{ root: classes.menuItem, gutters: classes.menuGutters }}
-          className={'menuItem'}
+          classes={{ root: classes.menuItem }}
           key={`menuButtonDesktop-${index}`}
-          style={selectedIndex === index ? { backgroundColor: '#F0F0F0' } : {}}
-        >
+          style={selectedIndex === index ? { backgroundColor: '#FFFFFF' } : {}}>
           <Typography
             variant='caption'
             className='ph3'
@@ -61,92 +27,69 @@ class SeeAppBar extends React.Component {
             key={`menuItemDesktop-${index}`}
             style={selectedIndex === index
               ? { color: '#347A7C', fontFamily: '\'Roboto Bold\', sans-serif' }
-              : {}}
-          >
-            {item.item}
+              : {}}>
+            {item.name}
           </Typography>
         </MenuItem>
       ))
     )
+  }
 
-  render () {
-    const {
-      name,
-      mobileFooterTitle,
-      mobileFooterBody,
-      menuItems,
-      handleExit,
-      menuIsOpen,
-      closeMenu,
-      openMenu,
-      selectedIndex,
-      classes,
-      color
-    } = this.props
-
-    return (
-      <AppBar
-        position='fixed'
-        color={color || 'inherit'}
-      >
-        <Toolbar classes={{ gutters: classes.toolbar }}>
-          <div className='flex items-center justify-between w-100'>
-            <div
-              id='seeMenuMobile'
-              className='dn-l'
-              style={menuItems.length === 0 ? { visibility: 'hidden' } : {}}
-            >
-              <IconButton
-                style={{ transform: 'scale(0.5)', marginRight: '27px' }}
-                onClick={openMenu}
-              >
-                <i className='gray par-icon-menu' />
-              </IconButton>
-              <SeeMenu
-                name={name}
-                mobileFooterTitle={mobileFooterTitle}
-                mobileFooterBody={mobileFooterBody}
-                menuItems={menuItems}
-                isOpen={menuIsOpen}
-                handleClose={closeMenu}
-                handleExit={handleExit}
-                selectedIndex={selectedIndex}
-                className={`dn-l ${menuItems.length === 0 ? 'dn' : ''}`}
-              />
-            </div>
-            <div>
-              <img
-                alt={'Logo Par Mais'}
-                style={{ maxHeight: '20px', minWidth: '125px' }}
-                src='https://static.parmais.com.br/images/clientemais-logo.svg'
-              />
-            </div>
-            <div className='dn flex-l'>
-              {this.renderMenuItems(menuItems, classes, selectedIndex)}
-            </div>
-            <div className='flex items-center'>
-              <div className='dn flex-l'>
-                <Typography variant='body2' style={{ paddingBottom: '4px' }}>
-                  {name}
-                </Typography>
-              </div>
-              <IconButton
-                onClick={handleExit}
-                id={'exitButtonAppBar'}
-                className='flex ph0 ph5-ns'
-                classes={{ root: classes.exitButton }}
-                style={{ backgroundColor: 'transparent', borderRadius: 0, outline: 0 }}>
-                <div className='flex'>
-                  <i className='purple par-icon-leave pr1' />
-                  <Typography variant='button'>SAIR</Typography>
-                </div>
-              </IconButton>
+  return (
+    <AppBar className={classes.appBar}>
+      <Toolbar className={`${classes.toolBar} ${menuItems.length === 0 ? 'justify-between' : ''}`}>
+        <div
+          id='seeMenuMobile'
+          className='flex dn-l'
+          style={{ width: '33.33%' }}>
+          <IconButton
+            color='inherit'
+            className={classes.menuIcon}
+            aria-label='Menu'
+            onClick={() => openMenu()}>
+            <MenuIcon />
+          </IconButton>
+          <DrawerMenu
+            name={name}
+            handleExit={handleExit}
+            isOpen={isOpen}
+            openMenu={openMenu}
+            closeMenu={closeMenu}
+            menuItems={menuItems}
+            lastUpdateDate={lastUpdateDate}
+            selectedIndex={selectedIndex} />
+        </div>
+        <div className='flex justify-center' style={{ width: '33.33%' }}>
+          <img
+            alt={'Logo Par Mais'}
+            style={{ maxHeight: '20px', minWidth: '125px' }}
+            src='https://static.parmais.com.br/images/clientemais-logo.svg'
+          />
+        </div>
+        <div className='dn flex-l'>
+          {renderMenuItems(menuItems, selectedIndex)}
+        </div>
+        <div className='flex justify-center' style={{ width: '33.33%' }}>
+          <div className='dn flex-l items-center'>
+            <Typography
+              component='div'
+              variant='body2'>
+              {name.split(' ')[0]}
+            </Typography>
+            <div className='flex items-center pointer' onClick={handleExit}>
+              <ExitIcon className={`${classes.exitIcon} pointer ml2 mr2`} />
+              <Typography
+                className='pointer'
+                component='div'
+                variant='button'>
+                SAIR
+              </Typography>
             </div>
           </div>
-        </Toolbar>
-      </AppBar>
-    )
-  }
+        </div>
+      </Toolbar>
+    </AppBar>
+  )
 }
 
 export default withStyles(styles)(SeeAppBar)

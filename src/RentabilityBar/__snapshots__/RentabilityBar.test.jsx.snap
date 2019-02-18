@@ -6,6 +6,50 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <MuiThemeProviderOld
     theme={
       Object {
+        "appBar": Object {
+          "appBar": Object {
+            "backgroundColor": "#ffffff",
+          },
+          "closeIcon": Object {
+            "color": "#9C9C9C",
+          },
+          "exitIcon": Object {
+            "color": "#632B7D",
+          },
+          "listItem": Object {
+            "&:hover": Object {
+              "backgroundColor": "white",
+            },
+          },
+          "listItemText": Object {
+            "&:focus": Object {
+              "backgroundColor": "#F0F0F0",
+              "color": "#347A7C",
+              "fontFamily": "Roboto Bold, sans-serif",
+            },
+            "&:hover": Object {
+              "color": "#347A7C",
+            },
+          },
+          "menuIcon": Object {
+            "color": "#9C9C9C",
+          },
+          "menuItem": Object {
+            "&:focus": Object {
+              "backgroundColor": "#F0F0F0",
+              "color": "#347A7C",
+              "fontFamily": "Roboto Bold, sans-serif",
+            },
+            "&:hover": Object {
+              "backgroundColor": "white",
+              "color": "#347A7C",
+            },
+            "color": "#9C9C9C",
+          },
+          "toolBar": Object {
+            "minHeight": 70,
+          },
+        },
         "breakpoints": Object {
           "between": [Function],
           "down": [Function],
@@ -282,10 +326,14 @@ ShallowWrapper {
           },
         },
         "menu": Object {
+          "closeIconButton": Object {
+            "color": "#9C9C9C",
+          },
           "menuItem": Object {
             "&:focus": Object {
               "backgroundColor": "#F0F0F0",
               "color": "#347A7C",
+              "fontFamily": "Roboto Bold, sans-serif",
             },
             "&:hover": Object {
               "backgroundColor": "white",
@@ -1081,6 +1129,15 @@ ShallowWrapper {
         },
       },
     },
+  },
+  Symbol(enzyme.__childContext__): Object {
+    "__THEMING__": Object {
+      "getState": [Function],
+      "setState": [Function],
+      "subscribe": [Function],
+      "unsubscribe": [Function],
+    },
+    "muiThemeProviderOptions": Object {},
   },
 }
 `;

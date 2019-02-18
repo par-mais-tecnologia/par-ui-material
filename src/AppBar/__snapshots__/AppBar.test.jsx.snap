@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <WithStyles(SeeAppBar)
     handleExit={[Function]}
+    lastUpdateDate="25/02/2019"
     menuItems={
       Array [
         Object {
@@ -12,7 +13,7 @@ ShallowWrapper {
           "onClick": [Function],
         },
         Object {
-          "item": "INTELIGÊNCIA EM INVESTIMENTOS",
+          "item": "INTELIGÊNCIA",
           "onClick": [Function],
         },
         Object {
@@ -25,9 +26,6 @@ ShallowWrapper {
         },
       ]
     }
-    mobileFooterBody="Última atualização 
-20/09/1989"
-    mobileFooterTitle="Ambiente atualizado diariamente"
     name="Rui Cavaleiro"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -42,22 +40,18 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
-      "classes": Object {
-        "exitButton": "SeeAppBar-exitButton-4",
-        "iconButton": "SeeAppBar-iconButton-2",
-        "menuGutters": "SeeAppBar-menuGutters-3",
-        "toolbar": "SeeAppBar-toolbar-1",
-      },
+      "classes": Object {},
       "handleExit": [Function],
+      "lastUpdateDate": "25/02/2019",
       "menuItems": Array [
         Object {
           "item": "SEUS OBJETIVOS",
           "onClick": [Function],
         },
         Object {
-          "item": "INTELIGÊNCIA EM INVESTIMENTOS",
+          "item": "INTELIGÊNCIA",
           "onClick": [Function],
         },
         Object {
@@ -69,9 +63,6 @@ ShallowWrapper {
           "onClick": [Function],
         },
       ],
-      "mobileFooterBody": "Última atualização 
-20/09/1989",
-      "mobileFooterTitle": "Ambiente atualizado diariamente",
       "name": "Rui Cavaleiro",
     },
     "ref": null,
@@ -82,22 +73,18 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
-        "classes": Object {
-          "exitButton": "SeeAppBar-exitButton-4",
-          "iconButton": "SeeAppBar-iconButton-2",
-          "menuGutters": "SeeAppBar-menuGutters-3",
-          "toolbar": "SeeAppBar-toolbar-1",
-        },
+        "classes": Object {},
         "handleExit": [Function],
+        "lastUpdateDate": "25/02/2019",
         "menuItems": Array [
           Object {
             "item": "SEUS OBJETIVOS",
             "onClick": [Function],
           },
           Object {
-            "item": "INTELIGÊNCIA EM INVESTIMENTOS",
+            "item": "INTELIGÊNCIA",
             "onClick": [Function],
           },
           Object {
@@ -109,9 +96,6 @@ ShallowWrapper {
             "onClick": [Function],
           },
         ],
-        "mobileFooterBody": "Última atualização 
-20/09/1989",
-        "mobileFooterTitle": "Ambiente atualizado diariamente",
         "name": "Rui Cavaleiro",
       },
       "ref": null,
@@ -140,5 +124,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

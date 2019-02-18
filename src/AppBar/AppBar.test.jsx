@@ -8,15 +8,13 @@ import { MenuItem } from '@material-ui/core'
 configure({ adapter: new Adapter() })
 
 const name = 'Rui Cavaleiro'
-const mobileFooterTitle = 'Ambiente atualizado diariamente'
-const mobileFooterBody = `Última atualização \n20/09/1989`
 const menuItems = [
   {
     item: 'SEUS OBJETIVOS',
     onClick: () => {}
   },
   {
-    item: 'INTELIGÊNCIA EM INVESTIMENTOS',
+    item: 'INTELIGÊNCIA',
     onClick: () => {}
   },
   {
@@ -33,8 +31,7 @@ export const testShallow = describe('SeeAppBar', () => {
   const getSeeAppBar = () => (
     <SeeAppBar
       name={name}
-      mobileFooterTitle={mobileFooterTitle}
-      mobileFooterBody={mobileFooterBody}
+      lastUpdateDate={'25/02/2019'}
       menuItems={menuItems}
       handleExit={() => {}}
     />
@@ -43,8 +40,7 @@ export const testShallow = describe('SeeAppBar', () => {
   const getSeeAppBarWithoutMenuItems = () => (
     <SeeAppBar
       name={name}
-      mobileFooterTitle={mobileFooterTitle}
-      mobileFooterBody={mobileFooterBody}
+      lastUpdateDate={'25/02/2019'}
       menuItems={[]}
       handleExit={() => {}}
     />
@@ -68,11 +64,6 @@ export const testShallow = describe('SeeAppBar', () => {
   it('should not show #seeMenuMobile in Desktop', () => {
     const wrapper = mount(getSeeAppBar())
     expect(wrapper.find(`#seeMenuMobile`).hasClass('dn-l')).toBeTruthy()
-  })
-
-  it('should not show #seeMenuMobile if menuItems prop is empty', () => {
-    const wrapper = mount(getSeeAppBarWithoutMenuItems())
-    expect(wrapper.find(`#seeMenuMobile`).prop('style')).toHaveProperty('visibility', 'hidden')
   })
 
   it('should not have <MenuItems> if menuItems prop is empty', () => {

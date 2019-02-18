@@ -2,6 +2,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import { styles } from './styles/styles'
 import buttonStyle from './styles/button'
 import menu from './styles/menu'
+import appBar from './styles/appBar'
 import rentabilityBar from './styles/rentabilityBar'
 import financialPanel from './styles/financialPanel'
 import parallax from './styles/parallax'
@@ -198,6 +199,7 @@ export const seeTheme = createMuiTheme({
     }
   },
   buttonStyle,
+  appBar,
   menu,
   rentabilityBar,
   financialPanel,
