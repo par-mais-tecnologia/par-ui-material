@@ -72,7 +72,6 @@ class RentabilityBar extends Component {
 
   render () {
     const { classes, periods } = this.props
-
     return (
       <div>
 
@@ -80,8 +79,8 @@ class RentabilityBar extends Component {
           <div className={[ MainBoxClasses, classes.mainBox, this.props.className ].join(' ')}>
             <div className={[SubBoxClasses, classes.subBox].join(' ')}>
               {
-                this.state.header.map(column => (
-                  <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
+                this.state.header.map((column, indice) => (
+                  <div key={indice} className={[ColumnsClasses, classes.boxColumn].join(' ')}>
                     <h1 className={[classes.title, classes.typography].join(' ')}>
                       {column.title}
                     </h1>
@@ -101,8 +100,8 @@ class RentabilityBar extends Component {
           <input className={classes.toggleInput} type='checkbox' id='toggle' onChange={() => this.handleToggle()} />
           <div className={classes.collapsableBox}>
             {
-              periods && this.state.data.map(period => (
-                <div className={[ MainBoxClasses, classes.collapsableRow, this.props.className ].join(' ')}>
+              periods && this.state.data.map((period, indice) => (
+                <div key={indice} className={[ MainBoxClasses, classes.collapsableRow, this.props.className ].join(' ')}>
                   <div className={[SubBoxClasses, classes.subBox].join(' ')}>
                     <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
                       <h1 className={[classes.subTitle, classes.typography].join(' ')}>
@@ -145,7 +144,7 @@ class RentabilityBar extends Component {
         </Paper>
         {
           periods && <div>
-            <label className={classes.toggle} for='toggle'>
+            <label className={classes.toggle} htmlFor='toggle'>
               <i className={`par-icon-expansor-${this.state.expanded ? 'less' : 'more'} mh2`} />
               {this.state.expanded ? 'OCULTAR' : 'MOSTRAR'} RENTABILIDADE MÊS A MÊS
             </label>

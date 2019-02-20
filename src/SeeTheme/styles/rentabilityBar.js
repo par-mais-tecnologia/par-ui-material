@@ -33,7 +33,7 @@ export default {
     color: '#632B7D',
     fontSize: '14px',
     margin: '11px 0',
-    fontFamily: 'Roboto Regular',
+    fontFamily: 'Roboto Bold',
     cursor: 'pointer'
   },
   typography: {

@@ -517,7 +517,7 @@ ShallowWrapper {
             "color": "#632B7D",
             "cursor": "pointer",
             "display": "flex",
-            "fontFamily": "Roboto Regular",
+            "fontFamily": "Roboto Bold",
             "fontSize": "14px",
             "justifyContent": "center",
             "margin": "11px 0",
