@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
-import { Switch, Grid, MenuItem, Paper, SeeTheme, Select, TextField, Typography } from '../index'
+import { Switch, Grid, MenuItem, Paper, Select, TextField, Typography } from '../index'
 import { getCurrencyFormat, NumberFormatCustom } from '../Core/masks'
 import * as PropTypes from 'prop-types'
 import { MuiThemeProvider, withStyles } from '@material-ui/core'
+import { getObjectiveType, verifyTitle } from './functions'
 
 const styles = theme => ({
   divisor: {
@@ -14,79 +15,6 @@ const styles = theme => ({
 })
 
 class ObjectiveRescueCard extends PureComponent {
-  getObjectiveType (type) {
-    switch (type) {
-      case 'SECURITY_RESERVE':
-        return {
-          preTitle: 'Do objetivo:',
-          title: 'RESERVA DE EMERGÊNCIA',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
-          sTitle: 'Saldo disponível para resgatar',
-          alt: 'Reserva de emergência',
-          firstQuestion: 'Quanto você deseja resgatar?',
-          secondQuestion: 'Qual o motivo do resgate?',
-          switchText: 'Resgatar todo o valor',
-          iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/padlock.svg',
-          width: 21,
-          heigth: 21
-        }
-      case 'TIMED_OBJECTIVE':
-        return {
-          preTitle: 'Do objetivo:',
-          title: 'SONHOS E METAS',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
-          sTitle: 'Saldo disponível para resgatar',
-          alt: 'Sonhos e Metas',
-          firstQuestion: 'Quanto você deseja resgatar?',
-          secondQuestion: 'Qual o motivo do resgate?',
-          switchText: 'Resgatar todo o valor',
-          iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/clock.svg',
-          width: 21,
-          heigth: 21
-        }
-      case 'FINANCIAL_INDEPENDENCE':
-        return {
-          preTitle: 'Do objetivo:',
-          title: 'VIVER DE RENDA',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
-          sTitle: 'Saldo disponível para resgatar',
-          alt: 'Viver de renda',
-          firstQuestion: 'Quanto você deseja resgatar?',
-          secondQuestion: 'Qual o motivo do resgate?',
-          switchText: 'Resgatar todo o valor',
-          iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/pig.svg',
-          width: 21,
-          heigth: 21
-        }
-      case 'IMPROVE_PROFITABILITY':
-        return {
-          preTitle: 'Do objetivo:',
-          title: 'INVESTIR MELHOR',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
-          sTitle: 'Saldo disponível para resgatar',
-          alt: 'Investir melhor',
-          firstQuestion: 'Quanto você deseja resgatar?',
-          secondQuestion: 'Qual o motivo do resgate?',
-          switchText: 'Resgatar todo o valor',
-          iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/wallet.svg',
-          width: 21,
-          heigth: 21
-        }
-      default:
-        return null
-    }
-  }
-
-  verifyTitle (standardType, title) {
-    if (standardType) {
-      if (title) {
-        return title
-      } else {
-        return standardType.title
-      }
-    }
-    return title
-  }
 
   render () {
     const {
@@ -110,10 +38,10 @@ class ObjectiveRescueCard extends PureComponent {
 
     let standardType = null
     if (objectiveType) {
-      standardType = this.getObjectiveType(objectiveType)
+      standardType = getObjectiveType(objectiveType)
     }
 
-    let mainTitle = this.verifyTitle(standardType, title)
+    let mainTitle = verifyTitle(standardType, title)
     let secondTitle = standardType ? standardType.sTitle : sTitle
     let pTitle = standardType ? standardType.preTitle : preTitle
     let fQuestion = standardType ? standardType.firstQuestion : firstQuestion
