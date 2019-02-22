@@ -25,7 +25,7 @@ const data = [
             liquidity: 18,
             name: "ABSOLUTE ALPHA GLOBAL FIC FIM",
             reference: [],
-            rentability: 138,
+            rentability: 0,
             status: "Recomendado",
             strategy: "Multimercado",
             subStrategy: "Macro",

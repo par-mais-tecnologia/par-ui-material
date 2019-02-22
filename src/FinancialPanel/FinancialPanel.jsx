@@ -39,7 +39,7 @@ class FinancialPanel extends Component {
               <Typography
                 variant='title'
                 className={classes.value}>
-                {formatDecAsPercent(this.props.headerPercentage, 1, ',', 0)}
+                {formatPercent(this.props.headerPercentage, 1, ',', 0)}
               </Typography>
               <Typography
                 variant='title'
@@ -79,7 +79,11 @@ class FinancialPanel extends Component {
                       Rentabilidade dos últimos 24 meses
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {formatPercent(obj.product.rentability, 1, ',', 0)}do CDI
+                      {
+                        obj.product.rentability > 0
+                          ? `${formatPercent(obj.product.rentability, 0, ',', 0)} do CDI`
+                          : `Fundo aberto a menos de 24 meses`
+                      }
                     </Typography>
                   </div>
 
@@ -97,7 +101,7 @@ class FinancialPanel extends Component {
                       Pl atual
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {getCurrencyFormat(obj.product.currentPL, 'R$', 0, ' ')}
+                      {getCurrencyFormat(obj.product.currentPL, 'R$', 0, ' ').split(',')[0]}
                     </Typography>
                   </div>
 
