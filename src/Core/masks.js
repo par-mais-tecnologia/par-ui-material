@@ -33,7 +33,7 @@ NumberFormatCustom.propTypes = {
   onChange: PropTypes.func.isRequired
 }
 
-export function getCurrencyFormat (number, prefix = '', defaultValue = 0, separator = ',') {
+export function getCurrencyFormat (number, prefix = '', defaultValue = 0, separator = ',', nCasas = 2) {
   if (number === null || typeof number === 'undefined') {
     return defaultValue
   }
@@ -45,7 +45,7 @@ export function getCurrencyFormat (number, prefix = '', defaultValue = 0, separa
     numbervalue = number
   }
 
-  const value = `${prefix} ${numbervalue.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+  const value = `${prefix} ${numbervalue.toLocaleString('pt-BR', { minimumFractionDigits: nCasas, maximumFractionDigits: nCasas })}`
 
   if (separator) {
     return value.replace(/\./g, separator)

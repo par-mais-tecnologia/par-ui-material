@@ -101,7 +101,7 @@ class FinancialPanel extends Component {
                       Pl atual
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {getCurrencyFormat(obj.product.currentPL, 'R$', 0, ' ').split(',')[0]}
+                      {getCurrencyFormat(obj.product.currentPL,'R$', 0, ' ', 0)}
                     </Typography>
                   </div>
 

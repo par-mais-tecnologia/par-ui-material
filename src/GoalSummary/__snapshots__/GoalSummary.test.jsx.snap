@@ -1134,5 +1134,14 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): Object {
+    "__THEMING__": Object {
+      "getState": [Function],
+      "setState": [Function],
+      "subscribe": [Function],
+      "unsubscribe": [Function],
+    },
+    "muiThemeProviderOptions": Object {},
+  },
 }
 `;
