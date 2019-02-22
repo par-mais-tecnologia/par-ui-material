@@ -61,12 +61,12 @@ class FinancialPanel extends Component {
                     <Typography
                       variant='title'
                       className={classes.name}>
-                      {obj.name}
+                      {obj.fundName}
                     </Typography>
                     <Typography
                       variant='title'
                       className={classes.walletComposition}>
-                      {formatDecAsPercent(obj.walletComposition, 1, ',', 0)}
+                      {formatDecAsPercent(obj.percentual, 1, ',', 0)}
                     </Typography>
                   </div>
                 </ExpansionPanelSummary>
@@ -77,7 +77,7 @@ class FinancialPanel extends Component {
                         Rentabilidade dos últimos 24 meses
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {formatDecAsPercent(obj.cdi, 1, ',', 0)}do CDI
+                      {formatDecAsPercent(obj.product.rentability, 1, ',', 0)}do CDI
                     </Typography>
                   </div>
 
@@ -86,7 +86,7 @@ class FinancialPanel extends Component {
                         Carteira
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {obj.evaluationClient}
+                      {obj.product.evaluationClient}
                     </Typography>
                   </div>
 
@@ -95,7 +95,7 @@ class FinancialPanel extends Component {
                       Pl atual
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {getCurrencyFormat(obj.currentPL, 'R$', 0, ' ')}
+                      {getCurrencyFormat(obj.product.currentPL, 'R$', 0, ' ')}
                     </Typography>
                   </div>
 
@@ -104,7 +104,7 @@ class FinancialPanel extends Component {
                       Cnpj do fundo
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {obj.cnpj}
+                      {obj.product.cnpj}
                     </Typography>
                   </div>
                 </ExpansionPanelDetails>
