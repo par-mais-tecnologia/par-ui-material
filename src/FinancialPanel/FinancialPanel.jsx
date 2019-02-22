@@ -77,7 +77,7 @@ class FinancialPanel extends Component {
                         Rentabilidade dos últimos 24 meses
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {formatDecAsPercent(obj.cdi, 1, ',', 0)}do {obj.index}
+                      {formatDecAsPercent(obj.cdi, 1, ',', 0)}do CDI
                     </Typography>
                   </div>
 
@@ -86,22 +86,22 @@ class FinancialPanel extends Component {
                         Carteira
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {obj.portfolio}
+                      {obj.evaluationClient}
                     </Typography>
                   </div>
 
                   <div className={classes.detailsLine}>
                     <Typography className={classes.detailsTitle}>
-                        Pl atual
+                      Pl atual
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {getCurrencyFormat(obj.gross, 'R$', 0, ' ')}
+                      {getCurrencyFormat(obj.currentPL, 'R$', 0, ' ')}
                     </Typography>
                   </div>
 
                   <div className={classes.detailsLine}>
                     <Typography className={classes.detailsTitle}>
-                        Cnpj do fundo
+                      Cnpj do fundo
                     </Typography>
                     <Typography className={classes.detailsContent}>
                       {obj.cnpj}
