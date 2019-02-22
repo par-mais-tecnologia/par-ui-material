@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import ExpansionPanel from '@material-ui/core/ExpansionPanel'
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
-import Typography from '@material-ui/core/Typography'
+import {
+  ExpansionPanel,
+  ExpansionPanelDetails,
+  ExpansionPanelSummary,
+  Typography
+} from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import { getCurrencyFormat, formatDecAsPercent } from '../Core/masks'
+import { getCurrencyFormat, formatDecAsPercent, formatPercent } from '../Core/masks'
 
 const styles = theme => (theme.financialPanel)
 
@@ -52,16 +54,16 @@ class FinancialPanel extends Component {
         <div className={this.state.hidden ? classes.close : classes.open}>
 
           {
-            data.map((obj) => (
+            data.map((obj, i) => (
 
-              <ExpansionPanel hidden={this.state.hidden}>
+              <ExpansionPanel hidden={this.state.hidden} key={i}>
                 <ExpansionPanelSummary
                   expandIcon={<ExpandMoreIcon />}>
                   <div className={classes.flexBoxBetween}>
                     <Typography
                       variant='title'
                       className={classes.name}>
-                      {obj.fundName}
+                      {obj.product.name}
                     </Typography>
                     <Typography
                       variant='title'
@@ -74,10 +76,10 @@ class FinancialPanel extends Component {
                 <ExpansionPanelDetails>
                   <div className={classes.detailsLine}>
                     <Typography className={classes.detailsTitle}>
-                        Rentabilidade dos últimos 24 meses
+                      Rentabilidade dos últimos 24 meses
                     </Typography>
                     <Typography className={classes.detailsContent}>
-                      {formatDecAsPercent(obj.product.rentability, 1, ',', 0)}do CDI
+                      {formatPercent(obj.product.rentability, 1, ',', 0)}do CDI
                     </Typography>
                   </div>
 
