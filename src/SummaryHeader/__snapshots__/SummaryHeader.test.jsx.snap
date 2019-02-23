@@ -21,7 +21,7 @@ ShallowWrapper {
       "children": undefined,
       "className": "flex items-center w-100 undefined",
       "style": Object {
-        "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
+        "backgroundImage": "linear-gradient(26deg, rgb(59,133,135), rgb(62,167,172))",
         "height": "auto",
       },
     },
@@ -38,7 +38,7 @@ ShallowWrapper {
         "children": undefined,
         "className": "flex items-center w-100 undefined",
         "style": Object {
-          "backgroundImage": "linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))",
+          "backgroundImage": "linear-gradient(26deg, rgb(59,133,135), rgb(62,167,172))",
           "height": "auto",
         },
       },
@@ -68,6 +68,5 @@ ShallowWrapper {
       },
     },
   },
-  Symbol(enzyme.__childContext__): null,
 }
 `;

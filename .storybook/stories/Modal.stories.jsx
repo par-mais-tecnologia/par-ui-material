@@ -7,7 +7,7 @@ import {
   Button,
   MuiThemeProvider,
   Grid,
-  Typography
+  Typography, SeeTheme
 } from '../../src'
 
 function ModalSample(props) {
@@ -91,6 +91,15 @@ storiesOf('Modal', module)
   .add('finBio email input', () => {
     return (
       <MuiThemeProvider theme={BioFinanceiraTheme}>
+        <ModalStories>
+          <ModalFinBioEmailInput />
+        </ModalStories>
+      </MuiThemeProvider>
+    )
+  })
+  .add('modal minha carteira', () => {
+    return (
+      <MuiThemeProvider theme={SeeTheme}>
         <ModalStories>
           <ModalFinBioEmailInput />
         </ModalStories>

@@ -398,6 +398,11 @@ ShallowWrapper {
               "fontSize": 16,
             },
           },
+          "MuiPaper": Object {
+            "rounded": Object {
+              "borderRadius": "20px",
+            },
+          },
           "MuiPickersSlideTransition": Object {
             "transitionContainer": Object {
               "fontFamily": "Roboto Light",
@@ -645,7 +650,7 @@ ShallowWrapper {
             "purple": "#632B7D",
             "red": "#BA2B31",
             "see": "#347A7C",
-            "seeGradient": "linear-gradient(26deg, #347A7C, #8ACAC7)",
+            "seeGradient": "linear-gradient(26deg, #3B8587, #3EA7AC)",
             "siren": "#019193",
             "turquise": "#5EB8C0",
             "white": "#ffffff",
@@ -699,8 +704,8 @@ ShallowWrapper {
             },
             "h2": Object {
               "color": "#636363",
-              "fontFamily": "Roboto Light, sans-serif",
-              "fontSize": "24px",
+              "fontFamily": "Brandon Bold, sans-serif",
+              "fontSize": "20px",
               "lineHeight": 1.5,
             },
             "h3": Object {
@@ -725,8 +730,8 @@ ShallowWrapper {
             },
             "headline": Object {
               "color": "#ffffff",
-              "fontFamily": "Brandon Regular, sans-serif",
-              "fontSize": "18px",
+              "fontFamily": "Brandon Bold, sans-serif",
+              "fontSize": "20px",
             },
             "inherit": Object {},
             "overline": Object {
@@ -882,8 +887,8 @@ ShallowWrapper {
           },
           "h2": Object {
             "color": "#636363",
-            "fontFamily": "Roboto Light, sans-serif",
-            "fontSize": "24px",
+            "fontFamily": "Brandon Bold, sans-serif",
+            "fontSize": "20px",
             "fontWeight": 300,
             "lineHeight": 1.5,
           },
@@ -917,8 +922,8 @@ ShallowWrapper {
           },
           "headline": Object {
             "color": "#ffffff",
-            "fontFamily": "Brandon Regular, sans-serif",
-            "fontSize": "18px",
+            "fontFamily": "Brandon Bold, sans-serif",
+            "fontSize": "20px",
             "fontWeight": 400,
             "lineHeight": "1.35417em",
           },
@@ -1076,15 +1081,6 @@ ShallowWrapper {
         },
       },
     },
-  },
-  Symbol(enzyme.__childContext__): Object {
-    "__THEMING__": Object {
-      "getState": [Function],
-      "setState": [Function],
-      "subscribe": [Function],
-      "unsubscribe": [Function],
-    },
-    "muiThemeProviderOptions": Object {},
   },
 }
 `;

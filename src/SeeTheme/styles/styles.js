@@ -31,7 +31,7 @@ const colors = {
 
   yellow: '#F8DB02',
 
-  seeGradient: 'linear-gradient(26deg, #347A7C, #8ACAC7)',
+  seeGradient: 'linear-gradient(26deg, #3B8587, #3EA7AC)',
   bgFooter: '#383838'
 }
 
@@ -91,8 +91,8 @@ const fonts = {
     color: colors.gray_01
   },
   h2: {
-    fontFamily: 'Roboto Light, sans-serif',
-    fontSize: '24px',
+    fontFamily: 'Brandon Bold, sans-serif',
+    fontSize: '20px',
     lineHeight: 1.5,
     color: colors.gray_01
   },
@@ -117,8 +117,8 @@ const fonts = {
     color: colors.white
   },
   headline: {
-    fontFamily: 'Brandon Regular, sans-serif',
-    fontSize: '18px',
+    fontFamily: 'Brandon Bold, sans-serif',
+    fontSize: '20px',
     color: colors.white
   },
   inherit: {

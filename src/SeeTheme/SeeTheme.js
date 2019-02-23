@@ -190,6 +190,11 @@ export const seeTheme = createMuiTheme({
         fontFamily: 'Roboto Light, sans-serif',
         fontSize: 16
       }
+    },
+    MuiPaper: {
+      rounded: {
+        borderRadius: '20px'
+      }
     }
   },
   buttonStyle,

@@ -5,7 +5,7 @@ class SummaryHeader extends PureComponent {
     return {
       ...headerProps,
       height: headerProps && headerProps.heigth ? headerProps.heigth : 'auto',
-      backgroundImage: headerProps && headerProps.backgroundImage ? headerProps.backgroundImage : 'linear-gradient(26deg, rgb(52, 122, 124), rgb(138, 202, 199))'
+      backgroundImage: headerProps && headerProps.backgroundImage ? headerProps.backgroundImage : 'linear-gradient(26deg, rgb(59,133,135), rgb(62,167,172))'
     }
   }
 
