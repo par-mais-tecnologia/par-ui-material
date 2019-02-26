@@ -133,11 +133,6 @@ export const seeTheme = createMuiTheme({
         transform: 'translate(0, 1.5px) scale(1)'
       }
     },
-    MuiMenuItem: {
-      root: {
-        color: styles.colors.gray_01
-      }
-    },
     MuiFormLabel: {
       root: {
         '&$focused': {

@@ -35,18 +35,23 @@ ShallowWrapper {
           >
             <Typography
               style={Object {}}
-              variant="headline"
+              variant="h2"
             />
           </Grid>
         </Grid>,
         <div>
           <Typography
-            variant="body2"
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+            variant="caption"
           />
         </div>,
         <div>
           <Typography
-            variant="body1"
+            variant="body2"
           >
             0
           </Typography>
@@ -75,7 +80,7 @@ ShallowWrapper {
             >
               <Typography
                 style={Object {}}
-                variant="headline"
+                variant="h2"
               />
             </Grid>,
           ],
@@ -119,7 +124,7 @@ ShallowWrapper {
             "props": Object {
               "children": <Typography
                 style={Object {}}
-                variant="headline"
+                variant="h2"
               />,
               "item": true,
             },
@@ -131,7 +136,7 @@ ShallowWrapper {
               "props": Object {
                 "children": undefined,
                 "style": Object {},
-                "variant": "headline",
+                "variant": "h2",
               },
               "ref": null,
               "rendered": null,
@@ -148,7 +153,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Typography
-            variant="body2"
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+            variant="caption"
           />,
         },
         "ref": null,
@@ -158,7 +168,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": undefined,
-            "variant": "body2",
+            "style": Object {
+              "fontSize": "16px",
+            },
+            "variant": "caption",
           },
           "ref": null,
           "rendered": null,
@@ -172,7 +185,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Typography
-            variant="body1"
+            variant="body2"
           >
             0
           </Typography>,
@@ -184,7 +197,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": 0,
-            "variant": "body1",
+            "variant": "body2",
           },
           "ref": null,
           "rendered": 0,
@@ -218,18 +231,23 @@ ShallowWrapper {
             >
               <Typography
                 style={Object {}}
-                variant="headline"
+                variant="h2"
               />
             </Grid>
           </Grid>,
           <div>
             <Typography
-              variant="body2"
+              style={
+                Object {
+                  "fontSize": "16px",
+                }
+              }
+              variant="caption"
             />
           </div>,
           <div>
             <Typography
-              variant="body1"
+              variant="body2"
             >
               0
             </Typography>
@@ -258,7 +276,7 @@ ShallowWrapper {
               >
                 <Typography
                   style={Object {}}
-                  variant="headline"
+                  variant="h2"
                 />
               </Grid>,
             ],
@@ -302,7 +320,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Typography
                   style={Object {}}
-                  variant="headline"
+                  variant="h2"
                 />,
                 "item": true,
               },
@@ -314,7 +332,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": undefined,
                   "style": Object {},
-                  "variant": "headline",
+                  "variant": "h2",
                 },
                 "ref": null,
                 "rendered": null,
@@ -331,7 +349,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Typography
-              variant="body2"
+              style={
+                Object {
+                  "fontSize": "16px",
+                }
+              }
+              variant="caption"
             />,
           },
           "ref": null,
@@ -341,7 +364,10 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": undefined,
-              "variant": "body2",
+              "style": Object {
+                "fontSize": "16px",
+              },
+              "variant": "caption",
             },
             "ref": null,
             "rendered": null,
@@ -355,7 +381,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Typography
-              variant="body1"
+              variant="body2"
             >
               0
             </Typography>,
@@ -367,7 +393,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": 0,
-              "variant": "body1",
+              "variant": "body2",
             },
             "ref": null,
             "rendered": 0,

@@ -8,7 +8,6 @@ import './style.css'
 import * as validation from '../Core/validation'
 
 class ObjectiveRescueCard extends PureComponent {
-
   render () {
     const {
       preTitle,
@@ -60,16 +59,16 @@ class ObjectiveRescueCard extends PureComponent {
 
     return (
       <MuiThemeProvider theme={{}}>
-          { !isConfirmRequest ?
-          <Paper elevation={1} className={`ph4-l ph2 pv4 flex-column ${paperClasses}`} style={{ minWidth: '650px' }}>
+        { !isConfirmRequest
+          ? <Paper elevation={1} className={`ph4-l ph2 pv4 flex-column ${paperClasses}`} style={{ minWidth: '650px' }}>
             <div className='flex justify-center mt3'>
               <Typography variant={'caption'}>
                 { pTitle }
               </Typography>
             </div>
             <Grid container
-                  direction='row'
-                  className='flex justify-center'>
+              direction='row'
+              className='flex justify-center'>
               <Grid item>
                 <img
                   border='0'
@@ -80,7 +79,7 @@ class ObjectiveRescueCard extends PureComponent {
               </Grid>
               <Grid item>
                 <Typography variant={'headline'}
-                            style={{ ...titlePropsValue }}>
+                  style={{ ...titlePropsValue }}>
                   { mainTitle }
                 </Typography>
               </Grid>
@@ -110,7 +109,7 @@ class ObjectiveRescueCard extends PureComponent {
               <div className='flex main justify-center w-100' style={{ flex: '1' }}>
                 <TextField
                   required
-                  validator={{validator, type: functionValidatorText}}
+                  validator={{ validator, type: functionValidatorText }}
                   style={{ width: '100%', marginBottom: '0px', color: 'red' }}
                   value={amountRequest}
                   onChange={(e) => onChangeText(e)}
@@ -153,7 +152,7 @@ class ObjectiveRescueCard extends PureComponent {
               <div className='main' style={{ flex: '1' }}>
                 <Select
                   required
-                  validator={{validator, type: functionValidatorSelect}}
+                  validator={{ validator, type: functionValidatorSelect }}
                   displayEmpty
                   formControlStyle={{ width: '100%' }}
                   style={{ marginTop: '0px', style: '100%' }}
@@ -185,62 +184,61 @@ class ObjectiveRescueCard extends PureComponent {
               <div style={{ width: '20%' }} />
             </div>
           </Paper>
-            :
-            <Paper elevation={1} className={`ph4-l ph2 pv4 flex-column paperLargeSize paperMobileSize ${paperClasses}`} >
-              <div className="wrapper">
-                <div className='content'>
-                  <div className='columns mobileColumsnDirection'>
-                    <div className='leftDiv leftDivHorizontal'>
-                      <Typography variant={'caption'} style={{marginBottom:'1rem'}}>
+          : <Paper elevation={1} className={`ph4-l ph2 pv4 flex-column paperLargeSize paperMobileSize ${paperClasses}`} >
+            <div className='wrapper'>
+              <div className='content'>
+                <div className='columns mobileColumsnDirection'>
+                  <div className='leftDiv leftDivHorizontal'>
+                    <Typography variant={'caption'} style={{ marginBottom: '1rem' }}>
                         Valor será resgatado para a conta
-                      </Typography>
-                      <Typography variant={'body2'}>
-                        { userData.bank }
-                      </Typography>
-                      <Typography variant={'body2'}>
+                    </Typography>
+                    <Typography variant={'body2'}>
+                      { userData.bank }
+                    </Typography>
+                    <Typography variant={'body2'}>
                         Titular: { userData.holder }
-                      </Typography>
-                      <Typography variant={'body2'}>
+                    </Typography>
+                    <Typography variant={'body2'}>
                         CPF: { userData.cpf }
-                      </Typography>
-                      <Typography variant={'body2'}>
+                    </Typography>
+                    <Typography variant={'body2'}>
                         Agência: { userData.agency }
-                      </Typography>
-                      <Typography variant={'body2'}>
+                    </Typography>
+                    <Typography variant={'body2'}>
                         Conta corrente: { userData.currentAccount }
-                      </Typography>
-                    </div>
+                    </Typography>
+                  </div>
 
-                    <div className='rigthDiv rightDivHorizontal'>
+                  <div className='rigthDiv rightDivHorizontal'>
 
-                      <Typography variant={'caption'}>
+                    <Typography variant={'caption'}>
                         Valor da solicitação de resgate
-                      </Typography>
-                      <Typography variant={'body2'} style={{marginBottom:'1rem'}}>
-                        {getCurrencyFormat(amountRequest, 'R$', 0, ' ')}
-                      </Typography>
+                    </Typography>
+                    <Typography variant={'body2'} style={{ marginBottom: '1rem' }}>
+                      {getCurrencyFormat(amountRequest, 'R$', 0, ' ')}
+                    </Typography>
 
-                      <Typography variant={'caption'}>
+                    <Typography variant={'caption'}>
                         Do objetivo
-                      </Typography>
-                      <Typography variant={'body2'} style={{marginBottom:'1rem'}}>
-                        {altValue}
-                      </Typography>
+                    </Typography>
+                    <Typography variant={'body2'} style={{ marginBottom: '1rem' }}>
+                      {altValue}
+                    </Typography>
 
-                      <Typography variant={'caption'}>
+                    <Typography variant={'caption'}>
                         Data prevista para o valor ser transferido em sua conta:
-                      </Typography>
-                      <Typography variant={'body2'}>
-                        {dateExpected}
-                      </Typography>
-
-                    </div>
+                    </Typography>
+                    <Typography variant={'body2'}>
+                      {dateExpected}
+                    </Typography>
 
                   </div>
+
                 </div>
               </div>
-            </Paper>
-          }
+            </div>
+          </Paper>
+        }
 
       </MuiThemeProvider>
     )

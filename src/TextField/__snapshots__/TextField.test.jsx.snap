@@ -29,7 +29,6 @@ ShallowWrapper {
       "aria-describedby": "textField",
       "children": Array [
         <TextField
-          className="gambe"
           error={false}
           id="textField"
           label=""
@@ -60,7 +59,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "autoFocus": undefined,
-          "className": "gambe",
           "error": false,
           "id": "textField",
           "label": "",
@@ -93,7 +91,6 @@ ShallowWrapper {
         "aria-describedby": "textField",
         "children": Array [
           <TextField
-            className="gambe"
             error={false}
             id="textField"
             label=""
@@ -124,7 +121,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "autoFocus": undefined,
-            "className": "gambe",
             "error": false,
             "id": "textField",
             "label": "",

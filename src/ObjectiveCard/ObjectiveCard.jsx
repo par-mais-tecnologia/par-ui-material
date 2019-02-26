@@ -9,7 +9,7 @@ export default class ObjectiveCard extends PureComponent {
       case 'SECURITY_RESERVE':
         return {
           title: 'RESERVA DE EMERGÊNCIA',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
+          titleProps: { color: SeeTheme.styles.colors.gray_01, marginLeft: '5px', marginTop: '2px', fontSize: '16px' },
           subTitle: 'Valor total',
           alt: 'Reserva de Emergência',
           iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/padlock.svg',
@@ -19,7 +19,7 @@ export default class ObjectiveCard extends PureComponent {
       case 'TIMED_OBJECTIVE':
         return {
           title: 'SONHOS E METAS',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '2px' },
+          titleProps: { color: SeeTheme.styles.colors.gray_01, marginLeft: '5px', marginTop: '2px', fontSize: '16px' },
           subTitle: 'Valor total',
           alt: 'Sonhos e Metas',
           iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/clock.svg',
@@ -29,7 +29,7 @@ export default class ObjectiveCard extends PureComponent {
       case 'FINANCIAL_INDEPENDENCE':
         return {
           title: 'VIVER DE RENDA',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px' },
+          titleProps: { color: SeeTheme.styles.colors.gray_01, marginLeft: '5px', fontSize: '16px' },
           subTitle: 'Valor total',
           alt: 'Viver de Renda',
           iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/pig.svg',
@@ -39,7 +39,7 @@ export default class ObjectiveCard extends PureComponent {
       case 'IMPROVE_PROFITABILITY':
         return {
           title: 'INVESTIR MELHOR',
-          titleProps: { color: SeeTheme.styles.colors.siren, marginLeft: '5px', marginTop: '1px' },
+          titleProps: { color: SeeTheme.styles.colors.gray_01, marginLeft: '5px', marginTop: '1px', fontSize: '16px' },
           subTitle: 'Valor total',
           alt: 'Reserva de Emergência',
           iconSrc: 'https://s3-sa-east-1.amazonaws.com/static.parmais.com.br/images/wallet.svg',
@@ -91,19 +91,19 @@ export default class ObjectiveCard extends PureComponent {
               height={heightValue} />
           </Grid>
           <Grid item>
-            <Typography variant={'headline'}
+            <Typography variant={'h2'}
               style={{ ...titlePropsValue }}>
               { titleValue }
             </Typography>
           </Grid>
         </Grid>
         <div>
-          <Typography variant={'body2'}>
+          <Typography variant={'caption'} style={{ fontSize: '16px' }}>
             { subTitleValue }
           </Typography>
         </div>
         <div>
-          <Typography variant={'body1'}>
+          <Typography variant={'body2'}>
             {getCurrencyFormat(value, 'R$', 0, ' ')}
           </Typography>
         </div>

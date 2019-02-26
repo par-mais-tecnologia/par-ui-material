@@ -120,11 +120,13 @@ class MyWalletLineChart extends Component {
   }
 
   render () {
-    const { classes } = this.props
+    const { classes, returnButtonClass } = this.props
 
     const helper = graphHelper(this, d3)
 
-    const tooltip = <foreignObject x='10' y='-50' width='169px' height={this.state.cdi ? '110px' : '89px'} className={['svgTooltipElement', classes.tooltipElement].join(' ')}>
+    const tooltip = <foreignObject x='10' y='-50' width='169px'
+      height={this.state.cdi ? '110px' : '89px'}
+      className={['svgTooltipElement', classes.tooltipElement].join(' ')}>
       <div className={['flex flex-column items-start tooltip', classes.tooltipWrapper].join(' ')} />
     </foreignObject>
 
@@ -285,7 +287,7 @@ class MyWalletLineChart extends Component {
                 <Button
                   disableRipple
                   variant='contained'
-                  style={{ width: '170px' }}
+                  className={returnButtonClass}
                   classes={{
                     root: this.state.areaLine.active
                       ? classes.buttonAreaActive
