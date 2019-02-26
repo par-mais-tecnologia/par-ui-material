@@ -71,7 +71,7 @@ class MyWalletLineChart extends Component {
   componentWillMount () {
     let props = this.props.dateRange
     let dateRange = this.state.dateRange
-    dateRange.data = props.map(date => moment(date))
+    dateRange.data = props.map(date => moment(date, 'DD-MM-YYYY'))
     dateRange.filtered = dateRange.data
     this.setState({ dateRange })
     window.addEventListener('resize', (event) => {
