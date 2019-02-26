@@ -22,7 +22,7 @@ class Donut extends Component {
 
   generateChart () {
     return generate({
-      bindto: '#wallet-chart',
+      bindto: this.props.identication === undefined ? '#wallet-chart' : `#${this.props.identication}`,
       size: {
         width: this.props.size,
         height: this.props.size
@@ -47,7 +47,9 @@ class Donut extends Component {
   getChartCustomStyles () {
     const { labelFirstLine, labelSecondLine } = this.props
 
-    const labelChart = select('text.c3-chart-arcs-title')
+    const labelChart = this.props.identication === undefined
+      ? select('text.c3-chart-arcs-title')
+      : select(`#${this.props.identication} text.c3-chart-arcs-title`)
 
     labelChart.html('')
     labelChart.insert('tspan').text(labelFirstLine).attr('dy', 0).attr('x', 0).style('font-family', 'sans-serif')
@@ -67,7 +69,9 @@ class Donut extends Component {
   }
 
   render () {
-    return <div id='wallet-chart' onMouseMove={this.onMouseMoveHandler} style={{ fontFamily: 'sans-serif' }} />
+    return <div id={this.props.identication === undefined ? 'wallet-chart' : this.props.identication}
+      onMouseMove={this.onMouseMoveHandler}
+      style={{ fontFamily: 'sans-serif' }} />
   }
 }
 

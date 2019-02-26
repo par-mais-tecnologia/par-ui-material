@@ -23,17 +23,18 @@ const styles = theme => ({
 
 class WalletChart extends Component {
   render () {
-    const { classes, initialInvestment, wallet, legend, showLegendPercentage, labelFirstLine, labelSecondLine } = this.props
-
+    const { classes, initialInvestment, wallet, legend, showLegendPercentage, labelFirstLine, labelSecondLine, identication } = this.props
     const strategies = getStrategies(initialInvestment, wallet)
 
     return (
       <Grid container direction='row' alignItems='center' justify='center'>
         <Donut
-          columns={getStrategies(this.props.initialInvestment, wallet)}
+          columns={getStrategies(initialInvestment, wallet)}
           colors={getStrategiesColors()}
           labelFirstLine={labelFirstLine}
-          labelSecondLine={labelSecondLine} />
+          labelSecondLine={labelSecondLine}
+          identication={identication}
+        />
         <Grid className={classes.legendChartContainer}>
           {legend && <Grid>
             <LegendChart initialInvestment={initialInvestment} strategies={strategies} showPercentage={showLegendPercentage} />
