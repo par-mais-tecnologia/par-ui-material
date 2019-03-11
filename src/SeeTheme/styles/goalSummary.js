@@ -11,6 +11,7 @@ export default {
   },
   section: {
     display: 'flex',
+    flex: '1',
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',

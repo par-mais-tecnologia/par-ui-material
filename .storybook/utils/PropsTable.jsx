@@ -12,9 +12,9 @@ const Td = ({ children }) => (
 
 const Table = ({ properties }) => {
   return (
-    <table width="600px" border-collapse="collapse" collspacing="0" cellspacing="0" style={{
+    <table width="600px" border-collapse="collapse" collspacing="0" cellSpacing="0" style={{
       fontFamily: "'Source Code Pro', monospace",
-      margin: '30px auto',
+      margin: '15px auto',
       boxShadow: "rgb(206, 212, 222) 0px 0px 0px 1px",
       backgroundColor: "transparent",
       borderSpacing: "0px",
@@ -64,7 +64,6 @@ const PropsTable = ({ of: component }) => {
   } else {
     properties = getPropsInfo(component)
   }
-  console.log(component)
 
   return (
     <Table properties={properties} />

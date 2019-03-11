@@ -1,12 +1,13 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { withKnobs, array} from '@storybook/addon-knobs'
+import { withKnobs, array } from '@storybook/addon-knobs'
 import {
   GoalSummary, 
   SeeTheme, 
   MuiThemeProvider,
   Typography
 } from '../../../src'
+import PropsTable from '../../utils/PropsTable'
 import style from '../style'
 
 const GoalSummaryStory = () => (
@@ -26,10 +27,11 @@ const GoalSummaryStory = () => (
         </Typography>
       </div>
       <div style={style.sectionItem}>
-        <div style={style.sectionContent}>
+        <div style={{ ...style.sectionContent, display: 'flex', justifyContent: 'center' }}>
           <GoalSummary
             data={array('data', [
               { title: 'Aportar mensalmente', value: 10000, type: 'currency' },
+              { title: 'Para ter', value: 300000, type: 'currency' },
               { title: 'Em', value: '2 anos e 3 meses' }
             ])}
           />
@@ -46,6 +48,11 @@ const GoalSummaryStory = () => (
                     type: 'currency'
                   &#125;,
                   &#123; 
+                    title: 'Para ter', 
+                    value: 300000, 
+                    type: 'currency'
+                  &#125;,
+                  &#123; 
                     title: 'Em', 
                     value: '2 anos e 3 meses'
                   &#125;
@@ -54,13 +61,11 @@ const GoalSummaryStory = () => (
             /&gt;
         </Typography>
       </div>
-      <div>
-        <Typography variant='overline' style={style.details}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Typography variant='overline' style={{ ...style.details, marginTop: 10 }}>
           Props
         </Typography>
-        <Typography variant='caption'>
-          data: PropTypes.array
-        </Typography>
+        <PropsTable of={GoalSummary} />
       </div>
     </div>
   </div>
