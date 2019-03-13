@@ -60,7 +60,7 @@ class RentabilityBar extends Component {
 
   formatValue = (value, type) => type === 'currency'
     ? getCurrencyFormat(value, 'R$', 0, ' ')
-    : formatDecAsPercent(value)
+    : formatDecAsPercent(value, 2)
 
   checkState = (value) => (
     value > 0
@@ -123,7 +123,7 @@ class RentabilityBar extends Component {
                             ? <small className={classes.sign}>{period.walletQuota.sign}</small>
                             : null
                         }
-                        {formatDecAsPercent(period.walletQuota.value)}
+                        {formatDecAsPercent(period.walletQuota.value, 2)}
                       </p>
                     </div>
                     <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
@@ -133,7 +133,7 @@ class RentabilityBar extends Component {
                             ? <small className={classes.sign}>{period.idxQuota.sign}</small>
                             : null
                         }
-                        {formatDecAsPercent(period.idxQuota.value)}
+                        {formatDecAsPercent(period.idxQuota.value, 2)}
                       </p>
                     </div>
                   </div>
