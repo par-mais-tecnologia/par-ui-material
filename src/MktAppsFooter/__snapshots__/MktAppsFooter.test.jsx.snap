@@ -743,9 +743,9 @@ ShallowWrapper {
       }
     }
   >
-    <WithStyles(MktAppsFooter)>
-      <WithStyles(MktAppsFooter) />
-    </WithStyles(MktAppsFooter)>
+    <MktAppsFooter>
+      <MktAppsFooter />
+    </MktAppsFooter>
   </MuiThemeProviderOld>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -761,7 +761,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <WithStyles(MktAppsFooter) />,
+      "children": <MktAppsFooter />,
     },
     "ref": null,
     "rendered": Object {
@@ -781,7 +781,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <WithStyles(MktAppsFooter) />,
+        "children": <MktAppsFooter />,
       },
       "ref": null,
       "rendered": Object {
@@ -816,15 +816,6 @@ ShallowWrapper {
         },
       },
     },
-  },
-  Symbol(enzyme.__childContext__): Object {
-    "__THEMING__": Object {
-      "getState": [Function],
-      "setState": [Function],
-      "subscribe": [Function],
-      "unsubscribe": [Function],
-    },
-    "muiThemeProviderOptions": Object {},
   },
 }
 `;

@@ -3,7 +3,14 @@
 exports[`ObjectiveCard shallow ObjectiveCard match Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ObjectiveCard />,
+  Symbol(enzyme.__unrendered__): <ObjectiveCard
+    subTitle="Valor total"
+    titleProps={
+      Object {
+        "style": Object {},
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -19,45 +26,34 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Grid
-          container={true}
-          direction="row"
-        >
-          <Grid
-            item={true}
-          >
-            <img
-              border="0"
-            />
-          </Grid>
-          <Grid
-            item={true}
-          >
-            <Typography
-              style={Object {}}
-              variant="h2"
-            />
-          </Grid>
-        </Grid>,
         <div>
           <Typography
+            align="center"
+            style={Object {}}
+            variant="h2"
+          />
+        </div>,
+        <div>
+          <Typography
+            align="center"
             style={
               Object {
                 "fontSize": "16px",
               }
             }
             variant="caption"
-          />
-        </div>,
-        <div>
+          >
+            Valor total
+          </Typography>
           <Typography
+            align="center"
             variant="body2"
           >
             0
           </Typography>
         </div>,
       ],
-      "className": "ph4 pv4 flex-column undefined",
+      "className": "ph4 pv4 flex flex-column justify-between undefined",
       "elevation": 1,
     },
     "ref": null,
@@ -65,100 +61,12 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Grid
-              item={true}
-            >
-              <img
-                border="0"
-              />
-            </Grid>,
-            <Grid
-              item={true}
-            >
-              <Typography
-                style={Object {}}
-                variant="h2"
-              />
-            </Grid>,
-          ],
-          "container": true,
-          "direction": "row",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <img
-                border="0"
-              />,
-              "item": true,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": undefined,
-                "border": "0",
-                "height": undefined,
-                "src": undefined,
-                "width": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Typography
-                style={Object {}}
-                variant="h2"
-              />,
-              "item": true,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": undefined,
-                "style": Object {},
-                "variant": "h2",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": <Typography
-            style={
-              Object {
-                "fontSize": "16px",
-              }
-            }
-            variant="caption"
+            align="center"
+            style={Object {}}
+            variant="h2"
           />,
         },
         "ref": null,
@@ -167,11 +75,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "align": "center",
             "children": undefined,
-            "style": Object {
-              "fontSize": "16px",
-            },
-            "variant": "caption",
+            "style": Object {},
+            "variant": "h2",
           },
           "ref": null,
           "rendered": null,
@@ -184,25 +91,58 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Typography
-            variant="body2"
-          >
-            0
-          </Typography>,
+          "children": Array [
+            <Typography
+              align="center"
+              style={
+                Object {
+                  "fontSize": "16px",
+                }
+              }
+              variant="caption"
+            >
+              Valor total
+            </Typography>,
+            <Typography
+              align="center"
+              variant="body2"
+            >
+              0
+            </Typography>,
+          ],
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": 0,
-            "variant": "body2",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "align": "center",
+              "children": "Valor total",
+              "style": Object {
+                "fontSize": "16px",
+              },
+              "variant": "caption",
+            },
+            "ref": null,
+            "rendered": "Valor total",
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": 0,
-          "type": [Function],
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "align": "center",
+              "children": 0,
+              "variant": "body2",
+            },
+            "ref": null,
+            "rendered": 0,
+            "type": [Function],
+          },
+        ],
         "type": "div",
       },
     ],
@@ -215,45 +155,34 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Grid
-            container={true}
-            direction="row"
-          >
-            <Grid
-              item={true}
-            >
-              <img
-                border="0"
-              />
-            </Grid>
-            <Grid
-              item={true}
-            >
-              <Typography
-                style={Object {}}
-                variant="h2"
-              />
-            </Grid>
-          </Grid>,
           <div>
             <Typography
+              align="center"
+              style={Object {}}
+              variant="h2"
+            />
+          </div>,
+          <div>
+            <Typography
+              align="center"
               style={
                 Object {
                   "fontSize": "16px",
                 }
               }
               variant="caption"
-            />
-          </div>,
-          <div>
+            >
+              Valor total
+            </Typography>
             <Typography
+              align="center"
               variant="body2"
             >
               0
             </Typography>
           </div>,
         ],
-        "className": "ph4 pv4 flex-column undefined",
+        "className": "ph4 pv4 flex flex-column justify-between undefined",
         "elevation": 1,
       },
       "ref": null,
@@ -261,100 +190,12 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Grid
-                item={true}
-              >
-                <img
-                  border="0"
-                />
-              </Grid>,
-              <Grid
-                item={true}
-              >
-                <Typography
-                  style={Object {}}
-                  variant="h2"
-                />
-              </Grid>,
-            ],
-            "container": true,
-            "direction": "row",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <img
-                  border="0"
-                />,
-                "item": true,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": undefined,
-                  "border": "0",
-                  "height": undefined,
-                  "src": undefined,
-                  "width": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Typography
-                  style={Object {}}
-                  variant="h2"
-                />,
-                "item": true,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": undefined,
-                  "style": Object {},
-                  "variant": "h2",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": <Typography
-              style={
-                Object {
-                  "fontSize": "16px",
-                }
-              }
-              variant="caption"
+              align="center"
+              style={Object {}}
+              variant="h2"
             />,
           },
           "ref": null,
@@ -363,11 +204,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "align": "center",
               "children": undefined,
-              "style": Object {
-                "fontSize": "16px",
-              },
-              "variant": "caption",
+              "style": Object {},
+              "variant": "h2",
             },
             "ref": null,
             "rendered": null,
@@ -380,25 +220,58 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Typography
-              variant="body2"
-            >
-              0
-            </Typography>,
+            "children": Array [
+              <Typography
+                align="center"
+                style={
+                  Object {
+                    "fontSize": "16px",
+                  }
+                }
+                variant="caption"
+              >
+                Valor total
+              </Typography>,
+              <Typography
+                align="center"
+                variant="body2"
+              >
+                0
+              </Typography>,
+            ],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": 0,
-              "variant": "body2",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "align": "center",
+                "children": "Valor total",
+                "style": Object {
+                  "fontSize": "16px",
+                },
+                "variant": "caption",
+              },
+              "ref": null,
+              "rendered": "Valor total",
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": 0,
-            "type": [Function],
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "align": "center",
+                "children": 0,
+                "variant": "body2",
+              },
+              "ref": null,
+              "rendered": 0,
+              "type": [Function],
+            },
+          ],
           "type": "div",
         },
       ],
@@ -426,6 +299,5 @@ ShallowWrapper {
       },
     },
   },
-  Symbol(enzyme.__childContext__): null,
 }
 `;

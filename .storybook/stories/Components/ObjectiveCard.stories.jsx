@@ -7,34 +7,61 @@ import {
   SeeTheme,
   Typography
 } from '../../../src'
+import PropsTable from '../../utils/PropsTable'
 import style from '../style'
 
-const variants = ['SECURITY_RESERVE', 'TIMED_OBJECTIVE', 'FINANCIAL_INDEPENDENCE', 'IMPROVE_PROFITABILITY', 'SECURITY_RESERVE']
+const variants = [
+  {
+    title: 'RESERVA DE EMERGÊNCIA',
+    subTitle: 'Valor total',
+    value: '27549'
+  },
+  {
+    title: 'VIVER DE RENDA',
+    subTitle: 'Valor total',
+    value: '215384'
+  },
+  {
+    title: 'MEU OBJETIVO',
+    subTitle: 'Valor total',
+    value: '21547'
+  }
+]
 
 const ObjectiveCardStory = () => (
-  <div style={{...style.section, gridTemplateColumns: 'repeat(auto-fill,minmax(450px, .5fr))'}}>
+  <div style={{ ...style.section, gridTemplateColumns: 'auto' }}>
     {
-      variants.map(variant => (
-        <div style={{...style.sectionItemWrapper, placeSelf: 'center'}}>
+      variants.map((variant, i) => (
+        <div key={i} style={{...style.sectionItemWrapper, placeSelf: 'center'}}>
           <div style={style.sectionItem}>
             <div style={style.content}>
               <MuiThemeProvider theme={SeeTheme}>
                 <ObjectiveCard
-                  objectiveType={variant}
-                  value={8450.045}
+                  title={variant.title.toUpperCase()}
+                  subTitlte={variant.subTitle}
+                  value={variant.value}
+                  style={{ width: 350, height: 150 }}
                 />
               </MuiThemeProvider>
             </div>
+            <div style={{ padding: '0 32px' }}>
               <Typography variant='body1'>
                 &lt;
                   <span style={style.tag}>ObjectiveCard </span>
-                  <span style={style.attr}>variant</span>=
-                  <span style={style.value}>'{variant}' </span>
+                  <span style={style.attr}>title</span>=
+                  <span style={style.value}>'{variant.title}' </span>
+
+                  <span style={style.attr}>subTitlte</span>=
+                  <span style={style.value}>'{variant.subTitle}' </span>
 
                   <span style={style.attr}>value</span>=
-                  <span style={style.value}>8450.045</span>
+                  <span style={style.value}>{variant.value} </span>
+
+                  <span style={style.attr}>style</span>=
+                  <span style={style.value}>&#123;&#123; width: 350, height: 150 &#125;&#125;</span>
                 &gt;
               </Typography>
+            </div>
           </div>
         </div>
       ))
@@ -57,28 +84,15 @@ const ObjectiveCardStory = () => (
           &gt;...
         </Typography>
         <Typography variant='subtitle1'>
-          Also, the component has default configutations, which are based on the <span style={style.value}>variant</span> prop,
-          but you can do it on your on adding props as: <span style={style.tag}>
-          title, subTitle, value, alt, iconSrc, width, height, titleProps, objectiveType, classes</span>
+          You have access to the following props: <span style={style.tag}>
+          title, subTitle, value, titleProps</span>.
         </Typography>
-        <Typography variant='overline' style={style.details}>
-          Props
-        </Typography>
-        <Typography variant='caption'>
-          title: PropTypes.string,
-          <br/>
-          titleProps: PropTypes.object,
-          <br/>
-          subTitle: PropTypes.string,
-          <br/>
-          alt: PropTypes.string,
-          <br/>
-          iconSrc: PropTypes.string,
-          <br/>
-          width: PropTypes.number,
-          <br/>
-          heigth: PropTypes.number
-        </Typography>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Typography variant='overline' style={{ ...style.details, marginTop: 10 }}>
+            Props
+          </Typography>
+          <PropsTable of={ObjectiveCard} />
+        </div>
       </div>
     </div>
   </div>
