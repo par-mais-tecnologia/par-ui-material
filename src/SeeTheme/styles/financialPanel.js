@@ -54,5 +54,13 @@ export default {
   walletComposition: {
     fontSize: '1rem',
     color: '#636363'
+  },
+  rounded: {
+    '&:first-child': {
+      borderRadius: '20px'
+    },
+    '&:last-child': {
+      borderRadius: '20px'
+    }
   }
 }

@@ -47,7 +47,7 @@ ShallowWrapper {
             "color": "#9C9C9C",
           },
           "toolBar": Object {
-            "minHeight": 70,
+            "minHeight": 60,
           },
         },
         "breakpoints": Object {
@@ -144,6 +144,14 @@ ShallowWrapper {
           },
           "root": Object {
             "width": "100%",
+          },
+          "rounded": Object {
+            "&:first-child": Object {
+              "borderRadius": "20px",
+            },
+            "&:last-child": Object {
+              "borderRadius": "20px",
+            },
           },
           "value": Object {
             "color": "#636363",

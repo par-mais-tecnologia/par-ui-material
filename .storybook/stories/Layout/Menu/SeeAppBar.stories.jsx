@@ -47,7 +47,8 @@ const AppBarComponent = () => {
         closeMenu={toggleMenu}
         name={'João da Silveira'}
         selectedIndex={selectedIndex}
-        lastUpdateDate={'25/02/2019'} 
+        lastUpdateDate={'25/02/2019'}
+        onClickLogo={() => alert('Clicoooou')}
       />
       <div style={{...style.section,  gridTemplateColumns: 'repeat(auto-fill)', padding: '6rem 2rem'}}>
         <div style={style.sectionItemWrapper}>

@@ -56,7 +56,7 @@ class FinancialPanel extends Component {
           {
             data.map((obj, i) => (
 
-              <ExpansionPanel hidden={this.state.hidden} key={i}>
+              <ExpansionPanel hidden={this.state.hidden} key={i} classes={{ rounded: classes.rounded }}>
                 <ExpansionPanelSummary
                   expandIcon={<ExpandMoreIcon />}>
                   <div className={classes.flexBoxBetween}>

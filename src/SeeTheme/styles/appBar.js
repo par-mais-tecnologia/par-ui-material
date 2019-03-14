@@ -5,7 +5,7 @@ export default {
     backgroundColor: styles.styles.colors.white
   },
   toolBar: {
-    minHeight: 70
+    minHeight: 60
   },
   menuItem: {
     color: '#9C9C9C',

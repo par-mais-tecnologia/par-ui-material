@@ -11,7 +11,7 @@ const styles = theme => ({
 
 const SeeAppBar = (
   { classes, menuItems, selectedIndex, isOpen, openMenu, handleExit,
-    closeMenu, name, lastUpdateDate }) => {
+    closeMenu, name, lastUpdateDate, onClickLogo }) => {
   const renderMenuItems = (menuItems, selectedIndex) => {
     return (
       [...menuItems].map((item, index) => (
@@ -59,7 +59,7 @@ const SeeAppBar = (
             lastUpdateDate={lastUpdateDate}
             selectedIndex={selectedIndex} />
         </div>
-        <div className='flex justify-center' style={{ width: '33.33%' }}>
+        <div className='flex justify-center' style={{ width: '33.33%', cursor: 'pointer' }} onClick={onClickLogo}>
           <img
             alt={'Logo Par Mais'}
             style={{ maxHeight: '20px', minWidth: '125px' }}
