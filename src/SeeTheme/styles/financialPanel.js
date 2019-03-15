@@ -61,6 +61,9 @@ export default {
     },
     '&:last-child': {
       borderRadius: '0 0 20px 20px'
+    },
+    '&:only-child': {
+      borderRadius: '20px'
     }
   }
 }

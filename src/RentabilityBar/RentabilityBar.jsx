@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles, Paper } from '@material-ui/core'
 import { formatDecAsPercent, getCurrencyFormat } from '../Core/masks'
@@ -73,9 +73,9 @@ class RentabilityBar extends Component {
   render () {
     const { classes, periods } = this.props
     return (
-      <div>
+      <Fragment>
 
-        <Paper>
+        <Paper className={classes.paper}>
           <div className={[ MainBoxClasses, classes.mainBox, this.props.className ].join(' ')}>
             <div className={[SubBoxClasses, classes.subBox].join(' ')}>
               {
@@ -103,29 +103,13 @@ class RentabilityBar extends Component {
               periods && this.state.data.map((period, indice) => (
                 <div key={indice} className={[ MainBoxClasses, classes.collapsableRow, this.props.className ].join(' ')}>
                   <div className={[SubBoxClasses, classes.subBox].join(' ')}>
+
                     <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
                       <h1 className={[classes.subTitle, classes.typography].join(' ')}>
                         {this.getMonth(period.date)}
                       </h1>
-                      <p className={[classes.typography, period.rentability.class].join(' ')}>
-                        {
-                          period.rentability.sign !== ''
-                            ? <small className={classes.sign}>{period.rentability.sign}</small>
-                            : null
-                        }
-                        {getCurrencyFormat(period.rentability.value, 'R$', 0, ' ')}
-                      </p>
                     </div>
-                    <div className={[classes.boxColumn, 'ph2'].join(' ')}>
-                      <p className={[classes.typography, period.walletQuota.class].join(' ')}>
-                        {
-                          period.walletQuota.sign !== ''
-                            ? <small className={classes.sign}>{period.walletQuota.sign}</small>
-                            : null
-                        }
-                        {formatDecAsPercent(period.walletQuota.value, 2)}
-                      </p>
-                    </div>
+
                     <div className={[ColumnsClasses, classes.boxColumn].join(' ')}>
                       <p className={[classes.typography, period.idxQuota.class].join(' ')}>
                         {
@@ -136,6 +120,18 @@ class RentabilityBar extends Component {
                         {formatDecAsPercent(period.idxQuota.value, 2)}
                       </p>
                     </div>
+
+                    <div className={[classes.boxColumn, 'ph2'].join(' ')}>
+                      <p className={[classes.typography, period.walletQuota.class].join(' ')}>
+                        {
+                          period.walletQuota.sign !== ''
+                            ? <small className={classes.sign}>{period.walletQuota.sign}</small>
+                            : null
+                        }
+                        {formatDecAsPercent(period.walletQuota.value, 2)}
+                      </p>
+                    </div>
+
                   </div>
                 </div>
               ))
@@ -143,14 +139,12 @@ class RentabilityBar extends Component {
           </div>
         </Paper>
         {
-          periods && <div>
-            <label className={classes.toggle} htmlFor='toggle'>
-              <i className={`par-icon-expansor-${this.state.expanded ? 'less' : 'more'} mh2`} />
-              {this.state.expanded ? 'OCULTAR' : 'MOSTRAR'} RENTABILIDADE MÊS A MÊS
-            </label>
-          </div>
+          periods && <label className={classes.toggle} htmlFor='toggle'>
+            <i className={`par-icon-expansor-${this.state.expanded ? 'less' : 'more'} mh2`} />
+            {this.state.expanded ? 'OCULTAR' : 'MOSTRAR'} RENTABILIDADE MÊS A MÊS
+          </label>
         }
-      </div>
+      </Fragment>
     )
   }
 }

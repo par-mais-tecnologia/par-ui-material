@@ -147,9 +147,12 @@ ShallowWrapper {
           },
           "rounded": Object {
             "&:first-child": Object {
-              "borderRadius": "20px",
+              "borderRadius": "20px 20px 0 0",
             },
             "&:last-child": Object {
+              "borderRadius": "0 0 20px 20px",
+            },
+            "&:only-child": Object {
               "borderRadius": "20px",
             },
           },
@@ -560,13 +563,16 @@ ShallowWrapper {
             "width": "20%",
           },
           "collapsableRow": Object {
+            "&:last-child": Object {
+              "borderRadius": "0 0 20px 20px",
+            },
+            "backgroundColor": "#FFFFFF",
             "maxHeight": 0,
             "overflow": "hidden",
             "transition": "all 0.4s",
           },
           "mainBox": Object {
-            "backgroundColor": "#F0F0F0",
-            "borderRadious": "20px",
+            "backgroundClip": "content-box",
             "padding": "1rem 0",
           },
           "negativeState": Object {
@@ -580,6 +586,9 @@ ShallowWrapper {
               "marginLeft": "7.75px",
             },
             "color": "#636363",
+          },
+          "paper": Object {
+            "backgroundColor": "#F0F0F0",
           },
           "positiveState": Object {
             "color": "#7FBD42",

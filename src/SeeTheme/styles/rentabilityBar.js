@@ -1,8 +1,10 @@
 export default {
+  paper: {
+    backgroundColor: '#F0F0F0'
+  },
   mainBox: {
-    backgroundColor: '#F0F0F0',
-    borderRadious: '20px',
-    padding: '1rem 0'
+    padding: '1rem 0',
+    backgroundClip: 'content-box'
   },
   subBox: {
     width: '100%',
@@ -14,7 +16,11 @@ export default {
   collapsableRow: {
     maxHeight: 0,
     transition: 'all 0.4s',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    backgroundColor: '#FFFFFF',
+    '&:last-child': {
+      borderRadius: '0 0 20px 20px'
+    }
   },
   boxColumn: {
     paddingBottom: '5px',

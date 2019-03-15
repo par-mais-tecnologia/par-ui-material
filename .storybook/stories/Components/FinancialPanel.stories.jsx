@@ -18,6 +18,19 @@ const data = [
       rentability: 138,
       strategy: "Multimercado"
     }
+  },
+  {
+    fundLiquidity: 32,
+    fundName: "PAR MAIS MAXIMUM FIC FIM",
+    percentual: "0.061",
+    product: {
+      cnpj: "21.983.042/0001-60",
+      currentPL: 1179318698,
+      evaluationClient: "Ações e mercado de juros global com hedge cambial",
+      name: "ABSOLUTE ALPHA GLOBAL FIC FIM",
+      rentability: 138,
+      strategy: "Multimercado"
+    }
   }
 ]
 
