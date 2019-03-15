@@ -57,10 +57,10 @@ export default {
   },
   rounded: {
     '&:first-child': {
-      borderRadius: '20px'
+      borderRadius: '20px 20px 0 0'
     },
     '&:last-child': {
-      borderRadius: '20px'
+      borderRadius: '0 0 20px 20px'
     }
   }
 }
